@@ -1,8 +1,14 @@
+import MainFooter from './components/MainFooter';
+import TopNavbar from './components/TopNavbar';
+import LeadBanner from './pages/landing-page/components/LeadBanner';
+
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">Welcome to client_main</header>
-    </div>
+    <>
+      <TopNavbar />
+      <LeadBanner />
+      <MainFooter />
+    </>
   );
 }
 

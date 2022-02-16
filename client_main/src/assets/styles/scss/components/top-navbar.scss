@@ -1,7 +1,13 @@
+@use '../utilities/global-resets';
+@use '../utilities/colors';
+@use '../utilities/config';
+@use '../utilities/google-fonts';
+
 .top-nav {
   background-color: transparent;
   padding-right: 50px;
   padding-left: 50px;
+  z-index: 1000;
   .navbar-brand {
     img {
       width: 60px;
@@ -25,7 +31,7 @@
       &:hover {
         &:after {
           width: 100%;
-          transition: width 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+          transition: width 0.95s cubic-bezier(0.19, 1, 0.22, 1);
         }
       }
       &:after {

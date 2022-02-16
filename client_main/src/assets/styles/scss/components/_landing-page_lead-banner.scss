@@ -2,13 +2,14 @@
   width: 100%;
   min-height: 600px;
   background-size: cover;
+  transform: translateY(-95.5px);
   background-image: url(../../images/black-doc.png);
   .lead-banner-overlay {
     width: inherit;
     min-height: inherit;
     background-color: rgba(0, 0, 0, 0.35);
     .lead-text-case {
-      padding-top: 100px;
+      padding-top: 200px;
       width: 50%;
       color: white;
       text-align: center;

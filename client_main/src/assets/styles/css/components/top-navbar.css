@@ -1,0 +1,124 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  --bs-gutter-x: 0 !important;
+}
+* a {
+  color: inherit;
+  text-decoration: none;
+}
+* a:hover {
+  color: inherit;
+  text-decoration: none;
+}
+
+:root {
+  --default-blue: #10acf5;
+  --default-blue-deep: #2387d4;
+  --default-blue-calm: #7ea2be;
+  --default-blue_opaque: rgba(16, 172, 245, 0.2);
+  --default-blue-calm_opaque: rgba(126, 162, 190, 0.2);
+  --default-white: white;
+  --default-grey: #565656;
+}
+:root .facebook-blue {
+  color: #3b5998;
+}
+:root .twitter-blue {
+  color: #00aced;
+}
+:root .instagram {
+  color: #e95950;
+}
+:root .linkedin {
+  color: #007bb5;
+}
+:root .youtube {
+  color: #ff0000;
+}
+
+:root {
+  --transition-all: all 0.75s ease;
+}
+
+.montserrat {
+  font-family: "Montserrat", sans-serif;
+}
+
+.roboto-slab {
+  font-family: "Roboto Slab", serif;
+}
+
+.open-sans {
+  font-family: "Open Sans", sans-serif;
+}
+
+.top-nav {
+  background-color: transparent;
+  padding-right: 50px;
+  padding-left: 50px;
+  z-index: 1000;
+}
+.top-nav .navbar-brand img {
+  width: 60px;
+  height: 60px;
+  margin: 5px 15px 5px 0;
+}
+.top-nav .navbar-brand span {
+  font-size: 40px;
+  display: inline;
+  color: white;
+  font-weight: 900;
+  position: relative;
+  top: 8px;
+}
+.top-nav ul {
+  margin-left: auto;
+}
+.top-nav ul .nav-item {
+  margin: 0 15px;
+  position: relative;
+}
+.top-nav ul .nav-item:hover:after {
+  width: 100%;
+  transition: width 0.95s cubic-bezier(0.19, 1, 0.22, 1);
+}
+.top-nav ul .nav-item:after {
+  content: "";
+  background-color: white;
+  width: 0;
+  height: 1px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: block;
+  margin: 0 auto;
+}
+.top-nav ul .nav-item .nav-link {
+  color: white;
+  padding: 0.2rem 0.5rem;
+}
+.top-nav ul .nav-item .nav-link:hover {
+  color: white;
+}
+.top-nav .btn-wrapper .btn {
+  padding: 3px 20px;
+  color: white;
+}
+.top-nav .btn-wrapper .btn:hover {
+  transform: scale(1.04);
+  box-shadow: 0px 5px 5px -1px var(--default-grey);
+  transition: var(--transition-all);
+}
+.top-nav .btn-wrapper .btn-x {
+  border-radius: 20px;
+  background-color: var(--default-blue-calm);
+  margin-left: 10px;
+}
+.top-nav .btn-wrapper .btn-xx {
+  border-radius: 20px;
+  background-color: var(--default-blue);
+  margin-left: 30px;
+  box-shadow: 0px 5px 5px -1px var(--default-grey);
+}
