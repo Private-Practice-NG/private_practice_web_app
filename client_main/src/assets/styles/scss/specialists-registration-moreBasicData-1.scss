@@ -1,0 +1,94 @@
+@use "./utilities/global-resets";
+@use './utilities/colors';
+@use './utilities/config';
+@use './components/footer';
+@use './components/button';
+@use './components/back';
+@use './components/registration-option';
+
+
+$border-bottom-color: #707070;
+
+
+.background-layout{
+    @extend %body !optional;
+    h2{
+    font-size: 18px; 
+    font-weight: 100;
+    }
+    p{
+        color: var(--default-white);
+    }
+
+    a{
+        text-decoration: none;
+    }
+
+
+    #content{
+        padding: 55px 0 50px 0; 
+    }
+
+    .back {
+    @extend %back;
+    }
+
+    .register-option{
+        @extend %register;
+    }
+
+    .platform{
+        border: hsla(0, 0%, 44%, 1);
+        background-color: var(--default-white);
+        padding: 25px;
+        border-radius: 15px;
+        height: fit-content;
+
+        input{
+            outline: 0;
+            border: none;
+            border-bottom: 1px $border-bottom-color solid;
+            border-radius: 0;
+            &:focus{
+                // outline: none;
+                box-shadow: none;
+            }
+
+        }
+        & #lastInput input{
+            border: none;
+            outline: 0;
+            border-bottom: none;
+        }
+    }
+
+    .checkBox{
+        input{
+            width: 24px; 
+            height: 24px;
+            outline: 0;
+        }
+    }
+
+    .signUp{
+        @extend %btn;
+        &:hover{
+            color: var(--default-white);
+        }
+        text-align: center;
+    }
+    .account{
+        p{
+            text-align: center;
+            a{
+                color: var(--default-white);
+                font-weight: 700;
+            }
+        }
+    }
+
+    .main-footer{
+    @extend %footer;
+    padding-top: 0px;
+    }
+}

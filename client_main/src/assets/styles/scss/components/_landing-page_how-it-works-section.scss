@@ -1,0 +1,108 @@
+@use './landing-page_background-extra';
+
+.how-it-works-section {
+  transform: translateY(-70px);
+  border-top: 8px solid var(--default-blue);
+  width: 100%;
+  .about-service {
+    .process-title {
+      font-weight: 700;
+      font-size: 50px;
+      display: flex;
+      align-items: center;
+      background-color: rgba(126, 162, 190, 0.7);
+      text-align: center;
+      padding: 25px;
+      color: white;
+      border-bottom-right-radius: 20px;
+      border-bottom-left-radius: 20px;
+    }
+    .service-process {
+      background-color: var(--default-blue-calm_opaque);
+      border-bottom-right-radius: 20px;
+      border-bottom-left-radius: 20px;
+      .process-item {
+        padding: 20px;
+        text-align: center;
+        .icon-wrapper {
+          width: 60px;
+          height: 60px;
+          padding: 10px;
+          border-radius: 100%;
+          margin: 0 auto;
+          background-color: rgba(255, 255, 255, 0.5);
+          img {
+            width: 40px;
+            height: 40px;
+          }
+        }
+        .process-item-title {
+          font-weight: bold;
+          text-transform: capitalize;
+          padding-top: 10px;
+        }
+      }
+    }
+  }
+  .call-for-signup {
+    margin-top: 80px;
+    position: relative;
+    z-index: 100;
+    .lg-1 {
+      background-image: linear-gradient(
+        to bottom,
+        var(--default-blue),
+        var(--default-blue-deep),
+        #1a4a6f
+      );
+    }
+    .lg-2 {
+      background-image: linear-gradient(
+        to top,
+        var(--default-blue),
+        var(--default-blue-deep),
+        #1a4a6f
+      );
+    }
+    .call-item {
+      position: relative;
+      z-index: 100;
+      margin: 0 auto 25px;
+      padding: 30px 50px;
+      color: white;
+      border-radius: 60px;
+      width: 80%;
+      display: flex;
+      justify-content: space-between;
+
+      .text-area {
+        .call-item-title {
+          font-weight: bold;
+          margin: 0;
+        }
+      }
+      .btn-aside {
+        border-radius: 60px;
+        font-size: 20px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        margin: auto 0;
+        padding: 0 35px;
+        background-color: rgba(255, 255, 255, 0.95);
+        box-shadow: 0px 5px 5px -1px var(--default-grey);
+        &:hover {
+          transform: scale(1.05);
+          transition: var(--transition-all);
+        }
+      }
+    }
+    &:after {
+      @extend %background-extra;
+      height: 1495px;
+      transform: rotate(60deg);
+      top: -600px;
+      right: 10px;
+    }
+  }
+}

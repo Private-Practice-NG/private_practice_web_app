@@ -1,0 +1,24 @@
+@use './landing-page_background-extra';
+
+.video-area {
+  margin: 80px auto;
+  .video-wrapper {
+    min-height: 350px;
+    margin: 0 50px;
+    position: relative;
+    z-index: 100;
+  }
+  .text-wrapper {
+    position: relative;
+    span:last-child {
+      font-weight: 900;
+    }
+    &:after {
+      @extend %background-extra;
+      transform: rotate(60deg);
+      height: 1450px;
+      top: -420px;
+      right: 10px;
+    }
+  }
+}

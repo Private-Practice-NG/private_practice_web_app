@@ -1,0 +1,31 @@
+:root {
+  --default-blue: #10acf5;
+  --default-blue-deep: #2387d4;
+  --default-blue-calm: #7ea2be;
+  --default-blue_opaque: rgba(16, 172, 245, 0.2);
+  --default-blue-calm_opaque: rgba(126, 162, 190, 0.2);
+  --default-white: white;
+  --default-grey: #565656;
+
+  // icons colours
+
+  .facebook-blue {
+    color: #3b5998;
+  }
+
+  .twitter-blue {
+    color: #00aced;
+  }
+
+  .instagram {
+    color: #e95950;
+  }
+
+  .linkedin {
+    color: #007bb5;
+  }
+
+  .youtube {
+    color: #ff0000;
+  }
+}

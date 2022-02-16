@@ -1,0 +1,12 @@
+@use '../utilities/colors';
+
+%back {
+  width: 45px;
+  height: 45px;
+  display: flex;
+  border-radius: 100px;
+  background-color: var(--default-white);
+  justify-content: center;
+  align-items: center;
+  filter: drop-shadow(3px 6px 5px rgba(0, 0, 0, 0.192));
+}

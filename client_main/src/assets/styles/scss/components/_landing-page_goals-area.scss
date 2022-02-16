@@ -1,0 +1,115 @@
+@use './landing-page_background-extra';
+
+.goals-area {
+  .container-fluid {
+    padding: 0;
+  }
+  .downloads-area {
+    margin-top: 50px;
+    .app-download-links-case {
+      display: flex;
+      padding: 10px 80px;
+      a {
+        margin: 0 10px;
+        img {
+          width: 200px;
+          height: 60px;
+        }
+      }
+    }
+    .our-capacity-container {
+      padding-right: 80px;
+      color: white;
+      text-align: center;
+      position: relative;
+      z-index: 100;
+      &:after {
+        @extend %background-extra;
+        height: 1485px;
+        transform: rotate(-60deg);
+        top: -600px;
+      }
+      .our-capacity-child {
+        margin: 40px auto;
+        background-image: url(../../images/specialist-count.png);
+        background-color: rgba(0, 0, 0, 0.7);
+        background-blend-mode: overlay;
+        width: 350px;
+        // filter: blur(1px);
+        min-height: 300px;
+        position: relative;
+        z-index: 100;
+        .blurry-overlay {
+          width: 100%;
+          min-height: inherit;
+          padding: 35px;
+          background-color: transparent;
+          &:before {
+            content: '';
+            background-color: var(--default-blue);
+            width: 120px;
+            margin: 0 auto;
+            height: 3px;
+            display: block;
+          }
+          .capacity-figure-container {
+            margin: 30px auto 10px;
+            img {
+              width: 40px;
+              height: 40px;
+            }
+            .specialist-number {
+              font-size: 60px;
+              font-weight: 400;
+              margin-top: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .goals-container {
+    width: 550px;
+    margin-left: auto;
+    background-color: var(--default-white);
+    border-top-left-radius: 60px;
+    border-bottom-left-radius: 50px;
+    transform: translateY(-100px);
+    padding: 20px;
+    box-shadow: 4px 0 8px 2px var(--default-grey);
+    .goals-header {
+      margin-top: 40px;
+      font-weight: 900;
+      text-align: center;
+      &:after {
+        content: '';
+        background-color: var(--default-blue);
+        width: 180px;
+        height: 4px;
+        margin: 10px auto;
+        display: block;
+      }
+    }
+    .goals-list {
+      margin: 50px 0 100px;
+      .goals-item {
+        margin-bottom: 25px;
+        display: flex;
+        padding: 20px;
+        justify-content: space-around;
+        &-list-number-bg {
+          background-image: url(../../images/list-item.png);
+          background-size: cover;
+          width: 130px;
+          height: 73px;
+          padding: 20px;
+          font-size: 25px;
+          font-weight: bold;
+        }
+        span {
+          padding: 0 15px 0 30px;
+        }
+      }
+    }
+  }
+}

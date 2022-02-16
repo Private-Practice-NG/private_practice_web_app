@@ -1,0 +1,129 @@
+:root {
+  --default-blue: #10acf5;
+  --default-blue-deep: #2387d4;
+  --default-blue-calm: #7ea2be;
+  --default-blue_opaque: rgba(16, 172, 245, 0.2);
+  --default-blue-calm_opaque: rgba(126, 162, 190, 0.2);
+  --default-white: white;
+  --default-grey: #565656;
+}
+:root .facebook-blue {
+  color: #3b5998;
+}
+:root .twitter-blue {
+  color: #00aced;
+}
+:root .instagram {
+  color: #e95950;
+}
+:root .linkedin {
+  color: #007bb5;
+}
+:root .youtube {
+  color: #ff0000;
+}
+
+.background-layout .main-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  padding: 30px 30px 0 30px;
+  margin-bottom: 31px;
+}
+.background-layout .main-footer .footer-left a {
+  text-decoration: none;
+  color: var(--default-white);
+}
+
+.background-layout {
+  background-color: rgba(0, 0, 0, 0.35);
+  background-blend-mode: overlay;
+  background-image: url("../../images/nb1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+:root {
+  --transition-all: all 0.75s ease;
+}
+
+.background-layout .register-option {
+  height: 100px;
+  width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 5px 5px;
+  background-color: var(--default-white);
+  border-radius: 6rem;
+  margin: 0px;
+}
+.background-layout .register-option img {
+  height: 64px;
+  width: 64px;
+}
+
+.background-layout {
+  background-image: url("../../images/hospital-dashboard.png");
+  background-color: #1b494e;
+  background-blend-mode: multiply;
+}
+.background-layout a {
+  text-decoration: none;
+  cursor: pointer;
+}
+.background-layout h2 {
+  font-size: 24px;
+  font-weight: 400;
+}
+.background-layout header {
+  padding: 20px 0 40px 0px;
+}
+.background-layout header img {
+  height: 200px;
+  width: 200px;
+}
+.background-layout header h1 {
+  font-size: 3.5rem;
+}
+.background-layout p {
+  padding-top: 21px;
+}
+.background-layout h1,
+.background-layout h2,
+.background-layout p {
+  color: var(--default-white);
+}
+.background-layout .overlap-layout {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+}
+.background-layout .overlap-layout::after {
+  content: "";
+  height: 286px;
+  display: block;
+  border-bottom: 196px solid transparent;
+  border-left: 100vw solid var(--default-blue-deep);
+}
+.background-layout section {
+  margin-bottom: 120px;
+}
+.background-layout section div:nth-child(2) {
+  margin: 0 136px;
+}
+.background-layout .register-option {
+  height: 120px;
+  width: 120px;
+  cursor: pointer;
+}
+.background-layout .register-option img {
+  width: 70px;
+  height: 70px;
+}
+.background-layout .main-footer .footer-left a {
+  color: var(--default-white);
+}

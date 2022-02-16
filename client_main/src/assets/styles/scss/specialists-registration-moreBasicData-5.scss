@@ -1,0 +1,73 @@
+@use "./utilities/global-resets";
+@use './utilities/colors';
+@use './utilities/config';
+@use './components/footer';
+@use './components/button';
+@use './components/back';
+@use './components/registration-option';
+
+
+.background-layout{
+    @extend %body !optional;
+
+    p,h2{
+        color: var(--default-white);
+    }
+
+    a{
+        text-decoration: none;
+    }
+
+    #content{
+        padding: 55px 0 166px 0;
+        h2{
+            font-size: 18px;
+            font-weight:100;
+        }
+    }
+
+
+    .back {
+        @extend %back;
+    }
+    
+    .register-option{
+        @extend %register;
+    }
+
+    .btnSpace{
+        position: relative;
+        width: 100%;
+
+        input{
+            position: absolute;
+            width:70%;
+            left: 0;
+            color: #C2D1D9; 
+            font-size: 12px; 
+            border-color: transparent; 
+            outline: none;
+            height: 2.5rem;
+        }
+
+        .signUp{
+            @extend %btn;
+            width: 30%;
+            position: absolute;
+            top: 24px;
+            right: 0;
+            border-radius: unset;
+            height: 2.5rem;
+            box-shadow: unset;
+            &:hover{
+                color: var(--default-white);
+            }
+            text-align: center;
+        }
+        
+    }
+
+    .main-footer{
+        @extend %footer;
+    }
+}

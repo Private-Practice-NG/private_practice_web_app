@@ -1,0 +1,69 @@
+@use "./utilities/global-resets";
+@use './utilities/colors';
+@use './utilities/config';
+@use './components/footer';
+@use './components/button';
+@use './components/back';
+@use './components/registration-option';
+
+.background-layout{
+    @extend %body !optional;
+     
+    p,h1{
+        color: var(--default-white);
+    }
+    
+    #content{
+        padding: 55px 0 10px 0; 
+
+        h1{
+            font-size: 18px; 
+            font-weight: bold;
+        }
+        a{
+            text-decoration: none;
+        }
+
+        .fw-light{
+            font-size: 18px;
+        }
+        .back {
+            @extend %back;
+            }
+    }
+
+    .register-option{
+        @extend %register;
+        width: 150px;
+        height: 150px;
+        img{
+            width: 100px;
+            height: 100px;
+        }
+    }
+
+    ul{
+        li{
+            color: var(--default-white)
+        }
+    }
+
+    .last-btn{
+        .signUp{
+            width: 100%;
+        }
+    }
+    .signUp{
+        @extend %btn;
+        width: 50%;
+        &:hover{
+            color: var(--default-white);
+        }
+        text-align: center;
+    }
+
+    .main-footer{
+        @extend %footer;
+        padding-top: 0px;
+    }
+}    

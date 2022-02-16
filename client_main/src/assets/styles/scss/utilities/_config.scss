@@ -1,0 +1,22 @@
+%body {
+  background-color: rgba(0, 0, 0, 0.35);
+  background-blend-mode: overlay;
+  background-image: url('../../images/nb1.png');
+  background-repeat: no-repeat;
+  // overflow: hidden;
+  background-size: cover;
+}
+
+%background-extra {
+  content: '';
+  width: 250px;
+  border-radius: 130px;
+  z-index: 10;
+  background-color: rgba(194, 194, 194, 0.2);
+  display: block;
+  position: absolute;
+}
+
+:root {
+  --transition-all: all 0.75s ease;
+}

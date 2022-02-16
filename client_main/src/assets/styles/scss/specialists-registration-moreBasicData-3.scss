@@ -1,0 +1,59 @@
+@use './utilities/global-resets';
+@use './components/button.scss';
+@use './components/back.scss';
+
+$bigBox-color: #799ecb;
+$return-color: #707070;
+$footer-color-p: #505050;
+
+p,h2{
+    color: var(--default-white);
+}
+
+a{
+    text-decoration: none;
+}
+
+.return {
+    color: $return-color;
+    padding-bottom: 4.32rem;
+}
+
+.back {
+    @extend %back;
+}
+
+.private-practice-box {
+    width: 500px;
+    height: fit-content;
+    background-color: $bigBox-color;
+    color: var(--default-white);
+    border-radius: 10px;
+
+    .logoSection{
+        img{
+            height: 120px;
+            width: 120px;
+            
+        }
+        p{
+            font-weight: 800;
+            font-size: 20px;
+        }
+    }
+    // padding-top: 4.32rem;
+}
+
+.signUp{
+    @extend %btn;
+    &:hover{
+        color: var(--default-white);
+    }
+    text-align: center;
+}
+
+footer{
+    p{
+        color: $footer-color-p;
+    }
+}

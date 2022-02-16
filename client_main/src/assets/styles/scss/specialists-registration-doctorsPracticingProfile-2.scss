@@ -1,0 +1,108 @@
+@use "./utilities/global-resets";
+@use './utilities/colors';
+@use './utilities/config';
+@use './components/footer';
+@use './components/button';
+@use './components/back';
+
+$border-bottom-color: #707070;
+
+.background-layout{
+    @extend %body !optional;
+    
+    p,h1{
+        color: var(--default-white);
+    }
+    
+    #content{
+        padding: 55px 0 50px 0; 
+
+        h1{
+            font-size: 18px; 
+            font-weight: bold;
+        }
+        a{
+            text-decoration: none;
+        }
+
+        .fw-light{
+            font-size: 18px;
+        }
+        .back {
+            @extend %back;
+            }
+
+        .first-box{
+            background-color: var(--default-white); 
+            color: var(--default-grey);
+            text-align: start;
+            border-radius: 10px;
+            width: 100%;
+            height: fit-content;
+            padding: 20px;
+            p{
+                color: var(--default-grey);
+            }
+            .btn-group{
+                width: 160px;
+                height: 40px;
+                input[type="date"]{
+                    border-radius: 4px;
+                    padding: 6px 9px;
+                }
+            }
+        }
+        .second-box{
+            background-color: var(--default-white); 
+            color: var(--default-grey);
+            text-align: start;
+            border-radius: 10px;
+            width: 100%;
+            height: fit-content;
+            padding: 20px;
+
+            .form-group{
+                padding-bottom: 10px;
+                input{
+                    outline: 0;
+                    border: none;
+                    border-bottom: 1px $border-bottom-color solid;
+                    border-radius: 0;
+                    &:focus{
+                        box-shadow: none;
+                    }
+                }
+            }
+            .btn-group{
+                width: 160px;
+                height: 40px
+            }
+        }
+
+        .signUp{
+            @extend %btn;
+            &:hover{
+                color: var(--default-white);
+            }
+            text-align: center;
+        }
+
+        #formBtn {
+            // width: max-content;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border: 1px var(--default-grey) solid;
+            color: var(--default-grey);
+            background-color: var(--default-white);
+        
+            &:focus {
+            box-shadow: none;
+            }
+        }
+    }
+    .main-footer{
+        @extend %footer;
+        padding-top: 0px;
+        }
+}

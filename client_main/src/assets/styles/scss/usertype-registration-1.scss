@@ -1,0 +1,90 @@
+@import './utilities/colors';
+@import './components/footer';
+@import './utilities/config';
+@import './components/registration-option';
+
+.background-layout {
+  @extend %body;
+  background-image: url('../../images/hospital-dashboard.png');
+  background-color: #1b494e;
+  // background-size: auto;
+  background-blend-mode: multiply;
+
+  a {
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  h2 {
+    font-size: 24px;
+    font-weight: 400;
+    // margin-bottom: 20px;
+    // padding-bottom: 65px;
+  }
+
+  header {
+    padding: 20px 0 40px 0px;
+    img {
+      height: 200px;
+      width: 200px;
+    }
+    h1 {
+      font-size: 3.5rem;
+    }
+  }
+
+  p {
+    padding-top: 21px;
+  }
+
+  h1,
+  h2,
+  p {
+    color: var(--default-white);
+  }
+
+  .overlap-layout {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+
+    &::after {
+      content: '';
+      height: 286px;
+      display: block;
+      border-bottom: 196px solid transparent;
+      border-left: 100vw solid var(--default-blue-deep);
+    }
+  }
+
+  section {
+    margin-bottom: 120px;
+    div {
+      &:nth-child(2) {
+        margin: 0 136px;
+      }
+    }
+  }
+
+  .register-option {
+    @extend %register;
+    height: 120px;
+    width: 120px;
+    cursor: pointer;
+    img {
+      width: 70px;
+      height: 70px;
+    }
+  }
+
+  .main-footer {
+    @extend %footer;
+    // margin-bottom: 5px;
+    .footer-left {
+      a {
+        color: var(--default-white);
+      }
+    }
+  }
+}

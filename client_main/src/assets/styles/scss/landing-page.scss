@@ -1,0 +1,15 @@
+@use './utilities/global-resets';
+@use './utilities/colors';
+@use './utilities/config';
+@use './utilities/google-fonts';
+@use './components/top-navbar';
+@use './components/landing-page_lead-banner';
+@use './components/landing-page_goals-area';
+@use './components/landing-page_how-it-works-section';
+@use './components/landing-page_top-specialists-section';
+@use './components/landing-page_video-area';
+@use './components/landing-page_footer';
+
+body {
+  overflow-x: hidden;
+}
