@@ -15,7 +15,7 @@ Private-Practice is a platform birthed to easily fetch doctors that are speciali
 
 ## **A ScreenShot of the app**
 
-![What the app looks like](/assets/images/screencapture.png)
+![What the app looks like](./client_main/src/assets/images/screencapture.png)
 
 ## **Setup for compiling SCSS**
 

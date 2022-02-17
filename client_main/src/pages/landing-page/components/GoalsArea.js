@@ -1,5 +1,8 @@
 import React from 'react';
 import '../../../assets/styles/css/landing-page.css';
+import IOSAppDownload from '../../../assets/images/IOS-app-download.png';
+import androidAppDownload from '../../../assets/images/android-app-download.png';
+import specialistCountIcon from '../../../assets/images/Polygon.png';
 
 const GoalsArea = () => {
   return (
@@ -10,14 +13,11 @@ const GoalsArea = () => {
             <div className="downloads-area">
               <div className="app-download-links-case">
                 <a href="google.com">
-                  <img
-                    src="./assets/images/IOS-app-download.png"
-                    alt="IOS-app-download-link"
-                  />
+                  <img src={IOSAppDownload} alt="IOS-app-download-link" />
                 </a>
                 <a href="google.com">
                   <img
-                    src="./assets/images/android-app-download.png"
+                    src={androidAppDownload}
                     alt="android-app-download-link"
                   />
                 </a>
@@ -27,7 +27,7 @@ const GoalsArea = () => {
                   <div className="blurry-overlay">
                     <div className="capacity-figure-container">
                       <img
-                        src="./assets/images/Polygon.png"
+                        src={specialistCountIcon}
                         alt="specialist-number-icon"
                       />
                       <div className="specialist-number open-sans">183</div>
