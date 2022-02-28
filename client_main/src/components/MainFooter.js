@@ -3,7 +3,7 @@ import '../assets/styles/css/components/main-footer.css';
 
 const MainFooter = () => {
   return (
-    <footer className="container-fluid">
+    <footer className="main-footer container-fluid">
       <div className="row grid-wrapper">
         <div className="col-lg-4 footer-col-1">
           <div className="platform-name-case">
@@ -28,7 +28,7 @@ const MainFooter = () => {
               {' '}
               <li>business model</li>{' '}
             </a>
-            <a href="google.com">
+            <a href="goo">
               {' '}
               <li>our people</li>{' '}
             </a>

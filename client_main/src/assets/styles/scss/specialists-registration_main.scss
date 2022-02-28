@@ -1,0 +1,31 @@
+@use './utilities/global-resets';
+@use './utilities/colors';
+@use './utilities/config';
+@use './utilities/google-fonts';
+@use './components/specialists-registration_route-pages';
+@use './components/specialists-registration_accounts-verified-1';
+
+.main-background {
+  @extend %body;
+  background-size: cover;
+  width: 100%;
+  min-height: 100vh;
+
+  .specialists-registration-footer {
+    width: 100%;
+    background-color: transparent;
+    color: var(--default-grey);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    .flow-right {
+      margin-right: 15px;
+    }
+    .link {
+      margin: 0 15px;
+    }
+  }
+}

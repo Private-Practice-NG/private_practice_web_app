@@ -1,12 +1,23 @@
 import React from 'react';
+import MainFooter from '../../components/MainFooter';
+import TopNavbar from '../../components/TopNavbar';
 
-export const AboutPage = () => {
+function AboutPage() {
   return (
-    <div
-      style={{ margin: '200px auto', fontSize: '25px', textAlign: 'center' }}
+    <section
+      style={{
+        backgroundColor: 'grey',
+        textAlign: 'center',
+      }}
     >
-      {' '}
-      Welcome to the about page
-    </div>
+      <TopNavbar />
+      <div style={{ fontSize: '25px', margin: '200px auto' }}>
+        {' '}
+        Welcome to the about page
+      </div>
+      <MainFooter />
+    </section>
   );
-};
+}
+
+export default AboutPage;

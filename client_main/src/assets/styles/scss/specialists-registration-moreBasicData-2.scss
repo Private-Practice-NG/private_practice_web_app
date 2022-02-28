@@ -1,55 +1,55 @@
-@use './utilities/global-resets';
-@use './utilities/google-fonts';
-@use './components/button.scss';
-@use './components/footer.scss';
-@use './components/back.scss';
-@use './utilities/config';
-@use './components/registration-option';
+// @use './utilities/global-resets';
+// @use './utilities/google-fonts';
+// @use './components/button.scss';
+// @use './components/footer.scss';
+// @use './components/back.scss';
+// @use './utilities/config';
+// @use './components/registration-option';
 
-$border-bottom-color: #707070;
+// $border-bottom-color: #707070;
 
-.background-layout {
-  @extend %body;
-  // background-size: auto;
+// .background-layout {
+//   @extend %body;
+//   // background-size: auto;
 
-  p {
-    color: var(--default-white);
-  }
+//   p {
+//     color: var(--default-white);
+//   }
 
-  a {
-    text-decoration: none;
-  }
+//   a {
+//     text-decoration: none;
+//   }
 
-  #content {
-    a {
-      text-decoration: none;
-      cursor: pointer;
-    }
-    padding: 55px 0 50px 0;
-    h2 {
-      // font-family: var;
-      font-size: 18px;
-      font-weight: 100;
-    }
-  }
+//   #content {
+//     a {
+//       text-decoration: none;
+//       cursor: pointer;
+//     }
+//     padding: 55px 0 50px 0;
+//     h2 {
+//       // font-family: var;
+//       font-size: 18px;
+//       font-weight: 100;
+//     }
+//   }
 
-  .back {
-    @extend %back;
-  }
+//   .back {
+//     @extend %back;
+//   }
 
-  .register-option {
-    @extend %register;
-  }
+//   .register-option {
+//     @extend %register;
+//   }
 
-  .signUp {
-    @extend %btn;
-    &:hover {
-      color: var(--default-white);
-    }
-    text-align: center;
-  }
+//   .signUp {
+//     @extend %btn;
+//     &:hover {
+//       color: var(--default-white);
+//     }
+//     text-align: center;
+//   }
 
-  .main-footer {
-    @extend %footer;
-  }
-}
+//   .main-footer {
+//     @extend %footer;
+//   }
+// }

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link, Outlet } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 import '../assets/styles/css/components/top-navbar.css';
 import brandLogo from '../assets/images/logo.png';
@@ -53,7 +53,6 @@ function TopNavbar() {
           </div>
         </div>
       </nav>
-      <Outlet />
     </>
   );
 }

@@ -1,59 +1,58 @@
-@use "./utilities/global-resets";
-@use './utilities/colors';
-@use './utilities/config';
-@use './components/footer';
-@use './components/button';
-@use './components/back';
-@use './components/registration-option';
+// @use "./utilities/global-resets";
+// @use './utilities/colors';
+// @use './utilities/config';
+// @use './components/footer';
+// @use './components/button';
+// @use './components/back';
+// @use './components/registration-option';
 
+// .background-layout{
+//     @extend %body !optional;
+//     p,h2{
+//         color: var(--default-white);
+//     }
 
-.background-layout{
-    @extend %body !optional;
-    p,h2{
-        color: var(--default-white);
-    }
+//     a{
+//         text-decoration: none;
+//     }
 
-    a{
-        text-decoration: none;
-    }
+//     #content{
+//         padding: 55px 0 15px 0;
+//         h2{
+//             font-size: 18px;
+//             font-weight: 100;
+//         }
+//     }
 
-    #content{
-        padding: 55px 0 15px 0;
-        h2{
-            font-size: 18px;
-            font-weight: 100;
-        }
-    }
+//     .back {
+//         @extend %back;
+//     }
 
-    .back {
-        @extend %back;
-    }
-    
-    .register-option{
-        @extend %register;
-    }
+//     .register-option{
+//         @extend %register;
+//     }
 
-    .buttonSection{
-        input{
-        width: 100%; 
-        color: #C2D1D9; 
-        font-size: 12px; 
-        border-radius: 2px; 
-        border-color: transparent; 
-        outline: none;
-        }
-        .signUp{
-            @extend %btn;
-            &:hover{
-                color: var(--default-white);
-            }
-            text-align: center;
-        }
-        
-    }
+//     .buttonSection{
+//         input{
+//         width: 100%;
+//         color: #C2D1D9;
+//         font-size: 12px;
+//         border-radius: 2px;
+//         border-color: transparent;
+//         outline: none;
+//         }
+//         .signUp{
+//             @extend %btn;
+//             &:hover{
+//                 color: var(--default-white);
+//             }
+//             text-align: center;
+//         }
 
-    .main-footer{
-        @extend %footer;
-        padding-top: 0px;
-    }
-}
+//     }
+
+//     .main-footer{
+//         @extend %footer;
+//         padding-top: 0px;
+//     }
+// }

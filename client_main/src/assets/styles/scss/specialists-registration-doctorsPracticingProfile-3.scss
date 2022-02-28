@@ -1,93 +1,93 @@
-@use "./utilities/global-resets";
-@use './utilities/colors';
-@use './utilities/config';
-@use './components/footer';
-@use './components/button';
-@use './components/back';
-@use './components/registration-option';
+// @use "./utilities/global-resets";
+// @use './utilities/colors';
+// @use './utilities/config';
+// @use './components/footer';
+// @use './components/button';
+// @use './components/back';
+// @use './components/registration-option';
 
-$border-bottom-color: #707070;
+// $border-bottom-color: #707070;
 
-.background-layout{
-    @extend %body !optional;
-    
-    p,h1{
-        color: var(--default-white);
-    }
-    
-    #content{
-        padding: 55px 0 120px 0; 
+// .background-layout{
+//     @extend %body !optional;
 
-        h1{
-            font-size: 18px; 
-            font-weight: bold;
-        }
-        a{
-            text-decoration: none;
-        }
+//     p,h1{
+//         color: var(--default-white);
+//     }
 
-        .fw-light{
-            font-size: 18px;
-        }
-        .back {
-            @extend %back;
-            }
+//     #content{
+//         padding: 55px 0 120px 0;
 
-        .second-box{
-            background-color: var(--default-white); 
-            color: var(--default-grey);
-            text-align: start;
-            border-radius: 10px;
-            width: 100%;
-            height: fit-content;
-            padding: 20px;
+//         h1{
+//             font-size: 18px;
+//             font-weight: bold;
+//         }
+//         a{
+//             text-decoration: none;
+//         }
 
-            label{
-                margin-bottom: 0.5rem;
-            }
+//         .fw-light{
+//             font-size: 18px;
+//         }
+//         .back {
+//             @extend %back;
+//             }
 
-            .form-group{
-                padding-bottom: 10px;
-                input{
-                    outline: 0;
-                    border: none;
-                    border-bottom: 1px $border-bottom-color solid;
-                    border-radius: 0;
-                    &:focus{
-                        box-shadow: none;
-                    }
-                }
-            }
-            .btn-group{
-                width: 160px;
-                height: 40px
-            }
-        }
+//         .second-box{
+//             background-color: var(--default-white);
+//             color: var(--default-grey);
+//             text-align: start;
+//             border-radius: 10px;
+//             width: 100%;
+//             height: fit-content;
+//             padding: 20px;
 
-        .signUp{
-            @extend %btn;
-            &:hover{
-                color: var(--default-white);
-            }
-            text-align: center;
-        }
+//             label{
+//                 margin-bottom: 0.5rem;
+//             }
 
-        #formBtn {
-            // width: max-content;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            border: 1px var(--default-grey) solid;
-            color: var(--default-grey);
-            background-color: var(--default-white);
-        
-            &:focus {
-            box-shadow: none;
-            }
-        }
-    }
-    .main-footer{
-        @extend %footer;
-        padding-top: 0px;
-        }
-}
+//             .form-group{
+//                 padding-bottom: 10px;
+//                 input{
+//                     outline: 0;
+//                     border: none;
+//                     border-bottom: 1px $border-bottom-color solid;
+//                     border-radius: 0;
+//                     &:focus{
+//                         box-shadow: none;
+//                     }
+//                 }
+//             }
+//             .btn-group{
+//                 width: 160px;
+//                 height: 40px
+//             }
+//         }
+
+//         .signUp{
+//             @extend %btn;
+//             &:hover{
+//                 color: var(--default-white);
+//             }
+//             text-align: center;
+//         }
+
+//         #formBtn {
+//             // width: max-content;
+//             display: flex;
+//             justify-content: space-between;
+//             align-items: center;
+//             border: 1px var(--default-grey) solid;
+//             color: var(--default-grey);
+//             background-color: var(--default-white);
+
+//             &:focus {
+//             box-shadow: none;
+//             }
+//         }
+//     }
+//     .main-footer{
+//         @extend %footer;
+//         padding-top: 0px;
+//         }
+// }
