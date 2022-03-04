@@ -40,8 +40,11 @@
         }
       }
       .user-name {
-        font-size: 20px;
+        font-size: 22px;
         font-weight: bolder;
+      }
+      .user-specialization {
+        font-size: 17px;
       }
     }
     .profile-array-wrapper {
@@ -107,8 +110,13 @@
     .btn-wrapper {
       transform: translateY(-100px);
       .btn {
-        width: 400px;
+        width: 450px;
       }
+    }
+    .profile-setup-complete_text-wrapper {
+      transform: translateY(-135px);
+      color: var(--default-grey);
+      font-size: 16px;
     }
   }
 }

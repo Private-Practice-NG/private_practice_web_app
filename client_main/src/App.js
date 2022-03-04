@@ -22,7 +22,7 @@ import HospitalFinish from './pages/registration-section/HospitalsFinish'
 import HospitalsEnrolmentRequest from './pages/registration-section/HospitalsEnrolmentRequest'
 import EMailVerifyPage from './pages/registration-section/EMailVerifyPage'
 import ProfileSummaryPage from './pages/registration-section/ProfileSummaryPage'
-import HospitalDashboard from './pages/hospital-dashboard'
+import ProfileSetupComplete from './pages/registration-section/ProfileSetupComplete'
 
 function App() {
 	return (
@@ -77,8 +77,8 @@ function App() {
 						element={<ProfileSummaryPage />}
 					/>
 					<Route
-						path='/hospital-dashboard'
-						element={<HospitalDashboard />}
+						path='/profile-setup-complete'
+						element={<ProfileSetupComplete />}
 					/>
 					<Route
 						path='*'

@@ -175,8 +175,8 @@ function ProfileSummaryPage() {
             </section>
           </section>
           <section className="btn-wrapper">
-            <Link to="/" className="btn custom-button">
-              Upload Document
+            <Link to="/profile-setup-complete" className="btn custom-button">
+              Submit Profile
             </Link>
           </section>
         </section>
