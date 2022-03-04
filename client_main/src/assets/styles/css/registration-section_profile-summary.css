@@ -166,7 +166,7 @@
   width: 450px;
 }
 .main-content-wrapper_overlay .main-profile-section-background .profile-setup-complete_text-wrapper {
-  transform: translateY(-125px);
+  transform: translateY(-135px);
   color: var(--default-grey);
   font-size: 16px;
 }
