@@ -42,6 +42,22 @@
   --transition-all: all 0.75s ease;
 }
 
+.btn-wrapper {
+  display: flex;
+  justify-content: space-evenly;
+}
+.btn-wrapper .custom-button {
+  padding: 8px 35px;
+  color: white;
+  font-size: 16px;
+  background-color: var(--default-blue-deep);
+  box-shadow: 4px 4px 6px -1px var(--default-grey);
+}
+.btn-wrapper .custom-button:hover {
+  transform: scale(1.05);
+  transition: var(--transition-all);
+}
+
 .montserrat {
   font-family: "Montserrat", sans-serif;
 }

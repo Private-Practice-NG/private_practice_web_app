@@ -1,0 +1,49 @@
+.email-page-parent {
+  background-color: white;
+  width: 100%;
+  min-height: 100vh;
+  padding: 100px 100px 50px;
+  .main-page-content-wrapper {
+    width: 35%;
+    margin: 0 auto 30px;
+    color: white;
+    border-radius: 10px;
+    background-color: var(--default-blue-calm);
+    .logo-wrapper {
+      padding: 30px 20px 0;
+      img {
+        width: 100px;
+      }
+      .brand-name {
+        padding: 10px 0;
+        font-size: 20px;
+      }
+    }
+    .text-case {
+      padding: 15px 37px;
+      .btn-wrapper {
+        width: 100%;
+        .custom-button {
+          color: white;
+          background-color: var(--default-blue-deep);
+          width: 100%;
+          padding: 7px 15px;
+          text-align: center;
+          box-shadow: 4px 4px 6px -1px var(--default-grey);
+          &:hover {
+            transform: scale(1.05);
+            transition: var(--transition-all);
+          }
+        }
+      }
+    }
+  }
+  .base-content {
+    a {
+      margin: 0 10px;
+    }
+    width: 35%;
+    margin: 0 auto;
+    color: var(--default-grey);
+  }
+}

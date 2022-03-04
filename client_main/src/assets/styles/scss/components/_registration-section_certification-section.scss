@@ -1,0 +1,40 @@
+#certification-specific {
+  .certificates-array {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    .certificates-array-item {
+      width: 47%;
+      min-height: 145px;
+      background-color: white;
+      border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      justify-content: space-between;
+      position: relative;
+      padding: 25px 15px 20px;
+      margin-bottom: 20px;
+      .certificate-icon {
+        width: 45px;
+      }
+      .certificate-name {
+        font-weight: bold;
+        padding: 15px 0;
+        color: var(--default-grey);
+      }
+      .custom-button {
+        width: 100%;
+        padding: 8px 10px;
+      }
+      .upload-completed-icon {
+        position: absolute;
+        top: 0;
+        right: 20px;
+        color: #22c322;
+        font-size: 30px;
+      }
+    }
+  }
+}

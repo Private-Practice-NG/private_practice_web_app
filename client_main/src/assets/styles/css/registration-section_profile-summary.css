@@ -1,0 +1,164 @@
+.registration-default {
+  width: 50vw;
+  min-height: 200px;
+  color: white;
+}
+.registration-default .content-wrapper {
+  margin: 100px auto 0;
+  width: 450px;
+}
+.registration-default .content-wrapper h5 {
+  text-align: center;
+  font-weight: bold;
+}
+.registration-default .content-wrapper .account-type-icon-background {
+  width: 70px;
+  height: 70px;
+  border-radius: 100%;
+  padding: 10px;
+  background-color: white;
+  margin: 20px auto 10px;
+  box-shadow: 0 0 10px 2px #b0b0b1;
+}
+.registration-default .content-wrapper .account-type-icon-background img {
+  width: 50px;
+}
+.registration-default .content-wrapper .section-text {
+  text-align: center;
+  padding: 20px;
+}
+.registration-default .content-wrapper .section-text .intermediate-text {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0 auto 10px;
+}
+.registration-default .content-wrapper .form-wrapper {
+  width: 100%;
+  padding: 25px 30px;
+  background-color: white;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+.registration-default .content-wrapper .form-wrapper label {
+  color: var(--default-grey);
+  font-weight: bold;
+}
+.registration-default .content-wrapper .form-wrapper input {
+  background-color: transparent;
+  padding: 7px;
+  width: 100%;
+  margin-bottom: 15px;
+  border-radius: 0;
+  border-style: none none solid none;
+  border-width: 1px;
+}
+
+.profile-summary-background {
+  background-image: url(../../images/team.png);
+  width: 100%;
+  min-height: 100vh;
+  filter: blur(20px);
+  background-size: cover;
+}
+
+.main-content-wrapper_overlay {
+  padding: 80px 80px 0;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  overflow-y: auto;
+  left: 0;
+}
+.main-content-wrapper_overlay .main-profile-section-background {
+  width: 90%;
+  margin: 60px auto;
+  padding: 80px 100px 0;
+  background-color: white;
+  border-radius: 30px;
+}
+.main-content-wrapper_overlay .main-profile-section-background .user-intro {
+  transform: translateY(-155px);
+}
+.main-content-wrapper_overlay .main-profile-section-background .user-intro .user-avatar-case {
+  width: 150px;
+  height: 150px;
+  margin: 0 auto;
+  border-radius: 100%;
+  border: solid 5px var(--default-blue-deep);
+}
+.main-content-wrapper_overlay .main-profile-section-background .user-intro .user-avatar-case img {
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+}
+.main-content-wrapper_overlay .main-profile-section-background .user-intro .user-name {
+  font-size: 20px;
+  font-weight: bolder;
+}
+.main-content-wrapper_overlay .main-profile-section-background .profile-array-wrapper {
+  justify-content: space-between;
+}
+.main-content-wrapper_overlay .main-profile-section-background .profile-array-wrapper .profile-array {
+  width: 47%;
+  transform: translateY(-140px);
+}
+.main-content-wrapper_overlay .main-profile-section-background .profile-array-wrapper .profile-array .profile-array-item {
+  width: 100%;
+  background-color: #edecec;
+  align-self: flex-start;
+  margin: 10px 0;
+  padding: 15px 20px;
+  border-radius: 10px;
+}
+.main-content-wrapper_overlay .main-profile-section-background .profile-array-wrapper .profile-array .profile-array-item .certificates-array-item {
+  align-self: flex-start;
+  padding: 10px 10px !important;
+}
+.main-content-wrapper_overlay .main-profile-section-background .profile-array-wrapper .profile-array .profile-array-item .section-header {
+  color: var(--default-grey);
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 10px;
+  letter-spacing: 4px;
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+}
+.main-content-wrapper_overlay .main-profile-section-background .profile-array-wrapper .profile-array .profile-array-item .section-text {
+  font-size: 14px;
+}
+.main-content-wrapper_overlay .main-profile-section-background .profile-array-wrapper .profile-array .profile-array-item .item-group {
+  display: flex;
+  flex-direction: row;
+  padding: 5px 0 0;
+}
+.main-content-wrapper_overlay .main-profile-section-background .profile-array-wrapper .profile-array .profile-array-item .item-group .label {
+  font-weight: 900;
+  font-size: 14px;
+  text-transform: uppercase;
+  margin-right: 10px;
+}
+.main-content-wrapper_overlay .main-profile-section-background .profile-array-wrapper .profile-array .profile-array-item .item-group span {
+  font-size: 12px;
+}
+.main-content-wrapper_overlay .main-profile-section-background .profile-array-wrapper .profile-array .profile-array-item .map-case {
+  width: 100%;
+}
+.main-content-wrapper_overlay .main-profile-section-background .profile-array-wrapper .profile-array .profile-array-item .map-case img {
+  width: 100%;
+}
+.main-content-wrapper_overlay .main-profile-section-background .profile-array-wrapper .profile-array .profile-array-item .map-case .location-details {
+  padding: 25px 0 5px;
+}
+.main-content-wrapper_overlay .main-profile-section-background .profile-array-wrapper .profile-array .profile-array-item .map-case .location-details .location-icon-wrapper {
+  padding: 3px 10px 0 0;
+}
+.main-content-wrapper_overlay .main-profile-section-background .profile-array-wrapper .profile-array .profile-array-item .map-case .location-details .location-icon-wrapper img {
+  width: 20px;
+}
+.main-content-wrapper_overlay .main-profile-section-background .btn-wrapper {
+  transform: translateY(-100px);
+}
+.main-content-wrapper_overlay .main-profile-section-background .btn-wrapper .btn {
+  width: 400px;
+}

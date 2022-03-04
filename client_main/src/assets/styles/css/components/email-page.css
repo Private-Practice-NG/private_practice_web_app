@@ -1,0 +1,25 @@
+.email-page-parent {
+  background-color: white;
+  width: 100%;
+  min-height: 100vh;
+  padding: 100px;
+}
+.email-page-parent .main-page-content-wrapper {
+  width: 40%;
+  margin: 0 auto;
+  color: white;
+  background-color: var(--default-blue-calm);
+}
+.email-page-parent .main-page-content-wrapper .logo-wrapper {
+  padding: 15px 20px;
+}
+.email-page-parent .main-page-content-wrapper .logo-wrapper img {
+  width: 100px;
+}
+.email-page-parent .main-page-content-wrapper .logo-wrapper .brand-name {
+  padding: 10px 0;
+  font-size: 20px;
+}
+.email-page-parent .main-page-content-wrapper .text-content {
+  padding: 15px 37px;
+}

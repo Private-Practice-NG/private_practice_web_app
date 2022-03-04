@@ -1,0 +1,21 @@
+#basic-data-1-specific {
+  .account-type-icon-background {
+    width: 90px;
+    height: 90px;
+    padding: 20px;
+  }
+  ul {
+    list-style-type: none;
+    padding: 0;
+    li:before {
+      content: '';
+      width: 5px;
+      height: 5px;
+      border-radius: 100%;
+      background-color: white;
+      display: inline-block;
+      margin-right: 10px;
+      transform: translateY(-2.5px);
+    }
+  }
+}

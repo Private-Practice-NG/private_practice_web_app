@@ -1,0 +1,114 @@
+@use '../scss/components/registration-section_default';
+
+.profile-summary-background {
+  background-image: url(../../images/team.png);
+  width: 100%;
+  min-height: 100vh;
+  // background-blend-mode: overlay;
+  // background-color: rgba(0, 0, 0, 0.35);
+  filter: blur(20px);
+  // position: relative;
+  background-size: cover;
+}
+.main-content-wrapper_overlay {
+  padding: 80px 80px 0;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  overflow-y: auto;
+  left: 0;
+  .main-profile-section-background {
+    width: 90%;
+    margin: 60px auto;
+    padding: 80px 100px 0;
+    background-color: white;
+    border-radius: 30px;
+    .user-intro {
+      transform: translateY(-155px);
+      .user-avatar-case {
+        width: 150px;
+        height: 150px;
+        margin: 0 auto;
+        border-radius: 100%;
+        // background-size: cover;
+        border: solid 5px var(--default-blue-deep);
+        img {
+          width: 100%;
+          height: 100%;
+          border-radius: 100%;
+        }
+      }
+      .user-name {
+        font-size: 20px;
+        font-weight: bolder;
+      }
+    }
+    .profile-array-wrapper {
+      justify-content: space-between;
+      .profile-array {
+        width: 47%;
+        transform: translateY(-140px);
+        .profile-array-item {
+          width: 100%;
+          background-color: #edecec;
+          align-self: flex-start;
+          margin: 10px 0;
+          padding: 15px 20px;
+          border-radius: 10px;
+          .certificates-array-item {
+            align-self: flex-start;
+            padding: 10px 10px !important;
+          }
+          .section-header {
+            color: var(--default-grey);
+            text-transform: uppercase;
+            font-weight: bold;
+            margin-bottom: 10px;
+            letter-spacing: 4px;
+            font-size: 16px;
+            font-family: 'Open Sans', sans-serif;
+          }
+          .section-text {
+            font-size: 14px;
+          }
+          .item-group {
+            display: flex;
+            flex-direction: row;
+            padding: 5px 0 0;
+            .label {
+              font-weight: 900;
+              font-size: 14px;
+              text-transform: uppercase;
+              margin-right: 10px;
+            }
+            span {
+              font-size: 12px;
+            }
+          }
+          .map-case {
+            width: 100%;
+            img {
+              width: 100%;
+            }
+            .location-details {
+              padding: 25px 0 5px;
+              .location-icon-wrapper {
+                padding: 3px 10px 0 0;
+                img {
+                  width: 20px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .btn-wrapper {
+      transform: translateY(-100px);
+      .btn {
+        width: 400px;
+      }
+    }
+  }
+}

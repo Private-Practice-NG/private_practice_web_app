@@ -1,6 +1,6 @@
 %body {
-  // background-color: rgba(0, 0, 0, 0.35);
-  // background-blend-mode: overlay;
+  background-color: rgba(0, 0, 0, 0.35);
+  background-blend-mode: overlay;
   background-image: url('../../images/nb1.png');
   background-repeat: no-repeat;
   // overflow: hidden;
@@ -19,4 +19,20 @@
 
 :root {
   --transition-all: all 0.75s ease;
+}
+
+.btn-wrapper {
+  display: flex;
+  justify-content: space-evenly;
+  .custom-button {
+    padding: 8px 35px;
+    color: white;
+    font-size: 16px;
+    background-color: var(--default-blue-deep);
+    box-shadow: 4px 4px 6px -1px var(--default-grey);
+    &:hover {
+      transform: scale(1.05);
+      transition: var(--transition-all);
+    }
+  }
 }

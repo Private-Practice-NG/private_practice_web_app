@@ -1,0 +1,44 @@
+@use './utilities/global-resets';
+@use './utilities/colors';
+@use './utilities/config';
+@use './utilities/google-fonts';
+@use './components/registration-section_default';
+@use './components/registration-section_hospitals-finish';
+@use './components/registration-section_enrolmentment';
+@use './components/registration-section_footer';
+@use './components/registration-section_basic-data-1';
+@use './components/registration-section_basic-data-2';
+@use './components/registration-section_form-grouping';
+@use './components/registration-section_certification-section';
+
+.main-background {
+  @extend %body;
+  background-size: cover;
+  width: 100%;
+  min-height: 100vh;
+  .page-content-wrapper {
+    display: flex;
+    min-height: calc(100vh - 37.5px);
+    justify-content: space-between;
+    .icon-case {
+      padding: 50px;
+      .back-icon-wrapper {
+        width: 50px;
+        height: 50px;
+        border-radius: 100%;
+        padding: 8px 10px;
+        background-color: white;
+        box-shadow: 0 0 10px 2px #b0b0b1;
+        position: fixed;
+        &:hover {
+          transform: scale(1.05);
+          transition: var(--transition-all);
+        }
+        .back-arrow {
+          color: var(--default-grey);
+          font-size: 30px;
+        }
+      }
+    }
+  }
+}

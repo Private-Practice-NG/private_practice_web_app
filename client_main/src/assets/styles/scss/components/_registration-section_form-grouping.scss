@@ -1,0 +1,12 @@
+#form-grouping-specific {
+  label {
+    padding-bottom: 7px;
+  }
+  .form-grouping {
+    display: flex;
+    justify-content: space-between;
+    .form-input-group {
+      width: 48%;
+    }
+  }
+}
