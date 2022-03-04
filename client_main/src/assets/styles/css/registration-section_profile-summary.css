@@ -93,8 +93,11 @@
   border-radius: 100%;
 }
 .main-content-wrapper_overlay .main-profile-section-background .user-intro .user-name {
-  font-size: 20px;
+  font-size: 22px;
   font-weight: bolder;
+}
+.main-content-wrapper_overlay .main-profile-section-background .user-intro .user-specialization {
+  font-size: 17px;
 }
 .main-content-wrapper_overlay .main-profile-section-background .profile-array-wrapper {
   justify-content: space-between;
@@ -160,5 +163,10 @@
   transform: translateY(-100px);
 }
 .main-content-wrapper_overlay .main-profile-section-background .btn-wrapper .btn {
-  width: 400px;
+  width: 450px;
+}
+.main-content-wrapper_overlay .main-profile-section-background .profile-setup-complete_text-wrapper {
+  transform: translateY(-125px);
+  color: var(--default-grey);
+  font-size: 16px;
 }

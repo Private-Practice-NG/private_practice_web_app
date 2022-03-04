@@ -22,6 +22,7 @@ import HospitalFinish from './pages/registration-section/HospitalsFinish';
 import HospitalsEnrolmentRequest from './pages/registration-section/HospitalsEnrolmentRequest';
 import EMailVerifyPage from './pages/registration-section/EMailVerifyPage';
 import ProfileSummaryPage from './pages/registration-section/ProfileSummaryPage';
+import ProfileSetupComplete from './pages/registration-section/ProfileSetupComplete';
 
 function App() {
   return (
@@ -66,6 +67,10 @@ function App() {
           <Route path="/basic-data-8" element={<BasicData8 />} />
           <Route path="/verify-email" element={<EMailVerifyPage />} />
           <Route path="/profile-summary" element={<ProfileSummaryPage />} />
+          <Route
+            path="/profile-setup-complete"
+            element={<ProfileSetupComplete />}
+          />
           <Route
             path="*"
             element={
