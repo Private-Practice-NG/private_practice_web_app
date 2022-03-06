@@ -2,15 +2,15 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import '../../assets/styles/css/registration-section_main.css';
 import patientsIcon from '../../assets/images/icons/patient-icon.png';
-import specialistIcon from '../../assets/images/icons/specialist-icon.png';
+// import specialistIcon from '../../assets/images/icons/specialist-icon.png';
 import RegistrationSectionFooter from './components/RegistrationSectionFooter';
 
-function BasicData6() {
+function MobileNumberVerificationUser() {
   return (
     <div className="main-background">
       <section className="page-content-wrapper">
         <section className="icon-case">
-          <Link to="/accounts-verified-1">
+          <Link to="/verify-user-mobile-number">
             <div className="back-icon-wrapper">
               <i className="bi bi-arrow-left back-arrow"></i>
             </div>
@@ -23,25 +23,26 @@ function BasicData6() {
               className="user-type-icon-wrapper d-flex flex-row"
               style={{ justifyContent: 'space-around' }}
             >
-              <div className="account-type-icon-background">
+              {/* <div className="account-type-icon-background">
                 <img src={specialistIcon} alt="specialist-icon" />
-              </div>
+              </div> */}
               <div className="account-type-icon-background">
                 <img src={patientsIcon} alt="patients-icon" />
               </div>
             </div>
             <div className="section-text">
-              <p className="mb-3">
-                Verify your email and phone number to activate your account.
-              </p>
               <p>
-                We just sent an email to <br />
-                <strong>youremail@gmail.com</strong>
+                A verification code has been sent to <br />
+                <strong>081 2234 2234</strong>, Enter it below.
               </p>
             </div>
-            <div className="btn-wrapper">
-              <Link to="/basic-data-7" className="btn custom-button">
-                Resend Verification Email
+            <input
+              placeholder="Enter Verification Code"
+              className="form-control mb-3"
+            />
+            <div className="btn-wrapper mb-4">
+              <Link to="/user-account-verified" className="btn custom-button">
+                Verify
               </Link>
             </div>
           </div>
@@ -52,4 +53,4 @@ function BasicData6() {
   );
 }
 
-export default BasicData6;
+export default MobileNumberVerificationUser;

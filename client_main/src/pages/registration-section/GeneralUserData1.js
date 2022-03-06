@@ -2,15 +2,15 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import '../../assets/styles/css/registration-section_main.css';
 import patientsIcon from '../../assets/images/icons/patient-icon.png';
-import specialistIcon from '../../assets/images/icons/specialist-icon.png';
+// import specialistIcon from '../../assets/images/icons/specialist-icon.png';
 import RegistrationSectionFooter from './components/RegistrationSectionFooter';
 
-function BasicData5() {
+function GeneralUserData1() {
   return (
     <div className="main-background">
       <section className="page-content-wrapper">
         <section className="icon-case">
-          <Link to="/accounts-verified-1">
+          <Link to="/start-signup">
             <div className="back-icon-wrapper">
               <i className="bi bi-arrow-left back-arrow"></i>
             </div>
@@ -23,9 +23,9 @@ function BasicData5() {
               className="user-type-icon-wrapper d-flex flex-row"
               style={{ justifyContent: 'space-around' }}
             >
-              <div className="account-type-icon-background">
+              {/* <div className="account-type-icon-background">
                 <img src={specialistIcon} alt="specialist-icon" />
-              </div>
+              </div> */}
               <div className="account-type-icon-background">
                 <img src={patientsIcon} alt="patients-icon" />
               </div>
@@ -91,8 +91,8 @@ function BasicData5() {
               </div>
             </div>
             <div className="btn-wrapper">
-              <Link to="/basic-data-6" className="btn custom-button">
-                Create My Account - Next
+              <Link to="/verify-user-email" className="btn custom-button">
+                Create My Account
               </Link>
             </div>
             <div className="login-prompt">
@@ -109,4 +109,4 @@ function BasicData5() {
   );
 }
 
-export default BasicData5;
+export default GeneralUserData1;

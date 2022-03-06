@@ -56,7 +56,7 @@ function HospitalsEnrolmentRequest() {
               <div className="agreement-text">
                 Yes, I understand and agree to all private practice
                 <Link to="/" className="open-sans bold-link">
-                  Terms of Services
+                  Terms of Services{' '}
                 </Link>
                 including the{' '}
                 <Link to="/" className="open-sans bold-link">
@@ -70,8 +70,11 @@ function HospitalsEnrolmentRequest() {
               </div>
             </div>
             <div className="btn-wrapper">
-              <Link to="/basic-data-1" className="btn custom-button">
-                Request Enrolment - Next
+              <Link
+                to="/hospitals-registration-done"
+                className="btn custom-button"
+              >
+                Request Enrolment
               </Link>
             </div>
             <div className="login-prompt">
