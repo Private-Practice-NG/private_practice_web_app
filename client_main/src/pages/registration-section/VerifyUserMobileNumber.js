@@ -2,15 +2,15 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import '../../assets/styles/css/registration-section_main.css';
 import patientsIcon from '../../assets/images/icons/patient-icon.png';
-import specialistIcon from '../../assets/images/icons/specialist-icon.png';
+// import specialistIcon from '../../assets/images/icons/specialist-icon.png';
 import RegistrationSectionFooter from './components/RegistrationSectionFooter';
 
-function BasicData7() {
+function VerifyMobileNumber() {
   return (
     <div className="main-background">
       <section className="page-content-wrapper">
         <section className="icon-case">
-          <Link to="/accounts-verified-1">
+          <Link to="/verify-user-email">
             <div className="back-icon-wrapper">
               <i className="bi bi-arrow-left back-arrow"></i>
             </div>
@@ -23,15 +23,17 @@ function BasicData7() {
               className="user-type-icon-wrapper d-flex flex-row"
               style={{ justifyContent: 'space-around' }}
             >
-              <div className="account-type-icon-background">
+              {/* <div className="account-type-icon-background">
                 <img src={specialistIcon} alt="specialist-icon" />
-              </div>
+              </div> */}
               <div className="account-type-icon-background">
                 <img src={patientsIcon} alt="patients-icon" />
               </div>
             </div>
             <div className="section-text">
-              <p className="mb-3">Email Address Verified!!!</p>
+              <p className="mb-3" style={{ fontWeight: 'bold' }}>
+                Email Address Verified!!!
+              </p>
               <p>
                 Now, let's get mobile number. Enter your phone number to verify
                 your mobile line and activate your account
@@ -44,7 +46,10 @@ function BasicData7() {
               className="form-control mb-3"
             />
             <div className="btn-wrapper mb-4">
-              <Link to="/basic-data-8" className="btn custom-button">
+              <Link
+                to="/mobile-number-verification_user"
+                className="btn custom-button"
+              >
                 Verify Phone Number
               </Link>
             </div>
@@ -56,4 +61,4 @@ function BasicData7() {
   );
 }
 
-export default BasicData7;
+export default VerifyMobileNumber;

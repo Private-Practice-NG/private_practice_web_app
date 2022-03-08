@@ -1,15 +1,15 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import '../../assets/styles/css/registration-section_main.css';
-import Icon from '../../assets/images/icons/patient-icon.png';
+import Icon from '../../assets/images/icons/specialist-icon.png';
 import RegistrationSectionFooter from './components/RegistrationSectionFooter';
 
-function AccountsVerified2() {
+function SpecialistAccountsVerified() {
   return (
     <div className="main-background">
       <section className="page-content-wrapper">
         <section className="icon-case">
-          <Link to="/accounts-verified-1">
+          <Link to="/mobile-number-verification_specialist">
             <div className="back-icon-wrapper">
               <i className="bi bi-arrow-left back-arrow"></i>
             </div>
@@ -19,7 +19,7 @@ function AccountsVerified2() {
           <div className="content-wrapper">
             <h5 className="open-sans text-center">Account Verified</h5>
             <div className="account-type-icon-background">
-              <img src={Icon} alt="specialist-icon" />
+              <img src={Icon} alt="user-icon" />
             </div>
             <div className="section-text">
               <p className="mb-3">
@@ -27,24 +27,19 @@ function AccountsVerified2() {
               </p>
               <div className="intermediate-text open-sans">What's next?</div>
               <p>
-                As a basic user, you can use the platform for basic things such
-                as locating a Health Facility, that offers a service you need
-                such as vertinary clinic, an optical clinic etc. And many more
-                intersting things,feel free to explore the platform.
+                Now your account has been created, it's time to setup your
+                practicing profile to enable you to search for jobs and to be
+                displayed in the market place for hiring. <br />
+                You can proceed to create your practice profile by clicking the
+                button below or you can return to dashboard.
               </p>
             </div>
             <div className="btn-wrapper">
-              <Link
-                to="/start-specialist-registration"
-                className="btn custom-button"
-              >
+              <Link to="/specialist-dashboard" className="btn custom-button">
                 Dashboard
               </Link>
-              <Link
-                to="/hospital-registration-done"
-                className="btn custom-button"
-              >
-                Find Hospital
+              <Link to="/more-specialist-data-1" className="btn custom-button">
+                Practicing profile
               </Link>
             </div>
           </div>
@@ -55,4 +50,4 @@ function AccountsVerified2() {
   );
 }
 
-export default AccountsVerified2;
+export default SpecialistAccountsVerified;

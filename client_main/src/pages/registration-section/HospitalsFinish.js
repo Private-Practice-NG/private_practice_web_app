@@ -9,7 +9,7 @@ function HospitalFinish() {
     <div className="main-background">
       <section className="page-content-wrapper">
         <section className="icon-case">
-          <Link to="/start-signup">
+          <Link to="/hospitals-enrolment-page">
             <div className="back-icon-wrapper">
               <i className="bi bi-arrow-left back-arrow"></i>
             </div>
@@ -31,10 +31,7 @@ function HospitalFinish() {
               </p>
             </div>
             <div className="btn-wrapper">
-              <Link
-                to="/hospital-enrolment-request"
-                className="btn custom-button"
-              >
+              <Link to="/" className="btn custom-button">
                 Return to Homepage
               </Link>
             </div>

@@ -3,12 +3,12 @@ import { Link } from 'react-router-dom';
 import '../../assets/styles/css/registration-section_main.css';
 import RegistrationSectionFooter from './components/RegistrationSectionFooter';
 
-function BasicData2() {
+function MoreSpecialistData2() {
   return (
     <div className="main-background" id="basic-data-2-specific">
       <section className="page-content-wrapper">
         <section className="icon-case">
-          <Link to="/start-signup">
+          <Link to="/more-specialist-data-1">
             <div className="back-icon-wrapper">
               <i className="bi bi-arrow-left back-arrow"></i>
             </div>
@@ -74,7 +74,7 @@ function BasicData2() {
 
             <div className="btn-wrapper mb-5">
               <Link
-                to="/basic-data-3"
+                to="/more-specialist-data-3"
                 className="btn custom-button"
                 style={{ width: '100%' }}
               >
@@ -89,4 +89,4 @@ function BasicData2() {
   );
 }
 
-export default BasicData2;
+export default MoreSpecialistData2;

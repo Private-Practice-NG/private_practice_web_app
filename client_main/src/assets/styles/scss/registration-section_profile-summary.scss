@@ -4,10 +4,7 @@
   background-image: url(../../images/team.png);
   width: 100%;
   min-height: 100vh;
-  // background-blend-mode: overlay;
-  // background-color: rgba(0, 0, 0, 0.35);
   filter: blur(20px);
-  // position: relative;
   background-size: cover;
 }
 .main-content-wrapper_overlay {
@@ -31,7 +28,6 @@
         height: 150px;
         margin: 0 auto;
         border-radius: 100%;
-        // background-size: cover;
         border: solid 5px var(--default-blue-deep);
         img {
           width: 100%;

@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import '../../assets/styles/css/email-page.css';
 import Logo from '../../assets/images/bg-logo.svg';
 
-function EMailVerifyPage() {
+function MailVerificationPage1() {
   return (
     <section className="email-page-parent">
       <div className="main-page-content-wrapper">
@@ -23,7 +23,10 @@ function EMailVerifyPage() {
             your registration, we need to verify your email address.
           </p>
           <div className="btn-wrapper">
-            <Link to="/profile-summary" className="btn custom-button mt-2 mb-4">
+            <Link
+              to="/verify-user-mobile-number"
+              className="btn custom-button mt-2 mb-4"
+            >
               Verify Email
             </Link>
           </div>
@@ -43,4 +46,4 @@ function EMailVerifyPage() {
   );
 }
 
-export default EMailVerifyPage;
+export default MailVerificationPage1;

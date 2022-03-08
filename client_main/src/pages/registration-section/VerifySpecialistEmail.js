@@ -1,16 +1,16 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import '../../assets/styles/css/registration-section_main.css';
-import patientsIcon from '../../assets/images/icons/patient-icon.png';
+// import patientsIcon from '../../assets/images/icons/patient-icon.png';
 import specialistIcon from '../../assets/images/icons/specialist-icon.png';
 import RegistrationSectionFooter from './components/RegistrationSectionFooter';
 
-function BasicData8() {
+function VerifySpecialistEmail() {
   return (
     <div className="main-background">
       <section className="page-content-wrapper">
         <section className="icon-case">
-          <Link to="/accounts-verified-1">
+          <Link to="/general-specialist-data1">
             <div className="back-icon-wrapper">
               <i className="bi bi-arrow-left back-arrow"></i>
             </div>
@@ -26,23 +26,25 @@ function BasicData8() {
               <div className="account-type-icon-background">
                 <img src={specialistIcon} alt="specialist-icon" />
               </div>
-              <div className="account-type-icon-background">
+              {/* <div className="account-type-icon-background">
                 <img src={patientsIcon} alt="patients-icon" />
-              </div>
+              </div> */}
             </div>
             <div className="section-text">
+              <p className="mb-3">
+                Verify your email and phone number to activate your account.
+              </p>
               <p>
-                A verification code has been sent to <br />
-                <strong>081 2234 2234</strong>, Enter it below.
+                We just sent an email to <br />
+                <strong>youremail@gmail.com</strong>
               </p>
             </div>
-            <input
-              placeholder="Enter Verification Code"
-              className="form-control mb-3"
-            />
-            <div className="btn-wrapper mb-4">
-              <Link to="/verify-email" className="btn custom-button">
-                Verify
+            <div className="btn-wrapper">
+              <Link
+                to="/email-verification_specialist"
+                className="btn custom-button"
+              >
+                Resend Verification Email
               </Link>
             </div>
           </div>
@@ -53,4 +55,4 @@ function BasicData8() {
   );
 }
 
-export default BasicData8;
+export default VerifySpecialistEmail;

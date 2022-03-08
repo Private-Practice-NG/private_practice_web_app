@@ -28,7 +28,7 @@ function ProfileSetupComplete() {
             </div>
           </section>
           <section className="btn-wrapper">
-            <Link to="/" className="btn custom-button">
+            <Link to="/specialist-dashboard" className="btn custom-button">
               Go To Dashboard
             </Link>
           </section>

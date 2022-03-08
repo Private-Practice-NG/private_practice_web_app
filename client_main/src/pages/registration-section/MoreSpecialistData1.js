@@ -4,12 +4,12 @@ import '../../assets/styles/css/registration-section_main.css';
 import Icon from '../../assets/images/icons/specialist-icon.png';
 import RegistrationSectionFooter from './components/RegistrationSectionFooter';
 
-function BasicData1() {
+function MoreSpecialistData1() {
   return (
     <div className="main-background">
       <section className="page-content-wrapper">
         <section className="icon-case">
-          <Link to="/start-signup">
+          <Link to="/specialist-account-verified">
             <div className="back-icon-wrapper">
               <i className="bi bi-arrow-left back-arrow"></i>
             </div>
@@ -26,7 +26,7 @@ function BasicData1() {
               <img src={Icon} alt="signup-icon" />
             </div>
             <div className="btn-wrapper" style={{ marginTop: '20px' }}>
-              <Link to="/start-signup" className="btn custom-button">
+              <Link to="/more-specialist-data-1" className="btn custom-button">
                 Select Profile Image
               </Link>
             </div>
@@ -43,7 +43,7 @@ function BasicData1() {
             </div>
             <div className="btn-wrapper">
               <Link
-                to="/basic-data-2"
+                to="/more-specialist-data-2"
                 className="btn custom-button"
                 style={{ width: '100%' }}
               >
@@ -58,4 +58,4 @@ function BasicData1() {
   );
 }
 
-export default BasicData1;
+export default MoreSpecialistData1;

@@ -5,12 +5,12 @@ import Icon from '../../assets/images/icons/file-upload.svg';
 
 import RegistrationSectionFooter from './components/RegistrationSectionFooter';
 
-function BasicData4() {
+function MoreSpecialistData4() {
   return (
     <div className="main-background">
       <section className="page-content-wrapper" id="certification-specific">
         <section className="icon-case">
-          <Link to="/start-signup">
+          <Link to="/more-specialist-data-3">
             <div className="back-icon-wrapper">
               <i className="bi bi-arrow-left back-arrow"></i>
             </div>
@@ -113,7 +113,7 @@ function BasicData4() {
             </div>
             <div className="btn-wrapper mb-5">
               <Link
-                to="/basic-data-5"
+                to="/specialist-profile-summary"
                 className="btn custom-button"
                 style={{ width: '100%' }}
               >
@@ -128,4 +128,4 @@ function BasicData4() {
   );
 }
 
-export default BasicData4;
+export default MoreSpecialistData4;

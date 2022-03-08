@@ -175,7 +175,10 @@ function ProfileSummaryPage() {
             </section>
           </section>
           <section className="btn-wrapper">
-            <Link to="/profile-setup-complete" className="btn custom-button">
+            <Link
+              to="/specialist-profile-setup-complete"
+              className="btn custom-button"
+            >
               Submit Profile
             </Link>
           </section>
