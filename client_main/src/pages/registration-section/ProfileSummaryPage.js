@@ -9,9 +9,9 @@ import { Link } from 'react-router-dom';
 function ProfileSummaryPage() {
   return (
     <>
-      <section className="profile-summary-background "></section>
+      <section className="profile-summary-background"></section>
       <main className="main-content-wrapper_overlay">
-        <section className="main-profile-section-background ">
+        <section className="main-profile-section-background container">
           <section className="user-intro text-center">
             <div className="user-avatar-case">
               <img src={userAvatar} alt="User-avatar" />

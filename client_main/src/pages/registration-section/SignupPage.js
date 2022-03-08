@@ -13,6 +13,9 @@ export const SignupPage = () => {
       className="main-background"
       style={{ backgroundColor: 'rgba(0,0,0,0.55)' }}
     >
+      {/* make conscious implementation for bootstrap classes
+      (Especially when handling responsiveness)) 
+      So as to enjoy its natural out of the box responsiveness */}
       <div className="index-page_parent-wrapper">
         <section className="header">
           <Link to="/" className="d-flex flex-column">
@@ -35,7 +38,7 @@ export const SignupPage = () => {
             </Link>
           </div>
           <div className="usertype-group">
-            <Link to="/general-user-data1" className="d-flex flex-column">
+            <Link to="/general-user-data-1" className="d-flex flex-column">
               <div className="usertype-icon-background">
                 <img src={patientsIcon} alt="regular-user" />
               </div>
@@ -43,7 +46,10 @@ export const SignupPage = () => {
             </Link>
           </div>
           <div className="usertype-group">
-            <Link to="/general-specialist-data1" className="d-flex flex-column">
+            <Link
+              to="/general-specialist-data-1"
+              className="d-flex flex-column"
+            >
               <div className="usertype-icon-background">
                 <img src={specialistIcon} alt="specialists" />
               </div>

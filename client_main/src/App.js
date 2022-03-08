@@ -71,9 +71,9 @@ function App() {
               path="/more-specialist-data-4"
               element={<MoreSpecialistData4 />}
             />
-            <Route path="/general-user-data1" element={<GeneralUserData1 />} />
+            <Route path="/general-user-data-1" element={<GeneralUserData1 />} />
             <Route
-              path="/general-specialist-data1"
+              path="/general-specialist-data-1"
               element={<GeneralSpecialistData1 />}
             />
             <Route path="/verify-user-email" element={<VerifyUserEmail />} />
