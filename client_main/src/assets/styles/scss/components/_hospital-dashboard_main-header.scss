@@ -1,0 +1,60 @@
+.dashboard-main-header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0.5rem 1.5rem;
+	background: var(--default-blue-deep);
+	color: var(--default-white);
+
+	.dashboard-form {
+		background: var(--default-white);
+		border-radius: 25px;
+
+		label {
+			display: flex;
+			align-items: center;
+		}
+
+		.dashboard-form-input {
+			all: unset;
+			padding: 0.4rem 0.75rem;
+			color: var(--default-grey);
+		}
+
+		.bi-search {
+			margin-right: 11px;
+			color: var(--default-grey);
+		}
+	}
+
+	.dashboard-user-details {
+		display: flex;
+		align-items: center;
+		gap: 1.55rem;
+
+		img {
+			width: 40px;
+			border-radius: 50%;
+		}
+	}
+
+	.dashboard-user {
+		display: flex;
+		align-items: center;
+		gap: 0.65rem;
+	}
+
+	.user {
+		display: flex;
+		align-items: center;
+		gap: 0.65rem;
+
+		.bi-chevron-down {
+			font-size: 16px;
+		}
+
+		p {
+			margin-bottom: 0;
+		}
+	}
+}
