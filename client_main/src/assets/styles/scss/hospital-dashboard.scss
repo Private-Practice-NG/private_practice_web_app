@@ -1,0 +1,33 @@
+@use './utilities/global-resets';
+@use './utilities/colors';
+@use './utilities/config';
+@use './utilities/google-fonts';
+@use './components/hospital-dashboard_sidebar';
+@use './components/hospital-dashboard_navlinks';
+@use './components/hospital-dashboard_main-header';
+@use './components/hospital-dashboard_jobs';
+
+ol,
+ul {
+	list-style: none;
+}
+
+img {
+	max-width: 100%;
+}
+
+.bi {
+	font-size: 25px;
+	color: inherit;
+}
+
+p {
+	margin-bottom: 0;
+}
+
+.dashboard-container {
+	min-height: 100vh;
+	background: var(--default-blue-calm);
+	display: grid;
+	grid-template-columns: 250px 1fr;
+}

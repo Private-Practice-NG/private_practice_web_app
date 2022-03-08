@@ -1,0 +1,15 @@
+.dashboard-nav-items {
+	display: flex;
+	flex-direction: column;
+	gap: 2.5rem;
+	padding: 2rem;
+
+	.dashboard-nav-link {
+		display: flex;
+		gap: 0.5rem;
+
+		&:hover {
+			font-weight: bolder;
+		}
+	}
+}

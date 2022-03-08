@@ -1,0 +1,73 @@
+.dashboard-jobs {
+	background: var(--default-white);
+	max-width: 750px;
+	margin: 3rem auto;
+	padding: 1.5rem 2.5rem;
+	border-radius: 35px;
+
+	.dashboard-jobs-header {
+		color: var(--default-blue-deep);
+
+		.dashboard-jobs-title {
+			font-weight: 700;
+		}
+
+		p {
+			text-transform: uppercase;
+		}
+	}
+
+	.dashboard-jobs-form-section {
+		display: flex;
+		align-items: center;
+		gap: 1rem;
+		padding-top: 3rem;
+		padding-bottom: 2.2rem;
+
+		span {
+			text-transform: uppercase;
+			color: var(--default-blue-calm);
+		}
+	}
+
+	.dashboard-jobs-form {
+		border-radius: 15px;
+		padding: 0 1rem;
+		border: 2px solid #000;
+		font-size: 1.3rem;
+
+		label {
+			display: flex;
+			align-items: center;
+		}
+
+		span {
+			color: initial;
+			font-weight: 600;
+		}
+
+		input {
+			all: unset;
+			padding: 0.4rem 0.75rem;
+		}
+	}
+}
+.dashboard-jobs-payment {
+	padding-top: 2rem;
+	border-top: 1px solid var(--default-grey);
+
+	h3 {
+		font-size: 1.6rem;
+		text-decoration: underline;
+	}
+
+	.payment-calulations {
+		font-size: 1.5rem;
+	}
+
+	.payment-total {
+		font-size: 2rem;
+		font-weight: 600;
+		padding-top: 0.75rem;
+	}
+}
