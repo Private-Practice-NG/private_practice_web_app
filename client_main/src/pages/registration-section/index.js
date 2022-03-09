@@ -7,7 +7,7 @@ import specialistIcon from '../../assets/images/icons/specialist-icon.png';
 import hospitalsIcon from '../../assets/images/icons/hospital-icon.png';
 import { Link } from 'react-router-dom';
 
-export const SignupPage = () => {
+function SignupPage() {
   return (
     <main
       className="main-background"
@@ -61,4 +61,6 @@ export const SignupPage = () => {
       <RegistrationSectionFooter />
     </main>
   );
-};
+}
+
+export default SignupPage;
