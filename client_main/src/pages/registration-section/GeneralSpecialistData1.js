@@ -1,8 +1,8 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import '../../assets/styles/css/registration-section_main.css';
-import specialistIcon from '../../assets/images/icons/specialist-icon.png';
-import RegistrationSectionParentWrapper from './components/RegistrationSectionParentWrapper';
+import React from "react";
+import { Link } from "react-router-dom";
+import "assets/styles/css/registration-section_main.css";
+import specialistIcon from "assets/images/icons/specialist-icon.png";
+import RegistrationSectionParentWrapper from "./components/RegistrationSectionParentWrapper";
 
 function GeneralSpecialistData1() {
   return (
@@ -14,8 +14,7 @@ function GeneralSpecialistData1() {
           </h5>
           <div
             className="user-type-icon-wrapper d-flex flex-row"
-            style={{ justifyContent: 'space-around' }}
-          >
+            style={{ justifyContent: "space-around" }}>
             <div className="account-type-icon-background">
               <img src={specialistIcon} alt="specialist-icon" />
             </div>
@@ -28,16 +27,14 @@ function GeneralSpecialistData1() {
                   <input
                     type="text"
                     id="firstName"
-                    className="form-control"
-                  ></input>
+                    className="form-control"></input>
                 </div>
                 <div className="form-input-group">
                   <label htmlFor="middleName">Middle Name</label>
                   <input
                     type="text"
                     id="middleName"
-                    className="form-control"
-                  ></input>
+                    className="form-control"></input>
                 </div>
               </div>
               <label htmlFor="lastName">Last Name</label>
@@ -48,14 +45,12 @@ function GeneralSpecialistData1() {
               <input
                 type="password"
                 id="password"
-                className="form-control"
-              ></input>
+                className="form-control"></input>
               <label htmlFor="repeatPassword">Repeat Password</label>
               <input
                 type="password"
                 id="repeatPassword"
-                className="form-control"
-              ></input>
+                className="form-control"></input>
             </form>
           </div>
           <div className="agreement-section">
@@ -63,13 +58,13 @@ function GeneralSpecialistData1() {
             <div className="agreement-text">
               Yes, I understand and agree to all private practice
               <Link to="/" className="open-sans bold-link">
-                Terms of Services{' '}
+                Terms of Services{" "}
               </Link>
-              including the{' '}
+              including the{" "}
               <Link to="/" className="open-sans bold-link">
                 User Agreement
-              </Link>{' '}
-              and{' '}
+              </Link>{" "}
+              and{" "}
               <Link to="/" className="open-sans bold-link">
                 Privacy Policy
               </Link>
@@ -82,7 +77,7 @@ function GeneralSpecialistData1() {
             </Link>
           </div>
           <div className="login-prompt">
-            Already have and account?{' '}
+            Already have and account?{" "}
             <Link to="/" className="open-sans bold-link">
               Login
             </Link>

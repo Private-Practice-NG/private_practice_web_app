@@ -3,50 +3,12 @@
   align-items: center;
   justify-content: space-between;
   padding: 0.5rem 1.5rem;
-  background: var(--default-blue-deep);
+  background: #2387d4;
   color: var(--default-white);
 
   .bi {
     font-size: 25px;
     color: inherit;
-  }
-
-  .dashboard-form {
-    background: var(--default-white);
-    border-radius: 25px;
-
-    label {
-      display: flex;
-      align-items: center;
-    }
-
-    .dashboard-form-input {
-      all: unset;
-      padding: 0.4rem 0.75rem;
-      color: var(--default-grey);
-    }
-
-    .bi-search {
-      margin-right: 11px;
-      color: var(--default-grey);
-    }
-  }
-
-  .dashboard-user-details {
-    display: flex;
-    align-items: center;
-    gap: 1.55rem;
-
-    img {
-      width: 40px;
-      border-radius: 50%;
-    }
-  }
-
-  .dashboard-user {
-    display: flex;
-    align-items: center;
-    gap: 0.65rem;
   }
 
   .user {
@@ -62,4 +24,42 @@
       margin-bottom: 0;
     }
   }
+}
+
+.dashboard-form {
+  background: var(--default-white);
+  border-radius: 25px;
+
+  label {
+    display: flex;
+    align-items: center;
+  }
+
+  .dashboard-form-input {
+    all: unset;
+    padding: 0.4rem 0.75rem;
+    color: var(--default-grey);
+  }
+
+  .bi-search {
+    margin-right: 11px;
+    color: var(--default-grey);
+  }
+}
+
+.dashboard-user-details {
+  display: flex;
+  align-items: center;
+  gap: 1.55rem;
+
+  img {
+    width: 40px;
+    border-radius: 50%;
+  }
+}
+
+.dashboard-user {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
 }

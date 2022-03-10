@@ -1,5 +1,5 @@
-import React from 'react';
-import '../../../assets/styles/css/landing-page.css';
+import React from "react";
+import "assets/styles/css/landing-page.css";
 
 const LeadBanner = () => {
   return (

@@ -1,4 +1,4 @@
-import userImage from "../../../assets/images/avatar/avatar-2.png";
+import userImage from "assets/images/avatar/avatar-2.png";
 
 const MainHeader = () => {
   return (

@@ -1,16 +1,16 @@
 import Buttons from "./Buttons";
 
-const Jobs = () => {
+const Payment = () => {
   return (
-    <section className="dashboard-jobs-section">
-      <div className="dashboard-jobs">
-        <header className="dashboard-jobs-header">
-          <h2 className="open-sans dashboard-jobs-title">Payment</h2>
+    <section className="dashboard-payment-section">
+      <div className="dashboard-payment">
+        <header className="dashboard-payment-header">
+          <h2 className="open-sans dashboard-payment-title">Payment</h2>
           <p>Tell us about your budget</p>
         </header>
 
-        <div className="dashboard-jobs-form-section">
-          <form className="dashboard-jobs-form">
+        <div className="dashboard-payment-form-section">
+          <form className="dashboard-payment-form">
             <label>
               <span>&#8358;</span>
               <input type="number" placeholder="Enter Amount" />
@@ -19,7 +19,7 @@ const Jobs = () => {
           <span>Per session</span>
         </div>
 
-        <div className="dashboard-jobs-payment">
+        <div className="dashboard-payment-payment">
           <h3>Total</h3>
           <p>20,000 x 2 sessions</p>
           <p className="payment-calulations">
@@ -33,4 +33,4 @@ const Jobs = () => {
     </section>
   );
 };
-export default Jobs;
+export default Payment;

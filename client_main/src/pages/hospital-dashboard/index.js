@@ -1,15 +1,15 @@
-import Sidebar from './components/Sidebar'
-import Main from './components/Main'
-
-import '../../assets/styles/css/hospital-dashboard.css'
+import "assets/styles/css/hospital-dashboard.css";
+import HospitalDashboardContainer from "./components/HospitalDashboardContainer";
+// import Payment from "./components/Payment";
+import Jobs from "./pages/Jobs";
 
 const HospitalDashboard = () => {
-	return (
-		<div className='dashboard-container open-sans'>
-			<Sidebar />
-			<Main />
-		</div>
-	)
-}
+  return (
+    <HospitalDashboardContainer>
+      <h1>Welcome to your dashboard</h1>
+      {/* <Jobs /> */}
+    </HospitalDashboardContainer>
+  );
+};
 
-export default HospitalDashboard
+export default HospitalDashboard;

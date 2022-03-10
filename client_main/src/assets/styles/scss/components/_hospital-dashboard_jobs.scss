@@ -1,78 +1,24 @@
-.dashboard-jobs-section {
-  max-width: 800px;
-  margin: 3rem auto;
-  padding: 0 2rem;
+.dashboard-jobs {
+  display: grid;
+  place-items: center;
 
-  .dashboard-jobs {
-    padding: 1.5rem 2.5rem;
-    border-radius: 35px;
-    background: var(--default-white);
-  }
-
-  .dashboard-jobs-header {
-    color: var(--default-blue-deep);
-
-    .dashboard-jobs-title {
-      font-weight: 700;
-    }
-
-    p {
-      text-transform: uppercase;
-    }
-  }
-
-  .dashboard-jobs-form-section {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    padding-top: 3rem;
-    padding-bottom: 2.2rem;
-
-    span {
-      text-transform: uppercase;
-      color: var(--default-blue-calm);
-    }
-  }
-
-  .dashboard-jobs-form {
-    border-radius: 15px;
-    padding: 0 1rem;
-    border: 2px solid var(--default-grey);
-    font-size: 1.3rem;
-
-    label {
-      display: flex;
-      align-items: center;
-    }
-
-    span {
-      color: initial;
-      font-weight: 600;
-    }
-
-    input {
-      all: unset;
-      padding: 0.4rem 0.75rem;
-    }
+  h2 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    letter-spacing: 10px;
+    font-weight: 600;
+    margin-top: -30px;
   }
 }
 
-.dashboard-jobs-payment {
-  padding-top: 2rem;
-  border-top: 1px solid var(--default-grey);
-
-  h3 {
-    font-size: 1.6rem;
-    text-decoration: underline;
-  }
-
-  .payment-calulations {
-    font-size: 1.5rem;
-  }
-
-  .payment-total {
-    font-size: 2rem;
-    font-weight: 600;
-    padding-top: 0.75rem;
-  }
+.dashboard-job {
+  margin: 0 auto;
+  margin-top: -100px;
+  border-radius: 50%;
+  background: #fff;
+  width: 150px;
+  height: 150px;
+  display: grid;
+  place-items: center;
 }

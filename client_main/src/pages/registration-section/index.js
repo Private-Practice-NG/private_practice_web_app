@@ -1,20 +1,19 @@
-import React from 'react';
-import '../../assets/styles/css/registration-section_main.css';
-import RegistrationSectionFooter from './components/RegistrationSectionFooter';
-import brandLogo from '../../assets/images/bg-logo.svg';
-import patientsIcon from '../../assets/images/icons/patient-icon.png';
-import specialistIcon from '../../assets/images/icons/specialist-icon.png';
-import hospitalsIcon from '../../assets/images/icons/hospital-icon.png';
-import { Link } from 'react-router-dom';
+import React from "react";
+import "assets/styles/css/registration-section_main.css";
+import RegistrationSectionFooter from "./components/RegistrationSectionFooter";
+import brandLogo from "assets/images/bg-logo.svg";
+import patientsIcon from "assets/images/icons/patient-icon.png";
+import specialistIcon from "assets/images/icons/specialist-icon.png";
+import hospitalsIcon from "assets/images/icons/hospital-icon.png";
+import { Link } from "react-router-dom";
 
 function SignupPage() {
   return (
     <main
       className="main-background"
-      style={{ backgroundColor: 'rgba(0,0,0,0.55)' }}
-    >
+      style={{ backgroundColor: "rgba(0,0,0,0.55)" }}>
       {/* make conscious implementation for bootstrap classes
-      (Especially when handling responsiveness)) 
+      (Especially when handling responsiveness))
       So as to enjoy its natural out of the box responsiveness */}
       <div className="index-page_parent-wrapper">
         <section className="header">
@@ -48,8 +47,7 @@ function SignupPage() {
           <div className="usertype-group">
             <Link
               to="/general-specialist-data-1"
-              className="d-flex flex-column"
-            >
+              className="d-flex flex-column">
               <div className="usertype-icon-background">
                 <img src={specialistIcon} alt="specialists" />
               </div>

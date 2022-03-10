@@ -1,5 +1,5 @@
-import React from 'react';
-import videoPoster from '../../../assets/images/in-surgery.png';
+import React from "react";
+import videoPoster from "assets/images/in-surgery.png";
 
 function VideoArea() {
   return (

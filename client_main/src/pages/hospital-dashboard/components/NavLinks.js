@@ -30,7 +30,7 @@ const NavLinks = () => {
       key: 5,
       icon: "fa-regular fa-star",
       name: "Favorites",
-      link: "/favorites",
+      link: "/favourites",
     },
     {
       key: 6,
@@ -42,7 +42,7 @@ const NavLinks = () => {
       key: 7,
       icon: "fa-regular fa-circle-question",
       name: "Help/Support",
-      link: "/helpandsupport",
+      link: "/helpsupport",
     },
     {
       key: 8,
@@ -56,7 +56,10 @@ const NavLinks = () => {
     <ul className="dashboard-nav-items">
       {navs.map((nav) => (
         <li className="dashboard-nav-lists" key={nav.key}>
-          <NavLink to={nav.link} className="dashboard-nav-link">
+          <NavLink
+            to={nav.link}
+            className={`dashboard-nav-link ${({ isActive }) =>
+              isActive ? "active" : ""}`}>
             <i className={nav.icon}></i>
             <span>{nav.name}</span>
           </NavLink>

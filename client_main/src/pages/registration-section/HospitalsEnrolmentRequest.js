@@ -1,8 +1,8 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import '../../assets/styles/css/registration-section_main.css';
-import Icon from '../../assets/images/icons/hospital-icon.png';
-import RegistrationSectionParentWrapper from './components/RegistrationSectionParentWrapper';
+import React from "react";
+import { Link } from "react-router-dom";
+import "assets/styles/css/registration-section_main.css";
+import Icon from "assets/images/icons/hospital-icon.png";
+import RegistrationSectionParentWrapper from "./components/RegistrationSectionParentWrapper";
 
 function HospitalsEnrolmentRequest() {
   return (
@@ -14,7 +14,7 @@ function HospitalsEnrolmentRequest() {
             <img src={Icon} alt="specialist-icon" />
           </div>
           <div className="section-text">
-            <p className="open-sans" style={{ fontSize: '14px' }}>
+            <p className="open-sans" style={{ fontSize: "14px" }}>
               <strong>
                 Fill out the form to enrol your hospital. <br /> We will contact
                 you withing 48hours for verification.
@@ -27,8 +27,7 @@ function HospitalsEnrolmentRequest() {
               <input
                 type="text"
                 id="hospitalName"
-                className="form-control"
-              ></input>
+                className="form-control"></input>
 
               <label htmlFor="email">Email</label>
               <input type="email" id="email" className="form-control"></input>
@@ -37,8 +36,7 @@ function HospitalsEnrolmentRequest() {
               <input
                 type="contact"
                 id="contactNumber"
-                className="form-control"
-              ></input>
+                className="form-control"></input>
             </form>
           </div>
           <div className="agreement-section">
@@ -46,13 +44,13 @@ function HospitalsEnrolmentRequest() {
             <div className="agreement-text">
               Yes, I understand and agree to all private practice
               <Link to="/" className="open-sans bold-link">
-                Terms of Services{' '}
+                Terms of Services{" "}
               </Link>
-              including the{' '}
+              including the{" "}
               <Link to="/" className="open-sans bold-link">
                 User Agreement
-              </Link>{' '}
-              and{' '}
+              </Link>{" "}
+              and{" "}
               <Link to="/" className="open-sans bold-link">
                 Privacy Policy
               </Link>
@@ -62,13 +60,12 @@ function HospitalsEnrolmentRequest() {
           <div className="btn-wrapper">
             <Link
               to="/hospitals-registration-done"
-              className="btn custom-button"
-            >
+              className="btn custom-button">
               Request Enrolment
             </Link>
           </div>
           <div className="login-prompt">
-            Already have and account?{' '}
+            Already have and account?{" "}
             <Link to="/" className="open-sans bold-link">
               Login
             </Link>
