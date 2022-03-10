@@ -1,9 +1,13 @@
-.dashboard-jobs {
-  background: var(--default-white);
-  max-width: 750px;
+.dashboard-jobs-section {
+  max-width: 800px;
   margin: 3rem auto;
-  padding: 1.5rem 2.5rem;
-  border-radius: 35px;
+  padding: 0 2rem;
+
+  .dashboard-jobs {
+    padding: 1.5rem 2.5rem;
+    border-radius: 35px;
+    background: var(--default-white);
+  }
 
   .dashboard-jobs-header {
     color: var(--default-blue-deep);
@@ -33,7 +37,7 @@
   .dashboard-jobs-form {
     border-radius: 15px;
     padding: 0 1rem;
-    border: 2px solid #000;
+    border: 2px solid var(--default-grey);
     font-size: 1.3rem;
 
     label {
@@ -52,6 +56,7 @@
     }
   }
 }
+
 .dashboard-jobs-payment {
   padding-top: 2rem;
   border-top: 1px solid var(--default-grey);

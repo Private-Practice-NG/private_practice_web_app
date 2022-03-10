@@ -1,54 +1,54 @@
-import { NavLink } from 'react-router-dom';
+import { NavLink } from "react-router-dom";
 
 const NavLinks = () => {
   const navs = [
     {
       key: 1,
-      icon: 'fab fa-regular fa-earth-africa',
-      name: 'Dashboard',
-      link: '/dashboard',
+      icon: "fab fa-regular fa-earth-africa",
+      name: "Dashboard",
+      link: "/hospital-dashboard",
     },
     {
       key: 2,
-      icon: 'fa-regular fa-rectangle-list',
-      name: 'Jobs',
-      link: '/jobs',
+      icon: "fa-regular fa-rectangle-list",
+      name: "Jobs",
+      link: "/jobs",
     },
     {
       key: 3,
-      icon: 'hello',
-      name: 'Statistics',
-      link: '/statistics',
+      icon: "hello",
+      name: "Statistics",
+      link: "/statistics",
     },
     {
       key: 4,
-      icon: 'fa-regular fa-wallet',
-      name: 'Wallet',
-      link: '/wallet',
+      icon: "fa-regular fa-wallet",
+      name: "Wallet",
+      link: "/wallet",
     },
     {
       key: 5,
-      icon: 'fa-regular fa-star',
-      name: 'Favorites',
-      link: '/favorites',
+      icon: "fa-regular fa-star",
+      name: "Favorites",
+      link: "/favorites",
     },
     {
       key: 6,
-      icon: 'fa-light fa-calendar-clock',
-      name: 'Calender',
-      link: '/calender',
+      icon: "fa-light fa-calendar-clock",
+      name: "Calender",
+      link: "/calender",
     },
     {
       key: 7,
-      icon: 'fa-regular fa-circle-question',
-      name: 'Help/Support',
-      link: '/helpandsupport',
+      icon: "fa-regular fa-circle-question",
+      name: "Help/Support",
+      link: "/helpandsupport",
     },
     {
       key: 8,
-      icon: 'hello',
-      name: 'Site Guide',
-      link: '/site-guide',
+      icon: "hello",
+      name: "Site Guide",
+      link: "/site-guide",
     },
   ];
 

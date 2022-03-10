@@ -1,4 +1,4 @@
-import userImage from '../../../assets/images/avatar/avatar-2.png';
+import userImage from "../../../assets/images/avatar/avatar-2.png";
 
 const MainHeader = () => {
   return (
@@ -22,9 +22,15 @@ const MainHeader = () => {
             <i className="bi bi-chevron-down"></i>
           </div>
         </div>
-        <i className="bi bi-envelope"></i>
-        <i className="bi bi-bell"></i>
-        <i className="bi bi-gear"></i>
+        <button title="Mail">
+          <i className="bi bi-envelope"></i>
+        </button>
+        <button title="Notification">
+          <i className="bi bi-bell"></i>
+        </button>
+        <button title="Setting">
+          <i className="bi bi-gear"></i>
+        </button>
       </div>
     </header>
   );

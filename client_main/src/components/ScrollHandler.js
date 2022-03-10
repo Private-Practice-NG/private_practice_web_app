@@ -1,14 +1,14 @@
-import React from 'react';
-import { useEffect } from 'react';
-import { useLocation } from 'react-router';
+import React from 'react'
+import { useEffect } from 'react'
+import { useLocation } from 'react-router-dom'
 
 function ScrollHandler({ children }) {
-  const location = useLocation();
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, [location]);
+	const location = useLocation()
+	useEffect(() => {
+		window.scrollTo(0, 0)
+	}, [location])
 
-  return <>{children}</>;
+	return <>{children}</>
 }
 
-export default ScrollHandler;
+export default ScrollHandler
