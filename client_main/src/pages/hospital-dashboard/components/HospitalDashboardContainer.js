@@ -5,7 +5,6 @@ const HospitalDashboardContainer = ({ children }) => {
   return (
     <div className="dashboard-container open-sans">
       <Sidenav />
-
       <main>
         <MainHeader />
         {children}

@@ -1,7 +1,7 @@
 import "assets/styles/css/hospital-dashboard.css";
 import HospitalDashboardContainer from "./components/HospitalDashboardContainer";
 // import Payment from "./components/Payment";
-import Jobs from "./pages/Jobs";
+// import Jobs from "./pages/Jobs";
 
 const HospitalDashboard = () => {
   return (

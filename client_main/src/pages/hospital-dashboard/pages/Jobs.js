@@ -1,4 +1,4 @@
-import hospitalIcon from "assets/images/icons/hospital-icon.png";
+// import hospitalIcon from "assets/images/icons/hospital-icon.png";
 import HospitalDashboardContainer from "../components/HospitalDashboardContainer";
 import Payment from "../components/Payment";
 
