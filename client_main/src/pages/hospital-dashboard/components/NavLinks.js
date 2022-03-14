@@ -60,7 +60,6 @@ const NavLinks = () => {
             to={nav.link}
             className={`dashboard-nav-link ${({ isActive }) =>
               isActive ? "active" : ""}`}>
-            <i className={nav.icon}></i>
             <span>{nav.name}</span>
           </NavLink>
         </li>

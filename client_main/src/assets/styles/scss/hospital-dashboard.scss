@@ -7,6 +7,7 @@
 @use "./components/hospital-dashboard_main-header";
 @use "./components/hospital-dashboard_payment";
 @use "./components/hospital-dashboard_jobs";
+@use "./components/hospital-dashboard_emergency";
 
 /* Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,
@@ -47,4 +48,30 @@ button {
 
 .active {
   font-weight: 700;
+  border-left: 8px solid #c92d2d;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  box-shadow: 0 8px 15px rgba($color: #000000, $alpha: 0.15);
 }
+
+/* .successful {
+  background: var(--default-white);
+  border-radius: 20px;
+  padding: 3rem 5rem;
+  color: var(--default-dashboard-heading-clr);
+
+  h2 {
+    font-weight: 700;
+  }
+
+  p {
+    text-transform: capitalize;
+    padding-top: 0.7rem;
+  }
+
+  button {
+    background: #e4ecf2;
+    border: 0;
+    margin-top: 1.5rem;
+  }
+} */

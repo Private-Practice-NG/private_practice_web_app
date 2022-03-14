@@ -1,10 +1,4 @@
-import HospitalDashboardContainer from "../components/HospitalDashboardContainer";
-
 const Calender = () => {
-  return (
-    <HospitalDashboardContainer>
-      <h1>Calender</h1>
-    </HospitalDashboardContainer>
-  );
+  return <h1>Calender</h1>;
 };
 export default Calender;

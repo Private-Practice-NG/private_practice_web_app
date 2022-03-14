@@ -2,11 +2,15 @@
   padding-top: 3rem;
   display: flex;
   flex-direction: column;
-  gap: 2.5rem;
+  gap: 1.5rem;
+  padding-left: 0;
+  padding-right: 3rem;
 
   .dashboard-nav-link {
     display: flex;
     gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    padding-left: 3rem;
 
     &:hover {
       font-weight: bolder;
