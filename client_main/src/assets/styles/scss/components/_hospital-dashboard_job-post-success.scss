@@ -1,0 +1,33 @@
+.successful {
+  background: var(--default-white);
+  border-radius: 30px;
+  padding: 5rem;
+  color: var(--default-dashboard-heading-clr);
+  display: grid;
+  place-items: center;
+  transform: translateY(25%);
+
+  .check-box {
+    width: 120px;
+    height: 120px;
+    border: 5px solid currentColor;
+    border-radius: 50%;
+  }
+
+  h2 {
+    font-weight: 700;
+    padding-top: 1.2rem;
+  }
+
+  p {
+    text-transform: capitalize;
+    padding-top: 1rem;
+  }
+
+  a {
+    background: #e4ecf2;
+    border: 0;
+    margin-top: 1.5rem;
+    color: currentColor;
+  }
+}

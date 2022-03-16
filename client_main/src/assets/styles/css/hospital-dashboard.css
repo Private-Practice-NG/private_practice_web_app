@@ -369,6 +369,36 @@
   text-shadow: 0 0 5px black;
 }
 
+.successful {
+  background: var(--default-white);
+  border-radius: 30px;
+  padding: 5rem;
+  color: var(--default-dashboard-heading-clr);
+  display: grid;
+  place-items: center;
+  transform: translateY(25%);
+}
+.successful .check-box {
+  width: 120px;
+  height: 120px;
+  border: 5px solid currentColor;
+  border-radius: 50%;
+}
+.successful h2 {
+  font-weight: 700;
+  padding-top: 1.2rem;
+}
+.successful p {
+  text-transform: capitalize;
+  padding-top: 1rem;
+}
+.successful a {
+  background: #e4ecf2;
+  border: 0;
+  margin-top: 1.5rem;
+  color: currentColor;
+}
+
 /* Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
@@ -411,27 +441,5 @@ button {
   border-left: 8px solid #c92d2d;
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
-  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.15);
 }
-
-/* .successful {
-  background: var(--default-white);
-  border-radius: 20px;
-  padding: 3rem 5rem;
-  color: var(--default-dashboard-heading-clr);
-
-  h2 {
-    font-weight: 700;
-  }
-
-  p {
-    text-transform: capitalize;
-    padding-top: 0.7rem;
-  }
-
-  button {
-    background: #e4ecf2;
-    border: 0;
-    margin-top: 1.5rem;
-  }
-} */

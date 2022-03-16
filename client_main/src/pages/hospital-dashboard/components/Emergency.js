@@ -11,9 +11,7 @@ const Emergency = () => {
             <h3 className="montserrat">
               Enter a short title description of the job
             </h3>
-            <textarea
-              spellCheck="true"
-              placeholder="No more than 60 words"></textarea>
+            <textarea placeholder="No more than 60 words"></textarea>
           </div>
 
           <div>
