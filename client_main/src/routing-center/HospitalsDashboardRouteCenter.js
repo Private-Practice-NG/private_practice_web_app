@@ -2,7 +2,7 @@ import React from "react";
 import ScrollHandler from "components/ScrollHandler";
 import { Routes, Route } from "react-router-dom";
 import HospitalDashboard from "pages/hospital-dashboard";
-import Jobs from "pages/hospital-dashboard/pages/Jobs";
+import JobsHome from "pages/hospital-dashboard/pages/JobsHome";
 import Statistics from "pages/hospital-dashboard/pages/Statistics";
 import Wallet from "pages/hospital-dashboard/pages/Wallet";
 import Favourites from "pages/hospital-dashboard/pages/Favourites";
@@ -15,7 +15,7 @@ function HospitalsDashboardRouteCenter() {
     <ScrollHandler>
       <Routes>
         <Route path="/hospital-dashboard" element={<HospitalDashboard />} />
-        <Route path="/jobs" element={<Jobs />} />
+        <Route path="/jobs" element={<JobsHome />} />
         <Route path="/statistics" element={<Statistics />} />
         <Route path="/wallet" element={<Wallet />} />
         <Route path="/favourites" element={<Favourites />} />
