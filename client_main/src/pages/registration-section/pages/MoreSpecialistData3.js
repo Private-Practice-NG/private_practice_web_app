@@ -1,7 +1,7 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import '../../assets/styles/css/registration-section_main.css';
-import RegistrationSectionParentWrapper from './components/RegistrationSectionParentWrapper';
+import React from "react";
+import { Link } from "react-router-dom";
+import "../../../assets/styles/css/registration-section_main.css";
+import RegistrationSectionParentWrapper from "../components/RegistrationSectionParentWrapper";
 
 function MoreSpecialistData3() {
   return (
@@ -44,8 +44,7 @@ function MoreSpecialistData3() {
             <Link
               to="/more-specialist-data-4"
               className="btn custom-button"
-              style={{ width: '100%' }}
-            >
+              style={{ width: "100%" }}>
               Save and Continue - Next
             </Link>
           </div>

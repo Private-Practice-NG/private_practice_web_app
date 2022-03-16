@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "assets/styles/css/email-page.css";
-import Logo from "assets/images/bg-logo.svg";
+import "../../../assets/styles/css/email-page.css";
+import Logo from "../../../assets/images/bg-logo.svg";
 
 function MailVerificationPage1() {
   return (

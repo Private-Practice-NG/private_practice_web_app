@@ -1,8 +1,8 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import '../../assets/styles/css/registration-section_main.css';
-import Icon from '../../assets/images/icons/patient-icon.png';
-import RegistrationSectionParentWrapper from './components/RegistrationSectionParentWrapper';
+import React from "react";
+import { Link } from "react-router-dom";
+import "../../../assets/styles/css/registration-section_main.css";
+import Icon from "../../../assets/images/icons/patient-icon.png";
+import RegistrationSectionParentWrapper from "../components/RegistrationSectionParentWrapper";
 
 function UserAccountVerified() {
   return (
@@ -14,7 +14,7 @@ function UserAccountVerified() {
             <img src={Icon} alt="specialist-icon" />
           </div>
           <div className="section-text">
-            <p className="mb-3" style={{ fontWeight: 'bold' }}>
+            <p className="mb-3" style={{ fontWeight: "bold" }}>
               Verified! Your account has been fully created and verified.
             </p>
             <div className="intermediate-text open-sans">What's next?</div>

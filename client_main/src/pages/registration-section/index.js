@@ -1,10 +1,10 @@
 import React from "react";
-import "assets/styles/css/registration-section_main.css";
+import "../../assets/styles/css/registration-section_main.css";
 import RegistrationSectionFooter from "./components/RegistrationSectionFooter";
-import brandLogo from "assets/images/bg-logo.svg";
-import patientsIcon from "assets/images/icons/patient-icon.png";
-import specialistIcon from "assets/images/icons/specialist-icon.png";
-import hospitalsIcon from "assets/images/icons/hospital-icon.png";
+import brandLogo from "../../assets/images/bg-logo.svg";
+import patientsIcon from "../../assets/images/icons/patient-icon.png";
+import specialistIcon from "../../assets/images/icons/specialist-icon.png";
+import hospitalsIcon from "../../assets/images/icons/hospital-icon.png";
 import { Link } from "react-router-dom";
 
 function SignupPage() {

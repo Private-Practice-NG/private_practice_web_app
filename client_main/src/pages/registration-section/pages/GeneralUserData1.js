@@ -1,8 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "assets/styles/css/registration-section_main.css";
-import patientsIcon from "assets/images/icons/patient-icon.png";
-import RegistrationSectionParentWrapper from "./components/RegistrationSectionParentWrapper";
+import "../../../assets/styles/css/registration-section_main.css";
+import patientsIcon from "../../../assets/images/icons/patient-icon.png";
+import RegistrationSectionParentWrapper from "../components/RegistrationSectionParentWrapper";
 
 function GeneralUserData1() {
   return (

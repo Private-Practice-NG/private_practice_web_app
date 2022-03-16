@@ -1,10 +1,4 @@
-import HospitalDashboardContainer from "../components/HospitalDashboardContainer";
-
 const HelpSupport = () => {
-  return (
-    <HospitalDashboardContainer>
-      <h1>Help / Support</h1>
-    </HospitalDashboardContainer>
-  );
+  return <h1>Help / Support</h1>;
 };
 export default HelpSupport;

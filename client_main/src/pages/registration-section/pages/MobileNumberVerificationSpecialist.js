@@ -1,9 +1,9 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import '../../assets/styles/css/registration-section_main.css';
-// import patientsIcon from '../../assets/images/icons/patient-icon.png';
-import specialistIcon from '../../assets/images/icons/specialist-icon.png';
-import RegistrationSectionParentWrapper from './components/RegistrationSectionParentWrapper';
+import React from "react";
+import { Link } from "react-router-dom";
+import "../../../assets/styles/css/registration-section_main.css";
+// import patientsIcon from '../../../assets/images/icons/patient-icon.png';
+import specialistIcon from "../../../assets/images/icons/specialist-icon.png";
+import RegistrationSectionParentWrapper from "../components/RegistrationSectionParentWrapper";
 
 function MobileNumberVerificationSpecialist() {
   return (
@@ -13,8 +13,7 @@ function MobileNumberVerificationSpecialist() {
           <h5 className="open-sans text-center">Verify Your Account</h5>
           <div
             className="user-type-icon-wrapper d-flex flex-row"
-            style={{ justifyContent: 'space-around' }}
-          >
+            style={{ justifyContent: "space-around" }}>
             <div className="account-type-icon-background">
               <img src={specialistIcon} alt="specialist-icon" />
             </div>
@@ -35,8 +34,7 @@ function MobileNumberVerificationSpecialist() {
           <div className="btn-wrapper mb-4">
             <Link
               to="/specialist-account-verified"
-              className="btn custom-button"
-            >
+              className="btn custom-button">
               Verify
             </Link>
           </div>

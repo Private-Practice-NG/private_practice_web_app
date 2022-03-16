@@ -14,11 +14,40 @@
 
 .dashboard-job {
   margin: 0 auto;
-  margin-top: -100px;
+  margin-top: -90px;
   border-radius: 50%;
   background: #fff;
   width: 150px;
   height: 150px;
   display: grid;
   place-items: center;
+}
+
+.btn-container {
+  padding-top: 3.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+
+  .btn {
+    background: red;
+    padding: 0.5rem 1.75rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    color: #fff;
+    background: #23d4bf;
+  }
+
+  .btn:nth-child(2) {
+    background: #2387d4;
+  }
+  .btn:nth-child(3) {
+    background: #fb7272;
+  }
+
+  .bi {
+    font-size: 20px;
+  }
 }

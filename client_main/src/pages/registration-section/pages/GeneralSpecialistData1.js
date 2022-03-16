@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "assets/styles/css/registration-section_main.css";
-import specialistIcon from "assets/images/icons/specialist-icon.png";
+import "../../../assets/styles/css/registration-section_main.css";
+import specialistIcon from "../../../assets/images/icons/specialist-icon.png";
 import RegistrationSectionParentWrapper from "../components/RegistrationSectionParentWrapper";
 
 function GeneralSpecialistData1() {
