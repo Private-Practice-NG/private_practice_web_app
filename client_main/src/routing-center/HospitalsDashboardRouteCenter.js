@@ -11,25 +11,25 @@ import HelpSupport from "../pages/hospital-dashboard/pages/HelpSupport";
 import SiteGuide from "../pages/hospital-dashboard/pages/SiteGuide";
 import Emergency from "../pages/hospital-dashboard/components/Emergency";
 import JobOutbox from "../pages/hospital-dashboard/components/JobOutbox";
-import HospitalDashboardContainer from "../pages/hospital-dashboard/components/HospitalDashboardContainer";
+// import HospitalDashboardContainer from "../pages/hospital-dashboard/components/HospitalDashboardContainer";
+import CreateJobsPage from "../pages/hospital-dashboard/pages/CreateJobsPage";
 
 function HospitalsDashboardRouteCenter() {
   return (
     <ScrollHandler>
-      <HospitalDashboardContainer>
-        <Routes>
-          <Route path="/hospital-dashboard" element={<HospitalDashboard />} />
-          <Route path="/jobs" element={<JobsHome />} />
-          <Route path="/jobs/emergency" element={<Emergency />} />
-          <Route path="/jobs/job-outbox" element={<JobOutbox />} />
-          <Route path="/statistics" element={<Statistics />} />
-          <Route path="/wallet" element={<Wallet />} />
-          <Route path="/favourites" element={<Favourites />} />
-          <Route path="/calender" element={<Calender />} />
-          <Route path="/helpsupport" element={<HelpSupport />} />
-          <Route path="/site-guide" element={<SiteGuide />} />
-        </Routes>
-      </HospitalDashboardContainer>
+      <Routes>
+        <Route path="/hospital-dashboard" element={<HospitalDashboard />} />
+        <Route path="/jobs" element={<JobsHome />} />
+        <Route path="/jobs/emergency" element={<Emergency />} />
+        <Route path="/jobs/job-outbox" element={<JobOutbox />} />
+        <Route path="/statistics" element={<Statistics />} />
+        <Route path="/wallet" element={<Wallet />} />
+        <Route path="/favourites" element={<Favourites />} />
+        <Route path="/calender" element={<Calender />} />
+        <Route path="/helpsupport" element={<HelpSupport />} />
+        <Route path="/site-guide" element={<SiteGuide />} />
+        <Route path="/jobs/create-a-job" element={<CreateJobsPage />} />
+      </Routes>
     </ScrollHandler>
   );
 }

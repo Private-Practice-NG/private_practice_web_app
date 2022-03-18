@@ -1,6 +1,6 @@
 import Buttons from "./Buttons";
-import eyeIcon from "assets/images/icons/eye_d.png";
-import heartIcon from "assets/images/icons/heart_d.png";
+import eyeIcon from "../../../assets/images/icons/eye_d.png";
+import heartIcon from "../../../assets/images/icons/heart_d.png";
 
 const Emergency = () => {
   return (
