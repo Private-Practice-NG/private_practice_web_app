@@ -243,6 +243,9 @@
   display: grid;
   place-items: center;
 }
+.dashboard-jobs img {
+  width: 65px;
+}
 .dashboard-jobs h2 {
   text-align: center;
   text-transform: uppercase;
@@ -250,6 +253,7 @@
   letter-spacing: 10px;
   font-weight: 600;
   margin-top: -30px;
+  color: var(--default-dashboard-heading-clr);
 }
 
 .dashboard-job {
@@ -269,6 +273,9 @@
   align-items: center;
   justify-content: center;
   gap: 2rem;
+}
+.btn-container img {
+  width: 30px;
 }
 .btn-container .btn {
   background: red;

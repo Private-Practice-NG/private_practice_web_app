@@ -2,6 +2,10 @@
   display: grid;
   place-items: center;
 
+  img {
+    width: 65px;
+  }
+
   h2 {
     text-align: center;
     text-transform: uppercase;
@@ -9,6 +13,7 @@
     letter-spacing: 10px;
     font-weight: 600;
     margin-top: -30px;
+    color: var(--default-dashboard-heading-clr);
   }
 }
 
@@ -29,6 +34,10 @@
   align-items: center;
   justify-content: center;
   gap: 2rem;
+
+  img {
+    width: 30px;
+  }
 
   .btn {
     background: red;

@@ -1,6 +1,10 @@
-// import HospitalDashboardContainer from "./HospitalDashboardContainer";
+import HospitalDashboardContainer from "../components/HospitalDashboardContainer";
 
 const JobOutbox = () => {
-  return <h2>Job Outbox</h2>;
+  return (
+    <HospitalDashboardContainer>
+      <h2>Job Outbox</h2>
+    </HospitalDashboardContainer>
+  );
 };
 export default JobOutbox;

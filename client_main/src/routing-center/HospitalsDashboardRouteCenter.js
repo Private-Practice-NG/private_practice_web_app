@@ -9,10 +9,9 @@ import Favourites from "../pages/hospital-dashboard/pages/Favourites";
 import Calender from "../pages/hospital-dashboard/pages/Calender";
 import HelpSupport from "../pages/hospital-dashboard/pages/HelpSupport";
 import SiteGuide from "../pages/hospital-dashboard/pages/SiteGuide";
-import Emergency from "../pages/hospital-dashboard/components/Emergency";
-import JobOutbox from "../pages/hospital-dashboard/components/JobOutbox";
-// import HospitalDashboardContainer from "../pages/hospital-dashboard/components/HospitalDashboardContainer";
 import CreateJobsPage from "../pages/hospital-dashboard/pages/CreateJobsPage";
+import JobOutbox from "../pages/hospital-dashboard/pages/JobOutbox";
+import Emergency from "../pages/hospital-dashboard/pages/Emergency";
 
 function HospitalsDashboardRouteCenter() {
   return (

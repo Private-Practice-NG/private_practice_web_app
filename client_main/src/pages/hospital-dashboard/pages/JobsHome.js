@@ -1,4 +1,5 @@
-import hospitalIcon from "../../../assets/images/icons/hospital-icon.png";
+import hospitalIcon from "../../../assets/images/icons/outline.png";
+import emergencyIcon from "../../../assets/images/icons/siren.png";
 import { Link } from "react-router-dom";
 import HospitalDashboardContainer from "../components/HospitalDashboardContainer";
 
@@ -10,7 +11,7 @@ const Jobs = () => {
           className="bg-image"
           style={{
             background:
-              "rgb(18 17 17 / 22%)url('https://images.unsplash.com/photo-1576091160550-2173dba999ef?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80') no-repeat center/cover",
+              "rgba(10, 48, 78, 0.35)url('https://images.unsplash.com/photo-1576091160550-2173dba999ef?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80') no-repeat center/cover",
             height: "300px",
             backgroundBlendMode: "overlay",
           }}></div>
@@ -23,18 +24,16 @@ const Jobs = () => {
         </div>
 
         <div className="btn-container">
-          <button className="btn">
-            <Link className="btn" to="/jobs/create-a-job">
-              <i class="bi bi-plus-circle"></i>
-              <span>Create Job</span>
-            </Link>
-          </button>
+          <Link className="btn" to="/jobs/create-a-job">
+            <i class="bi bi-plus-circle"></i>
+            <span>Create Job</span>
+          </Link>
           <Link className="btn" to="/jobs/job-outbox">
             <i class="bi bi-chat-square-text"></i>
             <span>Job Outbox</span>
           </Link>
           <Link className="btn" to="/jobs/emergency">
-            <i class="bi bi-chat-square-text"></i>
+            <img src={emergencyIcon} alt="" />
             <span>Emergency</span>
           </Link>
         </div>

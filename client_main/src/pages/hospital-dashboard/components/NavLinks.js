@@ -1,5 +1,4 @@
 import { NavLink } from "react-router-dom";
-import calendar from "../../../assets/images/icons/calendar.png";
 const NavLinks = () => {
   const navs = [
     {
