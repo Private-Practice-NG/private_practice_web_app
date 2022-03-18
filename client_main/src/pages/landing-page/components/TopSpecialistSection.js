@@ -1,6 +1,6 @@
 import React from "react";
-import avatar1 from "assets/images/avatar/avatar-1.png";
-import avatar4 from "assets/images/avatar/avatar-4.png";
+import avatar1 from "../../../assets/images/avatar/avatar-1.png";
+import avatar4 from "../../../assets/images/avatar/avatar-4.png";
 
 function TopSpecialistSection() {
   return (

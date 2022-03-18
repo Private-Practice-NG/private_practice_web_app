@@ -4,8 +4,8 @@ import GoalsArea from "./components/GoalsArea";
 import HowItWorksSection from "./components/HowItWorksSection";
 import TopSpecialistSection from "./components/TopSpecialistSection";
 import VideoArea from "./components/VideoArea";
-import TopNavbar from "components/TopNavbar";
-import MainFooter from "components/MainFooter";
+import TopNavbar from "../../components/TopNavbar";
+import MainFooter from "../../components/MainFooter";
 
 function LandingPage() {
   return (

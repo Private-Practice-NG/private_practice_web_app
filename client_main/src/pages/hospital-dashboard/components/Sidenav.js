@@ -1,5 +1,5 @@
 import NavLinks from "./NavLinks";
-import logo from "assets/images/logo.png";
+import logo from "../../../assets/images/logo.png";
 
 const Sidenav = () => {
   return (
