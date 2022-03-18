@@ -1,8 +1,8 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import '../../assets/styles/css/registration-section_main.css';
-import Icon from '../../assets/images/icons/file-upload.svg';
-import RegistrationSectionParentWrapper from './components/RegistrationSectionParentWrapper';
+import React from "react";
+import { Link } from "react-router-dom";
+import "../../../assets/styles/css/registration-section_main.css";
+import Icon from "../../../assets/images/icons/file-upload.svg";
+import RegistrationSectionParentWrapper from "../components/RegistrationSectionParentWrapper";
 
 function MoreSpecialistData4() {
   return (
@@ -67,8 +67,7 @@ function MoreSpecialistData4() {
             </div>
             <div
               className="certificates-array-item"
-              style={{ border: '3px solid #22c322' }}
-            >
+              style={{ border: "3px solid #22c322" }}>
               <div className="certificate-icon-wrapper">
                 <img
                   src={Icon}
@@ -90,8 +89,7 @@ function MoreSpecialistData4() {
             <select
               type="text"
               id="years-in-practice"
-              className="form-control mt-2"
-            >
+              className="form-control mt-2">
               <option value="1 Year">1 Year</option>
               <option value="2 Years">2 Years </option>
               <option value="3 Years">3 Years </option>
@@ -104,8 +102,7 @@ function MoreSpecialistData4() {
             <Link
               to="/specialist-profile-summary"
               className="btn custom-button"
-              style={{ width: '100%' }}
-            >
+              style={{ width: "100%" }}>
               Save and Continue
             </Link>
           </div>

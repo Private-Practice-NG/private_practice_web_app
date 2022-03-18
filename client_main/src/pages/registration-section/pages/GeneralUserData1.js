@@ -1,22 +1,20 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "assets/styles/css/registration-section_main.css";
-import specialistIcon from "assets/images/icons/specialist-icon.png";
-import RegistrationSectionParentWrapper from "./components/RegistrationSectionParentWrapper";
+import "../../../assets/styles/css/registration-section_main.css";
+import patientsIcon from "../../../assets/images/icons/patient-icon.png";
+import RegistrationSectionParentWrapper from "../components/RegistrationSectionParentWrapper";
 
-function GeneralSpecialistData1() {
+function GeneralUserData1() {
   return (
     <RegistrationSectionParentWrapper backlink="/start-signup">
       <section className="registration-default " id="enrolment-specific">
         <div className="content-wrapper">
-          <h5 className="open-sans text-center">
-            Setup A Free Specialist Account
-          </h5>
+          <h5 className="open-sans text-center">Setup A Free User Account</h5>
           <div
             className="user-type-icon-wrapper d-flex flex-row"
             style={{ justifyContent: "space-around" }}>
             <div className="account-type-icon-background">
-              <img src={specialistIcon} alt="specialist-icon" />
+              <img src={patientsIcon} alt="patients-icon" />
             </div>
           </div>
           <div className="form-wrapper mt-4" id="form-grouping-specific">
@@ -72,7 +70,7 @@ function GeneralSpecialistData1() {
             </div>
           </div>
           <div className="btn-wrapper">
-            <Link to="/verify-specialist-email" className="btn custom-button">
+            <Link to="/verify-user-email" className="btn custom-button">
               Create My Account
             </Link>
           </div>
@@ -88,4 +86,4 @@ function GeneralSpecialistData1() {
   );
 }
 
-export default GeneralSpecialistData1;
+export default GeneralUserData1;

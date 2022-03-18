@@ -101,9 +101,14 @@
 }
 .dashboard-nav-items .dashboard-nav-link {
   display: flex;
-  gap: 0.5rem;
+  gap: 1rem;
+  align-items: center;
   padding: 0.5rem 1rem;
   padding-left: 3rem;
+}
+.dashboard-nav-items .dashboard-nav-link img {
+  width: 22px;
+  height: 22px;
 }
 .dashboard-nav-items .dashboard-nav-link:hover {
   font-weight: bolder;
@@ -145,6 +150,7 @@
   all: unset;
   padding: 0.4rem 0.75rem;
   color: var(--default-grey);
+  cursor: initial;
 }
 .dashboard-form .bi-search {
   margin-right: 11px;
@@ -306,14 +312,9 @@
   color: var(--default-dashboard-heading-clr);
 }
 .emergency-one textarea {
-  width: 100%;
   height: 170px;
-  padding: 0.75rem 1rem;
-  border: 0;
-  border-radius: 10px;
   background: #f0f0f0;
   resize: none;
-  color: var(--default-dashboard-heading-clr);
 }
 .emergency-one .dashboard-form {
   border: 2px solid #000;
@@ -321,12 +322,6 @@
 }
 .emergency-one .dashboard-form-input {
   width: 100%;
-}
-.emergency-one select {
-  width: 100%;
-  padding: 0.5rem 1rem;
-  border-radius: 10px;
-  border-width: 2px;
 }
 
 .specalists-section {
@@ -340,17 +335,17 @@
   gap: 1rem;
   margin-bottom: 0;
 }
-.specalists-section .specialists .specialist {
+.specalists-section .specialist {
   border-radius: 10px;
   background: #a3d8f9;
   padding: 0.2rem 0.5rem;
 }
-.specalists-section .specialists .specialist h4 {
+.specalists-section .specialist h4 {
   font-size: 0.75rem;
   font-weight: 600;
   margin-bottom: 0;
 }
-.specalists-section .specialists .specialist p {
+.specalists-section .specialist p {
   font-size: 0.6rem;
 }
 

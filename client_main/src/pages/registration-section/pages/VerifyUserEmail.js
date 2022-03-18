@@ -1,22 +1,20 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import '../../assets/styles/css/registration-section_main.css';
-// import patientsIcon from '../../assets/images/icons/patient-icon.png';
-import specialistIcon from '../../assets/images/icons/specialist-icon.png';
-import RegistrationSectionParentWrapper from './components/RegistrationSectionParentWrapper';
+import React from "react";
+import { Link } from "react-router-dom";
+import "../../../assets/styles/css/registration-section_main.css";
+import patientsIcon from "../../../assets/images/icons/patient-icon.png";
+import RegistrationSectionParentWrapper from "../components/RegistrationSectionParentWrapper";
 
-function VerifySpecialistEmail() {
+function VerifyUserEmail() {
   return (
-    <RegistrationSectionParentWrapper backlink="/general-specialist-data-1">
+    <RegistrationSectionParentWrapper backlink="/general-user-data-1">
       <section className="registration-default " id="enrolment-specific">
         <div className="content-wrapper">
           <h5 className="open-sans text-center">Verify Your Account</h5>
           <div
             className="user-type-icon-wrapper d-flex flex-row"
-            style={{ justifyContent: 'space-around' }}
-          >
+            style={{ justifyContent: "space-around" }}>
             <div className="account-type-icon-background">
-              <img src={specialistIcon} alt="specialist-icon" />
+              <img src={patientsIcon} alt="patients-icon" />
             </div>
           </div>
           <div className="section-text">
@@ -29,10 +27,7 @@ function VerifySpecialistEmail() {
             </p>
           </div>
           <div className="btn-wrapper">
-            <Link
-              to="/email-verification_specialist"
-              className="btn custom-button"
-            >
+            <Link to="/email-verification_user" className="btn custom-button">
               Resend Verification Email
             </Link>
           </div>
@@ -42,4 +37,4 @@ function VerifySpecialistEmail() {
   );
 }
 
-export default VerifySpecialistEmail;
+export default VerifyUserEmail;

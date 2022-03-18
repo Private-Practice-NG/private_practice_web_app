@@ -1,6 +1,6 @@
-import Buttons from "./Buttons";
+import Buttons from "../components/Buttons";
 
-const Payment = () => {
+const JobPayment = () => {
   return (
     <section className="dashboard-payment-section">
       <div className="dashboard-payment">
@@ -33,4 +33,4 @@ const Payment = () => {
     </section>
   );
 };
-export default Payment;
+export default JobPayment;

@@ -1,9 +1,9 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import "assets/styles/css/email-page.css";
-import Logo from "assets/images/bg-logo.svg";
+import React from 'react';
+import { Link } from 'react-router-dom';
+import "../../../assets/styles/css/email-page.css";
+import Logo from "../../../assets/images/bg-logo.svg";
 
-function MailVerificationPage1() {
+function MailVerificationPage2() {
   return (
     <section className="email-page-parent">
       <div className="main-page-content-wrapper">
@@ -24,8 +24,9 @@ function MailVerificationPage1() {
           </p>
           <div className="btn-wrapper">
             <Link
-              to="/verify-user-mobile-number"
-              className="btn custom-button mt-2 mb-4">
+              to="/verify-specialist-mobile-number"
+              className="btn custom-button mt-2 mb-4"
+            >
               Verify Email
             </Link>
           </div>
@@ -36,7 +37,7 @@ function MailVerificationPage1() {
       </div>
       <div className="base-content text-center">
         <a href="https://dummylink.com">Contact Support</a>
-        <span style={{ fontSize: "20px" }}>|</span>
+        <span style={{ fontSize: '20px' }}>|</span>
         <a href="https://dummylink.com">Privacy Policy</a> <br />
         <span>16 Usuma Street, Maitama, Abuja, Nigeria </span> <br />
         <span>2020 Private Practice Inc </span>
@@ -45,4 +46,4 @@ function MailVerificationPage1() {
   );
 }
 
-export default MailVerificationPage1;
+export default MailVerificationPage2;

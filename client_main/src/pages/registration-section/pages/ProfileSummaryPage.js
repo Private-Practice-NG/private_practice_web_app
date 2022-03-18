@@ -1,10 +1,10 @@
-import React from 'react';
-import '../../assets/styles/css/registration-section_profile-summary.css';
-import Map from '../../assets/images/map.svg';
-import Radar from '../../assets/images/radar.svg';
-import certificateIcon from '../../assets/images/icons/file-upload.svg';
-import userAvatar from '../../assets/images/avatar/avatar-2.png';
-import { Link } from 'react-router-dom';
+import React from "react";
+import "../../../assets/styles/css/registration-section_profile-summary.css";
+import Map from "../../../assets/images/map.svg";
+import Radar from "../../../assets/images/radar.svg";
+import certificateIcon from "../../../assets/images/icons/file-upload.svg";
+import userAvatar from "../../../assets/images/avatar/avatar-2.png";
+import { Link } from "react-router-dom";
 
 function ProfileSummaryPage() {
   return (
@@ -87,16 +87,14 @@ function ProfileSummaryPage() {
               </section>
               <section
                 className="profile-array-item"
-                id="certification-specific"
-              >
+                id="certification-specific">
                 {/* the profile array item is to be made into a component, 
               exported from the basic-data-4 page, and used here */}
 
                 <div className="certificates-array">
                   <div
                     className="certificates-array-item"
-                    style={{ border: '3px solid #22c322' }}
-                  >
+                    style={{ border: "3px solid #22c322" }}>
                     <div className="upload-completed-icon">.</div>
 
                     <div className="certificate-icon-wrapper">
@@ -113,8 +111,7 @@ function ProfileSummaryPage() {
                   </div>
                   <div
                     className="certificates-array-item"
-                    style={{ border: '3px solid #22c322' }}
-                  >
+                    style={{ border: "3px solid #22c322" }}>
                     <div className="certificate-icon-wrapper">
                       <img
                         src={certificateIcon}
@@ -127,8 +124,7 @@ function ProfileSummaryPage() {
                   </div>
                   <div
                     className="certificates-array-item"
-                    style={{ border: '3px solid #22c322' }}
-                  >
+                    style={{ border: "3px solid #22c322" }}>
                     <div className="certificate-icon-wrapper">
                       <img
                         src={certificateIcon}
@@ -141,8 +137,7 @@ function ProfileSummaryPage() {
                   </div>
                   <div
                     className="certificates-array-item"
-                    style={{ border: '3px solid #22c322' }}
-                  >
+                    style={{ border: "3px solid #22c322" }}>
                     <div className="certificate-icon-wrapper">
                       <img
                         src={certificateIcon}
@@ -177,8 +172,7 @@ function ProfileSummaryPage() {
           <section className="btn-wrapper">
             <Link
               to="/specialist-profile-setup-complete"
-              className="btn custom-button"
-            >
+              className="btn custom-button">
               Submit Profile
             </Link>
           </section>

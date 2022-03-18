@@ -1,52 +1,52 @@
 import { NavLink } from "react-router-dom";
-
+import calendar from "../../../assets/images/icons/calendar.png";
 const NavLinks = () => {
   const navs = [
     {
       key: 1,
-      icon: "fab fa-regular fa-earth-africa",
+      icon: require("../../../assets/images/icons/global.png"),
       name: "Dashboard",
       link: "/hospital-dashboard",
     },
     {
       key: 2,
-      icon: "fa-regular fa-rectangle-list",
+      icon: require("../../../assets/images/icons/jobs.png"),
       name: "Jobs",
       link: "/jobs",
     },
     {
       key: 3,
-      icon: "hello",
+      icon: require("../../../assets/images/icons/growth.png"),
       name: "Statistics",
       link: "/statistics",
     },
     {
       key: 4,
-      icon: "fa-regular fa-wallet",
+      icon: require("../../../assets/images/icons/wallet.png"),
       name: "Wallet",
       link: "/wallet",
     },
     {
       key: 5,
-      icon: "fa-regular fa-star",
+      icon: require("../../../assets/images/icons/star.png"),
       name: "Favorites",
       link: "/favourites",
     },
     {
       key: 6,
-      icon: "fa-light fa-calendar-clock",
+      icon: require("../../../assets/images/icons/calendar.png"),
       name: "Calender",
       link: "/calender",
     },
     {
       key: 7,
-      icon: "fa-regular fa-circle-question",
+      icon: require("../../../assets/images/icons/question.png"),
       name: "Help/Support",
       link: "/helpsupport",
     },
     {
       key: 8,
-      icon: "hello",
+      icon: require("../../../assets/images/icons/tourism.png"),
       name: "Site Guide",
       link: "/site-guide",
     },
@@ -60,6 +60,7 @@ const NavLinks = () => {
             to={nav.link}
             className={`dashboard-nav-link ${({ isActive }) =>
               isActive ? "active" : ""}`}>
+            <img src={nav.icon} alt="" />
             <span>{nav.name}</span>
           </NavLink>
         </li>

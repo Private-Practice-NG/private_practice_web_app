@@ -1,8 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "assets/styles/css/registration-section_main.css";
-import Icon from "assets/images/icons/hospital-icon.png";
-import RegistrationSectionParentWrapper from "./components/RegistrationSectionParentWrapper";
+import "../../../assets/styles/css/registration-section_main.css";
+import Icon from "../../../assets/images/icons/hospital-icon.png";
+import RegistrationSectionParentWrapper from "../components/RegistrationSectionParentWrapper";
 
 function HospitalFinish() {
   return (

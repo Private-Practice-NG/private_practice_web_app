@@ -1,7 +1,7 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import '../../assets/styles/css/registration-section_main.css';
-import RegistrationSectionParentWrapper from './components/RegistrationSectionParentWrapper';
+import React from "react";
+import { Link } from "react-router-dom";
+import "../../../assets/styles/css/registration-section_main.css";
+import RegistrationSectionParentWrapper from "../components/RegistrationSectionParentWrapper";
 
 function MoreSpecialistData2() {
   return (
@@ -21,8 +21,7 @@ function MoreSpecialistData2() {
                 type="text"
                 id="bio"
                 className="form-control"
-                rows="5"
-              ></textarea>
+                rows="5"></textarea>
               <div className="form-grouping">
                 <div className="form-input-group">
                   <label htmlFor="sex">Sex*</label>
@@ -36,8 +35,7 @@ function MoreSpecialistData2() {
                   <input
                     type="date"
                     id="date-of-birth"
-                    className="form-control"
-                  ></input>
+                    className="form-control"></input>
                 </div>
               </div>
             </form>
@@ -67,8 +65,7 @@ function MoreSpecialistData2() {
             <Link
               to="/more-specialist-data-3"
               className="btn custom-button"
-              style={{ width: '100%' }}
-            >
+              style={{ width: "100%" }}>
               Save and Continue - Next
             </Link>
           </div>

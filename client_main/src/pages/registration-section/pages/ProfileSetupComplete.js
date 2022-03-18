@@ -1,7 +1,7 @@
-import React from 'react';
-import '../../assets/styles/css/registration-section_profile-summary.css';
-import userAvatar from '../../assets/images/avatar/avatar-2.png';
-import { Link } from 'react-router-dom';
+import React from "react";
+import "../../../assets/styles/css/registration-section_profile-summary.css";
+import userAvatar from "../../../assets/images/avatar/avatar-2.png";
+import { Link } from "react-router-dom";
 
 function ProfileSetupComplete() {
   return (

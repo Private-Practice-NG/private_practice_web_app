@@ -22,14 +22,9 @@
   }
 
   textarea {
-    width: 100%;
     height: 170px;
-    padding: 0.75rem 1rem;
-    border: 0;
-    border-radius: 10px;
     background: #f0f0f0;
     resize: none;
-    color: var(--default-dashboard-heading-clr);
   }
 
   .dashboard-form {
@@ -39,13 +34,6 @@
 
   .dashboard-form-input {
     width: 100%;
-  }
-
-  select {
-    width: 100%;
-    padding: 0.5rem 1rem;
-    border-radius: 10px;
-    border-width: 2px;
   }
 }
 
@@ -59,21 +47,20 @@
     display: flex;
     gap: 1rem;
     margin-bottom: 0;
+  }
+  .specialist {
+    border-radius: 10px;
+    background: #a3d8f9;
+    padding: 0.2rem 0.5rem;
 
-    .specialist {
-      border-radius: 10px;
-      background: #a3d8f9;
-      padding: 0.2rem 0.5rem;
+    h4 {
+      font-size: 0.75rem;
+      font-weight: 600;
+      margin-bottom: 0;
+    }
 
-      h4 {
-        font-size: 0.75rem;
-        font-weight: 600;
-        margin-bottom: 0;
-      }
-
-      p {
-        font-size: 0.6rem;
-      }
+    p {
+      font-size: 0.6rem;
     }
   }
 }

@@ -1,4 +1,4 @@
-import Buttons from "./Buttons";
+import Buttons from "../components/Buttons";
 import eyeIcon from "assets/images/icons/eye_d.png";
 import heartIcon from "assets/images/icons/heart_d.png";
 
@@ -11,7 +11,9 @@ const Emergency = () => {
             <h3 className="montserrat">
               Enter a short title description of the job
             </h3>
-            <textarea placeholder="No more than 60 words"></textarea>
+            <textarea
+              placeholder="No more than 60 words"
+              className="form-control"></textarea>
           </div>
 
           <div>
@@ -45,7 +47,7 @@ const Emergency = () => {
 
           <div>
             <h3>Treatment Category</h3>
-            <select>
+            <select className="form-select">
               <option>Click to select category</option>
             </select>
           </div>
