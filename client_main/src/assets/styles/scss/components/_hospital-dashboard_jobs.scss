@@ -51,3 +51,15 @@
     font-size: 20px;
   }
 }
+
+// reusable plain background for the whole jobs section
+
+.jobs_plain-wrapper {
+  width: 70%;
+  margin: 50px auto 0;
+  min-height: 300px;
+  border-radius: 15px;
+  padding: 20px 30px;
+  color: #5a6f81;
+  background-color: white;
+}

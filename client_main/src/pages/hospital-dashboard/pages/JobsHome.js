@@ -22,18 +22,16 @@ const Jobs = () => {
         </div>
 
         <div className="btn-container">
-          <button className="btn">
-            <Link className="btn" to="/jobs/create-a-job">
-              <i class="bi bi-plus-circle"></i>
-              <span>Create Job</span>
-            </Link>
-          </button>
+          <Link className="btn" to="/jobs/create-a-job">
+            <i className="bi bi-plus-circle"></i>
+            <span>Create Job</span>
+          </Link>
           <Link className="btn" to="/jobs/job-outbox">
-            <i class="bi bi-chat-square-text"></i>
+            <i className="bi bi-chat-square-text"></i>
             <span>Job Outbox</span>
           </Link>
           <Link className="btn" to="/jobs/emergency">
-            <i class="bi bi-chat-square-text"></i>
+            <i className="bi bi-chat-square-text"></i>
             <span>Emergency</span>
           </Link>
         </div>
