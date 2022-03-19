@@ -357,8 +357,9 @@
 }
 
 .emergency-hero {
-  background: url("https://images.unsplash.com/photo-1600959907703-125ba1374a12?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80") center/cover;
+  background: rgba(10, 48, 78, 0.8) url("../../images/emergency_bg.jpg") center/cover;
   align-self: flex-start;
+  background-blend-mode: overlay;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -366,9 +367,8 @@
 }
 .emergency-hero h2 {
   font-size: 2.5rem;
-  color: var(--default-white);
+  color: #e4ecf2;
   font-weight: 600;
-  text-shadow: 0 0 5px black;
 }
 
 .successful {
