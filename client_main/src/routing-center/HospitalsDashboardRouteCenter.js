@@ -9,10 +9,10 @@ import Favourites from "../pages/hospital-dashboard/pages/Favourites";
 import Calender from "../pages/hospital-dashboard/pages/Calender";
 import HelpSupport from "../pages/hospital-dashboard/pages/HelpSupport";
 import SiteGuide from "../pages/hospital-dashboard/pages/SiteGuide";
-import Emergency from "../pages/hospital-dashboard/components/Emergency";
-import JobOutbox from "../pages/hospital-dashboard/components/JobOutbox";
-// import HospitalDashboardContainer from "../pages/hospital-dashboard/components/HospitalDashboardContainer";
 import CreateJobsPage from "../pages/hospital-dashboard/pages/CreateJobsPage";
+import JobOutbox from "../pages/hospital-dashboard/pages/JobOutbox";
+import Emergency from "../pages/hospital-dashboard/pages/Emergency";
+import JobPostSuccess from "../pages/hospital-dashboard/pages/JobPostSuccess";
 
 function HospitalsDashboardRouteCenter() {
   return (
@@ -29,6 +29,10 @@ function HospitalsDashboardRouteCenter() {
         <Route path="/helpsupport" element={<HelpSupport />} />
         <Route path="/site-guide" element={<SiteGuide />} />
         <Route path="/jobs/create-a-job" element={<CreateJobsPage />} />
+        <Route
+          path="/jobs/job-posted-successfully"
+          element={<JobPostSuccess />}
+        />
       </Routes>
     </ScrollHandler>
   );

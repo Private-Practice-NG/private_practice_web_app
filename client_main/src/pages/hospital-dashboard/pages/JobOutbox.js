@@ -1,10 +1,10 @@
 import HospitalDashboardContainer from "../components/HospitalDashboardContainer";
 
-const Wallet = () => {
+const JobOutbox = () => {
   return (
     <HospitalDashboardContainer>
-      <h1>Wallet</h1>
+      <h2>Job Outbox</h2>
     </HospitalDashboardContainer>
   );
 };
-export default Wallet;
+export default JobOutbox;

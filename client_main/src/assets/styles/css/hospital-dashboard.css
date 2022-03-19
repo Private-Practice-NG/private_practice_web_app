@@ -22,6 +22,7 @@
   --default-white: white;
   --default-grey: #565656;
   --default-dashboard-heading-clr: #4d718d;
+  --default-dashboard-text-clr: #5a6f81;
 }
 :root .facebook-blue {
   color: #3b5998;
@@ -101,9 +102,14 @@
 }
 .dashboard-nav-items .dashboard-nav-link {
   display: flex;
-  gap: 0.5rem;
+  gap: 1rem;
+  align-items: center;
   padding: 0.5rem 1rem;
   padding-left: 3rem;
+}
+.dashboard-nav-items .dashboard-nav-link img {
+  width: 22px;
+  height: 22px;
 }
 .dashboard-nav-items .dashboard-nav-link:hover {
   font-weight: bolder;
@@ -145,6 +151,7 @@
   all: unset;
   padding: 0.4rem 0.75rem;
   color: var(--default-grey);
+  cursor: initial;
 }
 .dashboard-form .bi-search {
   margin-right: 11px;
@@ -237,6 +244,9 @@
   display: grid;
   place-items: center;
 }
+.dashboard-jobs img {
+  width: 65px;
+}
 .dashboard-jobs h2 {
   text-align: center;
   text-transform: uppercase;
@@ -244,6 +254,7 @@
   letter-spacing: 10px;
   font-weight: 600;
   margin-top: -30px;
+  color: var(--default-dashboard-heading-clr);
 }
 
 .dashboard-job {
@@ -263,6 +274,9 @@
   align-items: center;
   justify-content: center;
   gap: 2rem;
+}
+.btn-container img {
+  width: 30px;
 }
 .btn-container .btn {
   background: red;
@@ -288,8 +302,8 @@
   margin: 50px auto 0;
   min-height: 300px;
   border-radius: 15px;
-  padding: 20px 30px;
-  color: #5a6f81;
+  padding: 50px 30px;
+  color: var(--default-dashboard-text-clr);
   background-color: white;
 }
 
@@ -340,7 +354,7 @@
 .create-jobs-main-content .specialist-count-wrapper .counter {
   width: 150px;
   margin-top: 15px;
-  border: 2px solid #5a6f81;
+  border: 2px solid var(--default-dashboard-text-clr);
   justify-content: space-between;
   border-radius: 5px;
 }
@@ -353,99 +367,92 @@
   padding: 5px 0;
 }
 .create-jobs-main-content .specialist-count-wrapper .counter button:first-child {
-  background-color: #5a6f81;
+  background-color: var(--default-dashboard-text-clr);
 }
 .create-jobs-main-content .specialist-count-wrapper .counter span {
-  color: #5a6f81;
+  color: var(--default-dashboard-text-clr);
 }
 .create-jobs-main-content .specialist-count-wrapper .counter button:last-child {
-  background-color: #5a6f81;
+  background-color: var(--default-dashboard-text-clr);
 }
 
 .emergency-section {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 92%;
+  background: url("https://images.unsplash.com/photo-1600959907703-125ba1374a12?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80") center/cover;
 }
-
-.emergency-one {
-  background: #fff;
-  border-radius: 20px;
-  padding: 2rem 3rem;
-  margin-top: 1rem;
-  margin-inline: 2rem;
-  display: flex;
-  flex-direction: column;
-  gap: 1.25rem;
+.emergency-section .jobs_plain-wrapper {
+  background-color: rgba(255, 255, 255, 0.95);
 }
-.emergency-one h3 {
+.emergency-section .jobs_plain-wrapper h3 {
   font-size: 1rem;
   font-weight: 600;
   color: var(--default-dashboard-heading-clr);
 }
-.emergency-one textarea {
-  width: 100%;
+.emergency-section .jobs_plain-wrapper textarea {
   height: 170px;
-  padding: 0.75rem 1rem;
-  border: 0;
-  border-radius: 10px;
   background: #f0f0f0;
   resize: none;
-  color: var(--default-dashboard-heading-clr);
 }
-.emergency-one .dashboard-form {
-  border: 2px solid #000;
+.emergency-section .jobs_plain-wrapper .specialist-search .dashboard-form-input {
   width: 300px;
+  border-radius: 15px;
+  position: relative;
 }
-.emergency-one .dashboard-form-input {
-  width: 100%;
+.emergency-section .jobs_plain-wrapper .specialist-search .bi {
+  transform: translate(-30px, 6px);
 }
-.emergency-one select {
-  width: 100%;
-  padding: 0.5rem 1rem;
-  border-radius: 10px;
-  border-width: 2px;
-}
-
-.specalists-section {
+.emergency-section .specalists-section {
   display: flex;
   align-items: center;
   gap: 2rem;
 }
-.specalists-section .specialists {
+.emergency-section .specalists-section .specialists {
   padding-left: 0;
   display: flex;
   gap: 1rem;
   margin-bottom: 0;
 }
-.specalists-section .specialists .specialist {
+.emergency-section .specalists-section .specialist {
   border-radius: 10px;
   background: #a3d8f9;
-  padding: 0.2rem 0.5rem;
+  padding: 0.2rem 0.5rem 0.5rem;
 }
-.specalists-section .specialists .specialist h4 {
+.emergency-section .specalists-section .specialist h4 {
   font-size: 0.75rem;
   font-weight: 600;
   margin-bottom: 0;
 }
-.specalists-section .specialists .specialist p {
+.emergency-section .specalists-section .specialist p {
   font-size: 0.6rem;
 }
 
-.emergency-hero {
-  background: url("https://images.unsplash.com/photo-1600959907703-125ba1374a12?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80") center/cover;
-  align-self: flex-start;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
+.job-post-success .check-icon-wrapper {
+  padding: 0 15px;
 }
-.emergency-hero h2 {
-  font-size: 2.5rem;
-  color: var(--default-white);
-  font-weight: 600;
-  text-shadow: 0 0 5px black;
+.job-post-success .check-icon-wrapper i {
+  font-size: 120px;
+}
+.job-post-success h2 {
+  font-weight: 700;
+  padding-top: 1.2rem;
+}
+.job-post-success p {
+  text-transform: capitalize;
+  padding-top: 1rem;
+}
+.job-post-success a {
+  background: #e4ecf2;
+  border: 0;
+  padding: 15px 50px;
+  margin-top: 1.5rem;
+  color: currentColor;
+}
+.job-post-success a:hover {
+  color: white;
+  transition: var(--transition-all);
+  background-color: var(--default-blue-deep);
 }
 
 /* Chrome, Safari, Edge, Opera */
@@ -490,27 +497,5 @@ button {
   border-left: 8px solid #c92d2d;
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
-  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.15);
 }
-
-/* .successful {
-  background: var(--default-white);
-  border-radius: 20px;
-  padding: 3rem 5rem;
-  color: var(--default-dashboard-heading-clr);
-
-  h2 {
-    font-weight: 700;
-  }
-
-  p {
-    text-transform: capitalize;
-    padding-top: 0.7rem;
-  }
-
-  button {
-    background: #e4ecf2;
-    border: 0;
-    margin-top: 1.5rem;
-  }
-} */

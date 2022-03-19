@@ -22,6 +22,7 @@
   --default-white: white;
   --default-grey: #565656;
   --default-dashboard-heading-clr: #4d718d;
+  --default-dashboard-text-clr: #5a6f81;
 }
 :root .facebook-blue {
   color: #3b5998;

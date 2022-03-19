@@ -1,4 +1,10 @@
+import HospitalDashboardContainer from "../components/HospitalDashboardContainer";
+
 const Statistics = () => {
-  return <h1>Statistics</h1>;
+  return (
+    <HospitalDashboardContainer>
+      <h1>Statistics</h1>
+    </HospitalDashboardContainer>
+  );
 };
 export default Statistics;

@@ -2,68 +2,48 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 92%;
-}
+  background: url("https://images.unsplash.com/photo-1600959907703-125ba1374a12?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80")
+    center/cover;
+  .jobs_plain-wrapper {
+    background-color: rgba(255, 255, 255, 0.95);
+    h3 {
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--default-dashboard-heading-clr);
+    }
 
-.emergency-one {
-  background: #fff;
-  border-radius: 20px;
-  padding: 2rem 3rem;
-  margin-top: 1rem;
-  margin-inline: 2rem;
-  display: flex;
-  flex-direction: column;
-  gap: 1.25rem;
-
-  h3 {
-    font-size: 1rem;
-    font-weight: 600;
-    color: var(--default-dashboard-heading-clr);
+    textarea {
+      height: 170px;
+      background: #f0f0f0;
+      resize: none;
+    }
+    .specialist-search {
+      .dashboard-form-input {
+        width: 300px;
+        border-radius: 15px;
+        position: relative;
+      }
+      .bi {
+        transform: translate(-30px, 6px);
+      }
+    }
   }
 
-  textarea {
-    width: 100%;
-    height: 170px;
-    padding: 0.75rem 1rem;
-    border: 0;
-    border-radius: 10px;
-    background: #f0f0f0;
-    resize: none;
-    color: var(--default-dashboard-heading-clr);
-  }
-
-  .dashboard-form {
-    border: 2px solid #000;
-    width: 300px;
-  }
-
-  .dashboard-form-input {
-    width: 100%;
-  }
-
-  select {
-    width: 100%;
-    padding: 0.5rem 1rem;
-    border-radius: 10px;
-    border-width: 2px;
-  }
-}
-
-.specalists-section {
-  display: flex;
-  align-items: center;
-  gap: 2rem;
-
-  .specialists {
-    padding-left: 0;
+  .specalists-section {
     display: flex;
-    gap: 1rem;
-    margin-bottom: 0;
+    align-items: center;
+    gap: 2rem;
 
+    .specialists {
+      padding-left: 0;
+      display: flex;
+      gap: 1rem;
+      margin-bottom: 0;
+    }
     .specialist {
       border-radius: 10px;
       background: #a3d8f9;
-      padding: 0.2rem 0.5rem;
+      padding: 0.2rem 0.5rem 0.5rem;
 
       h4 {
         font-size: 0.75rem;
@@ -75,22 +55,5 @@
         font-size: 0.6rem;
       }
     }
-  }
-}
-
-.emergency-hero {
-  background: url("https://images.unsplash.com/photo-1600959907703-125ba1374a12?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80")
-    center/cover;
-  align-self: flex-start;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-
-  h2 {
-    font-size: 2.5rem;
-    color: var(--default-white);
-    font-weight: 600;
-    text-shadow: 0 0 5px rgba($color: #000000, $alpha: 1);
   }
 }

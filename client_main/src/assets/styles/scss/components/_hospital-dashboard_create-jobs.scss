@@ -46,7 +46,7 @@
     .counter {
       width: 150px;
       margin-top: 15px;
-      border: 2px solid #5a6f81;
+      border: 2px solid var(--default-dashboard-text-clr);
       justify-content: space-between;
       border-radius: 5px;
       span,
@@ -58,13 +58,13 @@
         padding: 5px 0;
       }
       button:first-child {
-        background-color: #5a6f81;
+        background-color: var(--default-dashboard-text-clr);
       }
       span {
-        color: #5a6f81;
+        color: var(--default-dashboard-text-clr);
       }
       button:last-child {
-        background-color: #5a6f81;
+        background-color: var(--default-dashboard-text-clr);
       }
     }
   }
