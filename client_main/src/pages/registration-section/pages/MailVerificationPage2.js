@@ -1,6 +1,6 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import "../../../assets/styles/css/email-page.css";
+import React from "react";
+import { Link } from "react-router-dom";
+import "../../../assets/styles/css/registration-section_email-page.css";
 import Logo from "../../../assets/images/bg-logo.svg";
 
 function MailVerificationPage2() {
@@ -25,8 +25,7 @@ function MailVerificationPage2() {
           <div className="btn-wrapper">
             <Link
               to="/verify-specialist-mobile-number"
-              className="btn custom-button mt-2 mb-4"
-            >
+              className="btn custom-button mt-2 mb-4">
               Verify Email
             </Link>
           </div>
@@ -37,7 +36,7 @@ function MailVerificationPage2() {
       </div>
       <div className="base-content text-center">
         <a href="https://dummylink.com">Contact Support</a>
-        <span style={{ fontSize: '20px' }}>|</span>
+        <span style={{ fontSize: "20px" }}>|</span>
         <a href="https://dummylink.com">Privacy Policy</a> <br />
         <span>16 Usuma Street, Maitama, Abuja, Nigeria </span> <br />
         <span>2020 Private Practice Inc </span>

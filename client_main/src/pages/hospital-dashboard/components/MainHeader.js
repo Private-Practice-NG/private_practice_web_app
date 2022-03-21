@@ -3,15 +3,13 @@ import userImage from "../../../assets/images/avatar/avatar-2.png";
 const MainHeader = () => {
   return (
     <header className="dashboard-main-header">
-      <form className="dashboard-form">
-        <label>
-          <input
-            type="search"
-            placeholder="Search"
-            className="dashboard-form-input"
-          />
-          <i className="bi bi-search"></i>
-        </label>
+      <form className="d-flex flex-row dashboard-form">
+        <input
+          type="search"
+          placeholder="Search"
+          className="dashboard-form-input form-control"
+        />
+        <i className="bi bi-search"></i>
       </form>
 
       <div className="dashboard-user-details">

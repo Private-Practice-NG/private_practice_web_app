@@ -12,6 +12,7 @@ import SiteGuide from "../pages/hospital-dashboard/pages/SiteGuide";
 import CreateJobsPage from "../pages/hospital-dashboard/pages/CreateJobsPage";
 import JobOutbox from "../pages/hospital-dashboard/pages/JobOutbox";
 import Emergency from "../pages/hospital-dashboard/pages/Emergency";
+import JobPostSuccess from "../pages/hospital-dashboard/pages/JobPostSuccess";
 
 function HospitalsDashboardRouteCenter() {
   return (
@@ -28,6 +29,10 @@ function HospitalsDashboardRouteCenter() {
         <Route path="/helpsupport" element={<HelpSupport />} />
         <Route path="/site-guide" element={<SiteGuide />} />
         <Route path="/jobs/create-a-job" element={<CreateJobsPage />} />
+        <Route
+          path="/jobs/job-posted-successfully"
+          element={<JobPostSuccess />}
+        />
       </Routes>
     </ScrollHandler>
   );

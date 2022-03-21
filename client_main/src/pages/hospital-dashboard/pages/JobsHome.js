@@ -15,25 +15,23 @@ const Jobs = () => {
             height: "300px",
             backgroundBlendMode: "overlay",
           }}></div>
-
         <div className="dashboard-jobs">
           <div className="dashboard-job">
             <img src={hospitalIcon} alt="" />
           </div>
           <h2>Jobs Page</h2>
         </div>
-
         <div className="btn-container">
           <Link className="btn" to="/jobs/create-a-job">
-            <i class="bi bi-plus-circle"></i>
+            <i className="bi bi-plus-circle"></i>
             <span>Create Job</span>
           </Link>
           <Link className="btn" to="/jobs/job-outbox">
-            <i class="bi bi-chat-square-text"></i>
+            <i className="bi bi-chat-square-text"></i>
             <span>Job Outbox</span>
           </Link>
           <Link className="btn" to="/jobs/emergency">
-            <img src={emergencyIcon} alt="" />
+            <img src={emergencyIcon} alt="emergency-icon" />
             <span>Emergency</span>
           </Link>
         </div>

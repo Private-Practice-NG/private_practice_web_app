@@ -8,7 +8,7 @@ const Emergency = () => {
     <HospitalDashboardContainer>
       <section className="row emergency-section">
         <div className="col">
-          <section className="emergency-one">
+          <section className="jobs_plain-wrapper">
             <div>
               <h3 className="montserrat">
                 Enter a short title description of the job
@@ -17,22 +17,19 @@ const Emergency = () => {
                 placeholder="No more than 60 words"
                 className="form-control"></textarea>
             </div>
-
-            <div>
+            <div className="mt-4">
               <h3>What Specialist do you need?</h3>
-              <form className="dashboard-form">
-                <label>
-                  <input
-                    type="search"
-                    placeholder="Search specialist"
-                    className="dashboard-form-input"
-                  />
-                  <i className="bi bi-search"></i>
-                </label>
+              <form className="mt-3 d-flex flex-row dashboard-form">
+                <input
+                  type="search"
+                  placeholder="Search Specialist"
+                  className="dashboard-form-input form-control"
+                />
+                <i className="bi bi-search"></i>
               </form>
             </div>
 
-            <div className="specalists-section">
+            <div className="specalists-section mt-4">
               <ul className="specialists">
                 <li className="specialist">
                   <img src={eyeIcon} alt="" width={22} />
@@ -47,7 +44,7 @@ const Emergency = () => {
               </ul>
             </div>
 
-            <div>
+            <div className="mt-4">
               <h3>Treatment Category</h3>
               <select className="form-select">
                 <option>Click to select category</option>
@@ -57,10 +54,6 @@ const Emergency = () => {
 
           <Buttons iconB="bi-arrow-right" iconA="bi-arrow-left" />
         </div>
-
-        <section className="col-6 emergency-hero">
-          <h2>Emergency</h2>
-        </section>
       </section>
     </HospitalDashboardContainer>
   );

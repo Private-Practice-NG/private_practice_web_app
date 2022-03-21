@@ -7,8 +7,10 @@
 @use "./components/hospital-dashboard_main-header";
 @use "./components/hospital-dashboard_payment";
 @use "./components/hospital-dashboard_jobs";
+@use "./components/hospital-dashboard_create-jobs.scss";
 @use "./components/hospital-dashboard_emergency";
 @use "./components/hospital-dashboard_job-post-success";
+@use "./components/hospital-dashboard_helpsupport";
 
 /* Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,

@@ -1,0 +1,49 @@
+.email-page-parent {
+  background-color: white;
+  width: 100%;
+  min-height: 100vh;
+  padding: 100px 100px 50px;
+}
+.email-page-parent .main-page-content-wrapper {
+  width: 35%;
+  margin: 0 auto 30px;
+  color: white;
+  border-radius: 10px;
+  background-color: var(--default-blue-calm);
+}
+.email-page-parent .main-page-content-wrapper .logo-wrapper {
+  padding: 30px 20px 0;
+}
+.email-page-parent .main-page-content-wrapper .logo-wrapper img {
+  width: 100px;
+}
+.email-page-parent .main-page-content-wrapper .logo-wrapper .brand-name {
+  padding: 10px 0;
+  font-size: 20px;
+}
+.email-page-parent .main-page-content-wrapper .text-case {
+  padding: 15px 37px;
+}
+.email-page-parent .main-page-content-wrapper .text-case .btn-wrapper {
+  width: 100%;
+}
+.email-page-parent .main-page-content-wrapper .text-case .btn-wrapper .custom-button {
+  color: white;
+  background-color: var(--default-blue-deep);
+  width: 100%;
+  padding: 7px 15px;
+  text-align: center;
+  box-shadow: 4px 4px 6px -1px var(--default-grey);
+}
+.email-page-parent .main-page-content-wrapper .text-case .btn-wrapper .custom-button:hover {
+  transform: scale(1.05);
+  transition: var(--transition-all);
+}
+.email-page-parent .base-content {
+  width: 35%;
+  margin: 0 auto;
+  color: var(--default-grey);
+}
+.email-page-parent .base-content a {
+  margin: 0 10px;
+}

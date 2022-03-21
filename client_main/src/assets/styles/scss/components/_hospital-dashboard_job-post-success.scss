@@ -1,17 +1,9 @@
-.successful {
-  background: var(--default-white);
-  border-radius: 30px;
-  padding: 5rem;
-  color: var(--default-dashboard-heading-clr);
-  display: grid;
-  place-items: center;
-  transform: translateY(25%);
-
-  .check-box {
-    width: 120px;
-    height: 120px;
-    border: 5px solid currentColor;
-    border-radius: 50%;
+.job-post-success {
+  .check-icon-wrapper {
+    padding: 0 15px;
+    i {
+      font-size: 120px;
+    }
   }
 
   h2 {
@@ -27,7 +19,13 @@
   a {
     background: #e4ecf2;
     border: 0;
+    padding: 15px 50px;
     margin-top: 1.5rem;
     color: currentColor;
+    &:hover {
+      color: white;
+      transition: var(--transition-all);
+      background-color: var(--default-blue-deep);
+    }
   }
 }
