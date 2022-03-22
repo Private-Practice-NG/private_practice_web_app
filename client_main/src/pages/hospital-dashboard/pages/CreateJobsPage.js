@@ -1,6 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import "../../../assets/styles/css/hospital-dashboard.css";
+import PageNavigator from "../components/PageNavigator";
 import HospitalDashboardContainer from "../components/HospitalDashboardContainer";
 
 function CreateJobsPage() {
@@ -17,7 +18,7 @@ function CreateJobsPage() {
   return (
     <HospitalDashboardContainer>
       <section>
-        <div className="jobs_plain-wrapper shadow">
+        <div className="jobs_plain-wrapper mt-5 shadow">
           <div className="create-jobs-header">
             <h4 className="open-sans">Find A Specialist</h4>
             <span>LETS HELP YOU FIND A SPECIALIST</span>
@@ -47,6 +48,10 @@ function CreateJobsPage() {
           </div>
         </div>
       </section>
+      <PageNavigator
+        previousPage="/jobs"
+        nextPage="/jobs/job-posted-successfully"
+      />
     </HospitalDashboardContainer>
   );
 }

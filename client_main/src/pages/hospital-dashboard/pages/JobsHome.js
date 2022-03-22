@@ -26,7 +26,7 @@ const Jobs = () => {
             <i className="bi bi-plus-circle"></i>
             <span>Create Job</span>
           </Link>
-          <Link className="btn" to="/jobs/job-outbox">
+          <Link className="btn" to="/jobs/job-outbox/open-jobs">
             <i className="bi bi-chat-square-text"></i>
             <span>Job Outbox</span>
           </Link>

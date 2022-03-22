@@ -299,12 +299,59 @@
 
 .jobs_plain-wrapper {
   width: 70%;
-  margin: 50px auto 0;
+  margin: 0 auto;
   min-height: 300px;
   border-radius: 15px;
   padding: 50px 30px;
   color: var(--default-dashboard-text-clr);
   background-color: white;
+}
+
+.jobs-outbox-wrapper .page-header {
+  font-weight: 700;
+  width: 100%;
+  color: #2b3e4e;
+}
+.jobs-outbox-wrapper .page-header i {
+  font-size: 35px;
+  margin-right: 15px;
+}
+.jobs-outbox-wrapper .page-header h3 {
+  padding-top: 8px;
+  font-weight: 700;
+}
+.jobs-outbox-wrapper .page-header .page-header-item:active {
+  border-bottom: 5px solid var(--default-blue-deep);
+}
+.jobs-outbox-wrapper .jobs_plain-wrapper .jobs-outbox-nav {
+  border-bottom: 1px solid #e1e4e7;
+}
+.jobs-outbox-wrapper .jobs_plain-wrapper .jobs-outbox-nav .header-item {
+  padding: 15px 10px 10px;
+  width: 25%;
+  box-sizing: content-box;
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.jobs-outbox-wrapper .jobs_plain-wrapper .jobs-outbox-nav .header-item:nth-child(3) {
+  border-right: 1px solid #e1e4e7;
+  border-left: 1px solid #e1e4e7;
+}
+.jobs-outbox-wrapper .jobs_plain-wrapper .jobs-outbox-nav .header-item:first-child {
+  border-right: 1px solid #e1e4e7;
+}
+.jobs-outbox-wrapper .jobs_plain-wrapper .job-details-area .job-title {
+  font-size: 17px;
+  font-weight: bold;
+}
+.jobs-outbox-wrapper .jobs_plain-wrapper .job-details-area .job-extras-wrapper {
+  font-size: 13px;
+}
+.jobs-outbox-wrapper .jobs_plain-wrapper .job-details-area .job-extras-wrapper .track-btn {
+  background-color: var(--default-blue-deep);
+  border-radius: 20px;
+  font-size: 15px;
 }
 
 .create-jobs-header h4 {
@@ -374,6 +421,34 @@
 }
 .create-jobs-main-content .specialist-count-wrapper .counter button:last-child {
   background-color: var(--default-dashboard-text-clr);
+}
+
+.navigator-wrapper {
+  width: 85%;
+  margin: 60px auto 40px;
+}
+.navigator-wrapper .navigator-item {
+  width: 100px;
+  padding: 0 10px;
+  background-color: var(--default-dashboard-text-clr);
+  color: white;
+}
+.navigator-wrapper .navigator-item:hover {
+  transform: scale(1.05);
+  transition: var(--transition-all);
+}
+.navigator-wrapper .navigator-item div {
+  min-width: 65%;
+  margin: 7px 0;
+}
+.navigator-wrapper .navigator-item i {
+  font-size: 25px;
+}
+.navigator-wrapper .navigator-item i:first-child {
+  margin-right: 10px;
+}
+.navigator-wrapper .navigator-item i:last-child {
+  margin-left: 10px;
 }
 
 .emergency-section {
@@ -451,7 +526,6 @@
 }
 .job-post-success a:hover {
   color: white;
-  transition: var(--transition-all);
   background-color: var(--default-blue-deep);
 }
 

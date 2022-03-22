@@ -1,13 +1,14 @@
 import NavLinks from "./NavLinks";
 import logo from "../../../assets/images/logo.png";
+import { Link } from "react-router-dom";
 
 const Sidenav = () => {
   return (
     <header className="dashboard-header">
-      <div className="dashboard-title-container">
+      <Link to="/" className="dashboard-title-container">
         <img src={logo} alt="private pratice logo" />
         <h1 className="dashboard-title">Private Practice</h1>
-      </div>
+      </Link>
 
       <nav className="dashboard-nav">
         <NavLinks />

@@ -24,7 +24,6 @@
     color: currentColor;
     &:hover {
       color: white;
-      transition: var(--transition-all);
       background-color: var(--default-blue-deep);
     }
   }

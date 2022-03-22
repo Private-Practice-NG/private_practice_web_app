@@ -7,7 +7,9 @@
 @use "./components/hospital-dashboard_main-header";
 @use "./components/hospital-dashboard_payment";
 @use "./components/hospital-dashboard_jobs";
-@use "./components/hospital-dashboard_create-jobs.scss";
+@use "./components/hospital-dashboard_jobs-outbox";
+@use "./components/hospital-dashboard_create-jobs";
+@use "./components/hospital-dashboard_page-navigator";
 @use "./components/hospital-dashboard_emergency";
 @use "./components/hospital-dashboard_job-post-success";
 

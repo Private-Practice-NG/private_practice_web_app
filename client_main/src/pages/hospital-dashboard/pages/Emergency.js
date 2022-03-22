@@ -1,14 +1,14 @@
 import eyeIcon from "../../../assets/images/icons/eye_d.png";
 import heartIcon from "../../../assets/images/icons/heart_d.png";
-import Buttons from "../components/Buttons";
 import HospitalDashboardContainer from "../components/HospitalDashboardContainer";
+import PageNavigator from "../components/PageNavigator";
 
 const Emergency = () => {
   return (
     <HospitalDashboardContainer>
       <section className="row emergency-section">
         <div className="col">
-          <section className="jobs_plain-wrapper">
+          <section className="jobs_plain-wrapper mt-5">
             <div>
               <h3 className="montserrat">
                 Enter a short title description of the job
@@ -51,8 +51,10 @@ const Emergency = () => {
               </select>
             </div>
           </section>
-
-          <Buttons iconB="bi-arrow-right" iconA="bi-arrow-left" />
+          <PageNavigator
+            previousPage="/jobs"
+            nextPage="/jobs/job-posted-successfully"
+          />
         </div>
       </section>
     </HospitalDashboardContainer>

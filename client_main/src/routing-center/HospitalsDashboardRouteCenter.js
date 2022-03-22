@@ -13,6 +13,10 @@ import CreateJobsPage from "../pages/hospital-dashboard/pages/CreateJobsPage";
 import JobOutbox from "../pages/hospital-dashboard/pages/JobOutbox";
 import Emergency from "../pages/hospital-dashboard/pages/Emergency";
 import JobPostSuccess from "../pages/hospital-dashboard/pages/JobPostSuccess";
+import JobsOutboxActiveJobs from "../pages/hospital-dashboard/components/JobsOutboxActiveJobs";
+import JobsOutboxCompletedJobs from "../pages/hospital-dashboard/components/JobsOutboxCompletedJobs";
+import JobsOutboxClosedJobs from "../pages/hospital-dashboard/components/JobsOutboxClosedJobs";
+import JobsOutboxOpenJobs from "../pages/hospital-dashboard/components/JobsOutboxOpenJobs";
 
 function HospitalsDashboardRouteCenter() {
   return (
@@ -21,7 +25,24 @@ function HospitalsDashboardRouteCenter() {
         <Route path="/hospital-dashboard" element={<HospitalDashboard />} />
         <Route path="/jobs" element={<JobsHome />} />
         <Route path="/jobs/emergency" element={<Emergency />} />
-        <Route path="/jobs/job-outbox" element={<JobOutbox />} />
+        <Route path="/jobs/job-outbox" element={<JobOutbox />}>
+          <Route
+            path="/jobs/job-outbox/closed-jobs"
+            element={<JobsOutboxClosedJobs />}
+          />
+          <Route
+            path="/jobs/job-outbox/completed-jobs"
+            element={<JobsOutboxCompletedJobs />}
+          />
+          <Route
+            path="/jobs/job-outbox/open-jobs"
+            element={<JobsOutboxOpenJobs />}
+          />
+          <Route
+            path="/jobs/job-outbox/active-jobs"
+            element={<JobsOutboxActiveJobs />}
+          />
+        </Route>
         <Route path="/statistics" element={<Statistics />} />
         <Route path="/wallet" element={<Wallet />} />
         <Route path="/favourites" element={<Favourites />} />
