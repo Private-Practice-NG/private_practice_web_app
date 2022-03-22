@@ -3,8 +3,9 @@
     padding: 0;
     overflow: hidden;
     width: 90%;
-    margin-bottom: 50px;
+    margin-block: 50px;
   }
+
   header {
     background: linear-gradient(226.38deg, #23bcd4 14.92%, #41eafe 89.46%);
     p {
@@ -28,7 +29,7 @@
   }
 
   img {
-    width: 60px;
+    width: 50px;
   }
 
   .other-info-section {
@@ -36,9 +37,5 @@
     grid-template-columns: repeat(3, 100px);
     gap: 2rem 1.75rem;
     font-size: 0.85rem;
-
-    img {
-      width: 50px;
-    }
   }
 }
