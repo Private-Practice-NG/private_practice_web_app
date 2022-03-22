@@ -19,7 +19,7 @@ const Emergency = () => {
             </div>
             <div className="mt-4">
               <h3>What Specialist do you need?</h3>
-              <form className="mt-3 d-flex flex-row specialist-search">
+              <form className="mt-3 d-flex flex-row dashboard-form">
                 <input
                   type="search"
                   placeholder="Search Specialist"

@@ -125,7 +125,6 @@
 }
 .dashboard-main-header .bi {
   font-size: 25px;
-  color: inherit;
 }
 .dashboard-main-header .user {
   display: flex;
@@ -139,22 +138,14 @@
   margin-bottom: 0;
 }
 
-.dashboard-form {
-  background: var(--default-white);
-  border-radius: 25px;
-}
-.dashboard-form label {
-  display: flex;
-  align-items: center;
-}
 .dashboard-form .dashboard-form-input {
-  all: unset;
-  padding: 0.4rem 0.75rem;
-  color: var(--default-grey);
-  cursor: initial;
+  width: 300px;
+  border-radius: 15px;
+  position: relative;
 }
-.dashboard-form .bi-search {
-  margin-right: 11px;
+.dashboard-form .bi {
+  font-size: initial;
+  transform: translate(-30px, 6px);
   color: var(--default-grey);
 }
 
@@ -470,14 +461,6 @@
   background: #f0f0f0;
   resize: none;
 }
-.emergency-section .jobs_plain-wrapper .specialist-search .dashboard-form-input {
-  width: 300px;
-  border-radius: 15px;
-  position: relative;
-}
-.emergency-section .jobs_plain-wrapper .specialist-search .bi {
-  transform: translate(-30px, 6px);
-}
 .emergency-section .specalists-section {
   display: flex;
   align-items: center;
@@ -527,6 +510,44 @@
 .job-post-success a:hover {
   color: white;
   background-color: var(--default-blue-deep);
+}
+
+.help-support-section .jobs_plain-wrapper {
+  padding: 0;
+  overflow: hidden;
+  width: 90%;
+  margin-bottom: 50px;
+}
+.help-support-section header {
+  background: linear-gradient(226.38deg, #23bcd4 14.92%, #41eafe 89.46%);
+}
+.help-support-section header p {
+  width: 600px;
+}
+.help-support-section .dashboard-form-input {
+  width: 600px;
+  padding: 0.85rem 1.2rem;
+  border-radius: 50px;
+}
+.help-support-section button {
+  position: absolute;
+  top: 32px;
+  right: 10px;
+  padding: 0.4rem 3rem;
+  border-radius: 50px;
+  background: #5d5d5d;
+}
+.help-support-section img {
+  width: 60px;
+}
+.help-support-section .other-info-section {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  gap: 2rem 1.75rem;
+  font-size: 0.85rem;
+}
+.help-support-section .other-info-section img {
+  width: 50px;
 }
 
 /* Chrome, Safari, Edge, Opera */
