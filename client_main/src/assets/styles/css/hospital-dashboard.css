@@ -583,6 +583,15 @@
   background: #41eafe;
 }
 
+.treatment-category h2 {
+  background: #23d4bf;
+  padding: 0.35rem 1rem;
+  border-radius: 5px;
+  width: max-content;
+  letter-spacing: 0.15em;
+  color: #5d5d5d;
+}
+
 /* Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
