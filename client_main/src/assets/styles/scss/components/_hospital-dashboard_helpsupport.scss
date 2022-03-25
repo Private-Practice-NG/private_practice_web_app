@@ -14,13 +14,13 @@
   }
 
   .dashboard-form-input {
-    width: 600px;
+    width: 500px;
     padding: 0.85rem 1.2rem;
     border-radius: 50px;
   }
 
-  button {
-    position: absolute;
+  .search-btn {
+    // position: absolute;
     top: 32px;
     right: 10px;
     padding: 0.4rem 3rem;
@@ -29,7 +29,7 @@
   }
 
   img {
-    width: 50px;
+    max-width: 50px;
   }
 
   .other-info-section {

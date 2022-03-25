@@ -2,6 +2,7 @@ import HospitalDashboardContainer from "../components/HospitalDashboardContainer
 import specialistIcon from "../../../assets/images/icons/specialist-icon.png";
 import hospitalIcon from "../../../assets/images/icons/hospital-outline.png";
 import patientIcon from "../../../assets/images/icons/patient-icon.png";
+import Faqs from "../components/Faqs";
 
 const HelpSupport = () => {
   const otherLinks = [
@@ -65,20 +66,20 @@ const HelpSupport = () => {
               nam. Adipisci, optio porro?
             </p>
 
-            <form className="d-flex flex-row pt-4 position-relative dashboard-form">
+            <form className="d-flex flex-row gap-3 pt-4 position-relative dashboard-form">
               <input
                 type="search"
                 placeholder="Find through our full database full of answers"
                 className="dashboard-form-input form-control"
               />
-              <button>Search</button>
+              <button className="search-btn">Search</button>
             </form>
           </header>
 
           <section className="py-5 px-4 row gap-3">
             {/* faq's */}
             <div className="col-4">
-              <h3 className="fs-4 fw-bolder">Frequently Asked Question</h3>
+              <Faqs />
             </div>
 
             <div className="col d-flex flex-column align-items-center gap-5">
