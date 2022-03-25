@@ -22,15 +22,15 @@ const Jobs = () => {
           <h2>Jobs Page</h2>
         </div>
         <div className="btn-container">
-          <Link className="btn" to="/jobs/create-a-job">
+          <Link className="btn shadow" to="/jobs/create-a-job">
             <i className="bi bi-plus-circle"></i>
             <span>Create Job</span>
           </Link>
-          <Link className="btn" to="/jobs/job-outbox/open-jobs">
+          <Link className="btn shadow" to="/jobs/job-outbox/open-jobs">
             <i className="bi bi-chat-square-text"></i>
             <span>Job Outbox</span>
           </Link>
-          <Link className="btn" to="/jobs/emergency">
+          <Link className="btn shadow" to="/jobs/emergency">
             <img src={emergencyIcon} alt="emergency-icon" />
             <span>Emergency</span>
           </Link>
