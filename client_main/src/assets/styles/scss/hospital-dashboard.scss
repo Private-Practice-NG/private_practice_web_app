@@ -13,6 +13,8 @@
 @use "./components/hospital-dashboard_emergency";
 @use "./components/hospital-dashboard_job-post-success";
 @use "./components/hospital-dashboard_helpsupport";
+@use "./components/hospital-dashboard_favourites";
+@use "./components/hospital-dashboard_treatment-category";
 
 /* Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,

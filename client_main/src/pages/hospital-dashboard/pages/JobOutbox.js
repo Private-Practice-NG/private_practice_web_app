@@ -8,7 +8,7 @@ import { Outlet } from "react-router-dom";
 const JobOutbox = ({ children }) => {
   return (
     <HospitalDashboardContainer>
-      <main className="jobs-outbox-wrapper">
+      <section className="jobs-outbox-wrapper">
         <section className="page-header d-flex text-center justify-content-center mt-5">
           <i className="bi bi-chat-square-text"></i>
           <h3 className="montserrat">Jobs Outbox</h3>
@@ -18,7 +18,7 @@ const JobOutbox = ({ children }) => {
           style={{ padding: "0" }}>
           <Outlet />
         </div>
-      </main>
+      </section>
     </HospitalDashboardContainer>
   );
 };
