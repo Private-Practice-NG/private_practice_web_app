@@ -1,0 +1,30 @@
+.job-post-success {
+  .check-icon-wrapper {
+    padding: 0 15px;
+    i {
+      font-size: 120px;
+    }
+  }
+
+  h2 {
+    font-weight: 700;
+    padding-top: 1.2rem;
+  }
+
+  p {
+    text-transform: capitalize;
+    padding-top: 1rem;
+  }
+
+  a {
+    background: #e4ecf2;
+    border: 0;
+    padding: 15px 50px;
+    margin-top: 1.5rem;
+    color: currentColor;
+    &:hover {
+      color: white;
+      background-color: var(--default-blue-deep);
+    }
+  }
+}

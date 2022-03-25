@@ -1,0 +1,62 @@
+@use "./utilities/global-resets";
+@use "./utilities/colors";
+@use "./utilities/config";
+@use "./utilities/google-fonts";
+@use "./components/hospital-dashboard_sidenav";
+@use "./components/hospital-dashboard_navlinks";
+@use "./components/hospital-dashboard_main-header";
+@use "./components/hospital-dashboard_payment";
+@use "./components/hospital-dashboard_jobs";
+@use "./components/hospital-dashboard_jobs-outbox";
+@use "./components/hospital-dashboard_create-jobs";
+@use "./components/hospital-dashboard_page-navigator";
+@use "./components/hospital-dashboard_emergency";
+@use "./components/hospital-dashboard_job-post-success";
+@use "./components/hospital-dashboard_helpsupport";
+@use "./components/hospital-dashboard_favourites";
+@use "./components/hospital-dashboard_treatment-category";
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+p {
+  margin-bottom: 0;
+}
+
+button {
+  all: unset;
+}
+
+.dashboard-container {
+  min-height: 100vh;
+  background: #d1e9e1;
+  color: var(--default-grey);
+  display: grid;
+  grid-template-columns: 275px 1fr;
+}
+
+.active {
+  font-weight: 700;
+  border-left: 8px solid #c92d2d;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  box-shadow: 0 3px 15px rgba($color: #000000, $alpha: 0.15);
+}

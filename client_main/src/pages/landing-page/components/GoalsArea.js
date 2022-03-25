@@ -1,8 +1,8 @@
-import React from 'react';
-import '../../../assets/styles/css/landing-page.css';
-import IOSAppDownload from '../../../assets/images/IOS-app-download.png';
-import androidAppDownload from '../../../assets/images/android-app-download.png';
-import specialistCountIcon from '../../../assets/images/Polygon.png';
+import React from "react";
+import "../../../assets/styles/css/landing-page.css";
+import IOSAppDownload from "../../../assets/images/IOS-app-download.png";
+import androidAppDownload from "../../../assets/images/android-app-download.png";
+import specialistCountIcon from "../../../assets/images/Polygon.png";
 
 const GoalsArea = () => {
   return (

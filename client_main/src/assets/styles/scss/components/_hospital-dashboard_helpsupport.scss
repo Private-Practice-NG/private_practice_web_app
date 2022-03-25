@@ -1,0 +1,41 @@
+.help-support-section {
+  .jobs_plain-wrapper {
+    padding: 0;
+    overflow: hidden;
+    width: 90%;
+    margin-block: 50px;
+  }
+
+  header {
+    background: linear-gradient(226.38deg, #23bcd4 14.92%, #41eafe 89.46%);
+    p {
+      width: 600px;
+    }
+  }
+
+  .dashboard-form-input {
+    width: 600px;
+    padding: 0.85rem 1.2rem;
+    border-radius: 50px;
+  }
+
+  button {
+    position: absolute;
+    top: 32px;
+    right: 10px;
+    padding: 0.4rem 3rem;
+    border-radius: 50px;
+    background: #5d5d5d;
+  }
+
+  img {
+    width: 50px;
+  }
+
+  .other-info-section {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    gap: 2rem 1.75rem;
+    font-size: 0.85rem;
+  }
+}

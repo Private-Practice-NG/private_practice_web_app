@@ -1,0 +1,27 @@
+.navigator-wrapper {
+  width: 85%;
+  margin: 60px auto 40px;
+  .navigator-item {
+    width: 100px;
+    padding: 0 10px;
+    background-color: var(--default-dashboard-text-clr);
+    color: white;
+    &:hover {
+      transform: scale(1.05);
+      transition: var(--transition-all);
+    }
+    div {
+      min-width: 65%;
+      margin: 7px 0;
+    }
+    i {
+      font-size: 25px;
+      &:first-child {
+        margin-right: 10px;
+      }
+      &:last-child {
+        margin-left: 10px;
+      }
+    }
+  }
+}

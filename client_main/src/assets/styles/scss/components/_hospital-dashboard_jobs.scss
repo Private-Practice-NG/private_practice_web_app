@@ -1,0 +1,74 @@
+.dashboard-jobs {
+  display: grid;
+  place-items: center;
+
+  img {
+    width: 65px;
+  }
+
+  h2 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    letter-spacing: 10px;
+    font-weight: 600;
+    margin-top: -30px;
+    color: var(--default-dashboard-heading-clr);
+  }
+}
+
+.dashboard-job {
+  margin: 0 auto;
+  margin-top: -90px;
+  border-radius: 50%;
+  background: #fff;
+  width: 150px;
+  height: 150px;
+  display: grid;
+  place-items: center;
+}
+
+.btn-container {
+  padding-top: 3.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+
+  img {
+    width: 30px;
+  }
+
+  .btn {
+    background: red;
+    padding: 0.5rem 1.75rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    color: #fff;
+    background: #23d4bf;
+  }
+
+  .btn:nth-child(2) {
+    background: #2387d4;
+  }
+  .btn:nth-child(3) {
+    background: #fb7272;
+  }
+
+  .bi {
+    font-size: 20px;
+  }
+}
+
+// reusable plain background for the whole jobs section
+
+.jobs_plain-wrapper {
+  width: 70%;
+  margin: 0 auto;
+  min-height: 300px;
+  border-radius: 15px;
+  padding: 50px 30px;
+  color: var(--default-dashboard-text-clr);
+  background-color: white;
+}

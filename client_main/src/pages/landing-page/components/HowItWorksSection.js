@@ -1,10 +1,10 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import '../../../assets/styles/css/landing-page.css';
-import searchIcon from '../../../assets/images/icons/seach-icon.png';
-import locationIcon from '../../../assets/images/icons/location-icon.png';
-import handsOnIcon from '../../../assets/images/icons/hands-on.png';
-import payCardIcon from '../../../assets/images/icons/card.png';
+import React from "react";
+import { Link } from "react-router-dom";
+import "../../../assets/styles/css/landing-page.css";
+import searchIcon from "../../../assets/images/icons/seach-icon.png";
+import locationIcon from "../../../assets/images/icons/location-icon.png";
+import handsOnIcon from "../../../assets/images/icons/hands-on.png";
+import payCardIcon from "../../../assets/images/icons/card.png";
 
 const HowItWorksSection = () => {
   return (

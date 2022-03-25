@@ -1,0 +1,56 @@
+.dashboard-main-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 1.5rem;
+  background: #2387d4;
+  color: var(--default-white);
+
+  .bi {
+    font-size: 25px;
+  }
+
+  .user {
+    display: flex;
+    align-items: center;
+    gap: 0.65rem;
+
+    .bi-chevron-down {
+      font-size: 16px;
+    }
+
+    p {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.dashboard-form {
+  .dashboard-form-input {
+    width: 300px;
+    border-radius: 15px;
+    position: relative;
+  }
+  .bi {
+    font-size: initial;
+    transform: translate(-30px, 6px);
+    color: var(--default-grey);
+  }
+}
+
+.dashboard-user-details {
+  display: flex;
+  align-items: center;
+  gap: 1.55rem;
+
+  img {
+    width: 40px;
+    border-radius: 50%;
+  }
+}
+
+.dashboard-user {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+}
