@@ -72,6 +72,42 @@
   font-family: "Open Sans", sans-serif;
 }
 
+.hospitals-dashboard-home-wrapper .main-section {
+  width: 70%;
+}
+.hospitals-dashboard-home-wrapper .main-section .top-rated-array-item {
+  width: 30%;
+}
+.hospitals-dashboard-home-wrapper .main-section .avatar-area {
+  width: 35%;
+  height: 120px;
+  background-color: var(--default-blue-deep);
+  border-radius: 20px;
+  box-shadow: 0px 5px 15px -2px;
+  z-index: 10;
+}
+.hospitals-dashboard-home-wrapper .main-section .avatar-area .specialist-avatar {
+  width: 50px;
+  height: 50px;
+  box-shadow: -3px 5px 11px -1px var(--default-grey);
+}
+.hospitals-dashboard-home-wrapper .main-section .details-area {
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  height: 105px;
+  background-color: white;
+  width: 65%;
+  transform: translateX(-5px);
+  box-shadow: 3px 5px 24px -3px;
+  z-index: 5;
+}
+.hospitals-dashboard-home-wrapper .main-section .details-area p {
+  font-size: 14px;
+}
+.hospitals-dashboard-home-wrapper .main-section .details-area span {
+  font-size: 12px;
+}
+
 .dashboard-header {
   background: var(--default-white);
 }
@@ -116,53 +152,50 @@
 }
 
 .dashboard-main-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   padding: 0.5rem 1.5rem;
   background: #2387d4;
-  color: var(--default-white);
+  color: white;
 }
 .dashboard-main-header .bi {
   font-size: 25px;
 }
-.dashboard-main-header .user {
-  display: flex;
-  align-items: center;
-  gap: 0.65rem;
-}
-.dashboard-main-header .user .bi-chevron-down {
-  font-size: 16px;
-}
-.dashboard-main-header .user p {
-  margin-bottom: 0;
-}
 
 .dashboard-form .dashboard-form-input {
   width: 300px;
-  border-radius: 15px;
-  position: relative;
 }
 .dashboard-form .bi {
   font-size: initial;
-  transform: translate(-30px, 6px);
+  transform: translate(-30px, 10px);
   color: var(--default-grey);
 }
 
 .dashboard-user-details {
-  display: flex;
-  align-items: center;
   gap: 1.55rem;
+  width: 40%;
+}
+.dashboard-user-details .dashboard-user {
+  gap: 0.65rem;
+}
+.dashboard-user-details .dashboard-user .user {
+  gap: 0.65rem;
+  font-size: 14px;
+}
+.dashboard-user-details .dashboard-user .user .bi-chevron-down {
+  font-size: 16px;
+}
+.dashboard-user-details .dashboard-user .user p {
+  margin-bottom: 0;
+}
+.dashboard-user-details .dashboard-user .bi-chevron-down {
+  font-size: 16px;
+}
+.dashboard-user-details .dashboard-user p {
+  margin-bottom: 0;
 }
 .dashboard-user-details img {
   width: 40px;
   border-radius: 50%;
-}
-
-.dashboard-user {
-  display: flex;
-  align-items: center;
-  gap: 0.65rem;
+  box-shadow: 0px 0px 11px -1px var(--default-grey);
 }
 
 .dashboard-payment-section {
@@ -592,21 +625,6 @@
   background-color: var(--default-dashboard-text-clr);
   color: white;
   padding: 10px 0;
-}
-
-.treatment-details-wrapper label {
-  color: var(--default-dashboard-text-clr);
-  font-weight: bold;
-}
-.treatment-details-wrapper .session-label {
-  background-color: #59a58b;
-}
-.treatment-details-wrapper .form-group {
-  width: 45%;
-}
-.treatment-details-wrapper .form-group select,
-.treatment-details-wrapper .form-group input {
-  color: var(--default-grey);
 }
 
 /* Chrome, Safari, Edge, Opera */

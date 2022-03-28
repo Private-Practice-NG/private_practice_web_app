@@ -2,6 +2,7 @@
 @use "./utilities/colors";
 @use "./utilities/config";
 @use "./utilities/google-fonts";
+@use "./components/hospital-dashboard_home";
 @use "./components/hospital-dashboard_sidenav";
 @use "./components/hospital-dashboard_navlinks";
 @use "./components/hospital-dashboard_main-header";
@@ -14,9 +15,9 @@
 @use "./components/hospital-dashboard_job-post-success";
 @use "./components/hospital-dashboard_helpsupport";
 @use "./components/hospital-dashboard_favourites";
-@use "./components/hospital-dashboard_treatment-category";
-@use "./components/hospital-dashboard_job-preview";
 @use "./components/hospital-dashboard_treatment-details";
+@use "./components/hospital-dashboard_job-preview";
+// @use "./components/hospital-dashboard_treatment-details";
 
 /* Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,

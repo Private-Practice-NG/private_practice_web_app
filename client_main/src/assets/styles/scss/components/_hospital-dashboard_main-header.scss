@@ -1,19 +1,41 @@
 .dashboard-main-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   padding: 0.5rem 1.5rem;
   background: #2387d4;
-  color: var(--default-white);
+  color: white;
 
   .bi {
     font-size: 25px;
   }
+}
 
-  .user {
-    display: flex;
-    align-items: center;
+.dashboard-form {
+  .dashboard-form-input {
+    width: 300px;
+  }
+  .bi {
+    font-size: initial;
+    transform: translate(-30px, 10px);
+    color: var(--default-grey);
+  }
+}
+
+.dashboard-user-details {
+  gap: 1.55rem;
+  width: 40%;
+  .dashboard-user {
     gap: 0.65rem;
+    .user {
+      gap: 0.65rem;
+      font-size: 14px;
+
+      .bi-chevron-down {
+        font-size: 16px;
+      }
+
+      p {
+        margin-bottom: 0;
+      }
+    }
 
     .bi-chevron-down {
       font-size: 16px;
@@ -23,34 +45,9 @@
       margin-bottom: 0;
     }
   }
-}
-
-.dashboard-form {
-  .dashboard-form-input {
-    width: 300px;
-    border-radius: 15px;
-    position: relative;
-  }
-  .bi {
-    font-size: initial;
-    transform: translate(-30px, 6px);
-    color: var(--default-grey);
-  }
-}
-
-.dashboard-user-details {
-  display: flex;
-  align-items: center;
-  gap: 1.55rem;
-
   img {
     width: 40px;
     border-radius: 50%;
+    box-shadow: 0px 0px 11px -1px var(--default-grey);
   }
-}
-
-.dashboard-user {
-  display: flex;
-  align-items: center;
-  gap: 0.65rem;
 }
