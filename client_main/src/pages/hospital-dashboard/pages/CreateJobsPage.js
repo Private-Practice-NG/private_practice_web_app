@@ -50,7 +50,7 @@ function CreateJobsPage() {
       </section>
       <PageNavigator
         previousPage="/jobs"
-        nextPage="/jobs/job-posted-successfully"
+        nextPage="/jobs/specialist-near-you"
       />
     </HospitalDashboardContainer>
   );

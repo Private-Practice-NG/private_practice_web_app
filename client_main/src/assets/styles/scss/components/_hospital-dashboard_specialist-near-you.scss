@@ -1,0 +1,44 @@
+.specialist-near-you {
+  .specialists {
+    font-size: 0.8rem;
+  }
+
+  .specialist {
+    background-color: #eee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    padding: 0.5rem 0.75rem;
+    border-radius: 10px;
+
+    img {
+      width: 75px;
+      height: 125px;
+      object-fit: cover;
+    }
+
+    ul {
+      margin-bottom: 0;
+      padding-left: 0;
+    }
+  }
+
+  .selected-specialist {
+    font-size: 0.7rem;
+    background: #fff;
+    border-radius: 10px;
+    width: max-content;
+    padding: 0.5rem 0.75rem;
+
+    img {
+      width: 100px;
+      height: 75px;
+      object-fit: cover;
+    }
+
+    p:first-child {
+      font-size: 1rem;
+    }
+  }
+}

@@ -51,7 +51,7 @@ const HelpSupport = () => {
   return (
     <HospitalDashboardContainer>
       <section className="help-support-section">
-        <div className="jobs_plain-wrapper">
+        <div className="custom_plain-wrapper">
           <header className="d-flex align-items-center justify-content-center flex-column text-center px-5 py-5 text-white">
             <div className="roboto-slab">
               <p>Self service help centre</p>

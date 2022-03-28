@@ -10,6 +10,7 @@ import Calender from "../pages/hospital-dashboard/pages/Calender";
 import HelpSupport from "../pages/hospital-dashboard/pages/HelpSupport";
 import SiteGuide from "../pages/hospital-dashboard/pages/SiteGuide";
 import CreateJobsPage from "../pages/hospital-dashboard/pages/CreateJobsPage";
+import SpecialistNearYou from "../pages/hospital-dashboard/pages/SpecialistNearYou";
 import JobOutbox from "../pages/hospital-dashboard/pages/JobOutbox";
 import Emergency from "../pages/hospital-dashboard/pages/Emergency";
 import JobPostSuccess from "../pages/hospital-dashboard/pages/JobPostSuccess";
@@ -53,6 +54,10 @@ function HospitalsDashboardRouteCenter() {
         <Route path="/helpsupport" element={<HelpSupport />} />
         <Route path="/site-guide" element={<SiteGuide />} />
         <Route path="/jobs/create-a-job" element={<CreateJobsPage />} />
+        <Route
+          path="/jobs/specialist-near-you"
+          element={<SpecialistNearYou />}
+        />
         <Route
           path="/jobs/job-posted-successfully"
           element={<JobPostSuccess />}

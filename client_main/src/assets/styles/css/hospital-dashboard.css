@@ -534,7 +534,7 @@
   background-color: var(--default-blue-deep);
 }
 
-.help-support-section .jobs_plain-wrapper {
+.help-support-section .custom_plain-wrapper {
   padding: 0;
   overflow: hidden;
   width: 90%;
@@ -625,6 +625,43 @@
   background-color: var(--default-dashboard-text-clr);
   color: white;
   padding: 10px 0;
+}
+
+.specialist-near-you .specialists {
+  font-size: 0.8rem;
+}
+.specialist-near-you .specialist {
+  background-color: #eee;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  padding: 0.5rem 0.75rem;
+  border-radius: 10px;
+}
+.specialist-near-you .specialist img {
+  width: 75px;
+  height: 125px;
+  object-fit: cover;
+}
+.specialist-near-you .specialist ul {
+  margin-bottom: 0;
+  padding-left: 0;
+}
+.specialist-near-you .selected-specialist {
+  font-size: 0.7rem;
+  background: #fff;
+  border-radius: 10px;
+  width: max-content;
+  padding: 0.5rem 0.75rem;
+}
+.specialist-near-you .selected-specialist img {
+  width: 100px;
+  height: 75px;
+  object-fit: cover;
+}
+.specialist-near-you .selected-specialist p:first-child {
+  font-size: 1rem;
 }
 
 /* Chrome, Safari, Edge, Opera */
