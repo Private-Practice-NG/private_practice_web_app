@@ -514,12 +514,11 @@
   width: 600px;
 }
 .help-support-section .dashboard-form-input {
-  width: 600px;
+  width: 500px;
   padding: 0.85rem 1.2rem;
   border-radius: 50px;
 }
-.help-support-section button {
-  position: absolute;
+.help-support-section .search-btn {
   top: 32px;
   right: 10px;
   padding: 0.4rem 3rem;
@@ -527,7 +526,7 @@
   background: #5d5d5d;
 }
 .help-support-section img {
-  width: 50px;
+  max-width: 50px;
 }
 .help-support-section .other-info-section {
   display: grid;
