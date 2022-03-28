@@ -14,7 +14,7 @@ const JobOutbox = ({ children }) => {
           <h3 className="montserrat">Jobs Outbox</h3>
         </section>
         <div
-          className="jobs_plain-wrapper mt-4 mb-5 shadow"
+          className="custom_plain-wrapper mt-4 mb-5 shadow"
           style={{ padding: "0" }}>
           <Outlet />
         </div>

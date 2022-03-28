@@ -17,6 +17,9 @@ import JobsOutboxActiveJobs from "../pages/hospital-dashboard/components/JobsOut
 import JobsOutboxCompletedJobs from "../pages/hospital-dashboard/components/JobsOutboxCompletedJobs";
 import JobsOutboxClosedJobs from "../pages/hospital-dashboard/components/JobsOutboxClosedJobs";
 import JobsOutboxOpenJobs from "../pages/hospital-dashboard/components/JobsOutboxOpenJobs";
+import JobPreview from "../pages/hospital-dashboard/pages/JobPreview";
+// import TreatmentDetails from "../pages/hospital-dashboard/pages/TreatmentDetails";
+import TreatmentDetails from "../pages/hospital-dashboard/pages/TreatmentDetails";
 
 function HospitalsDashboardRouteCenter() {
   return (
@@ -54,6 +57,8 @@ function HospitalsDashboardRouteCenter() {
           path="/jobs/job-posted-successfully"
           element={<JobPostSuccess />}
         />
+        <Route path="/jobs/job-preview" element={<JobPreview />} />
+        <Route path="/jobs/treatment-details" element={<TreatmentDetails />} />
       </Routes>
     </ScrollHandler>
   );

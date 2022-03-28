@@ -8,7 +8,7 @@ const Emergency = () => {
     <HospitalDashboardContainer>
       <section className="row emergency-section">
         <div className="col">
-          <section className="jobs_plain-wrapper mt-5">
+          <section className="custom_plain-wrapper mt-5">
             <div>
               <h3 className="montserrat">
                 Enter a short title description of the job

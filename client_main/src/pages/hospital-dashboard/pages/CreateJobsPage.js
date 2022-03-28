@@ -18,7 +18,7 @@ function CreateJobsPage() {
   return (
     <HospitalDashboardContainer>
       <section>
-        <div className="jobs_plain-wrapper mt-5 shadow">
+        <div className="custom_plain-wrapper mt-5 shadow">
           <div className="create-jobs-header">
             <h4 className="open-sans">Find A Specialist</h4>
             <span>LETS HELP YOU FIND A SPECIALIST</span>

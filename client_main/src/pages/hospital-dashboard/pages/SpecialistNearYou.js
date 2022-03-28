@@ -1,7 +1,7 @@
 const SpecialistNearYou = () => {
   return (
     <section>
-      <div className="jobs_plain-wrapper mt-5 shadow">
+      <div className="custom_plain-wrapper mt-5 shadow">
         <header>
           <div>
             <h2>Specialist Near You</h2>

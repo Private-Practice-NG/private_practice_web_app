@@ -15,6 +15,8 @@
 @use "./components/hospital-dashboard_helpsupport";
 @use "./components/hospital-dashboard_favourites";
 @use "./components/hospital-dashboard_treatment-category";
+@use "./components/hospital-dashboard_job-preview";
+@use "./components/hospital-dashboard_treatment-details";
 
 /* Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,
@@ -59,4 +61,16 @@ button {
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
   box-shadow: 0 3px 15px rgba($color: #000000, $alpha: 0.15);
+}
+
+// reusable plain background for the whole jobs section
+
+.custom_plain-wrapper {
+  width: 70%;
+  margin: 40px auto;
+  min-height: 300px;
+  border-radius: 15px;
+  padding: 30px;
+  color: var(--default-dashboard-text-clr);
+  background-color: white;
 }

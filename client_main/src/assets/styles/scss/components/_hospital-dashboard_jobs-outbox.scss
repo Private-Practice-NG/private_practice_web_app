@@ -2,7 +2,7 @@
   .page-header {
     font-weight: 700;
     width: 100%;
-    color: #2b3e4e;
+    // color: #2b3e4e;
     i {
       font-size: 35px;
       margin-right: 15px;
@@ -15,7 +15,7 @@
       border-bottom: 5px solid var(--default-blue-deep);
     }
   }
-  .jobs_plain-wrapper {
+  .custom_plain-wrapper {
     .jobs-outbox-nav {
       border-bottom: 1px solid #e1e4e7;
       .header-item {
@@ -36,7 +36,7 @@
     }
     .job-details-area {
       .job-title {
-        font-size: 17px;
+        font-size: 15px;
         font-weight: bold;
       }
       .job-extras-wrapper {

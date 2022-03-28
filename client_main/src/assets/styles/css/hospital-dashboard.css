@@ -288,20 +288,9 @@
   font-size: 20px;
 }
 
-.jobs_plain-wrapper {
-  width: 70%;
-  margin: 0 auto;
-  min-height: 300px;
-  border-radius: 15px;
-  padding: 50px 30px;
-  color: var(--default-dashboard-text-clr);
-  background-color: white;
-}
-
 .jobs-outbox-wrapper .page-header {
   font-weight: 700;
   width: 100%;
-  color: #2b3e4e;
 }
 .jobs-outbox-wrapper .page-header i {
   font-size: 35px;
@@ -314,10 +303,10 @@
 .jobs-outbox-wrapper .page-header .page-header-item:active {
   border-bottom: 5px solid var(--default-blue-deep);
 }
-.jobs-outbox-wrapper .jobs_plain-wrapper .jobs-outbox-nav {
+.jobs-outbox-wrapper .custom_plain-wrapper .jobs-outbox-nav {
   border-bottom: 1px solid #e1e4e7;
 }
-.jobs-outbox-wrapper .jobs_plain-wrapper .jobs-outbox-nav .header-item {
+.jobs-outbox-wrapper .custom_plain-wrapper .jobs-outbox-nav .header-item {
   padding: 15px 10px 10px;
   width: 25%;
   box-sizing: content-box;
@@ -325,21 +314,21 @@
   font-weight: bold;
   text-transform: uppercase;
 }
-.jobs-outbox-wrapper .jobs_plain-wrapper .jobs-outbox-nav .header-item:nth-child(3) {
+.jobs-outbox-wrapper .custom_plain-wrapper .jobs-outbox-nav .header-item:nth-child(3) {
   border-right: 1px solid #e1e4e7;
   border-left: 1px solid #e1e4e7;
 }
-.jobs-outbox-wrapper .jobs_plain-wrapper .jobs-outbox-nav .header-item:first-child {
+.jobs-outbox-wrapper .custom_plain-wrapper .jobs-outbox-nav .header-item:first-child {
   border-right: 1px solid #e1e4e7;
 }
-.jobs-outbox-wrapper .jobs_plain-wrapper .job-details-area .job-title {
-  font-size: 17px;
+.jobs-outbox-wrapper .custom_plain-wrapper .job-details-area .job-title {
+  font-size: 15px;
   font-weight: bold;
 }
-.jobs-outbox-wrapper .jobs_plain-wrapper .job-details-area .job-extras-wrapper {
+.jobs-outbox-wrapper .custom_plain-wrapper .job-details-area .job-extras-wrapper {
   font-size: 13px;
 }
-.jobs-outbox-wrapper .jobs_plain-wrapper .job-details-area .job-extras-wrapper .track-btn {
+.jobs-outbox-wrapper .custom_plain-wrapper .job-details-area .job-extras-wrapper .track-btn {
   background-color: var(--default-blue-deep);
   border-radius: 20px;
   font-size: 15px;
@@ -448,15 +437,15 @@
   justify-content: center;
   background: url("https://images.unsplash.com/photo-1600959907703-125ba1374a12?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80") center/cover;
 }
-.emergency-section .jobs_plain-wrapper {
+.emergency-section .custom_plain-wrapper {
   background-color: rgba(255, 255, 255, 0.95);
 }
-.emergency-section .jobs_plain-wrapper h3 {
+.emergency-section .custom_plain-wrapper h3 {
   font-size: 1rem;
   font-weight: 600;
   color: var(--default-dashboard-heading-clr);
 }
-.emergency-section .jobs_plain-wrapper textarea {
+.emergency-section .custom_plain-wrapper textarea {
   height: 170px;
   background: #f0f0f0;
   resize: none;
@@ -555,7 +544,7 @@
   justify-content: center;
   padding-top: 4rem;
 }
-.favourites .jobs_plain-wrapper {
+.favourites .custom_plain-wrapper {
   width: 80%;
   margin-top: 1rem;
 }
@@ -576,7 +565,7 @@
   background: #85ff96;
 }
 .favourites .btn {
-  background: #2387d4;
+  background: var(--default-blue-deep);
   color: #fff;
 }
 .favourites .btn:nth-child(1) {
@@ -590,6 +579,35 @@
   width: max-content;
   letter-spacing: 0.15em;
   color: #5d5d5d;
+}
+
+.jobs-preview-wrapper .preview-item {
+  font-size: 16px;
+  margin-top: 15px;
+  box-shadow: 0px 0px 9px -6px var(--default-grey);
+}
+.jobs-preview-wrapper .preview-item-child-title {
+  width: 25%;
+}
+.jobs-preview-wrapper .post-btn {
+  background-color: var(--default-dashboard-text-clr);
+  color: white;
+  padding: 10px 0;
+}
+
+.treatment-details-wrapper label {
+  color: var(--default-dashboard-text-clr);
+  font-weight: bold;
+}
+.treatment-details-wrapper .session-label {
+  background-color: #59a58b;
+}
+.treatment-details-wrapper .form-group {
+  width: 45%;
+}
+.treatment-details-wrapper .form-group select,
+.treatment-details-wrapper .form-group input {
+  color: var(--default-grey);
 }
 
 /* Chrome, Safari, Edge, Opera */
@@ -635,4 +653,14 @@ button {
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
   box-shadow: 0 3px 15px rgba(0, 0, 0, 0.15);
+}
+
+.custom_plain-wrapper {
+  width: 70%;
+  margin: 40px auto;
+  min-height: 300px;
+  border-radius: 15px;
+  padding: 30px;
+  color: var(--default-dashboard-text-clr);
+  background-color: white;
 }

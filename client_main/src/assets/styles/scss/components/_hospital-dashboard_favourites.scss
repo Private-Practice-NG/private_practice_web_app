@@ -6,7 +6,7 @@
   justify-content: center;
   padding-top: 4rem;
 
-  .jobs_plain-wrapper {
+  .custom_plain-wrapper {
     width: 80%;
     margin-top: 1rem;
   }
@@ -32,7 +32,7 @@
   }
 
   .btn {
-    background: #2387d4;
+    background: var(--default-blue-deep);
     color: #fff;
 
     &:nth-child(1) {

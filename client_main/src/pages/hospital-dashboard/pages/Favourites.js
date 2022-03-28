@@ -5,18 +5,18 @@ const Favourites = () => {
   return (
     <HospitalDashboardContainer>
       <section className="favourites">
-        <h2 className="fw-bolder roboto-slab">Favourites</h2>
-        <div className="jobs_plain-wrapper shadow py-4 px-5">
+        <h2 className="fw-bolder montserrat mb-4">Favourites</h2>
+        <div className="custom_plain-wrapper shadow py-4 px-5">
           <header className="d-flex align-items-center gap-4">
             <div>
               <h3 className="fs-6 text-uppercase">Category</h3>
-              <select className="form-select mt-2">
+              <select className="form-select mt-3">
                 <option>All categories </option>
               </select>
             </div>
             <div>
               <h3 className="fs-6 text-uppercase">Location</h3>
-              <select className="form-select mt-2">
+              <select className="form-select mt-3">
                 <option>All location </option>
               </select>
             </div>
@@ -45,8 +45,10 @@ const Favourites = () => {
 
               {/* buttons */}
               <div className="d-flex align-items-center gap-3">
-                <button className="btn btn-sm">View</button>
-                <button className="btn btn-sm">Remove</button>
+                <button className="btn btn rounded-pill px-3 py-1">View</button>
+                <button className="btn btn rounded-pill px-3 py-1">
+                  Remove
+                </button>
               </div>
             </li>
           </ul>
