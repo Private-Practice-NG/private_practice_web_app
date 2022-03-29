@@ -133,7 +133,6 @@
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
-  padding-left: 0;
   padding-right: 3rem;
 }
 .dashboard-nav-items .dashboard-nav-link {
@@ -367,21 +366,38 @@
   font-size: 15px;
 }
 
-.create-jobs-header h4 {
+.create-job .create-job-hero {
+  background: rgba(10, 48, 78, 0.35) url("https://images.unsplash.com/photo-1505751172876-fa1923c5c528?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80") no-repeat center/cover;
+  height: 300px;
+  background-blend-mode: overlay;
+  display: flex;
+  align-items: center;
+  padding-left: 5rem;
+  color: #fff;
+}
+.create-job .create-job-hero h2 {
+  font-size: 3rem;
+}
+.create-job .specialist-section {
+  background-color: #bae0e5;
+  padding: 2rem;
+}
+
+.find-specialist-header h4 {
   font-weight: bold !important;
 }
 
-.create-jobs-main-content h5 {
+.find-specialist-main-content h5 {
   font-weight: bold;
   font-size: 15px;
 }
-.create-jobs-main-content .invite-type-wrapper {
+.find-specialist-main-content .invite-type-wrapper {
   margin-top: 50px;
 }
-.create-jobs-main-content .invite-type-wrapper .invite-item-case {
+.find-specialist-main-content .invite-type-wrapper .invite-item-case {
   padding-top: 20px;
 }
-.create-jobs-main-content .invite-type-wrapper .invite-item-case .invite-item {
+.find-specialist-main-content .invite-type-wrapper .invite-item-case .invite-item {
   width: 140px;
   height: 140px;
   font-size: 16px;
@@ -392,47 +408,47 @@
   border-radius: 5px;
   position: relative;
 }
-.create-jobs-main-content .invite-type-wrapper .invite-item-case .invite-item:first-child {
+.find-specialist-main-content .invite-type-wrapper .invite-item-case .invite-item:first-child {
   background-color: #bd4747;
 }
-.create-jobs-main-content .invite-type-wrapper .invite-item-case .invite-item:last-child {
+.find-specialist-main-content .invite-type-wrapper .invite-item-case .invite-item:last-child {
   background-color: var(--default-blue-deep);
 }
-.create-jobs-main-content .invite-type-wrapper .invite-item-case .invite-item div {
+.find-specialist-main-content .invite-type-wrapper .invite-item-case .invite-item div {
   text-align: center;
   margin: 43px auto;
 }
-.create-jobs-main-content .invite-type-wrapper .invite-item-case .invite-item .tick-icon {
+.find-specialist-main-content .invite-type-wrapper .invite-item-case .invite-item .tick-icon {
   position: absolute;
   font-size: 20px;
   top: 5px;
   right: 10px;
 }
-.create-jobs-main-content .specialist-count-wrapper {
+.find-specialist-main-content .specialist-count-wrapper {
   margin-top: 40px;
 }
-.create-jobs-main-content .specialist-count-wrapper .counter {
+.find-specialist-main-content .specialist-count-wrapper .counter {
   width: 150px;
   margin-top: 15px;
   border: 2px solid var(--default-dashboard-text-clr);
   justify-content: space-between;
   border-radius: 5px;
 }
-.create-jobs-main-content .specialist-count-wrapper .counter span,
-.create-jobs-main-content .specialist-count-wrapper .counter button {
+.find-specialist-main-content .specialist-count-wrapper .counter span,
+.find-specialist-main-content .specialist-count-wrapper .counter button {
   width: 30%;
   text-align: center;
   font-size: 20px;
   color: white;
   padding: 5px 0;
 }
-.create-jobs-main-content .specialist-count-wrapper .counter button:first-child {
+.find-specialist-main-content .specialist-count-wrapper .counter button:first-child {
   background-color: var(--default-dashboard-text-clr);
 }
-.create-jobs-main-content .specialist-count-wrapper .counter span {
+.find-specialist-main-content .specialist-count-wrapper .counter span {
   color: var(--default-dashboard-text-clr);
 }
-.create-jobs-main-content .specialist-count-wrapper .counter button:last-child {
+.find-specialist-main-content .specialist-count-wrapper .counter button:last-child {
   background-color: var(--default-dashboard-text-clr);
 }
 
@@ -472,40 +488,6 @@
 }
 .emergency-section .custom_plain-wrapper {
   background-color: rgba(255, 255, 255, 0.95);
-}
-.emergency-section .custom_plain-wrapper h3 {
-  font-size: 1rem;
-  font-weight: 600;
-  color: var(--default-dashboard-heading-clr);
-}
-.emergency-section .custom_plain-wrapper textarea {
-  height: 170px;
-  background: #f0f0f0;
-  resize: none;
-}
-.emergency-section .specalists-section {
-  display: flex;
-  align-items: center;
-  gap: 2rem;
-}
-.emergency-section .specalists-section .specialists {
-  padding-left: 0;
-  display: flex;
-  gap: 1rem;
-  margin-bottom: 0;
-}
-.emergency-section .specalists-section .specialist {
-  border-radius: 10px;
-  background: #a3d8f9;
-  padding: 0.2rem 0.5rem 0.5rem;
-}
-.emergency-section .specalists-section .specialist h4 {
-  font-size: 0.75rem;
-  font-weight: 600;
-  margin-bottom: 0;
-}
-.emergency-section .specalists-section .specialist p {
-  font-size: 0.6rem;
 }
 
 .job-post-success .check-icon-wrapper {
@@ -584,7 +566,6 @@
   margin-bottom: 0;
 }
 .favourites ul {
-  padding-left: 0;
   padding-top: 5rem;
 }
 .favourites img {
@@ -646,7 +627,6 @@
 }
 .specialist-near-you .specialist ul {
   margin-bottom: 0;
-  padding-left: 0;
 }
 .specialist-near-you .selected-specialist {
   font-size: 0.7rem;
@@ -700,6 +680,22 @@ button {
   display: grid;
   grid-template-columns: 275px 1fr;
 }
+.dashboard-container textarea {
+  height: 170px;
+  background: #f0f0f0;
+  resize: none;
+}
+.dashboard-container h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--default-dashboard-heading-clr);
+}
+.dashboard-container h4 {
+  font-size: 0.85rem;
+}
+.dashboard-container ul {
+  padding-left: 0;
+}
 
 .active {
   font-weight: 700;
@@ -717,4 +713,24 @@ button {
   padding: 30px;
   color: var(--default-dashboard-text-clr);
   background-color: white;
+}
+
+.specialists {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 0;
+}
+
+.specialist {
+  border-radius: 10px;
+  background: #a3d8f9;
+  padding: 0.2rem 0.5rem 0.5rem;
+}
+.specialist h4 {
+  font-size: 0.75rem;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+.specialist p {
+  font-size: 0.6rem;
 }
