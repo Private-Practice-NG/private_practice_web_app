@@ -20,7 +20,7 @@ function FindASpecialist() {
       <section>
         <div className="custom_plain-wrapper mt-5 shadow">
           <div className="find-specialist-header">
-            <h4 className="open-sans">Find A Specialist</h4>
+            <h2 className="open-sans">Find A Specialist</h2>
             <span>LETS HELP YOU FIND A SPECIALIST</span>
           </div>
           <div className="find-specialist-main-content">
@@ -49,7 +49,7 @@ function FindASpecialist() {
         </div>
       </section>
       <PageNavigator
-        previousPage="/jobs/create-job"
+        previousPage="/jobs/payment"
         nextPage="/jobs/specialist-near-you"
       />
     </HospitalDashboardContainer>

@@ -1,10 +1,6 @@
 .dashboard-payment-section {
-  max-width: 800px;
-  margin: 3rem auto;
-  padding: 0 2rem;
-
   .dashboard-payment {
-    padding: 1.5rem 2.5rem;
+    padding: 2.5rem;
     border-radius: 35px;
     background: var(--default-white);
   }
@@ -39,11 +35,6 @@
     padding: 0 1rem;
     border: 2px solid var(--default-grey);
     font-size: 1.3rem;
-
-    label {
-      display: flex;
-      align-items: center;
-    }
 
     span {
       color: initial;

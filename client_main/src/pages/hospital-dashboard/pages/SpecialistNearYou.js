@@ -1,5 +1,8 @@
 import HospitalDashboardContainer from "../components/HospitalDashboardContainer";
 import specialist from "../../../assets/images/avatar/avatar-6.jpg";
+import nearPeople from "../../../assets/images/near-people.png";
+import PageNavigator from "../components/PageNavigator";
+import SelectedSpecialist from "../components/SelectedSpecialist";
 
 const SpecialistNearYou = () => {
   return (
@@ -24,66 +27,29 @@ const SpecialistNearYou = () => {
             </form>
           </header>
 
-          <section className="pt-5">
-            {/* <img src="" alt="" /> */}
+          <section className="pt-5 d-flex justify-content-between">
+            <img
+              src={nearPeople}
+              alt="the globe with people"
+              className="globe"
+            />
 
             {/* specialist selected */}
-            <div>
-              <h3 className="fs-6 text-uppercase">Selected</h3>
-
-              <div className="d-flex flex-column gap-3">
-                <div className="d-flex align-items-center gap-3 shadow selected-specialist">
-                  <img src={specialist} alt="" />
-
-                  <div>
-                    <p>
-                      <strong>Name:</strong> Collins Allen
-                    </p>
-                    <p>
-                      <strong>Specialist:</strong> Optician
-                    </p>
-                    <p>
-                      <strong>Jobs Completed:</strong> (6)
-                    </p>
-                    <p>
-                      <strong>Ratings:</strong> 4.5 stars
-                    </p>
-                  </div>
-                </div>
-                <div className="d-flex align-items-center gap-3 shadow selected-specialist">
-                  <img src={specialist} alt="" />
-
-                  <div>
-                    <p>
-                      <strong>Name:</strong> Collins Allen
-                    </p>
-                    <p>
-                      <strong>Specialist:</strong> Optician
-                    </p>
-                    <p>
-                      <strong>Jobs Completed:</strong> (6)
-                    </p>
-                    <p>
-                      <strong>Ratings:</strong> 4.5 stars
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
+            <SelectedSpecialist />
           </section>
 
           <section className="pt-5">
             <h3 className="text-center fs-6 text-uppercase">Featured</h3>
 
-            <div className="d-flex align-items-center justify-content-between gap-3">
+            <div className="d-flex align-items-center justify-content-between gap-3 pt-2">
               <button>
                 <i class="bi bi-chevron-left"></i>
               </button>
 
-              <div className="d-flex align-items-center gap-3 specialists">
-                {/* specialist */}
+              {/* specialists */}
+              <div className="d-flex align-items-center gap-4 specialists">
                 <div className="specialist">
-                  <img src={specialist} alt="" />
+                  <img src={specialist} alt="specialist" />
 
                   <ul>
                     <li>
@@ -108,7 +74,7 @@ const SpecialistNearYou = () => {
                 </div>
 
                 <div className="specialist bg-white shadow">
-                  <img src={specialist} alt="" />
+                  <img src={specialist} alt="specialist" />
 
                   <ul>
                     <li>
@@ -133,7 +99,7 @@ const SpecialistNearYou = () => {
                 </div>
 
                 <div className="specialist">
-                  <img src={specialist} alt="" />
+                  <img src={specialist} alt="specialist" />
 
                   <ul>
                     <li>
@@ -164,6 +130,11 @@ const SpecialistNearYou = () => {
             </div>
           </section>
         </div>
+
+        <PageNavigator
+          nextPage="/hospital-dashboard"
+          previousPage="/jobs/find-specialist"
+        />
       </section>
     </HospitalDashboardContainer>
   );

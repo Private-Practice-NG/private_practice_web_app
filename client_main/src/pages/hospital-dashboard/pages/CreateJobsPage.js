@@ -22,7 +22,7 @@ const CreateJobsPage = () => {
                 className="form-control"></textarea>
             </div>
             <PageNavigator
-              nextPage="/jobs/find-specialist"
+              nextPage="/jobs/treatment-details"
               previousPage="/jobs"
             />
           </div>

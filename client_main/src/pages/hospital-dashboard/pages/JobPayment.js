@@ -1,22 +1,24 @@
-import Buttons from "../components/Buttons";
 import HospitalDashboardContainer from "../components/HospitalDashboardContainer";
+import PageNavigator from "../components/PageNavigator";
 
 const JobPayment = () => {
   return (
     <HospitalDashboardContainer>
       <section className="dashboard-payment-section">
-        <div className="dashboard-payment">
+        <div className="dashboard-payment custom_plain-wrapper">
           <header className="dashboard-payment-header">
             <h2 className="open-sans dashboard-payment-title">Payment</h2>
             <p>Tell us about your budget</p>
           </header>
 
           <div className="dashboard-payment-form-section">
-            <form className="dashboard-payment-form">
-              <label>
-                <span>&#8358;</span>
-                <input type="number" placeholder="Enter Amount" />
-              </label>
+            <form className="d-flex flex-row align-items-center gap-2 dashboard-form">
+              <span className="fs-4">&#8358;</span>
+              <input
+                type="number"
+                placeholder="Enter Amount"
+                className="dashboard-form-input form-control position-relative pl-5"
+              />
             </form>
             <span>Per session</span>
           </div>
@@ -31,7 +33,10 @@ const JobPayment = () => {
           </div>
         </div>
 
-        <Buttons iconB="bi-arrow-right" iconA="bi-arrow-left" />
+        <PageNavigator
+          previousPage="/jobs/treatment-details"
+          nextPage="/jobs/find-specialist"
+        />
       </section>
     </HospitalDashboardContainer>
   );

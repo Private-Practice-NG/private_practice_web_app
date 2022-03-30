@@ -53,7 +53,7 @@ const Emergency = () => {
           </section>
           <PageNavigator
             previousPage="/jobs"
-            nextPage="/jobs/job-posted-successfully"
+            nextPage="/jobs/emergency-payment"
           />
         </div>
       </section>

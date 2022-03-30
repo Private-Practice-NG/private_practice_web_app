@@ -67,7 +67,7 @@ const TreatmentDetails = () => {
           </section>
         </div>
       </section>
-      <PageNavigator previousPage="/jobs" nextPage="/jobs" />
+      <PageNavigator previousPage="/jobs/create-job" nextPage="/jobs/payment" />
     </HospitalDashboardContainer>
   );
 };

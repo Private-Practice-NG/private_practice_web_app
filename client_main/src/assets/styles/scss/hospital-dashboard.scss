@@ -118,3 +118,32 @@ button {
     font-size: 0.6rem;
   }
 }
+
+.selected-specialist {
+  font-size: 0.7rem;
+  background: #fff;
+  border-radius: 10px;
+  width: max-content;
+  padding: 0.5rem 0.75rem;
+
+  img {
+    width: 100px;
+    height: 75px;
+    object-fit: cover;
+  }
+
+  p:first-child {
+    font-size: 1rem;
+  }
+
+  .check {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: 2px solid #00ff2b;
+    display: grid;
+    place-items: center;
+    color: #00ff2b;
+    font-size: 1rem;
+  }
+}
