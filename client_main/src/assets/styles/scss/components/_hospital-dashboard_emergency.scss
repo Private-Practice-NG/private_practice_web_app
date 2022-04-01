@@ -11,19 +11,16 @@
       font-weight: 600;
       color: var(--default-dashboard-heading-clr);
     }
-
     textarea {
       height: 170px;
       background: #f0f0f0;
       resize: none;
     }
   }
-
   .specializations-section {
     display: flex;
     align-items: center;
     gap: 2rem;
-
     .specializations-array {
       padding-left: 0;
       display: flex;

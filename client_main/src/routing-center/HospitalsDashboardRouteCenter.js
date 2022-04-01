@@ -9,7 +9,8 @@ import Favourites from "../pages/hospital-dashboard/pages/Favourites";
 import Calender from "../pages/hospital-dashboard/pages/Calender";
 import HelpSupport from "../pages/hospital-dashboard/pages/HelpSupport";
 import SiteGuide from "../pages/hospital-dashboard/pages/SiteGuide";
-import CreateJobsPage from "../pages/hospital-dashboard/pages/CreateJobsPage";
+import FindASpecialist from "../pages/hospital-dashboard/pages/FindASpecialist";
+import SpecialistNearYou from "../pages/hospital-dashboard/pages/SpecialistNearYou";
 import JobOutbox from "../pages/hospital-dashboard/pages/JobOutbox";
 import Emergency from "../pages/hospital-dashboard/pages/Emergency";
 import JobPostSuccess from "../pages/hospital-dashboard/pages/JobPostSuccess";
@@ -18,8 +19,10 @@ import JobsOutboxCompletedJobs from "../pages/hospital-dashboard/components/Jobs
 import JobsOutboxClosedJobs from "../pages/hospital-dashboard/components/JobsOutboxClosedJobs";
 import JobsOutboxOpenJobs from "../pages/hospital-dashboard/components/JobsOutboxOpenJobs";
 import JobPreview from "../pages/hospital-dashboard/pages/JobPreview";
-// import TreatmentDetails from "../pages/hospital-dashboard/pages/TreatmentDetails";
 import TreatmentDetails from "../pages/hospital-dashboard/pages/TreatmentDetails";
+import CreateJobsPage from "../pages/hospital-dashboard/pages/CreateJobsPage";
+import JobPayment from "../pages/hospital-dashboard/pages/JobPayment";
+import EmergencyPayment from "../pages/hospital-dashboard/pages/EmergencyPayment";
 
 function HospitalsDashboardRouteCenter() {
   return (
@@ -28,6 +31,7 @@ function HospitalsDashboardRouteCenter() {
         <Route path="/hospital-dashboard" element={<HospitalDashboard />} />
         <Route path="/jobs" element={<JobsHome />} />
         <Route path="/jobs/emergency" element={<Emergency />} />
+        <Route path="/jobs/emergency-payment" element={<EmergencyPayment />} />
         <Route path="/jobs/job-outbox" element={<JobOutbox />}>
           <Route
             path="/jobs/job-outbox/closed-jobs"
@@ -52,7 +56,14 @@ function HospitalsDashboardRouteCenter() {
         <Route path="/calender" element={<Calender />} />
         <Route path="/helpsupport" element={<HelpSupport />} />
         <Route path="/site-guide" element={<SiteGuide />} />
-        <Route path="/jobs/create-a-job" element={<CreateJobsPage />} />
+        <Route path="/jobs/find-specialist" element={<FindASpecialist />} />
+        <Route path="/jobs/create-job" element={<CreateJobsPage />} />
+        <Route path="/jobs/treatment-details" element={<TreatmentDetails />} />
+        <Route path="/jobs/payment" element={<JobPayment />} />
+        <Route
+          path="/jobs/specialist-near-you"
+          element={<SpecialistNearYou />}
+        />
         <Route
           path="/jobs/job-posted-successfully"
           element={<JobPostSuccess />}

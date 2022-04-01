@@ -22,7 +22,7 @@ const Jobs = () => {
           <h2>Jobs Page</h2>
         </div>
         <div className="btn-container">
-          <Link className="btn shadow" to="/jobs/create-a-job">
+          <Link className="btn shadow" to="/jobs/create-job">
             <i className="bi bi-plus-circle"></i>
             <span>Create Job</span>
           </Link>

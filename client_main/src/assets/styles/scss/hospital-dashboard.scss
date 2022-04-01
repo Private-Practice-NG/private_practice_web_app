@@ -10,6 +10,7 @@
 @use "./components/hospital-dashboard_jobs";
 @use "./components/hospital-dashboard_jobs-outbox";
 @use "./components/hospital-dashboard_create-jobs";
+@use "./components/hospital-dashboard_find-a-specialist";
 @use "./components/hospital-dashboard_page-navigator";
 @use "./components/hospital-dashboard_emergency";
 @use "./components/hospital-dashboard_job-post-success";
@@ -19,7 +20,7 @@
 @use "./components/hospital-dashboard_job-preview";
 @use "./components/hospital-dashboard_profile-listing";
 @use "./components/hospital-dashboard_specialization-item";
-
+@use "./components/hospital-dashboard_specialist-near-you";
 // @use "./components/hospital-dashboard_treatment-details";
 
 /* Chrome, Safari, Edge, Opera */
@@ -57,6 +58,26 @@ button {
   color: var(--default-grey);
   display: grid;
   grid-template-columns: 275px 1fr;
+
+  textarea {
+    height: 170px;
+    background: #f0f0f0;
+    resize: none;
+  }
+
+  h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--default-dashboard-heading-clr);
+  }
+
+  h4 {
+    font-size: 0.85rem;
+  }
+
+  ul {
+    padding-left: 0;
+  }
 }
 
 .active {
@@ -68,7 +89,6 @@ button {
 }
 
 // reusable plain background for the whole jobs section
-
 .custom_plain-wrapper {
   width: 70%;
   margin: 40px auto;
@@ -77,4 +97,55 @@ button {
   padding: 30px;
   color: var(--default-dashboard-text-clr);
   background-color: white;
+}
+
+// resusable
+.specialists {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 0;
+}
+.specialist {
+  border-radius: 10px;
+  background: #a3d8f9;
+  padding: 0.2rem 0.5rem 0.5rem;
+
+  h4 {
+    font-size: 0.75rem;
+    font-weight: 600;
+    margin-bottom: 0;
+  }
+
+  p {
+    font-size: 0.6rem;
+  }
+}
+
+.selected-specialist {
+  font-size: 0.7rem;
+  background: #fff;
+  border-radius: 10px;
+  width: max-content;
+  padding: 0.5rem 0.75rem;
+
+  img {
+    width: 100px;
+    height: 75px;
+    object-fit: cover;
+  }
+
+  p:first-child {
+    font-size: 1rem;
+  }
+
+  .check {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: 2px solid #00ff2b;
+    display: grid;
+    place-items: center;
+    color: #00ff2b;
+    font-size: 1rem;
+  }
 }
