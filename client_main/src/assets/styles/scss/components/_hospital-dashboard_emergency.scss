@@ -19,31 +19,16 @@
     }
   }
 
-  .specalists-section {
+  .specializations-section {
     display: flex;
     align-items: center;
     gap: 2rem;
 
-    .specialists {
+    .specializations-array {
       padding-left: 0;
       display: flex;
       gap: 1rem;
       margin-bottom: 0;
-    }
-    .specialist {
-      border-radius: 10px;
-      background: #a3d8f9;
-      padding: 0.2rem 0.5rem 0.5rem;
-
-      h4 {
-        font-size: 0.75rem;
-        font-weight: 600;
-        margin-bottom: 0;
-      }
-
-      p {
-        font-size: 0.6rem;
-      }
     }
   }
 }

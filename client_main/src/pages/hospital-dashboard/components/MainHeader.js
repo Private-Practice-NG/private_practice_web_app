@@ -28,7 +28,7 @@ const MainHeader = () => {
                 padding: "5px",
               }}
               className="position-absolute top-0 rounded-circle bg-danger">
-              <span class="visually-hidden">unread messages</span>
+              <span className="visually-hidden">unread messages</span>
             </span>
           </i>
         </button>
@@ -40,7 +40,7 @@ const MainHeader = () => {
                 padding: "5px",
               }}
               className="position-absolute top-0 rounded-circle bg-danger">
-              <span class="visually-hidden">unread messages</span>
+              <span className="visually-hidden">unread messages</span>
             </span>
           </i>
         </button>

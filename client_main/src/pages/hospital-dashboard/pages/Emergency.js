@@ -1,7 +1,8 @@
-import eyeIcon from "../../../assets/images/icons/eye_d.png";
-import heartIcon from "../../../assets/images/icons/heart_d.png";
+// import eyeIcon from "../../../assets/images/icons/eye_d.png";
+// import heartIcon from "../../../assets/images/icons/heart_d.png";
 import HospitalDashboardContainer from "../components/HospitalDashboardContainer";
 import PageNavigator from "../components/PageNavigator";
+import SpecializationItem from "../components/SpecializationItem";
 
 const Emergency = () => {
   return (
@@ -29,18 +30,11 @@ const Emergency = () => {
               </form>
             </div>
 
-            <div className="specalists-section mt-4">
-              <ul className="specialists">
-                <li className="specialist">
-                  <img src={eyeIcon} alt="" width={22} />
-                  <h4>Eye</h4>
-                  <p>Specialist</p>
-                </li>
-                <li className="specialist">
-                  <img src={heartIcon} alt="" width={22} />
-                  <h4>Heart</h4>
-                  <p>Specialist</p>
-                </li>
+            <div className="specializations-section mt-4">
+              <ul className="specializations-array">
+                <SpecializationItem />
+                <SpecializationItem />
+                <SpecializationItem />
               </ul>
             </div>
 

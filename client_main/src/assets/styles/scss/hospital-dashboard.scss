@@ -17,6 +17,9 @@
 @use "./components/hospital-dashboard_favourites";
 @use "./components/hospital-dashboard_treatment-details";
 @use "./components/hospital-dashboard_job-preview";
+@use "./components/hospital-dashboard_profile-listing";
+@use "./components/hospital-dashboard_specialization-item";
+
 // @use "./components/hospital-dashboard_treatment-details";
 
 /* Chrome, Safari, Edge, Opera */
@@ -69,7 +72,7 @@ button {
 .custom_plain-wrapper {
   width: 70%;
   margin: 40px auto;
-  min-height: 300px;
+  min-height: 50px;
   border-radius: 15px;
   padding: 30px;
   color: var(--default-dashboard-text-clr);
