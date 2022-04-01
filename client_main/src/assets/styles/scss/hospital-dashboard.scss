@@ -19,6 +19,8 @@
 @use "./components/hospital-dashboard_favourites";
 @use "./components/hospital-dashboard_treatment-details";
 @use "./components/hospital-dashboard_job-preview";
+@use "./components/hospital-dashboard_profile-listing";
+@use "./components/hospital-dashboard_specialization-item";
 @use "./components/hospital-dashboard_specialist-near-you";
 // @use "./components/hospital-dashboard_treatment-details";
 
@@ -65,7 +67,7 @@ button {
   }
 
   h3 {
-    font-size: 1rem;
+    // font-size: 1rem;
     font-weight: 600;
     color: var(--default-dashboard-heading-clr);
   }
@@ -97,7 +99,7 @@ button {
 .custom_plain-wrapper {
   width: 70%;
   margin: 40px auto;
-  min-height: 300px;
+  min-height: 50px;
   border-radius: 15px;
   padding: 30px;
   color: var(--default-dashboard-text-clr);

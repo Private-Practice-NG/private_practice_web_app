@@ -6,5 +6,26 @@
     center/cover;
   .custom_plain-wrapper {
     background-color: rgba(255, 255, 255, 0.95);
+    h3 {
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--default-dashboard-heading-clr);
+    }
+    textarea {
+      height: 170px;
+      background: #f0f0f0;
+      resize: none;
+    }
+  }
+  .specializations-section {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    .specializations-array {
+      padding-left: 0;
+      display: flex;
+      gap: 1rem;
+      margin-bottom: 0;
+    }
   }
 }

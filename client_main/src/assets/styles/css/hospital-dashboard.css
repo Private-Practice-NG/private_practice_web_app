@@ -72,40 +72,94 @@
   font-family: "Open Sans", sans-serif;
 }
 
+.hospitals-dashboard-home-wrapper {
+  padding: 25px 0 25px 30px;
+  color: var(--default-dashboard-text-clr);
+}
 .hospitals-dashboard-home-wrapper .main-section {
   width: 70%;
 }
 .hospitals-dashboard-home-wrapper .main-section .top-rated-array-item {
   width: 30%;
 }
-.hospitals-dashboard-home-wrapper .main-section .avatar-area {
-  width: 35%;
+.hospitals-dashboard-home-wrapper .main-section .top-rated-array-item .avatar-area {
+  width: 32%;
   height: 120px;
   background-color: var(--default-blue-deep);
   border-radius: 20px;
   box-shadow: 0px 5px 15px -2px;
   z-index: 10;
 }
-.hospitals-dashboard-home-wrapper .main-section .avatar-area .specialist-avatar {
+.hospitals-dashboard-home-wrapper .main-section .top-rated-array-item .avatar-area .specialist-avatar {
   width: 50px;
   height: 50px;
   box-shadow: -3px 5px 11px -1px var(--default-grey);
 }
-.hospitals-dashboard-home-wrapper .main-section .details-area {
+.hospitals-dashboard-home-wrapper .main-section .top-rated-array-item .details-area {
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
   height: 105px;
   background-color: white;
-  width: 65%;
+  width: 68%;
   transform: translateX(-5px);
   box-shadow: 3px 5px 24px -3px;
   z-index: 5;
 }
-.hospitals-dashboard-home-wrapper .main-section .details-area p {
+.hospitals-dashboard-home-wrapper .main-section .top-rated-array-item .details-area p {
   font-size: 14px;
 }
-.hospitals-dashboard-home-wrapper .main-section .details-area span {
+.hospitals-dashboard-home-wrapper .main-section .top-rated-array-item .details-area span {
   font-size: 12px;
+}
+.hospitals-dashboard-home-wrapper .main-section .section-header {
+  border-top-left-radius: 15px;
+}
+.hospitals-dashboard-home-wrapper aside {
+  width: 30%;
+  min-height: 200px;
+}
+.hospitals-dashboard-home-wrapper aside .specialization-array {
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+}
+.hospitals-dashboard-home-wrapper aside .online-status-wrapper .section-header {
+  border-top-left-radius: 60px;
+  border-bottom-left-radius: 60px;
+  z-index: 10;
+}
+.hospitals-dashboard-home-wrapper aside .online-status-wrapper .section-header img {
+  padding: 5px;
+  width: 50px;
+}
+.hospitals-dashboard-home-wrapper aside .online-status-wrapper .section-header h5 {
+  color: var(--default-blue-deep);
+}
+.hospitals-dashboard-home-wrapper aside .online-status-wrapper .section-main {
+  z-index: 1;
+  border-bottom-left-radius: 30px;
+}
+.hospitals-dashboard-home-wrapper aside .online-status-wrapper .section-main .figure-wrapper {
+  width: 50px;
+  height: 50px;
+  font-weight: 700;
+  text-align: center;
+  padding: 7px;
+}
+.hospitals-dashboard-home-wrapper aside .online-status-wrapper .section-main .online {
+  background-color: var(--default-blue-deep);
+}
+.hospitals-dashboard-home-wrapper aside .online-status-wrapper .section-main .online:after {
+  content: "";
+  background-color: grey;
+  width: 50px;
+  height: 2px;
+  display: inline-block;
+  position: absolute;
+  top: 25px;
+  left: 64px;
+}
+.hospitals-dashboard-home-wrapper aside .online-status-wrapper .section-main .offline {
+  background-color: #805858;
 }
 
 .dashboard-header {
@@ -481,6 +535,27 @@
 .emergency-section .custom_plain-wrapper {
   background-color: rgba(255, 255, 255, 0.95);
 }
+.emergency-section .custom_plain-wrapper h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--default-dashboard-heading-clr);
+}
+.emergency-section .custom_plain-wrapper textarea {
+  height: 170px;
+  background: #f0f0f0;
+  resize: none;
+}
+.emergency-section .specializations-section {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.emergency-section .specializations-section .specializations-array {
+  padding-left: 0;
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 0;
+}
 
 .emergency-payment-section {
   color: var(--default-dashboard-text-clr);
@@ -548,37 +623,11 @@
 
 .favourites {
   font-size: 0.85rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   padding-top: 4rem;
 }
 .favourites .custom_plain-wrapper {
   width: 80%;
   margin-top: 1rem;
-}
-.favourites h3 {
-  margin-bottom: 0;
-}
-.favourites ul {
-  padding-top: 5rem;
-}
-.favourites img {
-  border-radius: 50%;
-  width: 42px;
-}
-.favourites .square {
-  width: 10px;
-  height: 10px;
-  background: #85ff96;
-}
-.favourites .btn {
-  background: var(--default-blue-deep);
-  color: #fff;
-}
-.favourites .btn:nth-child(1) {
-  background: #41eafe;
 }
 
 .treatment-category h2 {
@@ -602,6 +651,46 @@
   background-color: var(--default-dashboard-text-clr);
   color: white;
   padding: 10px 0;
+}
+
+ul {
+  padding-left: 0;
+}
+ul .profile-listing {
+  padding-left: 0;
+  padding-top: 5rem;
+}
+ul .profile-listing img {
+  width: 42px;
+  box-shadow: 0px 5px 11px -1px var(--default-grey);
+}
+ul .profile-listing .square {
+  width: 10px;
+  height: 10px;
+  background: #85ff96;
+}
+ul .profile-listing .btn {
+  font-size: 12px;
+  background: var(--default-blue-deep);
+  color: #fff;
+}
+ul .profile-listing .btn:nth-child(1) {
+  background: #41eafe;
+}
+
+.specialization-item {
+  border-radius: 10px;
+  background: #a3d8f9;
+  padding: 0.2rem 0.5rem 0.5rem;
+  list-style-type: none;
+}
+.specialization-item h4 {
+  font-size: 0.75rem;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+.specialization-item p {
+  font-size: 0.6rem;
 }
 
 .specialist-near-you .custom_plain-wrapper {
@@ -674,7 +763,6 @@ button {
   resize: none;
 }
 .dashboard-container h3 {
-  font-size: 1rem;
   font-weight: 600;
   color: var(--default-dashboard-heading-clr);
 }
@@ -701,7 +789,7 @@ button {
 .custom_plain-wrapper {
   width: 70%;
   margin: 40px auto;
-  min-height: 300px;
+  min-height: 50px;
   border-radius: 15px;
   padding: 30px;
   color: var(--default-dashboard-text-clr);

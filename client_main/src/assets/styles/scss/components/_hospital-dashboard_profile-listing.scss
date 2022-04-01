@@ -1,0 +1,24 @@
+ul {
+  padding-left: 0;
+  .profile-listing {
+    padding-left: 0;
+    padding-top: 5rem;
+    img {
+      width: 42px;
+      box-shadow: 0px 5px 11px -1px var(--default-grey);
+    }
+    .square {
+      width: 10px;
+      height: 10px;
+      background: #85ff96;
+    }
+    .btn {
+      font-size: 12px;
+      background: var(--default-blue-deep);
+      color: #fff;
+      &:nth-child(1) {
+        background: #41eafe;
+      }
+    }
+  }
+}
