@@ -65,24 +65,25 @@
         .figure-wrapper {
           width: 50px;
           height: 50px;
+          font-weight: 700;
           text-align: center;
-          padding: 20px;
-          &:first-child {
-            background-color: var(--default-blue-deep);
-          }
-          &:first-child:after {
-            content: "";
-            background-color: grey;
-            width: 50px;
-            height: 2px;
-            display: inline-block;
-            position: absolute;
-            top: 25px;
-            left: 64px;
-          }
-          &:last-child {
-            background-color: rgb(128, 88, 88);
-          }
+          padding: 7px;
+        }
+        .online {
+          background-color: var(--default-blue-deep);
+        }
+        .online:after {
+          content: "";
+          background-color: grey;
+          width: 50px;
+          height: 2px;
+          display: inline-block;
+          position: absolute;
+          top: 25px;
+          left: 64px;
+        }
+        .offline {
+          background-color: rgb(128, 88, 88);
         }
       }
     }

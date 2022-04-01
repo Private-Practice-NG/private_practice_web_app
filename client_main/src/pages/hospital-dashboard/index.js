@@ -106,22 +106,22 @@ const HospitalDashboard = () => {
               <h5 className="m-0 fw-bold">Specialists (12)</h5>
             </div>
             <div className="section-main shadow px-4 py-4 position-relative justify-content-between text-white ms-5 bg-white d-flex">
-              <div className="statistics-wrapper d-flex flex-row">
-                <div className="figure-wrapper rounded-circle position-relative">
+              <div className="statistics-wrapper d-flex flex-column">
+                <div className="figure-wrapper rounded-circle position-relative online">
                   <span className="open-sans fs-3">5</span>
                 </div>
                 <p
-                  className="text-center"
+                  className="text-center mt-2"
                   style={{ color: "var(--default-grey)" }}>
                   online
                 </p>
               </div>
-              <div className="statistics-wrapper d-flex flex-row">
-                <div className="figure-wrapper rounded-circle">
+              <div className="statistics-wrapper d-flex flex-column">
+                <div className="figure-wrapper rounded-circle offline">
                   <span className="open-sans fs-3">7</span>
                 </div>
                 <p
-                  className="text-center"
+                  className="text-center mt-2"
                   style={{ color: "var(--default-grey)" }}>
                   offline
                 </p>
