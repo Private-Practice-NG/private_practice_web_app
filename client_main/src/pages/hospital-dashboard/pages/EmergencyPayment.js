@@ -1,15 +1,16 @@
 import HospitalDashboardContainer from "../components/HospitalDashboardContainer";
 import PageNavigator from "../components/PageNavigator";
 import SelectedSpecialist from "../components/SelectedSpecialist";
+import SessionAppointment from "../components/SessionAppointment";
 
 const EmergencyPayment = () => {
   return (
     <HospitalDashboardContainer>
-      <section>
-        <div className="d-flex align-items-center justify-content-center gap-3 mx-auto">
-          <section className="bg-white p-4">
+      <section className="emergency-payment-section">
+        <div className="d-flex flex-wrap align-items-center justify-content-center gap-4 mx-auto mt-5">
+          <section className="bg-white p-5">
             <header className="dashboard-payment-header">
-              <h2 className="open-sans fw-bolder">Payment</h2>
+              <h2 className="montserrat fw-bolder">Payment</h2>
               <p className="text-uppercase">Tell us about your budget</p>
             </header>
 
@@ -32,28 +33,21 @@ const EmergencyPayment = () => {
             </div>
           </section>
 
-          <section className="bg-white p-4">
-            <div className="pt-3 d-flex align-items-center gap-5">
-              <div>
-                <label className="fs-6 fw-bold">Date of appointment</label>
-                <input type="date" className="form-control" />
-              </div>
-              <div>
-                <label className="fs-6 fw-bold">Time of appointment</label>
-                <input type="time" className="form-control" />
-              </div>
-            </div>
-
-            <form className="mt-3 d-flex flex-row dashboard-form">
+          {/* session */}
+          <section className="bg-white p-5">
+            <SessionAppointment />
+            <form className="mt-4 d-flex flex-row dashboard-form">
               <input
                 type="search"
                 placeholder="Search Specialist"
-                className="dashboard-form-input form-control"
+                className="dashboard-form-input flex-fill form-control"
               />
               <i className="bi bi-search"></i>
             </form>
 
-            <SelectedSpecialist />
+            <div className="mt-5">
+              <SelectedSpecialist />
+            </div>
           </section>
         </div>
 
