@@ -22,7 +22,8 @@
 @use "./components/hospital-dashboard_profile-listing";
 @use "./components/hospital-dashboard_specialization-item";
 @use "./components/hospital-dashboard_specialist-near-you";
-// @use "./components/hospital-dashboard_treatment-details";
+@use "./components/hospital-dashboard_hospital-profile";
+@use "./components/hospital-dashboard-wallet";
 
 /* Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,

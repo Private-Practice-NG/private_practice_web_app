@@ -721,6 +721,91 @@ ul .profile-listing .btn:nth-child(1) {
   margin-bottom: 0;
 }
 
+.hospital-profile .custom_plain-wrapper {
+  width: 75%;
+  padding: 2.5rem;
+}
+.hospital-profile h1,
+.hospital-profile h2,
+.hospital-profile h3,
+.hospital-profile h4,
+.hospital-profile h5 {
+  margin-bottom: 0;
+}
+.hospital-profile p,
+.hospital-profile span {
+  font-size: 0.85rem;
+}
+.hospital-profile .subtitle {
+  font-size: 0.65rem;
+}
+.hospital-profile .hospital-rating,
+.hospital-profile .second-column {
+  background-color: #7e9ab0;
+  border-radius: 40px;
+  color: #fff;
+}
+.hospital-profile .hospital-rating i,
+.hospital-profile .second-column i {
+  color: #fdda62;
+}
+.hospital-profile .comment h3 {
+  font-size: 0.85rem;
+  color: currentColor;
+}
+.hospital-profile .comment p {
+  font-size: 0.65rem;
+}
+.hospital-profile .comment i {
+  font-size: 10px;
+}
+.hospital-profile .job-posted {
+  border: 10px solid #85ff96;
+  border-radius: 50%;
+  padding: 1.75rem;
+}
+.hospital-profile .active-post {
+  background-color: #85ff96;
+  border-radius: 50%;
+  height: 125px;
+  width: 125px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  outline: 7px solid #85ff96;
+  outline-offset: 7px;
+}
+
+.wallet-page .custom_plain-wrapper {
+  padding: 0;
+  margin-block: 0;
+  width: 75%;
+}
+.wallet-page .active-card {
+  outline: 3px solid #2387d4;
+}
+.wallet-page .banking-details {
+  background-color: #e8e8e8;
+}
+.wallet-page .transaction-type {
+  border: 4px solid red;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: grid;
+  place-items: center;
+  color: currentColor;
+}
+.wallet-page .withdraw {
+  border-color: #20c120;
+  color: #20c120;
+}
+.wallet-page .funded {
+  border-color: #2387d4;
+  color: #2387d4;
+}
+
 /* Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
