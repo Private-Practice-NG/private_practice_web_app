@@ -789,7 +789,7 @@ ul .profile-listing .btn:nth-child(1) {
   background-color: #e8e8e8;
 }
 .wallet-page .transaction-type {
-  border: 4px solid red;
+  border: 3px solid red;
   border-radius: 50%;
   width: 30px;
   height: 30px;

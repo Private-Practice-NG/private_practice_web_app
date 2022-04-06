@@ -46,17 +46,22 @@ const CreateJobsPage = () => {
               <ul className="d-flex align-items-center gap-3">
                 <li className="specialist">
                   <img src={eyeIcon} alt="" width={22} />
-                  <h4>Optician</h4>
+                  <h4>Eye</h4>
                   <p>Specialist</p>
                 </li>
                 <li className="specialist">
                   <img src={heartIcon} alt="" width={22} />
-                  <h4>Cardiologist</h4>
+                  <h4>Heart</h4>
                   <p>Specialist</p>
                 </li>
                 <li className="specialist">
                   <img src={heartIcon} alt="" width={22} />
-                  <h4>Nephrologist</h4>
+                  <h4>Heart</h4>
+                  <p>Specialist</p>
+                </li>
+                <li className="specialist">
+                  <img src={eyeIcon} alt="" width={22} />
+                  <h4>Eye</h4>
                   <p>Specialist</p>
                 </li>
               </ul>

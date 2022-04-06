@@ -39,7 +39,7 @@ const Wallet = () => {
             <div className="mt-4">
               <h3 className="fs-6">Debit Cards</h3>
 
-              <div className="d-flex flex-column gap-3">
+              <div className="d-flex flex-column gap-2">
                 <div
                   className="py-4 px-4 d-flex align-items-center gap-3"
                   style={{ borderRadius: "20px", backgroundColor: "#c3c5c7" }}>
