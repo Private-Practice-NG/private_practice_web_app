@@ -8,7 +8,9 @@ const SpecialistNearYou = () => {
   return (
     <HospitalDashboardContainer>
       <section className="specialist-near-you">
-        <div className="custom_plain-wrapper mt-5 shadow">
+        <div
+          className="custom_plain-wrapper mt-5 shadow"
+          style={{ width: "92%" }}>
           <header className="d-flex align-items-center justify-content-between">
             <div>
               <h2 className="montserrat fw-bolder fs-3 mb-0">

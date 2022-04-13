@@ -8,13 +8,13 @@ const TreatmentDetails = () => {
         <div className="custom_plain-wrapper mt-5 shadow">
           <section className="d-flex align-items-center gap-5 pb-4">
             <div className="flex-fill">
-              <label className="fs-6 fw-bold">Treatment Category</label>
+              <label className="fs-6 fw-bold mb-2">Treatment Category</label>
               <select className="form-select">
                 <option>Click to select category</option>
               </select>
             </div>
             <div className="flex-fill">
-              <label className="fs-6 fw-bold">
+              <label className="fs-6 fw-bold mb-2">
                 How many sessions is needed?
               </label>
               <select className="form-select">
@@ -37,11 +37,11 @@ const TreatmentDetails = () => {
 
             <div className="pt-3 d-flex align-items-center gap-5">
               <div>
-                <label className="fs-6 fw-bold">Date of appointment</label>
+                <label className="fs-6 fw-bold mb-2">Date of appointment</label>
                 <input type="date" className="form-control" />
               </div>
               <div>
-                <label className="fs-6 fw-bold">Time of appointment</label>
+                <label className="fs-6 fw-bold mb-2">Time of appointment</label>
                 <input type="time" className="form-control" />
               </div>
             </div>
@@ -56,11 +56,11 @@ const TreatmentDetails = () => {
 
             <div className="pt-3 d-flex align-items-center gap-5">
               <div>
-                <label className="fs-6 fw-bold">Date of appointment</label>
+                <label className="fs-6 fw-bold mb-2">Date of appointment</label>
                 <input type="date" className="form-control" />
               </div>
               <div>
-                <label className="fs-6 fw-bold">Time of appointment</label>
+                <label className="fs-6 fw-bold mb-2">Time of appointment</label>
                 <input type="time" className="form-control" />
               </div>
             </div>

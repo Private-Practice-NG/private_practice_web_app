@@ -11,8 +11,8 @@ const CreateJobsPage = () => {
           <h2 className="montserrat">Lets Create a job!</h2>
         </div>
 
-        <section className="d-flex gap-5">
-          <div className="d-flex align-items-center justify-content-center flex-column w-50 px-5 py-5">
+        <section className="d-flex justify-content-between">
+          <div className="d-flex align-items-center justify-content-center flex-column w-75 px-5 py-5 mx-auto">
             <div className="w-100">
               <h3 className="montserrat">
                 Enter a short title description of the job
@@ -28,7 +28,7 @@ const CreateJobsPage = () => {
           </div>
 
           <div className="specialist-section">
-            <p className="text-end fst-italic">drafts (6)</p>
+            <p className="text-end fst-italic mb-3">drafts (6)</p>
 
             <h3>What specialist do you need?</h3>
 

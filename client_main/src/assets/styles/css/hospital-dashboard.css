@@ -428,6 +428,12 @@
   padding: 2rem;
   width: 350px;
 }
+.create-job .specialist-section h3 {
+  font-size: 20px;
+}
+.create-job .navigator-wrapper {
+  width: 100%;
+}
 
 .find-specialist-header h2 {
   font-weight: bold !important;
