@@ -23,6 +23,7 @@ import TreatmentDetails from "../pages/hospital-dashboard/pages/TreatmentDetails
 import CreateJobsPage from "../pages/hospital-dashboard/pages/CreateJobsPage";
 import JobPayment from "../pages/hospital-dashboard/pages/JobPayment";
 import EmergencyPayment from "../pages/hospital-dashboard/pages/EmergencyPayment";
+import HospitalProfile from "../pages/hospital-dashboard/pages/HospitalProfile";
 
 function HospitalsDashboardRouteCenter() {
   return (
@@ -70,6 +71,7 @@ function HospitalsDashboardRouteCenter() {
         />
         <Route path="/jobs/job-preview" element={<JobPreview />} />
         <Route path="/jobs/treatment-details" element={<TreatmentDetails />} />
+        <Route path="/maitamageneralhospital" element={<HospitalProfile />} />
       </Routes>
     </ScrollHandler>
   );

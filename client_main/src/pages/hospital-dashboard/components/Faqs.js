@@ -3,7 +3,9 @@ import Accordion from "react-bootstrap/Accordion";
 const Faqs = () => {
   return (
     <>
-      <h3 className="fs-4 fw-bolder">Frequently Asked Question</h3>
+      <h3 className="fs-5 text-center text-uppercase fw-bolder">
+        Frequently Asked Question
+      </h3>
 
       <div className="faqs pt-3">
         <Accordion defaultActiveKey="0" flush>

@@ -18,6 +18,7 @@
     gap: 0.75rem;
     padding: 0.5rem 0.75rem;
     border-radius: 10px;
+    transform: all 0.3s ease-in-out;
 
     img {
       width: 90px;
@@ -28,16 +29,5 @@
     ul {
       margin-bottom: 0;
     }
-  }
-
-  .check {
-    width: 25px;
-    height: 25px;
-    border-radius: 50%;
-    border: 2px solid #00ff2b;
-    display: grid;
-    place-items: center;
-    color: #00ff2b;
-    font-size: 1rem;
   }
 }

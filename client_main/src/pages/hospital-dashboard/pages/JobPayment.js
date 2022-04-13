@@ -5,9 +5,9 @@ const JobPayment = () => {
   return (
     <HospitalDashboardContainer>
       <section className="dashboard-payment-section">
-        <div className="dashboard-payment custom_plain-wrapper">
+        <div className="dashboard-payment custom_plain-wrapper shadow">
           <header className="dashboard-payment-header">
-            <h2 className="open-sans dashboard-payment-title">Payment</h2>
+            <h2 className="montserrat dashboard-payment-title">Payment</h2>
             <p>Tell us about your budget</p>
           </header>
 

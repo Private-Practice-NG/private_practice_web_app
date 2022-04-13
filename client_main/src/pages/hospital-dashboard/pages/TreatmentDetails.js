@@ -1,5 +1,6 @@
 import HospitalDashboardContainer from "../components/HospitalDashboardContainer";
 import PageNavigator from "../components/PageNavigator";
+import SessionAppointment from "../components/SessionAppointment";
 
 const TreatmentDetails = () => {
   return (
@@ -35,16 +36,7 @@ const TreatmentDetails = () => {
               First Session
             </h2>
 
-            <div className="pt-3 d-flex align-items-center gap-5">
-              <div>
-                <label className="fs-6 fw-bold mb-2">Date of appointment</label>
-                <input type="date" className="form-control" />
-              </div>
-              <div>
-                <label className="fs-6 fw-bold mb-2">Time of appointment</label>
-                <input type="time" className="form-control" />
-              </div>
-            </div>
+            <SessionAppointment />
           </section>
 
           <section className="py-4 border-top">
@@ -54,16 +46,7 @@ const TreatmentDetails = () => {
               Second Session
             </h2>
 
-            <div className="pt-3 d-flex align-items-center gap-5">
-              <div>
-                <label className="fs-6 fw-bold mb-2">Date of appointment</label>
-                <input type="date" className="form-control" />
-              </div>
-              <div>
-                <label className="fs-6 fw-bold mb-2">Time of appointment</label>
-                <input type="time" className="form-control" />
-              </div>
-            </div>
+            <SessionAppointment />
           </section>
         </div>
       </section>

@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import userImage from "../../../assets/images/avatar/avatar-2.png";
 
 const MainHeader = () => {
@@ -16,7 +17,7 @@ const MainHeader = () => {
         <div className="dashboard-user d-flex">
           <img src={userImage} alt="user" />
           <div className="user d-flex align-items-center">
-            <p>Maitama General Hospital</p>
+            <Link to="/maitamageneralhospital">Maitama General Hospital</Link>
             <i className="bi bi-chevron-down"></i>
           </div>
         </div>

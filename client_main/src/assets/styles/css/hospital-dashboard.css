@@ -293,7 +293,7 @@
 
 .dashboard-payment-payment {
   padding-top: 2rem;
-  border-top: 1px solid var(--default-grey);
+  border-top: 1px solid currentColor;
 }
 .dashboard-payment-payment h3 {
   font-size: 1.6rem;
@@ -563,6 +563,13 @@
   margin-bottom: 0;
 }
 
+.emergency-payment-section {
+  color: var(--default-dashboard-text-clr);
+}
+.emergency-payment-section section {
+  border-radius: 15px;
+}
+
 .job-post-success .check-icon-wrapper {
   padding: 0 15px;
 }
@@ -599,7 +606,7 @@
   background: linear-gradient(226.38deg, #23bcd4 14.92%, #41eafe 89.46%);
 }
 .help-support-section header p {
-  width: 600px;
+  width: 650px;
 }
 .help-support-section .dashboard-form-input {
   width: 500px;
@@ -607,11 +614,8 @@
   border-radius: 50px;
 }
 .help-support-section .search-btn {
-  top: 32px;
-  right: 10px;
   padding: 0.4rem 3rem;
   border-radius: 50px;
-  background: #5d5d5d;
 }
 .help-support-section img {
   max-width: 50px;
@@ -712,6 +716,7 @@ ul .profile-listing .btn:nth-child(1) {
   gap: 0.75rem;
   padding: 0.5rem 0.75rem;
   border-radius: 10px;
+  transform: all 0.3s ease-in-out;
 }
 .specialist-near-you .specialist img {
   width: 90px;
@@ -721,15 +726,90 @@ ul .profile-listing .btn:nth-child(1) {
 .specialist-near-you .specialist ul {
   margin-bottom: 0;
 }
-.specialist-near-you .check {
-  width: 25px;
-  height: 25px;
+
+.hospital-profile .custom_plain-wrapper {
+  width: 75%;
+  padding: 2.5rem;
+}
+.hospital-profile h1,
+.hospital-profile h2,
+.hospital-profile h3,
+.hospital-profile h4,
+.hospital-profile h5 {
+  margin-bottom: 0;
+}
+.hospital-profile p,
+.hospital-profile span {
+  font-size: 0.85rem;
+}
+.hospital-profile .subtitle {
+  font-size: 0.65rem;
+}
+.hospital-profile .hospital-rating,
+.hospital-profile .second-column {
+  background-color: #7e9ab0;
+  border-radius: 40px;
+  color: #fff;
+}
+.hospital-profile .hospital-rating i,
+.hospital-profile .second-column i {
+  color: #fdda62;
+}
+.hospital-profile .comment h3 {
+  font-size: 0.85rem;
+  color: currentColor;
+}
+.hospital-profile .comment p {
+  font-size: 0.65rem;
+}
+.hospital-profile .comment i {
+  font-size: 10px;
+}
+.hospital-profile .job-posted {
+  border: 10px solid #85ff96;
   border-radius: 50%;
-  border: 2px solid #00ff2b;
+  padding: 1.75rem;
+}
+.hospital-profile .active-post {
+  background-color: #85ff96;
+  border-radius: 50%;
+  height: 125px;
+  width: 125px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  outline: 7px solid #85ff96;
+  outline-offset: 7px;
+}
+
+.wallet-page .custom_plain-wrapper {
+  padding: 0;
+  margin-block: 0;
+  width: 75%;
+}
+.wallet-page .active-card {
+  outline: 3px solid #2387d4;
+}
+.wallet-page .banking-details {
+  background-color: #e8e8e8;
+}
+.wallet-page .transaction-type {
+  border: 3px solid red;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
   display: grid;
   place-items: center;
-  color: #00ff2b;
-  font-size: 1rem;
+  color: currentColor;
+}
+.wallet-page .withdraw {
+  border-color: #20c120;
+  color: #20c120;
+}
+.wallet-page .funded {
+  border-color: #2387d4;
+  color: #2387d4;
 }
 
 /* Chrome, Safari, Edge, Opera */
@@ -782,6 +862,11 @@ button {
 }
 .dashboard-container ul {
   padding-left: 0;
+}
+.dashboard-container .active-specialist {
+  background-color: white;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  transform: scale(1.1);
 }
 
 .active {

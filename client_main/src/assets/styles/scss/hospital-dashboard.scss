@@ -13,6 +13,7 @@
 @use "./components/hospital-dashboard_find-a-specialist";
 @use "./components/hospital-dashboard_page-navigator";
 @use "./components/hospital-dashboard_emergency";
+@use "./components/hospital-dashboard_emergency-payment";
 @use "./components/hospital-dashboard_job-post-success";
 @use "./components/hospital-dashboard_helpsupport";
 @use "./components/hospital-dashboard_favourites";
@@ -21,7 +22,8 @@
 @use "./components/hospital-dashboard_profile-listing";
 @use "./components/hospital-dashboard_specialization-item";
 @use "./components/hospital-dashboard_specialist-near-you";
-// @use "./components/hospital-dashboard_treatment-details";
+@use "./components/hospital-dashboard_hospital-profile";
+@use "./components/hospital-dashboard-wallet";
 
 /* Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,
@@ -77,6 +79,12 @@ button {
 
   ul {
     padding-left: 0;
+  }
+
+  .active-specialist {
+    background-color: white;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    transform: scale(1.1);
   }
 }
 

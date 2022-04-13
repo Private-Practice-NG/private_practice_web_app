@@ -54,7 +54,7 @@ const HelpSupport = () => {
         <div className="custom_plain-wrapper">
           <header className="d-flex align-items-center justify-content-center flex-column text-center px-5 py-5 text-white">
             <div className="roboto-slab">
-              <p>Self service help centre</p>
+              <p className="montserrat fs-5">Self service help centre</p>
               <h2 className="fw-bolder fs-1">How can we help today?</h2>
             </div>
 
@@ -66,13 +66,13 @@ const HelpSupport = () => {
               nam. Adipisci, optio porro?
             </p>
 
-            <form className="d-flex flex-row gap-3 pt-4 position-relative dashboard-form">
+            <form className="d-flex flex-row gap-2 pt-4 position-relative dashboard-form">
               <input
                 type="search"
                 placeholder="Find through our full database full of answers"
                 className="dashboard-form-input form-control"
               />
-              <button className="search-btn">Search</button>
+              <button className="search-btn btn btn-secondary">Search</button>
             </form>
           </header>
 

@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const Sidenav = () => {
   return (
     <header className="dashboard-header">
-      <Link to="/" className="dashboard-title-container">
+      <Link to="/hospital-dashboard" className="dashboard-title-container">
         <img src={logo} alt="private pratice logo" />
         <h1 className="dashboard-title">Private Practice</h1>
       </Link>
