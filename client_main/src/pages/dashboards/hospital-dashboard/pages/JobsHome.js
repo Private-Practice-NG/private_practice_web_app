@@ -10,15 +10,15 @@ const Jobs = () => {
       <section className="main_bg text-white">
         <h1 className="open-sans fw-bold w-75 mx-auto ps-5">Jobs Page</h1>
         <div className="btn-container  mt-5 w-75 mx-auto">
-          <Link className="btn shadow" to="/jobs/create-job">
+          <Link className="btn shadow" to="/hospital/jobs/create-job">
             <i className="bi bi-plus-circle"></i>
             <span>Create Job</span>
           </Link>
-          <Link className="btn shadow" to="/jobs/job-outbox/open-jobs">
+          <Link className="btn shadow" to="/hospital/jobs/job-outbox/open-jobs">
             <i className="bi bi-chat-square-text"></i>
             <span>Job Outbox</span>
           </Link>
-          <Link className="btn shadow" to="/jobs/emergency">
+          <Link className="btn shadow" to="/hospital/jobs/emergency">
             <img src={emergencyIcon} alt="emergency-icon" />
             <span>Emergency</span>
           </Link>
