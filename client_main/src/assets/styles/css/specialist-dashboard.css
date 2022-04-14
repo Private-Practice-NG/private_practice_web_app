@@ -1,0 +1,102 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  --bs-gutter-x: 0 !important;
+}
+* a {
+  color: inherit;
+  text-decoration: none;
+}
+* a:hover {
+  color: inherit;
+  text-decoration: none;
+}
+
+:root {
+  --default-blue: #10acf5;
+  --default-blue-deep: #2387d4;
+  --default-blue-calm: #7ea2be;
+  --default-blue_opaque: rgba(16, 172, 245, 0.2);
+  --default-blue-calm_opaque: rgba(126, 162, 190, 0.2);
+  --default-white: white;
+  --default-grey: #565656;
+  --default-dashboard-heading-clr: #4d718d;
+  --default-dashboard-text-clr: #5a6f81;
+}
+:root .facebook-blue {
+  color: #3b5998;
+}
+:root .twitter-blue {
+  color: #00aced;
+}
+:root .instagram {
+  color: #e95950;
+}
+:root .linkedin {
+  color: #007bb5;
+}
+:root .youtube {
+  color: #ff0000;
+}
+
+:root {
+  --transition-all: all 0.75s ease;
+}
+
+.btn-wrapper {
+  display: flex;
+  justify-content: space-evenly;
+}
+.btn-wrapper .custom-button {
+  padding: 8px 35px;
+  color: white;
+  font-size: 16px;
+  background-color: var(--default-blue-deep);
+  box-shadow: 4px 4px 6px -1px var(--default-grey);
+}
+.btn-wrapper .custom-button:hover {
+  transform: scale(1.05);
+  transition: var(--transition-all);
+}
+
+.montserrat {
+  font-family: "Montserrat", sans-serif;
+}
+
+.roboto-slab {
+  font-family: "Roboto Slab", serif;
+}
+
+.open-sans {
+  font-family: "Open Sans", sans-serif;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+p {
+  margin-bottom: 0;
+}
+
+button {
+  all: unset;
+}

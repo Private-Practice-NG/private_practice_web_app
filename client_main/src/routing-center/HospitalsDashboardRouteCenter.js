@@ -1,79 +1,88 @@
 import React from "react";
-import ScrollHandler from "../components/ScrollHandler";
 import { Routes, Route } from "react-router-dom";
-import HospitalDashboard from "../pages/hospital-dashboard";
-import JobsHome from "../pages/hospital-dashboard/pages/JobsHome";
-import Statistics from "../pages/hospital-dashboard/pages/Statistics";
-import Wallet from "../pages/hospital-dashboard/pages/Wallet";
-import Favourites from "../pages/hospital-dashboard/pages/Favourites";
-import Calender from "../pages/hospital-dashboard/pages/Calender";
-import HelpSupport from "../pages/hospital-dashboard/pages/HelpSupport";
-import SiteGuide from "../pages/hospital-dashboard/pages/SiteGuide";
-import FindASpecialist from "../pages/hospital-dashboard/pages/FindASpecialist";
-import SpecialistNearYou from "../pages/hospital-dashboard/pages/SpecialistNearYou";
-import JobOutbox from "../pages/hospital-dashboard/pages/JobOutbox";
-import Emergency from "../pages/hospital-dashboard/pages/Emergency";
-import JobPostSuccess from "../pages/hospital-dashboard/pages/JobPostSuccess";
-import JobsOutboxActiveJobs from "../pages/hospital-dashboard/components/JobsOutboxActiveJobs";
-import JobsOutboxCompletedJobs from "../pages/hospital-dashboard/components/JobsOutboxCompletedJobs";
-import JobsOutboxClosedJobs from "../pages/hospital-dashboard/components/JobsOutboxClosedJobs";
-import JobsOutboxOpenJobs from "../pages/hospital-dashboard/components/JobsOutboxOpenJobs";
-import JobPreview from "../pages/hospital-dashboard/pages/JobPreview";
-import TreatmentDetails from "../pages/hospital-dashboard/pages/TreatmentDetails";
-import CreateJobsPage from "../pages/hospital-dashboard/pages/CreateJobsPage";
-import JobPayment from "../pages/hospital-dashboard/pages/JobPayment";
-import EmergencyPayment from "../pages/hospital-dashboard/pages/EmergencyPayment";
-import HospitalProfile from "../pages/hospital-dashboard/pages/HospitalProfile";
+import HospitalDashboard from "../pages/dashboards/hospital-dashboard/index";
+import Emergency from "../pages/dashboards/hospital-dashboard/pages/Emergency";
+import EmergencyPayment from "../pages/dashboards/hospital-dashboard/pages/EmergencyPayment";
+import JobPreview from "../pages/dashboards/hospital-dashboard/pages/JobPreview";
+import JobOutbox from "../pages/dashboards/hospital-dashboard/pages/JobOutbox";
+import JobsOutboxClosedJobs from "../pages/dashboards/hospital-dashboard/components/JobsOutboxClosedJobs";
+import JobsOutboxCompletedJobs from "../pages/dashboards/hospital-dashboard/components/JobsOutboxCompletedJobs";
+import JobsOutboxOpenJobs from "../pages/dashboards/hospital-dashboard/components/JobsOutboxOpenJobs";
+import JobsOutboxActiveJobs from "../pages/dashboards/hospital-dashboard/components/JobsOutboxActiveJobs";
+import Statistics from "../pages/dashboards/hospital-dashboard/pages/Statistics";
+import HospitalWallet from "../pages/dashboards/hospital-dashboard/pages/HospitalWallet";
+import Calender from "../pages/dashboards/hospital-dashboard/pages/Calender";
+import HelpSupport from "../pages/dashboards/hospital-dashboard/pages/HelpSupport";
+import SiteGuide from "../pages/dashboards/hospital-dashboard/pages/SiteGuide";
+import FindASpecialist from "../pages/dashboards/hospital-dashboard/pages/FindASpecialist";
+import CreateJobsPage from "../pages/dashboards/hospital-dashboard/pages/CreateJobsPage";
+import TreatmentDetails from "../pages/dashboards/hospital-dashboard/pages/TreatmentDetails";
+import JobPayment from "../pages/dashboards/hospital-dashboard/pages/JobPayment";
+import HospitalProfile from "../pages/dashboards/hospital-dashboard/pages/HospitalProfile";
+import JobsHome from "../pages/dashboards/hospital-dashboard/pages/JobsHome";
+import SpecialistNearYou from "../pages/dashboards/hospital-dashboard/pages/SpecialistNearYou";
+import JobPostSuccess from "../pages/dashboards/hospital-dashboard/pages/JobPostSuccess";
+import HospitalFavourites from "../pages/dashboards/hospital-dashboard/pages/HospitalFavourites";
 
 function HospitalsDashboardRouteCenter() {
   return (
-    <ScrollHandler>
-      <Routes>
-        <Route path="/hospital-dashboard" element={<HospitalDashboard />} />
-        <Route path="/jobs" element={<JobsHome />} />
-        <Route path="/jobs/emergency" element={<Emergency />} />
-        <Route path="/jobs/emergency-payment" element={<EmergencyPayment />} />
-        <Route path="/jobs/job-outbox" element={<JobOutbox />}>
-          <Route
-            path="/jobs/job-outbox/closed-jobs"
-            element={<JobsOutboxClosedJobs />}
-          />
-          <Route
-            path="/jobs/job-outbox/completed-jobs"
-            element={<JobsOutboxCompletedJobs />}
-          />
-          <Route
-            path="/jobs/job-outbox/open-jobs"
-            element={<JobsOutboxOpenJobs />}
-          />
-          <Route
-            path="/jobs/job-outbox/active-jobs"
-            element={<JobsOutboxActiveJobs />}
-          />
-        </Route>
-        <Route path="/statistics" element={<Statistics />} />
-        <Route path="/wallet" element={<Wallet />} />
-        <Route path="/favourites" element={<Favourites />} />
-        <Route path="/calender" element={<Calender />} />
-        <Route path="/helpsupport" element={<HelpSupport />} />
-        <Route path="/site-guide" element={<SiteGuide />} />
-        <Route path="/jobs/find-specialist" element={<FindASpecialist />} />
-        <Route path="/jobs/create-job" element={<CreateJobsPage />} />
-        <Route path="/jobs/treatment-details" element={<TreatmentDetails />} />
-        <Route path="/jobs/payment" element={<JobPayment />} />
+    <Routes>
+      <Route path="/hospital/dashboard" element={<HospitalDashboard />} />
+      <Route path="/hospital/jobs" element={<JobsHome />} />
+      <Route path="/hospital/jobs/emergency" element={<Emergency />} />
+      <Route
+        path="/hospital/jobs/emergency-payment"
+        element={<EmergencyPayment />}
+      />
+      <Route path="hospital/jobs/job-outbox" element={<JobOutbox />}>
         <Route
-          path="/jobs/specialist-near-you"
-          element={<SpecialistNearYou />}
+          path="/hospital/jobs/job-outbox/closed-jobs"
+          element={<JobsOutboxClosedJobs />}
         />
         <Route
-          path="/jobs/job-posted-successfully"
-          element={<JobPostSuccess />}
+          path="/hospital/jobs/job-outbox/completed-jobs"
+          element={<JobsOutboxCompletedJobs />}
         />
-        <Route path="/jobs/job-preview" element={<JobPreview />} />
-        <Route path="/jobs/treatment-details" element={<TreatmentDetails />} />
-        <Route path="/maitamageneralhospital" element={<HospitalProfile />} />
-      </Routes>
-    </ScrollHandler>
+        <Route
+          path="/hospital/jobs/job-outbox/open-jobs"
+          element={<JobsOutboxOpenJobs />}
+        />
+        <Route
+          path="/hospital/jobs/job-outbox/active-jobs"
+          element={<JobsOutboxActiveJobs />}
+        />
+      </Route>
+
+      <Route path="/hospital/statistics" element={<Statistics />} />
+      <Route path="/hospital/wallet" element={<HospitalWallet />} />
+      <Route path="/hospital/favourites" element={<HospitalFavourites />} />
+      <Route path="/hospital/calender" element={<Calender />} />
+      <Route path="/hospital/helpsupport" element={<HelpSupport />} />
+      <Route path="/hospital/site-guide" element={<SiteGuide />} />
+      <Route
+        path="/hospital/jobs/find-specialist"
+        element={<FindASpecialist />}
+      />
+      <Route path="/hospital/jobs/create-job" element={<CreateJobsPage />} />
+      <Route
+        path="/hospital/jobs/treatment-details"
+        element={<TreatmentDetails />}
+      />
+      <Route path="/hospital/jobs/payment" element={<JobPayment />} />
+      <Route
+        path="/hospital/jobs/specialist-near-you"
+        element={<SpecialistNearYou />}
+      />
+      <Route
+        path="/hospital/jobs/job-posted-successfully"
+        element={<JobPostSuccess />}
+      />
+      <Route path="/hospital/jobs/job-preview" element={<JobPreview />} />
+      <Route
+        path="/hospital/maitamageneralhospital"
+        element={<HospitalProfile />}
+      />
+    </Routes>
   );
 }
 
