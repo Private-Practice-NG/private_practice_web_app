@@ -57,7 +57,6 @@ const HelpSupport = () => {
               <p className="montserrat fs-5">Self service help centre</p>
               <h2 className="fw-bolder fs-1">How can we help today?</h2>
             </div>
-
             <p className="pt-3">
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem
               magni odit tempore explicabo veritatis quaerat, quam consectetur,
@@ -65,7 +64,6 @@ const HelpSupport = () => {
               et corrupti ab ducimus architecto totam iusto quae sunt possimus
               nam. Adipisci, optio porro?
             </p>
-
             <form className="d-flex flex-row gap-2 pt-4 position-relative dashboard-form">
               <input
                 type="search"
@@ -75,36 +73,52 @@ const HelpSupport = () => {
               <button className="search-btn btn btn-secondary">Search</button>
             </form>
           </header>
-
-          <section className="py-5 px-4 row gap-3">
-            {/* faq's */}
-            <div className="col-4">
+          <section className="py-5 px-4 d-flex flex-column gap-3">
+            <section style={{ width: "80%" }} className="mx-auto">
               <Faqs />
-            </div>
-
-            <div className="col d-flex flex-column align-items-center gap-5">
-              <div className="rounded-circle shadow p-4 border">
-                <img src={specialistIcon} alt="specialist" />
+            </section>
+            <section className="topical-help mx-auto" style={{ width: "80%" }}>
+              <h2 className="fs-5 text-center mt-4 mb-5 text-uppercase fw-bolder">
+                Find Help By Topics
+              </h2>
+              <ul className="other-info-section d-flex flex-wrap justify-content-center gap-4">
+                {otherLinks?.map(({ name, image, id }) => (
+                  <li
+                    className="d-flex flex-column align-items-center text-center"
+                    key={id}>
+                    <img src={image} alt="" />
+                    <p className="pt-1">{name}</p>
+                  </li>
+                ))}
+              </ul>
+            </section>
+            <section
+              className="user-type-help mx-auto mt-4 mb-4"
+              style={{ width: "80%" }}>
+              <h2 className="fs-5 text-center mb-5 text-uppercase fw-bolder">
+                Find Help By User Category
+              </h2>
+              <div className="d-flex flex-row align-items-center justify-content-around">
+                <div className="user-group d-flex flex-column gap-2">
+                  <div className="rounded-circle shadow p-4 border">
+                    <img src={specialistIcon} alt="specialist" />
+                  </div>
+                  <p className="text-center fs-6 fw-bold">Specialist</p>
+                </div>
+                <div className="user-group d-flex flex-column gap-2">
+                  <div className="rounded-circle shadow p-4 border">
+                    <img src={patientIcon} alt="patient" />
+                  </div>
+                  <p className="text-center fs-6 fw-bold">User</p>
+                </div>
+                <div className="user-group d-flex flex-column gap-2">
+                  <div className="rounded-circle shadow p-4 border">
+                    <img src={hospitalIcon} alt="Hospital" />
+                  </div>
+                  <p className="text-center fs-6 fw-bold">Hospital</p>
+                </div>
               </div>
-              <div className="rounded-circle shadow p-4 border">
-                <img src={patientIcon} alt="specialist" />
-              </div>
-              <div className="rounded-circle shadow p-4 border">
-                <img src={hospitalIcon} alt="specialist" />
-              </div>
-            </div>
-
-            {/* others */}
-            <ul className="col other-info-section">
-              {otherLinks?.map(({ name, image, id }) => (
-                <li
-                  className="d-flex flex-column align-items-center text-center"
-                  key={id}>
-                  <img src={image} alt="" />
-                  <p className="pt-1">{name}</p>
-                </li>
-              ))}
-            </ul>
+            </section>
           </section>
         </div>
       </section>

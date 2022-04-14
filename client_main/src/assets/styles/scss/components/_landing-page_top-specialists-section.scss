@@ -1,13 +1,15 @@
-@use './landing-page_background-extra';
+@use "./landing-page_background-extra";
 
 .top-specialists-section {
   margin-top: 50px;
   text-align: center;
+  position: relative;
+  z-index: 1000;
   .section-header {
     text-transform: uppercase;
     font-weight: 700;
     &:before {
-      content: '';
+      content: "";
       background-color: var(--default-blue);
       width: 300px;
       margin: 25px auto;
@@ -17,8 +19,6 @@
   }
   .specialist-array {
     margin: 50px auto;
-    position: relative;
-    z-index: 100;
     &:before {
       @extend %background-extra;
       height: 1200px;
@@ -53,10 +53,10 @@
         padding: 80px 16px 25px;
         background-color: rgba(255, 255, 255, 0.89);
         transform: translateY(-60px);
-        position: relative;
         box-shadow: 9px 12px 37px -22px var(--default-grey);
         border-bottom-left-radius: 35px;
         border-bottom-right-radius: 35px;
+        position: relative;
         z-index: 100;
         .card-title {
           font-weight: bold;

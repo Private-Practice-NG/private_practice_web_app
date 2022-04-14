@@ -13,7 +13,7 @@ const HospitalDashboard = () => {
     <DashboardContainer navType="hospital">
       <main className="hospitals-dashboard-home-wrapper d-flex justify-content-center">
         <section className="main-section">
-          <section className="top-rated">
+          <section className="top-rated pb-3">
             <h5 className="fw-bold">Top Rated</h5>
             <div className="top-rated-array d-flex justify-content-between pt-3">
               <Link
@@ -65,7 +65,7 @@ const HospitalDashboard = () => {
           </section>
           <section className="recent-specialist-section">
             <div
-              className="custom_plain-wrapper"
+              className="custom_plain-wrapper mt-5"
               style={{ width: "100%", padding: "0" }}>
               <div className="section-header px-3 py-3 border-bottom">
                 <h5 className="m-0 fw-bold">Recent Specialists</h5>

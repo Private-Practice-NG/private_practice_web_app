@@ -7,7 +7,9 @@ const DashboardContainer = ({ children, navType }) => {
       <Sidenav navType={navType} />
       <main>
         <MainHeader />
-        {children}
+        <section style={{ height: "calc(100vh - 55px)", overflowY: "auto" }}>
+          {children}
+        </section>
       </main>
     </div>
   );

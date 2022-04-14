@@ -1,4 +1,4 @@
-@use './landing-page_background-extra';
+@use "./landing-page_background-extra";
 
 // $custom-border-color: rgba(94, 92, 92, 0.4);
 
@@ -99,7 +99,7 @@
     display: flex;
     justify-content: space-between;
     position: relative;
-    z-index: 100;
+    z-index: 1000;
 
     .copy-case {
       font-size: 22px;
