@@ -3,10 +3,9 @@ import avatar from "../../../assets/images/avatar/avatar-1.png";
 
 function ProfileListing() {
   return (
-    <li className="d-flex align-items-center justify-content-between border-bottom px-3 py-2 profile-listing">
+    <li className="d-flex align-items-center justify-content-between border-top border-bottom px-3 py-2 profile-listing">
       <div className="d-flex align-items-center gap-5">
         <img src={avatar} alt="doctor" className="rounded-circle" />
-
         <div>
           <p className="rating">
             4.5 <i className="bi bi-star-fill"></i>

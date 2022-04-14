@@ -7,7 +7,7 @@
   }
 
   header {
-    background: linear-gradient(226.38deg, #23bcd4 14.92%, #41eafe 89.46%);
+    background: linear-gradient(226.38deg, #1e98ab 14.92%, #39d2e4 89.46%);
     p {
       width: 650px;
     }
@@ -15,7 +15,7 @@
 
   .dashboard-form-input {
     width: 500px;
-    padding: 0.85rem 1.2rem;
+    padding: 0.7rem 1.2rem;
     border-radius: 50px;
   }
 
@@ -29,9 +29,9 @@
   }
 
   .other-info-section {
-    display: grid;
-    grid-template-columns: repeat(3, 100px);
-    gap: 2rem 1.75rem;
-    font-size: 0.85rem;
+    gap: 3rem 1.5rem !important;
+    li {
+      width: 30%;
+    }
   }
 }

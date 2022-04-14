@@ -308,45 +308,28 @@
   padding-top: 0.75rem;
 }
 
-.dashboard-jobs {
-  display: grid;
-  place-items: center;
+.main_bg {
+  background: rgba(10, 48, 78, 0.85) url("https://images.unsplash.com/photo-1576091160550-2173dba999ef?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80") no-repeat center/cover;
+  height: 100%;
+  background-blend-mode: overlay;
+  padding: 120px 30px 0;
 }
-.dashboard-jobs img {
-  width: 65px;
+.main_bg h1 {
+  border-left: 4px solid white;
 }
-.dashboard-jobs h2 {
-  text-align: center;
-  text-transform: uppercase;
-  font-size: 1.5rem;
-  letter-spacing: 10px;
-  font-weight: 600;
-  margin-top: -30px;
-  color: var(--default-dashboard-heading-clr);
-}
-
-.dashboard-job {
-  margin: 0 auto;
-  margin-top: -90px;
-  border-radius: 50%;
-  background: #fff;
-  width: 150px;
-  height: 150px;
-  display: grid;
-  place-items: center;
-}
-
-.btn-container {
-  padding-top: 3.5rem;
+.main_bg .btn-container {
+  padding: 40px;
+  border-radius: 7px;
+  background-color: rgba(255, 255, 255, 0.75);
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 2rem;
+  gap: 4rem;
 }
-.btn-container img {
+.main_bg .btn-container img {
   width: 30px;
 }
-.btn-container .btn {
+.main_bg .btn-container .btn {
   background: red;
   padding: 0.5rem 1.75rem;
   display: flex;
@@ -355,14 +338,18 @@
   color: #fff;
   background: #23d4bf;
 }
-.btn-container .btn:nth-child(2) {
+.main_bg .btn-container .btn:nth-child(2) {
   background: #2387d4;
 }
-.btn-container .btn:nth-child(3) {
+.main_bg .btn-container .btn:nth-child(3) {
   background: #fb7272;
 }
-.btn-container .bi {
+.main_bg .btn-container .bi {
   font-size: 20px;
+}
+.main_bg .ongoing-jobs {
+  font-style: italic;
+  text-decoration: underline;
 }
 
 .jobs-outbox-wrapper .page-header {
@@ -419,9 +406,6 @@
   align-items: center;
   padding-left: 5rem;
   color: #fff;
-}
-.create-job .create-job-hero h2 {
-  font-size: 3rem;
 }
 .create-job .specialist-section {
   background-color: rgba(94, 187, 244, 0.2);
@@ -603,14 +587,14 @@
   margin-block: 50px;
 }
 .help-support-section header {
-  background: linear-gradient(226.38deg, #23bcd4 14.92%, #41eafe 89.46%);
+  background: linear-gradient(226.38deg, #1e98ab 14.92%, #39d2e4 89.46%);
 }
 .help-support-section header p {
   width: 650px;
 }
 .help-support-section .dashboard-form-input {
   width: 500px;
-  padding: 0.85rem 1.2rem;
+  padding: 0.7rem 1.2rem;
   border-radius: 50px;
 }
 .help-support-section .search-btn {
@@ -621,10 +605,10 @@
   max-width: 50px;
 }
 .help-support-section .other-info-section {
-  display: grid;
-  grid-template-columns: repeat(3, 100px);
-  gap: 2rem 1.75rem;
-  font-size: 0.85rem;
+  gap: 3rem 1.5rem !important;
+}
+.help-support-section .other-info-section li {
+  width: 30%;
 }
 
 .favourites {
@@ -783,25 +767,33 @@ ul .profile-listing .btn:nth-child(1) {
   outline-offset: 7px;
 }
 
+.wallet-page .wallet-page-header {
+  width: 85%;
+}
 .wallet-page .custom_plain-wrapper {
   padding: 0;
-  margin-block: 0;
-  width: 75%;
+  width: 85%;
+  margin: 15px auto;
+}
+.wallet-page .custom_plain-wrapper .banking-details {
+  background-color: #e8e8e8;
+}
+.wallet-page .custom_plain-wrapper .banking-details .bank-account-item {
+  border-radius: 7px;
+}
+.wallet-page .custom_plain-wrapper .cards-wrapper .cards-wrapper-item {
+  border-radius: 7px;
 }
 .wallet-page .active-card {
   outline: 3px solid #2387d4;
 }
-.wallet-page .banking-details {
-  background-color: #e8e8e8;
-}
 .wallet-page .transaction-type {
-  border: 3px solid red;
+  border: 1px solid;
   border-radius: 50%;
   width: 30px;
   height: 30px;
   display: grid;
   place-items: center;
-  color: currentColor;
 }
 .wallet-page .withdraw {
   border-color: #20c120;

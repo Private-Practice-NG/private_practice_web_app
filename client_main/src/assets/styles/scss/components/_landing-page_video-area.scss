@@ -1,4 +1,4 @@
-@use './landing-page_background-extra';
+@use "./landing-page_background-extra";
 
 .video-area {
   margin: 80px auto;
@@ -10,6 +10,10 @@
   }
   .text-wrapper {
     position: relative;
+    .text {
+      position: relative;
+      z-index: 100;
+    }
     span:last-child {
       font-weight: 900;
     }
