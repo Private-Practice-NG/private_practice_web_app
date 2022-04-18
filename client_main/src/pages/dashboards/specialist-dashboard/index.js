@@ -4,7 +4,7 @@ import DashboardContainer from "../../../components/DashboardContainer";
 const SpecialistDashboard = () => {
   return (
     <>
-      <DashboardContainer navType="specialist">
+      <DashboardContainer>
         <h1>Hello Specialist</h1>
       </DashboardContainer>
     </>

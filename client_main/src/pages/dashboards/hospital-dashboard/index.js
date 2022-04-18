@@ -10,7 +10,7 @@ const HospitalDashboard = () => {
   // design incomplete -- -- -- add chart and calender after library selection/app development.
 
   return (
-    <DashboardContainer navType="hospital">
+    <DashboardContainer isHospital>
       <main className="hospitals-dashboard-home-wrapper d-flex justify-content-center">
         <section className="main-section">
           <section className="top-rated pb-3">

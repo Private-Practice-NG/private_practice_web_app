@@ -4,7 +4,7 @@ import SpecializationItem from "../components/SpecializationItem";
 
 const Emergency = () => {
   return (
-    <DashboardContainer navType="hospital">
+    <DashboardContainer isHospital>
       <section className="row emergency-section">
         <div className="col">
           <section className="custom_plain-wrapper mt-5">

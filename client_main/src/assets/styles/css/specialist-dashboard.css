@@ -72,6 +72,23 @@
   font-family: "Open Sans", sans-serif;
 }
 
+.job-inbox {
+  padding: 5rem 4rem;
+}
+
+.inbox-container p,
+.inbox-container span {
+  font-size: 14px;
+  max-width: 500px;
+}
+.inbox-container .inbox-header {
+  padding: 12px 66px 5px 18px;
+  background-color: var(--default-blue-deep);
+  width: max-content;
+  border-radius: 20px 20px 0px 0px;
+  color: #fff;
+}
+
 /* Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
@@ -99,4 +116,19 @@ p {
 
 button {
   all: unset;
+}
+
+.specialist-jobs {
+  color: #4a6f8b;
+}
+
+.specialist-job-nav {
+  padding-inline: 31px;
+  padding-block: 6px;
+  background-color: #fff;
+  border-radius: 8px;
+}
+
+.current {
+  background-color: #10acf5;
 }

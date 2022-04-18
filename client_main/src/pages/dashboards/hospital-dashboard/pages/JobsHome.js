@@ -6,7 +6,7 @@ import { Outlet } from "react-router-dom";
 
 const Jobs = () => {
   return (
-    <DashboardContainer>
+    <DashboardContainer isHospital>
       <section className="main_bg text-white">
         <h1 className="open-sans fw-bold w-75 mx-auto ps-5">Jobs Page</h1>
         <div className="btn-container  mt-5 w-75 mx-auto">

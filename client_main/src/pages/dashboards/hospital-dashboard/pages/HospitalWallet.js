@@ -3,7 +3,7 @@ import Wallet from "../../components/Wallet";
 
 const HospitalWallet = () => {
   return (
-    <DashboardContainer navType="hospital">
+    <DashboardContainer isHospital>
       <Wallet />
     </DashboardContainer>
   );

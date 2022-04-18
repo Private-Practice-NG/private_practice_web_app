@@ -3,7 +3,7 @@ import DashboardContainer from "../../../../components/DashboardContainer";
 
 function JobPreview() {
   return (
-    <DashboardContainer navType="hospital">
+    <DashboardContainer isHospital>
       <section className="jobs-preview-wrapper custom_plain-wrapper shadow">
         <section className="px-2 d-flex text-center justify-content-between">
           <h4 className="montserrat fw-bold">Job Preview</h4>

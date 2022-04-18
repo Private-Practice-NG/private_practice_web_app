@@ -4,7 +4,7 @@ import Favourites from "../../components/Favourites";
 
 const HospitalFavourites = () => {
   return (
-    <DashboardContainer navType="hospital">
+    <DashboardContainer isHospital>
       <Favourites />
     </DashboardContainer>
   );

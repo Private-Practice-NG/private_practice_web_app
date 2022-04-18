@@ -15,7 +15,7 @@ function FindASpecialist() {
   }
 
   return (
-    <DashboardContainer navType="hospital">
+    <DashboardContainer isHospital>
       <section>
         <div className="custom_plain-wrapper mt-5 shadow">
           <div className="find-specialist-header">

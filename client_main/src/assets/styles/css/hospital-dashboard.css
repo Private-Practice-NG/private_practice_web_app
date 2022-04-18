@@ -835,7 +835,6 @@ button {
 
 .dashboard-container {
   min-height: 100vh;
-  background: #d1e9e1;
   color: var(--default-grey);
   display: grid;
   grid-template-columns: 275px 1fr;

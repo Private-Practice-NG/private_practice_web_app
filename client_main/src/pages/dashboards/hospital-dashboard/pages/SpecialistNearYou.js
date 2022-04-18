@@ -6,7 +6,7 @@ import DashboardContainer from "../../../../components/DashboardContainer";
 
 const SpecialistNearYou = () => {
   return (
-    <DashboardContainer navType="hospital">
+    <DashboardContainer isHospital>
       <section className="specialist-near-you">
         <div className="custom_plain-wrapper mt-5 shadow">
           <header className="d-flex flex-wrap align-items-center justify-content-between">

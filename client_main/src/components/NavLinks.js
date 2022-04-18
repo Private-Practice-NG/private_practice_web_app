@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom";
-const NavLinks = ({ navType }) => {
+const NavLinks = ({ isHospital }) => {
   const navs = [
     {
       key: 1,
@@ -65,12 +65,12 @@ const NavLinks = ({ navType }) => {
         <li className="dashboard-nav-lists" key={nav.key}>
           <NavLink
             to={
-              navType === "hospital"
+              isHospital
                 ? nav.hospitalDashboardLink
                 : nav.specialistDashboardLink
             }
             className={`dashboard-nav-link ${({ isActive }) =>
-              isActive ? "active" : ""}`}>
+              isActive ? "active" : null}`}>
             <img src={nav.icon} alt="" />
             <span>{nav.name}</span>
           </NavLink>

@@ -5,7 +5,7 @@ import DashboardContainer from "../../../../components/DashboardContainer";
 
 const CreateJobsPage = () => {
   return (
-    <DashboardContainer navType="hospital">
+    <DashboardContainer isHospital>
       <div className="create-job">
         <div className="create-job-hero">
           <h2 className="fs-1 open-sans fw-bold">Lets Create a job!</h2>

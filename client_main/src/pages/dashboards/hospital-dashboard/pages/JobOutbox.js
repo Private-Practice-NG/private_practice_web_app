@@ -3,7 +3,7 @@ import DashboardContainer from "../../../../components/DashboardContainer";
 
 const JobOutbox = ({ children }) => {
   return (
-    <DashboardContainer navType="hospital">
+    <DashboardContainer isHospital>
       <section className="jobs-outbox-wrapper">
         <section className="page-header d-flex text-center justify-content-center mt-5">
           <i className="bi bi-chat-square-text"></i>

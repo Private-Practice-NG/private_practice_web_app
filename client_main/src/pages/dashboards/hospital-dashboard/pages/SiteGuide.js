@@ -2,7 +2,7 @@ import DashboardContainer from "../../../../components/DashboardContainer";
 
 const SiteGuide = () => {
   return (
-    <DashboardContainer navType="hospital">
+    <DashboardContainer isHospital>
       <h1>Site guide</h1>
     </DashboardContainer>
   );

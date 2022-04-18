@@ -3,7 +3,7 @@ import PageNavigator from "../../components/PageNavigator";
 
 const JobPayment = () => {
   return (
-    <DashboardContainer navType="hospital">
+    <DashboardContainer isHospital>
       <section className="dashboard-payment-section">
         <div className="dashboard-payment custom_plain-wrapper shadow">
           <header className="dashboard-payment-header">

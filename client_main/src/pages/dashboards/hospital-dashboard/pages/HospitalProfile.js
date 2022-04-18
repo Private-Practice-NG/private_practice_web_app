@@ -5,7 +5,7 @@ import DashboardContainer from "../../../../components/DashboardContainer";
 
 const HospitalProfile = () => {
   return (
-    <DashboardContainer navType="hospital">
+    <DashboardContainer isHospital>
       <section className="hospital-profile">
         {/* <i class="bi bi-chevron-left mx-5 mt-5"></i> */}
         <div className="custom_plain-wrapper mt-5 shadow">

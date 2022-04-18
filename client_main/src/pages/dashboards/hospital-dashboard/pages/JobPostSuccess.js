@@ -3,7 +3,7 @@ import DashboardContainer from "../../../../components/DashboardContainer";
 
 const JobPostSuccess = () => {
   return (
-    <DashboardContainer navType="hospital">
+    <DashboardContainer isHospital>
       <div className="d-flex align-items-center justify-content-center text-center job-post-success">
         <section className="custom_plain-wrapper shadow mt-5">
           <div className="check-icon-wrapper">

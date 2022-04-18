@@ -4,7 +4,7 @@ import SessionAppointment from "../components/SessionAppointment";
 
 const TreatmentDetails = () => {
   return (
-    <DashboardContainer navType="hospital">
+    <DashboardContainer isHospital>
       <section className="treatment-category">
         <div className="custom_plain-wrapper mt-5 shadow">
           <section className="d-flex align-items-center gap-5 pb-4">

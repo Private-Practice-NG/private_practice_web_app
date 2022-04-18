@@ -2,7 +2,7 @@ import NavLinks from "./NavLinks";
 import logo from "../assets/images/logo.png";
 import { Link } from "react-router-dom";
 
-const Sidenav = ({ navType }) => {
+const Sidenav = ({ isHospital }) => {
   return (
     <header className="dashboard-header">
       <Link to="/hospital-dashboard" className="dashboard-title-container">
@@ -11,7 +11,7 @@ const Sidenav = ({ navType }) => {
       </Link>
 
       <nav className="dashboard-nav">
-        <NavLinks navType={navType} />
+        <NavLinks isHospital={isHospital} />
       </nav>
     </header>
   );
