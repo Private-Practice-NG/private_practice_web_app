@@ -4,7 +4,6 @@ import LandingPage from "../pages/landing-page";
 import AboutPage from "../pages/about-page";
 import { LoginPage } from "../pages/login-page";
 import SignupPage from "../pages/registration-section";
-import ScrollHandler from "../components/ScrollHandler";
 import SpecialistAccountVerified from "../pages/registration-section/pages/SpecialistAccountVerified";
 import UserAccountVerified from "../pages/registration-section/pages/UserAccountVerified";
 import MoreSpecialistData1 from "../pages/registration-section/pages/MoreSpecialistData1";
@@ -29,91 +28,71 @@ import ProfileSetupComplete from "../pages/registration-section/pages/ProfileSet
 
 function App() {
   return (
-    <>
-      <ScrollHandler>
-        <Routes>
-          <Route path="/" element={<LandingPage />} />
-          <Route path="/about-page" element={<AboutPage />} />
-          <Route path="/contact-page" element={<ContactPage />} />
-          <Route path="/start-login" element={<LoginPage />} />
-          <Route path="/start-signup" element={<SignupPage />} />
+    <Routes>
+      <Route path="/" element={<LandingPage />} />
+      <Route path="/about-page" element={<AboutPage />} />
+      <Route path="/contact-page" element={<ContactPage />} />
+      <Route path="/start-login" element={<LoginPage />} />
+      <Route path="/start-signup" element={<SignupPage />} />
 
-          <Route
-            path="/specialist-account-verified"
-            element={<SpecialistAccountVerified />}
-          />
-          <Route
-            path="/user-account-verified"
-            element={<UserAccountVerified />}
-          />
-          <Route
-            path="/hospitals-registration-done"
-            element={<HospitalFinish />}
-          />
-          <Route
-            path="/hospitals-enrolment-page"
-            element={<HospitalsEnrolmentRequest />}
-          />
-          <Route
-            path="/more-specialist-data-1"
-            element={<MoreSpecialistData1 />}
-          />
-          <Route
-            path="/more-specialist-data-2"
-            element={<MoreSpecialistData2 />}
-          />
-          <Route
-            path="/more-specialist-data-3"
-            element={<MoreSpecialistData3 />}
-          />
-          <Route
-            path="/more-specialist-data-4"
-            element={<MoreSpecialistData4 />}
-          />
-          <Route path="/general-user-data-1" element={<GeneralUserData1 />} />
-          <Route
-            path="/general-specialist-data-1"
-            element={<GeneralSpecialistData1 />}
-          />
-          <Route path="/verify-user-email" element={<VerifyUserEmail />} />
-          <Route
-            path="/verify-specialist-email"
-            element={<VerifySpecialistEmail />}
-          />
+      <Route
+        path="/specialist-account-verified"
+        element={<SpecialistAccountVerified />}
+      />
+      <Route path="/user-account-verified" element={<UserAccountVerified />} />
+      <Route path="/hospitals-registration-done" element={<HospitalFinish />} />
+      <Route
+        path="/hospitals-enrolment-page"
+        element={<HospitalsEnrolmentRequest />}
+      />
+      <Route path="/more-specialist-data-1" element={<MoreSpecialistData1 />} />
+      <Route path="/more-specialist-data-2" element={<MoreSpecialistData2 />} />
+      <Route path="/more-specialist-data-3" element={<MoreSpecialistData3 />} />
+      <Route path="/more-specialist-data-4" element={<MoreSpecialistData4 />} />
+      <Route path="/general-user-data-1" element={<GeneralUserData1 />} />
+      <Route
+        path="/general-specialist-data-1"
+        element={<GeneralSpecialistData1 />}
+      />
+      <Route path="/verify-user-email" element={<VerifyUserEmail />} />
+      <Route
+        path="/verify-specialist-email"
+        element={<VerifySpecialistEmail />}
+      />
 
-          <Route
-            path="/verify-user-mobile-number"
-            element={<VerifyUserMobileNumber />}
-          />
-          <Route
-            path="/verify-specialist-mobile-number"
-            element={<VerifySpecialistMobileNumber />}
-          />
-          <Route
-            path="/mobile-number-verification_user"
-            element={<MobileNumberVerificationUser />}
-          />
-          <Route
-            path="/mobile-number-verification_specialist"
-            element={<MobileNumberVerificationSpecialist />}
-          />
-          <Route
-            path="/email-verification_user"
-            element={<MailVerificationPage1 />}
-          />
-          <Route
-            path="/email-verification_specialist"
-            element={<MailVerificationPage2 />}
-          />
-          <Route
-            path="/specialist-profile-summary"
-            element={<ProfileSummaryPage />}
-          />
-          <Route
-            path="/specialist-profile-setup-complete"
-            element={<ProfileSetupComplete />}
-          />
-          {/* <Route
+      <Route
+        path="/verify-user-mobile-number"
+        element={<VerifyUserMobileNumber />}
+      />
+      <Route
+        path="/verify-specialist-mobile-number"
+        element={<VerifySpecialistMobileNumber />}
+      />
+      <Route
+        path="/mobile-number-verification_user"
+        element={<MobileNumberVerificationUser />}
+      />
+      <Route
+        path="/mobile-number-verification_specialist"
+        element={<MobileNumberVerificationSpecialist />}
+      />
+      <Route
+        path="/email-verification_user"
+        element={<MailVerificationPage1 />}
+      />
+      <Route
+        path="/email-verification_specialist"
+        element={<MailVerificationPage2 />}
+      />
+      <Route
+        path="/specialist-profile-summary"
+        element={<ProfileSummaryPage />}
+      />
+      <Route
+        path="/specialist-profile-setup-complete"
+        element={<ProfileSetupComplete />}
+      />
+      {/* <Route
             path="*"
             element={
               <main
@@ -135,9 +114,7 @@ function App() {
               </main>
             }
           /> */}
-        </Routes>
-      </ScrollHandler>
-    </>
+    </Routes>
   );
 }
 

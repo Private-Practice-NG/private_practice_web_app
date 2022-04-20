@@ -1,18 +1,21 @@
 import React from "react";
 import ReactDOM from "react-dom";
-// import "./index.css";
 import { BrowserRouter } from "react-router-dom";
 import reportWebVitals from "./reportWebVitals";
 import HospitalsDashboardRouteCenter from "./routing-center/HospitalsDashboardRouteCenter";
 import RegistrationSectionRouteCenter from "./routing-center/RegistrationSectionRouteCenter";
+import SpecialistDashboardRouteCenter from "./routing-center/SpecialistDashboardRouteCenter";
+import ScrollHandler from "./components/ScrollHandler";
 // import PageNotFound from "./routing-center/404Route";
 
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
-      {/* add single scroll handler component here and remove from individual route centers */}
-      <RegistrationSectionRouteCenter />
-      <HospitalsDashboardRouteCenter />
+      <ScrollHandler>
+        <RegistrationSectionRouteCenter />
+        <HospitalsDashboardRouteCenter />
+        <SpecialistDashboardRouteCenter />
+      </ScrollHandler>
       {/* <PageNotFound /> */}
     </BrowserRouter>
   </React.StrictMode>,
