@@ -2,7 +2,7 @@ import DashboardContainer from "../../../../components/DashboardContainer";
 import PageNavigator from "../../components/PageNavigator";
 // import SelectedSpecialist from "../components/SelectedSpecialist";
 import SessionAppointment from "../components/SessionAppointment";
-import specialist from "../../../assets/images/avatar/avatar-6.jpg";
+import specialist from "../../../../assets/images/avatar/avatar-6.jpg";
 import { Link } from "react-router-dom";
 
 const EmergencyPayment = () => {

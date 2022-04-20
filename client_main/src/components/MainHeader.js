@@ -17,13 +17,7 @@ const MainHeader = () => {
         <Link to="/maitamageneralhospital" className="dashboard-user d-flex">
           <img src={userImage} alt="user" />
           <div className="user d-flex align-items-center">
-<<<<<<< HEAD:client_main/src/pages/hospital-dashboard/components/MainHeader.js
             <span>Maitama General Hospital</span>
-=======
-            <Link to="/hospital/maitamageneralhospital">
-              Maitama General Hospital
-            </Link>
->>>>>>> be8773fe3c9f2ee7f14c1d57f972acaa8c1b4aff:client_main/src/components/MainHeader.js
             <i className="bi bi-chevron-down"></i>
           </div>
         </Link>

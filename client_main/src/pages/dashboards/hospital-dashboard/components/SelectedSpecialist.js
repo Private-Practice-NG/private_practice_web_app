@@ -1,4 +1,4 @@
-import specialist from "../../../assets/images/avatar/avatar-6.jpg";
+import specialist from "../../../../assets/images/avatar/avatar-6.jpg";
 import { Link } from "react-router-dom";
 
 const SelectedSpecialist = () => {

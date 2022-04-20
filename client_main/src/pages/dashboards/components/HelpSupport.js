@@ -51,7 +51,7 @@ const HelpSupport = () => {
       <div className="custom_plain-wrapper">
         <header className="d-flex align-items-center justify-content-center flex-column text-center px-5 py-5 text-white">
           <div className="roboto-slab">
-            <p className="montserrat fs-5">Self service help centre</p>
+            <p className="montserrat fs-5 fw-bold">Self service help centre</p>
             <h2 className="fw-bolder fs-1">How can we help today?</h2>
           </div>
           <p className="pt-3">

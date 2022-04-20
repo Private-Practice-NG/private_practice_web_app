@@ -18,9 +18,7 @@ const HospitalProfileHeading = () => {
           </p>
         </div>
       </div>
-
       <div className="vr"></div>
-
       {/* hospital details like address, social links etc */}
       <div className="col">
         <div>
@@ -38,7 +36,6 @@ const HospitalProfileHeading = () => {
               <strong>Email:</strong> info@maitamageneralhospital.com
             </p>
           </div>
-
           {/* hospital socials */}
           <ul
             className="d-flex align-items-center justify-content-between pt-3"
@@ -63,11 +60,11 @@ const HospitalProfileHeading = () => {
                 <i class="bi bi-instagram"></i>
               </a>
             </li>
-            <li>
+            {/* <li>
               <a href="#" title="website">
                 <i class="bi bi-globe2"></i>
               </a>
-            </li>
+            </li> */}
           </ul>
         </div>
       </div>
