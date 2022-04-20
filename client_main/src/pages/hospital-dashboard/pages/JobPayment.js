@@ -7,10 +7,9 @@ const JobPayment = () => {
       <section className="dashboard-payment-section">
         <div className="dashboard-payment custom_plain-wrapper shadow">
           <header className="dashboard-payment-header">
-            <h2 className="montserrat dashboard-payment-title">Payment</h2>
+            <h2 className="open-sans dashboard-payment-title">Payment</h2>
             <p>Tell us about your budget</p>
           </header>
-
           <div className="dashboard-payment-form-section">
             <form className="d-flex flex-row align-items-center gap-2 dashboard-form">
               <span className="fs-4">&#8358;</span>
@@ -22,17 +21,18 @@ const JobPayment = () => {
             </form>
             <span>Per session</span>
           </div>
-
-          <div className="dashboard-payment-payment">
-            <h3>Total</h3>
-            <p>20,000 x 2 sessions</p>
-            <p className="payment-calulations">
-              &#8358;40,000 + 2,000 (platform fee)
+          <div className="dashboard-payment-total">
+            <h3 className="open-sans">Total</h3>
+            <p>
+              20,000 x <span>2 sessions</span>
             </p>
-            <p className="payment-total"> = N42,000 </p>
+            <p className="payment-calulations px-3 py-2 mt-2">
+              &#8358; 40,000 + 2,000{" "}
+              <span className="fs-6">(platform fee)</span>
+            </p>
+            <p className="payment-total"> = &#8358; 42,000 </p>
           </div>
         </div>
-
         <PageNavigator
           previousPage="/jobs/treatment-details"
           nextPage="/jobs/find-specialist"

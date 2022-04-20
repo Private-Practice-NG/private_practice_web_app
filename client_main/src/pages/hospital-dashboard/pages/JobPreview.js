@@ -1,12 +1,13 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import HospitalDashboardContainer from "../components/HospitalDashboardContainer";
 
 function JobPreview() {
   return (
     <HospitalDashboardContainer>
       <section className="jobs-preview-wrapper custom_plain-wrapper shadow">
-        <section className="px-2 d-flex text-center justify-content-between">
-          <h4 className="montserrat fw-bold">Job Preview</h4>
+        <section className="px-2 d-flex text-center align-items-center justify-content-between">
+          <h3 className="montserrat fw-bold mb-0">Job Preview</h3>
           <button className="fs-5">
             <span>Edit </span>
             <i class="bi bi-pencil-square fs-4"></i>
@@ -61,18 +62,20 @@ function JobPreview() {
               <div className="preview-item-child-title fw-bold">
                 Closed Invite:
               </div>
-              <div className="preview-item-child-detail">
-                <span className="specialist">Specialist 1</span> <br />
-                <span className="specialist">Specialist 1</span>
+              <div className="preview-item-child-detail d-flex flex-column gap-2">
+                <span className="px-3">Specialist 1</span>
+                <span className="px-3">Specialist 1</span>
               </div>
             </div>
             <div className="preview-item-child d-flex flex-row gap-4"></div>
           </div>
         </section>
         <div className="px-2 post-btn-wrapper">
-          <button className="post-btn btn mt-4 text-white w-100 fs-5">
+          <Link
+            to="/jobs/job-posted-successfully"
+            className="post-btn btn mt-4 text-white w-100 fs-5">
             Post Job
-          </button>
+          </Link>
         </div>
       </section>
     </HospitalDashboardContainer>

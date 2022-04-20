@@ -10,7 +10,6 @@ import Calender from "../pages/hospital-dashboard/pages/Calender";
 import HelpSupport from "../pages/hospital-dashboard/pages/HelpSupport";
 import SiteGuide from "../pages/hospital-dashboard/pages/SiteGuide";
 import FindASpecialist from "../pages/hospital-dashboard/pages/FindASpecialist";
-import SpecialistNearYou from "../pages/hospital-dashboard/pages/SpecialistNearYou";
 import JobOutbox from "../pages/hospital-dashboard/pages/JobOutbox";
 import Emergency from "../pages/hospital-dashboard/pages/Emergency";
 import JobPostSuccess from "../pages/hospital-dashboard/pages/JobPostSuccess";
@@ -24,6 +23,7 @@ import CreateJobsPage from "../pages/hospital-dashboard/pages/CreateJobsPage";
 import JobPayment from "../pages/hospital-dashboard/pages/JobPayment";
 import EmergencyPayment from "../pages/hospital-dashboard/pages/EmergencyPayment";
 import HospitalProfile from "../pages/hospital-dashboard/pages/HospitalProfile";
+import SpecialistSelection from "../pages/hospital-dashboard/pages/SpecialistSelection";
 
 function HospitalsDashboardRouteCenter() {
   return (
@@ -62,8 +62,8 @@ function HospitalsDashboardRouteCenter() {
         <Route path="/jobs/treatment-details" element={<TreatmentDetails />} />
         <Route path="/jobs/payment" element={<JobPayment />} />
         <Route
-          path="/jobs/specialist-near-you"
-          element={<SpecialistNearYou />}
+          path="/jobs/specialist-selection"
+          element={<SpecialistSelection />}
         />
         <Route
           path="/jobs/job-posted-successfully"
@@ -71,7 +71,7 @@ function HospitalsDashboardRouteCenter() {
         />
         <Route path="/jobs/job-preview" element={<JobPreview />} />
         <Route path="/jobs/treatment-details" element={<TreatmentDetails />} />
-        <Route path="/maitamageneralhospital" element={<HospitalProfile />} />
+        <Route path="/hospital-profile" element={<HospitalProfile />} />
       </Routes>
     </ScrollHandler>
   );

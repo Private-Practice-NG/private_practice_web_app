@@ -21,7 +21,7 @@
 @use "./components/hospital-dashboard_job-preview";
 @use "./components/hospital-dashboard_profile-listing";
 @use "./components/hospital-dashboard_specialization-item";
-@use "./components/hospital-dashboard_specialist-near-you";
+@use "./components/hospital-dashboard_specialist-selection";
 @use "./components/hospital-dashboard_hospital-profile";
 @use "./components/hospital-dashboard-wallet";
 
@@ -73,9 +73,9 @@ button {
     color: var(--default-dashboard-heading-clr);
   }
 
-  h4 {
-    font-size: 0.85rem;
-  }
+  // h4 {
+  //   font-size: 0.85rem;
+  // }
 
   ul {
     padding-left: 0;

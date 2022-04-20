@@ -26,7 +26,7 @@ const HospitalDashboard = () => {
                     alt="specialist-avatar"
                   />
                 </div>
-                <div className="details-area position-relative d-flex flex-column ps-3 py-3 pe-2">
+                <div className="details-area position-relative d-flex flex-column ps-3 py-3 pe-3">
                   <p className="fw-bold">Dr Gift Tobe</p>
                   <span>General Medicine</span>
                 </div>
@@ -41,7 +41,7 @@ const HospitalDashboard = () => {
                     alt="specialist-avatar"
                   />
                 </div>
-                <div className="details-area position-relative d-flex flex-column ps-3 py-3 pe-2">
+                <div className="details-area position-relative d-flex flex-column ps-3 py-3 pe-3">
                   <p className="fw-bold">Dr Mark Raddish</p>
                   <span>General Medicine</span>
                 </div>
@@ -56,7 +56,7 @@ const HospitalDashboard = () => {
                     alt="specialist-avatar"
                   />
                 </div>
-                <div className="details-area position-relative d-flex flex-column ps-3 py-3 pe-2">
+                <div className="details-area position-relative d-flex flex-column ps-3 py-3 pe-3">
                   <p className="fw-bold">Dr Joshua Anthony</p>
                   <span>General Medicine</span>
                 </div>

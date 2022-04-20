@@ -5,7 +5,9 @@ const JobPostSuccess = () => {
   return (
     <HospitalDashboardContainer>
       <div className="d-flex align-items-center justify-content-center text-center job-post-success">
-        <section className="custom_plain-wrapper shadow mt-5">
+        <section
+          className="custom_plain-wrapper shadow"
+          style={{ marginTop: "80px" }}>
           <div className="check-icon-wrapper">
             <i className="bi bi-check-circle"></i>
           </div>

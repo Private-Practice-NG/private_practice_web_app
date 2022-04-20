@@ -4,10 +4,10 @@ import PageNavigator from "../components/PageNavigator";
 import SelectedSpecialist from "../components/SelectedSpecialist";
 import FeaturedSpecialists from "../components/FeaturedSpecialists";
 
-const SpecialistNearYou = () => {
+const SpecialistSelection = () => {
   return (
     <HospitalDashboardContainer>
-      <section className="specialist-near-you">
+      <section className="specialist-selection">
         <div className="custom_plain-wrapper mt-5 shadow">
           <header className="d-flex flex-wrap align-items-center justify-content-between">
             <div>
@@ -16,37 +16,35 @@ const SpecialistNearYou = () => {
               </h2>
               <p>Here is a list of specialist near you</p>
             </div>
-
-            <form className="d-flex flex-row dashboard-form">
+            <form className="d-flex">
               <input
                 type="search"
-                placeholder="Search specialist"
-                className="dashboard-form-input form-control"
+                placeholder="Search Specialist"
+                className="form-control"
               />
-              <i className="bi bi-search"></i>
+              <i
+                className="bi bi-search"
+                style={{ transform: "translateY(-30px, 10px)" }}></i>
             </form>
           </header>
-
-          <section className="pt-5 d-flex flex-wrap justify-content-between gap-3">
-            <img
-              src={nearPeople}
-              alt="the globe with people"
-              className="globe"
-            />
-
-            {/* specialist selected */}
-            <SelectedSpecialist />
+          <section className="pt-5 d-flex flex-wrap justify-content-between">
+            <section className="geo-find">
+              <img
+                src={nearPeople}
+                alt="the globe with people"
+                className="globe"
+              />
+            </section>
+            <SelectedSpecialist style={{ width: "45%" }} />
           </section>
-
           <FeaturedSpecialists />
         </div>
-
         <PageNavigator
-          nextPage="/hospital-dashboard"
+          nextPage="/jobs/job-preview"
           previousPage="/jobs/find-specialist"
         />
       </section>
     </HospitalDashboardContainer>
   );
 };
-export default SpecialistNearYou;
+export default SpecialistSelection;
