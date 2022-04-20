@@ -315,6 +315,8 @@
 .top-specialists-section {
   margin-top: 50px;
   text-align: center;
+  position: relative;
+  z-index: 1000;
 }
 .top-specialists-section .section-header {
   text-transform: uppercase;
@@ -330,8 +332,6 @@
 }
 .top-specialists-section .specialist-array {
   margin: 50px auto;
-  position: relative;
-  z-index: 100;
 }
 .top-specialists-section .specialist-array:before {
   height: 1200px;
@@ -367,10 +367,10 @@
   padding: 80px 16px 25px;
   background-color: rgba(255, 255, 255, 0.89);
   transform: translateY(-60px);
-  position: relative;
   box-shadow: 9px 12px 37px -22px var(--default-grey);
   border-bottom-left-radius: 35px;
   border-bottom-right-radius: 35px;
+  position: relative;
   z-index: 100;
 }
 .top-specialists-section .specialist-profile .card .card-body .card-title {
@@ -404,6 +404,10 @@
 }
 .video-area .text-wrapper {
   position: relative;
+}
+.video-area .text-wrapper .text {
+  position: relative;
+  z-index: 100;
 }
 .video-area .text-wrapper span:last-child {
   font-weight: 900;

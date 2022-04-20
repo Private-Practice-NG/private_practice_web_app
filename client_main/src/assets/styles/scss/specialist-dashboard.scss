@@ -1,0 +1,49 @@
+@use "./utilities/global-resets";
+@use "./utilities/colors";
+@use "./utilities/config";
+@use "./utilities/google-fonts";
+@use "./components/specialist-dashboard_job-inbox";
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+p {
+  margin-bottom: 0;
+}
+
+button {
+  all: unset;
+}
+
+.specialist-jobs {
+  color: #4a6f8b;
+}
+
+.specialist-job-nav {
+  padding-inline: 31px;
+  padding-block: 6px;
+  background-color: #fff;
+  border-radius: 8px;
+}
+
+.current {
+  background-color: #10acf5;
+}

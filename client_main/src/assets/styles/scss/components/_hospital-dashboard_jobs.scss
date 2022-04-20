@@ -1,74 +1,47 @@
-.dashboard-jobs {
-  display: grid;
-  place-items: center;
-
-  img {
-    width: 65px;
+.main_bg {
+  background: rgba(10, 48, 78, 0.85)
+    url("https://images.unsplash.com/photo-1576091160550-2173dba999ef?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80")
+    no-repeat center/cover;
+  height: 100%;
+  background-blend-mode: overlay;
+  padding: 120px 30px 0;
+  h1 {
+    border-left: 4px solid white;
   }
-
-  h2 {
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 1.5rem;
-    letter-spacing: 10px;
-    font-weight: 600;
-    margin-top: -30px;
-    color: var(--default-dashboard-heading-clr);
-  }
-}
-
-.dashboard-job {
-  margin: 0 auto;
-  margin-top: -90px;
-  border-radius: 50%;
-  background: #fff;
-  width: 150px;
-  height: 150px;
-  display: grid;
-  place-items: center;
-}
-
-.btn-container {
-  padding-top: 3.5rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 2rem;
-
-  img {
-    width: 30px;
-  }
-
-  .btn {
-    background: red;
-    padding: 0.5rem 1.75rem;
+  .btn-container {
+    padding: 40px;
+    border-radius: 7px;
+    background-color: rgba(255, 255, 255, 0.75);
     display: flex;
     align-items: center;
-    gap: 1rem;
-    color: #fff;
-    background: #23d4bf;
-  }
+    justify-content: center;
+    gap: 4rem;
+    img {
+      width: 30px;
+    }
+    .btn {
+      background: red;
+      padding: 0.5rem 1.75rem;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      color: #fff;
+      background: #23d4bf;
+    }
 
-  .btn:nth-child(2) {
-    background: #2387d4;
-  }
-  .btn:nth-child(3) {
-    background: #fb7272;
-  }
+    .btn:nth-child(2) {
+      background: #2387d4;
+    }
+    .btn:nth-child(3) {
+      background: #fb7272;
+    }
 
-  .bi {
-    font-size: 20px;
+    .bi {
+      font-size: 20px;
+    }
   }
-}
-
-// reusable plain background for the whole jobs section
-
-.jobs_plain-wrapper {
-  width: 70%;
-  margin: 0 auto;
-  min-height: 300px;
-  border-radius: 15px;
-  padding: 50px 30px;
-  color: var(--default-dashboard-text-clr);
-  background-color: white;
+  .ongoing-jobs {
+    font-style: italic;
+    text-decoration: underline;
+  }
 }

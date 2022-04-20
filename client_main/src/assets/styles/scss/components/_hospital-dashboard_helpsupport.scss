@@ -1,5 +1,5 @@
 .help-support-section {
-  .jobs_plain-wrapper {
+  .custom_plain-wrapper {
     padding: 0;
     overflow: hidden;
     width: 90%;
@@ -7,35 +7,31 @@
   }
 
   header {
-    background: linear-gradient(226.38deg, #23bcd4 14.92%, #41eafe 89.46%);
+    background: linear-gradient(226.38deg, #1e98ab 14.92%, #39d2e4 89.46%);
     p {
-      width: 600px;
+      width: 650px;
     }
   }
 
   .dashboard-form-input {
-    width: 600px;
-    padding: 0.85rem 1.2rem;
+    width: 500px;
+    padding: 0.7rem 1.2rem;
     border-radius: 50px;
   }
 
-  button {
-    position: absolute;
-    top: 32px;
-    right: 10px;
+  .search-btn {
     padding: 0.4rem 3rem;
     border-radius: 50px;
-    background: #5d5d5d;
   }
 
   img {
-    width: 50px;
+    max-width: 50px;
   }
 
   .other-info-section {
-    display: grid;
-    grid-template-columns: repeat(3, 100px);
-    gap: 2rem 1.75rem;
-    font-size: 0.85rem;
+    gap: 3rem 1.5rem !important;
+    li {
+      width: 30%;
+    }
   }
 }

@@ -2,6 +2,7 @@
 @use "./utilities/colors";
 @use "./utilities/config";
 @use "./utilities/google-fonts";
+@use "./components/hospital-dashboard_home";
 @use "./components/hospital-dashboard_sidenav";
 @use "./components/hospital-dashboard_navlinks";
 @use "./components/hospital-dashboard_main-header";
@@ -9,12 +10,20 @@
 @use "./components/hospital-dashboard_jobs";
 @use "./components/hospital-dashboard_jobs-outbox";
 @use "./components/hospital-dashboard_create-jobs";
+@use "./components/hospital-dashboard_find-a-specialist";
 @use "./components/hospital-dashboard_page-navigator";
 @use "./components/hospital-dashboard_emergency";
+@use "./components/hospital-dashboard_emergency-payment";
 @use "./components/hospital-dashboard_job-post-success";
 @use "./components/hospital-dashboard_helpsupport";
 @use "./components/hospital-dashboard_favourites";
-@use "./components/hospital-dashboard_treatment-category";
+@use "./components/hospital-dashboard_treatment-details";
+@use "./components/hospital-dashboard_job-preview";
+@use "./components/hospital-dashboard_profile-listing";
+@use "./components/hospital-dashboard_specialization-item";
+@use "./components/hospital-dashboard_specialist-selection";
+@use "./components/hospital-dashboard_hospital-profile";
+@use "./components/hospital-dashboard-wallet";
 
 /* Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,
@@ -47,10 +56,35 @@ button {
 
 .dashboard-container {
   min-height: 100vh;
-  background: #d1e9e1;
   color: var(--default-grey);
   display: grid;
   grid-template-columns: 275px 1fr;
+
+  textarea {
+    height: 170px;
+    background: #f0f0f0;
+    resize: none;
+  }
+
+  h3 {
+    // font-size: 1rem;
+    font-weight: 600;
+    color: var(--default-dashboard-heading-clr);
+  }
+
+  // h4 {
+  //   font-size: 0.85rem;
+  // }
+
+  ul {
+    padding-left: 0;
+  }
+
+  .active-specialist {
+    background-color: white;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    transform: scale(1.1);
+  }
 }
 
 .active {
@@ -59,4 +93,66 @@ button {
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
   box-shadow: 0 3px 15px rgba($color: #000000, $alpha: 0.15);
+}
+
+// reusable plain background for the whole jobs section
+.custom_plain-wrapper {
+  width: 70%;
+  margin: 40px auto;
+  min-height: 50px;
+  border-radius: 15px;
+  padding: 30px;
+  color: var(--default-dashboard-text-clr);
+  background-color: white;
+}
+
+// resusable
+.specialists {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 0;
+}
+.specialist {
+  border-radius: 10px;
+  background: #a3d8f9;
+  padding: 0.2rem 0.5rem 0.5rem;
+
+  h4 {
+    font-size: 0.75rem;
+    font-weight: 600;
+    margin-bottom: 0;
+  }
+
+  p {
+    font-size: 0.6rem;
+  }
+}
+
+.selected-specialist {
+  font-size: 0.7rem;
+  background: #fff;
+  border-radius: 10px;
+  width: max-content;
+  padding: 0.5rem 0.75rem;
+
+  img {
+    width: 100px;
+    height: 75px;
+    object-fit: cover;
+  }
+
+  p:first-child {
+    font-size: 1rem;
+  }
+
+  .check {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: 2px solid #00ff2b;
+    display: grid;
+    place-items: center;
+    color: #00ff2b;
+    font-size: 1rem;
+  }
 }

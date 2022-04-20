@@ -1,0 +1,15 @@
+.jobs-preview-wrapper {
+  .preview-item {
+    font-size: 16px;
+    margin-top: 15px;
+    box-shadow: 0px 0px 9px -6px var(--default-grey);
+    &-child-title {
+      width: 25%;
+    }
+  }
+  .post-btn {
+    background-color: var(--default-dashboard-text-clr);
+    color: white;
+    padding: 10px 0;
+  }
+}

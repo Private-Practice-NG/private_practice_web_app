@@ -102,7 +102,7 @@
   display: flex;
   justify-content: space-between;
   position: relative;
-  z-index: 100;
+  z-index: 1000;
 }
 .main-footer .footer-base .copy-case {
   font-size: 22px;

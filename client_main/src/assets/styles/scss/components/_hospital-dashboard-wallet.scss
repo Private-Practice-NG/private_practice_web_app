@@ -1,0 +1,42 @@
+.wallet-page {
+  .wallet-page-header {
+    width: 85%;
+  }
+  .custom_plain-wrapper {
+    padding: 0;
+    width: 85%;
+    margin: 15px auto;
+    .banking-details {
+      background-color: #e8e8e8;
+      .bank-account-item {
+        border-radius: 7px;
+      }
+    }
+    .cards-wrapper {
+      .cards-wrapper-item {
+        border-radius: 7px;
+      }
+    }
+  }
+
+  .active-card {
+    outline: 3px solid #2387d4;
+  }
+
+  .transaction-type {
+    border: 1px solid;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: grid;
+    place-items: center;
+  }
+  .withdraw {
+    border-color: #20c120;
+    color: #20c120;
+  }
+  .funded {
+    border-color: #2387d4;
+    color: #2387d4;
+  }
+}
