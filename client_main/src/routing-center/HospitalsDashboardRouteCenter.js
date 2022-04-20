@@ -12,7 +12,6 @@ import JobsOutboxActiveJobs from "../pages/dashboards/hospital-dashboard/compone
 import Statistics from "../pages/dashboards/hospital-dashboard/pages/Statistics";
 import HospitalWallet from "../pages/dashboards/hospital-dashboard/pages/HospitalWallet";
 import Calender from "../pages/dashboards/hospital-dashboard/pages/Calender";
-import HelpSupport from "../pages/dashboards/hospital-dashboard/pages/HelpSupport";
 import SiteGuide from "../pages/dashboards/hospital-dashboard/pages/SiteGuide";
 import FindASpecialist from "../pages/dashboards/hospital-dashboard/pages/FindASpecialist";
 import CreateJobsPage from "../pages/dashboards/hospital-dashboard/pages/CreateJobsPage";
@@ -23,6 +22,7 @@ import JobsHome from "../pages/dashboards/hospital-dashboard/pages/JobsHome";
 import SpecialistNearYou from "../pages/dashboards/hospital-dashboard/pages/SpecialistNearYou";
 import JobPostSuccess from "../pages/dashboards/hospital-dashboard/pages/JobPostSuccess";
 import HospitalFavourites from "../pages/dashboards/hospital-dashboard/pages/HospitalFavourites";
+import HospitalHelpSupport from "../pages/dashboards/hospital-dashboard/pages/HospitalHelpSupport";
 
 function HospitalsDashboardRouteCenter() {
   return (
@@ -57,7 +57,7 @@ function HospitalsDashboardRouteCenter() {
       <Route path="/hospital/wallet" element={<HospitalWallet />} />
       <Route path="/hospital/favourites" element={<HospitalFavourites />} />
       <Route path="/hospital/calender" element={<Calender />} />
-      <Route path="/hospital/helpsupport" element={<HelpSupport />} />
+      <Route path="/hospital/helpsupport" element={<HospitalHelpSupport />} />
       <Route path="/hospital/site-guide" element={<SiteGuide />} />
       <Route
         path="/hospital/jobs/find-specialist"

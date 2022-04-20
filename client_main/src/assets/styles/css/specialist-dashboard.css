@@ -88,6 +88,42 @@
   border-radius: 20px 20px 0px 0px;
   color: #fff;
 }
+.inbox-container .filled-btn {
+  background-color: #10acf5;
+  border-color: #10acf5;
+}
+.inbox-container .outline-btn {
+  border-color: #10acf5;
+  color: #10acf5;
+}
+.inbox-container .outline-btn:hover {
+  background-color: #10acf5;
+  color: #fff;
+}
+
+.offers {
+  height: 400px;
+  overflow: auto;
+}
+.offers .offers-heading {
+  color: #2387d4;
+}
+.offers h4 {
+  margin-bottom: 0;
+}
+
+.emergency-offer {
+  border-radius: 25px;
+  background-color: #fb7272;
+}
+
+.offer {
+  border-radius: 25px;
+  background-color: #10acf5;
+}
+.offer p {
+  font-size: 0.75rem;
+}
 
 /* Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,

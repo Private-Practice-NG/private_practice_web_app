@@ -1,11 +1,11 @@
 import DashboardContainer from "../../../../components/DashboardContainer";
-import HelpSupport from "../../components/HelpSupport";
+import Wallet from "../../components/Wallet";
 
-const HelpAndSupport = () => {
+const SpecialistWallet = () => {
   return (
     <DashboardContainer>
-      <HelpSupport />
+      <Wallet />
     </DashboardContainer>
   );
 };
-export default HelpAndSupport;
+export default SpecialistWallet;

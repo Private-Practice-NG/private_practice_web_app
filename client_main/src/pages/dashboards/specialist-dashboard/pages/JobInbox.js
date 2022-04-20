@@ -23,10 +23,10 @@ const JobInbox = () => {
 
   return (
     <section className="d-flex flex-column gap-5 job-inbox">
-      <Jobs jobs={jobs} title="Ongoing jobs" howMany={2} />
+      <Jobs jobs={jobs} title="Ongoing jobs" howMany={2} isOngoing />
       <IncomingJobs />
-      <Jobs jobs={jobs} title="Processing jobs" />
-      <Jobs jobs={jobs} title="Completed jobs" />
+      <Jobs jobs={jobs} title="Processing jobs" howMany={2} isProcessing />
+      <Jobs jobs={jobs} title="Completed jobs" howMany={2} />
     </section>
   );
 };

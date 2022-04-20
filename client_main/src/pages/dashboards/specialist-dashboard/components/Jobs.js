@@ -1,12 +1,12 @@
 import locationIcon from "../../../../assets/images/icons/location-icon.svg";
 import hospitalIcon from "../../../../assets/images/icons/hospital-icon.svg";
 
-const Jobs = ({ jobs, howMany, title }) => {
+const Jobs = ({ jobs, howMany, title, isOngoing, isProcessing }) => {
   return (
     <section className="inbox-container">
       <div className="inbox-header">
         <h2 className="fs-5">
-          {title} {howMany}
+          {title} {howMany && `(${howMany})`}
         </h2>
       </div>
 
@@ -33,14 +33,24 @@ const Jobs = ({ jobs, howMany, title }) => {
               </ul>
             </div>
 
-            <div className="col-4 d-flex flex-column gap-3 w-25 pt-3">
-              <button className="btn btn-outline-primary px-4 py-2 rounded-pill">
-                Message Client
-              </button>
-              <button className="btn btn-primary px-4 py-2 rounded-pill">
-                Track Job
-              </button>
-            </div>
+            {isOngoing && (
+              <div className="col-4 d-flex flex-column gap-3 w-25 pt-3">
+                <button className="btn btn-outline-primary px-4 py-2 rounded-pill outline-btn">
+                  Message Client
+                </button>
+                <button className="btn btn-primary px-4 py-2 rounded-pill filled-btn">
+                  Track Job
+                </button>
+              </div>
+            )}
+
+            {isProcessing && (
+              <div className="col-4 d-flex flex-column gap-3 w-25 pt-3">
+                <button className="btn btn-primary px-4 py-2 rounded-pill filled-btn">
+                  View more
+                </button>
+              </div>
+            )}
           </div>
         ))}
 

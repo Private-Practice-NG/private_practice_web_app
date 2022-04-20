@@ -1,11 +1,11 @@
 import DashboardContainer from "../../../../components/DashboardContainer";
 import HelpSupport from "../../components/HelpSupport";
 
-const HelpAndSupport = () => {
+const HospitalHelpSupport = () => {
   return (
-    <DashboardContainer>
+    <DashboardContainer isHospital>
       <HelpSupport />
     </DashboardContainer>
   );
 };
-export default HelpAndSupport;
+export default HospitalHelpSupport;
