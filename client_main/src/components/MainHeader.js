@@ -14,7 +14,7 @@ const MainHeader = () => {
       </form>
 
       <div className="dashboard-user-details d-flex justify-content-between ">
-        <Link to="/maitamageneralhospital" className="dashboard-user d-flex">
+        <Link to="/hospital-profile" className="dashboard-user d-flex">
           <img src={userImage} alt="user" />
           <div className="user d-flex align-items-center">
             <span>Maitama General Hospital</span>

@@ -1,8 +1,8 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React from "react";
+import { Link } from "react-router-dom";
 
-import '../assets/styles/css/components/top-navbar.css';
-import brandLogo from '../assets/images/logo.png';
+import "../assets/styles/css/components/top-navbar.css";
+import brandLogo from "../assets/images/logo.png";
 
 function TopNavbar() {
   return (
@@ -20,8 +20,7 @@ function TopNavbar() {
             data-bs-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent"
             aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
+            aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
           </button>
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
@@ -39,6 +38,16 @@ function TopNavbar() {
               <li className="nav-item">
                 <Link to="/contact-page" className="nav-link">
                   Contact
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link to="/hospital/dashboard" className="nav-link">
+                  Hospital
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link to="/specialist/dashboard" className="nav-link">
+                  Specialist
                 </Link>
               </li>
             </ul>
