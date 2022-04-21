@@ -29,7 +29,7 @@ const SpecialistJobs = () => {
               <Link
                 to={link}
                 key={id}
-                className={`montserrat shadow specialist-job-nav`}>
+                className="montserrat shadow specialist-job-nav">
                 {name}
               </Link>
             ))}

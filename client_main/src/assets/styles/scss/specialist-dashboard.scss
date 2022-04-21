@@ -3,6 +3,8 @@
 @use "./utilities/config";
 @use "./utilities/google-fonts";
 @use "./components/specialist-dashboard_job-inbox";
+@use "./components/specialist-dashboard_jobs-hunter";
+@use "./components/specialist-dashboard_job-details";
 
 /* Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,
@@ -35,6 +37,44 @@ button {
 
 .specialist-jobs {
   color: #4a6f8b;
+
+  h2,
+  h3 {
+    color: #0a304e;
+    margin-bottom: 0;
+  }
+
+  .filled-btn {
+    background-color: #10acf5;
+    border-color: #10acf5;
+    // color: #fff;
+  }
+
+  .outline-btn {
+    border-color: #10acf5;
+    color: #10acf5;
+
+    &:hover {
+      background-color: #10acf5;
+      color: #fff;
+    }
+  }
+
+  .like-btn {
+    width: 44px;
+    height: 44px;
+    border: 1px solid #7e9ab0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 1.5rem;
+
+    .bi {
+      line-height: 0;
+      color: #fb7272;
+    }
+  }
 }
 
 .specialist-job-nav {
@@ -44,6 +84,9 @@ button {
   border-radius: 8px;
 }
 
-.current {
-  background-color: #10acf5;
+// .current {
+//   background-color: #10acf5;
+// }
+.active-job {
+  background-color: red;
 }

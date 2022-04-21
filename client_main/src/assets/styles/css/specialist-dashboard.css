@@ -82,23 +82,10 @@
   max-width: 500px;
 }
 .inbox-container .inbox-header {
-  padding: 12px 66px 5px 18px;
+  padding: 12px 66px 12px 18px;
   background-color: var(--default-blue-deep);
   width: max-content;
   border-radius: 20px 20px 0px 0px;
-  color: #fff;
-}
-.inbox-container .filled-btn {
-  background-color: #10acf5;
-  border-color: #10acf5;
-}
-.inbox-container .outline-btn {
-  border-color: #10acf5;
-  color: #10acf5;
-}
-.inbox-container .outline-btn:hover {
-  background-color: #10acf5;
-  color: #fff;
 }
 
 .offers {
@@ -123,6 +110,37 @@
 }
 .offer p {
   font-size: 0.75rem;
+}
+
+.jobs-hunter-container {
+  max-width: 736px;
+  margin-inline: auto;
+  margin-block: 97px;
+}
+.jobs-hunter-container .jobs-hunter {
+  margin-top: 68px;
+  border-radius: 15px;
+}
+.jobs-hunter-container .jobs-hunter-detail {
+  font-size: 0.8rem;
+}
+.jobs-hunter-container .jobs-tags {
+  font-size: 0.8rem;
+  color: #4a6f8b;
+}
+.jobs-hunter-container .jobs-tags button {
+  background-color: #bfd7e9;
+  padding: 0.2rem 1rem;
+}
+.jobs-hunter-container .jobs-tags .active-btn {
+  background-color: #4a6f8b;
+  color: #fff;
+}
+.jobs-hunter-container .search-btn {
+  background-color: var(--default-blue-deep);
+  border-radius: 0;
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
 }
 
 /* Chrome, Safari, Edge, Opera */
@@ -157,6 +175,37 @@ button {
 .specialist-jobs {
   color: #4a6f8b;
 }
+.specialist-jobs h2,
+.specialist-jobs h3 {
+  color: #0a304e;
+  margin-bottom: 0;
+}
+.specialist-jobs .filled-btn {
+  background-color: #10acf5;
+  border-color: #10acf5;
+}
+.specialist-jobs .outline-btn {
+  border-color: #10acf5;
+  color: #10acf5;
+}
+.specialist-jobs .outline-btn:hover {
+  background-color: #10acf5;
+  color: #fff;
+}
+.specialist-jobs .like-btn {
+  width: 44px;
+  height: 44px;
+  border: 1px solid #7e9ab0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: 1.5rem;
+}
+.specialist-jobs .like-btn .bi {
+  line-height: 0;
+  color: #fb7272;
+}
 
 .specialist-job-nav {
   padding-inline: 31px;
@@ -165,6 +214,6 @@ button {
   border-radius: 8px;
 }
 
-.current {
-  background-color: #10acf5;
+.active-job {
+  background-color: red;
 }

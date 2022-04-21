@@ -5,16 +5,16 @@ const Jobs = ({ jobs, howMany, title, isOngoing, isProcessing }) => {
   return (
     <section className="inbox-container">
       <div className="inbox-header">
-        <h2 className="fs-5">
+        <h2 className="fs-5 text-white montserrat">
           {title} {howMany && `(${howMany})`}
         </h2>
       </div>
 
       <div className="bg-white" style={{ borderRadius: "0px 20px 20px 20px" }}>
         {jobs?.map(({ id, hospital, location, title, info, date }) => (
-          <div className="px-5 py-4 border-top row" key={id}>
+          <article className="px-5 py-4 border-top row" key={id}>
             <div className="col">
-              <h3 className="fs-5 fw-bold">{title}</h3>
+              <h3 className="fs-5 fw-bold montserrat">{title}</h3>
               <p className="pt-1">{info}</p>
               <p className="fw-bolder pt-1">More &gt;</p>
 
@@ -51,7 +51,7 @@ const Jobs = ({ jobs, howMany, title, isOngoing, isProcessing }) => {
                 </button>
               </div>
             )}
-          </div>
+          </article>
         ))}
 
         <p className="px-4 pb-4 fw-bolder fs-5 fst-italic">Load More &gt;</p>

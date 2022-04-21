@@ -1,5 +1,4 @@
 const Offers = ({ privateOffer, heading, isEmergency }) => {
-  console.log(privateOffer);
   return (
     <div className="px-4 col offers">
       <h3 className="fs-6 offers-heading">{heading}</h3>
@@ -17,7 +16,7 @@ const Offers = ({ privateOffer, heading, isEmergency }) => {
               style={{ paddingTop: "0.5rem" }}
             />
             <div>
-              <h4 className="fs-5">{title}</h4>
+              <h4 className="fs-5 montserrat">{title}</h4>
 
               <div className="offer-info">
                 <p>{hospital}</p>
