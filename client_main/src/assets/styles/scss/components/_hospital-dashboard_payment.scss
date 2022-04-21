@@ -1,7 +1,6 @@
 .dashboard-payment-section {
   .dashboard-payment {
     padding: 2.5rem;
-    border-radius: 35px;
     background: var(--default-white);
   }
 
@@ -48,10 +47,8 @@
   }
 }
 
-.dashboard-payment-payment {
+.dashboard-payment-total {
   padding-top: 2rem;
-  border-top: 1px solid currentColor;
-
   h3 {
     font-size: 1.6rem;
     text-decoration: underline;
@@ -59,6 +56,11 @@
 
   .payment-calulations {
     font-size: 1.5rem;
+    background-color: var(--default-dashboard-heading-clr);
+    color: white;
+    border-radius: 7px;
+    min-width: 150px;
+    display: inline-block;
   }
 
   .payment-total {

@@ -14,15 +14,13 @@ const MainHeader = () => {
       </form>
 
       <div className="dashboard-user-details d-flex justify-content-between ">
-        <div className="dashboard-user d-flex">
+        <Link to="/maitamageneralhospital" className="dashboard-user d-flex">
           <img src={userImage} alt="user" />
           <div className="user d-flex align-items-center">
-            <Link to="/hospital/maitamageneralhospital">
-              Maitama General Hospital
-            </Link>
+            <span>Maitama General Hospital</span>
             <i className="bi bi-chevron-down"></i>
           </div>
-        </div>
+        </Link>
         <button title="Mail">
           <i className="bi bi-envelope position-relative">
             <span

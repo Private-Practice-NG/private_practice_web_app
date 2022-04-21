@@ -11,7 +11,7 @@ const CreateJobsPage = () => {
           <h2 className="fs-1 open-sans fw-bold">Lets Create a job!</h2>
         </div>
         <section className="d-flex justify-content-between">
-          <div className="d-flex align-items-center justify-content-center flex-column w-75 px-5 py-5 mx-auto">
+          <div className="d-flex align-items-center justify-content-center flex-column w-75 px-5 pt-5 mx-auto">
             <div className="w-100">
               <h3 className="open-sans">
                 Enter a short title description of the job
@@ -37,7 +37,7 @@ const CreateJobsPage = () => {
               <i className="bi bi-search"></i>
             </form>
             <div className="specalists-section mt-4">
-              <h4>Categories</h4>
+              <h4 className="fs-5 fw-bold mb-3">Categories</h4>
               <ul className="d-flex align-items-center gap-3">
                 <li className="specialist">
                   <img src={eyeIcon} alt="" width={22} />

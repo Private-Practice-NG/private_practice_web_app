@@ -26,7 +26,7 @@ const HospitalDashboard = () => {
                     alt="specialist-avatar"
                   />
                 </div>
-                <div className="details-area position-relative d-flex flex-column ps-3 py-3 pe-2">
+                <div className="details-area position-relative d-flex flex-column ps-3 py-3 pe-3">
                   <p className="fw-bold">Dr Gift Tobe</p>
                   <span>General Medicine</span>
                 </div>
@@ -41,7 +41,7 @@ const HospitalDashboard = () => {
                     alt="specialist-avatar"
                   />
                 </div>
-                <div className="details-area position-relative d-flex flex-column ps-3 py-3 pe-2">
+                <div className="details-area position-relative d-flex flex-column ps-3 py-3 pe-3">
                   <p className="fw-bold">Dr Mark Raddish</p>
                   <span>General Medicine</span>
                 </div>
@@ -56,7 +56,7 @@ const HospitalDashboard = () => {
                     alt="specialist-avatar"
                   />
                 </div>
-                <div className="details-area position-relative d-flex flex-column ps-3 py-3 pe-2">
+                <div className="details-area position-relative d-flex flex-column ps-3 py-3 pe-3">
                   <p className="fw-bold">Dr Joshua Anthony</p>
                   <span>General Medicine</span>
                 </div>
@@ -67,7 +67,7 @@ const HospitalDashboard = () => {
             <div
               className="custom_plain-wrapper mt-5"
               style={{ width: "100%", padding: "0" }}>
-              <div className="section-header px-3 py-3 border-bottom">
+              <div className="section-header px-3 py-3">
                 <h5 className="m-0 fw-bold">Recent Specialists</h5>
               </div>
               <ul>

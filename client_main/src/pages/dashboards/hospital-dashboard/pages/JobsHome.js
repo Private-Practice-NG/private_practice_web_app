@@ -1,8 +1,8 @@
-import hospitalIcon from "../../../../assets/images/icons/outline.png";
+// import hospitalIcon from "../../../../assets/images/icons/outline.png";
 import emergencyIcon from "../../../../assets/images/icons/siren.png";
 import { Link } from "react-router-dom";
 import DashboardContainer from "../../../../components/DashboardContainer";
-import { Outlet } from "react-router-dom";
+// import { Outlet } from "react-router-dom";
 
 const Jobs = () => {
   return (

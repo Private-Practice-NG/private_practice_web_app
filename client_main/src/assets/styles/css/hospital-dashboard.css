@@ -143,7 +143,7 @@
   height: 50px;
   font-weight: 700;
   text-align: center;
-  padding: 7px;
+  padding: 6px 7px;
 }
 .hospitals-dashboard-home-wrapper aside .online-status-wrapper .section-main .online {
   background-color: var(--default-blue-deep);
@@ -159,7 +159,7 @@
   left: 64px;
 }
 .hospitals-dashboard-home-wrapper aside .online-status-wrapper .section-main .offline {
-  background-color: rgb(128, 88, 88);
+  background-color: #805858;
 }
 
 .dashboard-header {
@@ -253,7 +253,6 @@
 
 .dashboard-payment-section .dashboard-payment {
   padding: 2.5rem;
-  border-radius: 35px;
   background: var(--default-white);
 }
 .dashboard-payment-section .dashboard-payment-header {
@@ -291,18 +290,22 @@
   padding: 0.4rem 0.75rem;
 }
 
-.dashboard-payment-payment {
+.dashboard-payment-total {
   padding-top: 2rem;
-  border-top: 1px solid currentColor;
 }
-.dashboard-payment-payment h3 {
+.dashboard-payment-total h3 {
   font-size: 1.6rem;
   text-decoration: underline;
 }
-.dashboard-payment-payment .payment-calulations {
+.dashboard-payment-total .payment-calulations {
   font-size: 1.5rem;
+  background-color: var(--default-dashboard-heading-clr);
+  color: white;
+  border-radius: 7px;
+  min-width: 150px;
+  display: inline-block;
 }
-.dashboard-payment-payment .payment-total {
+.dashboard-payment-total .payment-total {
   font-size: 2rem;
   font-weight: 600;
   padding-top: 0.75rem;
@@ -550,8 +553,34 @@
 .emergency-payment-section {
   color: var(--default-dashboard-text-clr);
 }
-.emergency-payment-section section {
+.emergency-payment-section .bg-white {
   border-radius: 15px;
+}
+.emergency-payment-section .emergency-specialist-selection .selected-specialists-item .avatar-area {
+  width: 80px;
+  min-height: 130px;
+  background-color: var(--default-blue-deep);
+  border-radius: 20px;
+  box-shadow: 0px 5px 15px -2px;
+  z-index: 10;
+}
+.emergency-payment-section .emergency-specialist-selection .selected-specialists-item .avatar-area .specialist-avatar {
+  width: 50px;
+  height: 50px;
+  box-shadow: -3px 5px 11px -1px var(--default-grey);
+}
+.emergency-payment-section .emergency-specialist-selection .selected-specialists-item .details-area {
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  min-height: 100px;
+  background-color: white;
+  min-width: 160px;
+  transform: translateX(-5px);
+  box-shadow: 3px 5px 24px -3px;
+  z-index: 5;
+}
+.emergency-payment-section .emergency-specialist-selection .selected-specialists-item .details-area li {
+  padding: 2px 0;
 }
 
 .job-post-success .check-icon-wrapper {
@@ -683,16 +712,63 @@ ul .profile-listing .btn:nth-child(1) {
   font-size: 0.6rem;
 }
 
-.specialist-near-you .custom_plain-wrapper {
-  width: 75%;
+.specialist-selection .custom_plain-wrapper {
+  width: 90%;
 }
-.specialist-near-you .globe {
-  width: 450px;
+.specialist-selection .selected-specialists-wrapper .selected-specialists-item .avatar-area,
+.specialist-selection .selected-specialists-wrapper .featured-specialists-item .avatar-area,
+.specialist-selection .featured-specialists-wrapper .selected-specialists-item .avatar-area,
+.specialist-selection .featured-specialists-wrapper .featured-specialists-item .avatar-area {
+  width: 80px;
+  background-color: var(--default-blue-deep);
+  border-radius: 20px;
+  box-shadow: 0px 5px 15px -2px;
+  z-index: 10;
 }
-.specialist-near-you .specialists {
+.specialist-selection .selected-specialists-wrapper .selected-specialists-item .avatar-area .specialist-avatar,
+.specialist-selection .selected-specialists-wrapper .featured-specialists-item .avatar-area .specialist-avatar,
+.specialist-selection .featured-specialists-wrapper .selected-specialists-item .avatar-area .specialist-avatar,
+.specialist-selection .featured-specialists-wrapper .featured-specialists-item .avatar-area .specialist-avatar {
+  width: 50px;
+  height: 50px;
+  box-shadow: -3px 5px 11px -1px var(--default-grey);
+}
+.specialist-selection .selected-specialists-wrapper .selected-specialists-item .details-area,
+.specialist-selection .selected-specialists-wrapper .featured-specialists-item .details-area,
+.specialist-selection .featured-specialists-wrapper .selected-specialists-item .details-area,
+.specialist-selection .featured-specialists-wrapper .featured-specialists-item .details-area {
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  background-color: white;
+  min-width: 160px;
+  transform: translateX(-5px);
+  box-shadow: 3px 5px 24px -3px;
+  z-index: 5;
+}
+.specialist-selection .selected-specialists-wrapper .selected-specialists-item .details-area li,
+.specialist-selection .selected-specialists-wrapper .featured-specialists-item .details-area li,
+.specialist-selection .featured-specialists-wrapper .selected-specialists-item .details-area li,
+.specialist-selection .featured-specialists-wrapper .featured-specialists-item .details-area li {
+  padding: 2px 0;
+}
+.specialist-selection .selected-specialists-wrapper {
+  height: 300px;
+  overflow-y: auto;
+  padding: 15px 10px;
+}
+.specialist-selection .selected-specialists-wrapper .selected-specialists-item .avatar-area {
+  min-height: 120px;
+}
+.specialist-selection .featured-specialists-wrapper .featured-specialists-item .avatar-area {
+  min-height: 160px;
+}
+.specialist-selection .globe {
+  height: 300px;
+}
+.specialist-selection .specialists {
   font-size: 0.8rem;
 }
-.specialist-near-you .specialist {
+.specialist-selection .specialist {
   background-color: #eee;
   display: flex;
   align-items: center;
@@ -702,12 +778,12 @@ ul .profile-listing .btn:nth-child(1) {
   border-radius: 10px;
   transform: all 0.3s ease-in-out;
 }
-.specialist-near-you .specialist img {
+.specialist-selection .specialist img {
   width: 90px;
   height: 125px;
   object-fit: cover;
 }
-.specialist-near-you .specialist ul {
+.specialist-selection .specialist ul {
   margin-bottom: 0;
 }
 
@@ -847,9 +923,6 @@ button {
 .dashboard-container h3 {
   font-weight: 600;
   color: var(--default-dashboard-heading-clr);
-}
-.dashboard-container h4 {
-  font-size: 0.85rem;
 }
 .dashboard-container ul {
   padding-left: 0;

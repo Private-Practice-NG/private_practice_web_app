@@ -1,7 +1,7 @@
 import { Outlet } from "react-router-dom";
 import DashboardContainer from "../../../../components/DashboardContainer";
 
-const JobOutbox = ({ children }) => {
+function JobOutbox() {
   return (
     <DashboardContainer isHospital>
       <section className="jobs-outbox-wrapper">
@@ -17,5 +17,6 @@ const JobOutbox = ({ children }) => {
       </section>
     </DashboardContainer>
   );
-};
+}
+
 export default JobOutbox;

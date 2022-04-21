@@ -23,7 +23,7 @@
   min-height: 250px;
 }
 .main-footer .grid-wrapper .footer-col-1 .platform-name-case {
-  color: rgb(138, 136, 136);
+  color: #8a8888;
   margin-bottom: 15px;
   text-transform: uppercase;
 }
@@ -64,7 +64,7 @@
   position: relative;
 }
 .main-footer .grid-wrapper .footer-col-2 ul a li:hover {
-  color: rgb(148, 144, 144);
+  color: #949090;
   transition: var(--transition-all);
 }
 .main-footer .grid-wrapper .footer-col-3 .form-input-case {

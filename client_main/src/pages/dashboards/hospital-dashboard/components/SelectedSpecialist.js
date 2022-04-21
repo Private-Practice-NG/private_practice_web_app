@@ -1,55 +1,96 @@
 import specialist from "../../../../assets/images/avatar/avatar-6.jpg";
+import { Link } from "react-router-dom";
 
 const SelectedSpecialist = () => {
   return (
-    <div>
-      <h3 className="fs-6 text-uppercase">Selected</h3>
-
-      <div className="d-flex flex-column gap-3">
-        <div className="d-flex align-items-center gap-3 shadow selected-specialist">
-          <div className="check">
-            <i class="bi bi-check2"></i>
+    <section className="selected-specialists-section">
+      <h5 className="text-uppercase text-end montserrat fw-bold mb-4 pe-1">
+        Selected specialist
+      </h5>
+      <div className="d-flex flex-column gap-3 selected-specialists-wrapper">
+        <Link
+          to="/"
+          className="selected-specialists-item d-flex align-items-center ms-auto">
+          <div className="avatar-area position-relative align-items-center d-flex flex-column justify-content-center">
+            <img
+              src={specialist}
+              className="specialist-avatar rounded-circle"
+              alt="specialist-avatar"
+            />
           </div>
-          <img src={specialist} alt="specialist" />
-
-          <div>
-            <p>
-              <strong>Name:</strong> Collins Allen
-            </p>
-            <p>
-              <strong>Specialist:</strong> Optician
-            </p>
-            <p>
-              <strong>Jobs Completed:</strong> (6)
-            </p>
-            <p>
-              <strong>Ratings:</strong> 4.5 stars
-            </p>
+          <div className="details-area position-relative d-flex flex-column ps-4 py-2 pe-2">
+            <ul className="m-0" style={{ fontSize: "12px" }}>
+              <li>
+                <strong>Name:</strong> Collins Allen
+              </li>
+              <li>
+                <strong>Specialist:</strong> Optician
+              </li>
+              <li>
+                <strong>Jobs Completed:</strong> 6
+              </li>
+              <li>
+                <strong>Ratings:</strong> 4.5 stars
+              </li>
+            </ul>
           </div>
-        </div>
-        <div className="d-flex align-items-center gap-3 shadow selected-specialist">
-          <div className="check">
-            <i class="bi bi-check2"></i>
+        </Link>
+        <Link
+          to="/"
+          className="selected-specialists-item d-flex align-items-center ms-auto">
+          <div className="avatar-area position-relative align-items-center d-flex flex-column justify-content-center">
+            <img
+              src={specialist}
+              className="specialist-avatar rounded-circle"
+              alt="specialist-avatar"
+            />
           </div>
-          <img src={specialist} alt="specialist" />
-
-          <div>
-            <p>
-              <strong>Name:</strong> Collins Allen
-            </p>
-            <p>
-              <strong>Specialist:</strong> Optician
-            </p>
-            <p>
-              <strong>Jobs Completed:</strong> (6)
-            </p>
-            <p>
-              <strong>Ratings:</strong> 4.5 stars
-            </p>
+          <div className="details-area position-relative d-flex flex-column ps-4 py-2 pe-2">
+            <ul className="m-0" style={{ fontSize: "12px" }}>
+              <li>
+                <strong>Name:</strong> Collins Allen
+              </li>
+              <li>
+                <strong>Specialist:</strong> Optician
+              </li>
+              <li>
+                <strong>Jobs Completed:</strong> 6
+              </li>
+              <li>
+                <strong>Ratings:</strong> 4.5 stars
+              </li>
+            </ul>
           </div>
-        </div>
+        </Link>
+        <Link
+          to="/"
+          className="selected-specialists-item d-flex align-items-center ms-auto">
+          <div className="avatar-area position-relative align-items-center d-flex flex-column justify-content-center">
+            <img
+              src={specialist}
+              className="specialist-avatar rounded-circle"
+              alt="specialist-avatar"
+            />
+          </div>
+          <div className="details-area position-relative d-flex flex-column ps-4 py-2 pe-2">
+            <ul className="m-0" style={{ fontSize: "12px" }}>
+              <li>
+                <strong>Name:</strong> Collins Allen
+              </li>
+              <li>
+                <strong>Specialist:</strong> Optician
+              </li>
+              <li>
+                <strong>Jobs Completed:</strong> 6
+              </li>
+              <li>
+                <strong>Ratings:</strong> 4.5 stars
+              </li>
+            </ul>
+          </div>
+        </Link>
       </div>
-    </div>
+    </section>
   );
 };
 export default SelectedSpecialist;
