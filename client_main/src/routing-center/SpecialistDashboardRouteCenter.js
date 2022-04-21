@@ -8,6 +8,7 @@ import JobsHunter from "../pages/dashboards/specialist-dashboard/pages/JobsHunte
 import PracticingProfile from "../pages/dashboards/specialist-dashboard/pages/PracticingProfile";
 import JobInbox from "../pages/dashboards/specialist-dashboard/pages/JobInbox";
 import SpecialistWallet from "../pages/dashboards/specialist-dashboard/pages/SpecialistWallet";
+import JobDetails from "../pages/dashboards/specialist-dashboard/pages/JobDetails";
 
 function SpecialistDashboardRouteCenter() {
   return (
@@ -19,6 +20,7 @@ function SpecialistDashboardRouteCenter() {
         <Route path="jobs-hunter" element={<JobsHunter />} />
         <Route path="job-inbox" element={<JobInbox />} />
       </Route>
+      <Route path="/specialist/jobs/job-details" element={<JobDetails />} />
 
       <Route path="/specialist/wallet" element={<SpecialistWallet />} />
       <Route path="/specialist/favourites" element={<SpecialistFavourites />} />

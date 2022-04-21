@@ -52,7 +52,7 @@ const IncomingJobs = () => {
   return (
     <section className="inbox-container">
       <div className="inbox-header">
-        <h2 className="fs-5">Incoming Jobs</h2>
+        <h2 className="fs-5 text-white montserrat">Incoming Jobs</h2>
       </div>
 
       <div
