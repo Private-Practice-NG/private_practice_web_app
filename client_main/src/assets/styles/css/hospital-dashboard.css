@@ -166,7 +166,7 @@
   background: var(--default-white);
 }
 .dashboard-header .dashboard-title-container {
-  padding: 0.5rem 1rem;
+  padding: 0.45rem 1rem;
   background: #3d4a54;
   color: var(--default-white);
   display: flex;
@@ -205,7 +205,7 @@
 }
 
 .dashboard-main-header {
-  padding: 0.5rem 1.5rem;
+  padding: 0.45rem 1.5rem;
   background: #2387d4;
   color: white;
 }
@@ -788,7 +788,7 @@ ul .profile-listing .btn:nth-child(1) {
 }
 
 .hospital-profile .custom_plain-wrapper {
-  width: 75%;
+  width: 80%;
   padding: 2.5rem;
 }
 .hospital-profile h1,
@@ -805,10 +805,18 @@ ul .profile-listing .btn:nth-child(1) {
 .hospital-profile .subtitle {
   font-size: 0.65rem;
 }
+.hospital-profile .social-icon {
+  color: var(--default-dashboard-text-clr);
+}
+.hospital-profile .social-icon:hover {
+  color: var(--default-blue-deep);
+  transform: scale(1.25);
+  transition: all ease 0.75s;
+}
 .hospital-profile .hospital-rating,
 .hospital-profile .second-column {
   background-color: #7e9ab0;
-  border-radius: 40px;
+  border-radius: 15px;
   color: #fff;
 }
 .hospital-profile .hospital-rating i,
@@ -833,8 +841,8 @@ ul .profile-listing .btn:nth-child(1) {
 .hospital-profile .active-post {
   background-color: #85ff96;
   border-radius: 50%;
-  height: 125px;
-  width: 125px;
+  height: 120px;
+  width: 120px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -910,7 +918,7 @@ button {
 }
 
 .dashboard-container {
-  min-height: 100vh;
+  max-height: 100vh;
   color: var(--default-grey);
   display: grid;
   grid-template-columns: 275px 1fr;

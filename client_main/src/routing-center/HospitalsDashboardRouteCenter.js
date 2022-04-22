@@ -108,10 +108,7 @@ function HospitalsDashboardRouteCenter() {
         element={<JobPostSuccess />}
       />
       <Route path="/hospital/jobs/job-preview" element={<JobPreview />} />
-      <Route
-        path="/hospital/maitamageneralhospital"
-        element={<HospitalProfile />}
-      />
+      <Route path="/hospital/hospital-profile" element={<HospitalProfile />} />
     </Routes>
   );
 }

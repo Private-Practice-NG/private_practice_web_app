@@ -1,0 +1,38 @@
+// style={{ width: "736px", marginInline: "auto" }}
+.jobs-hunter-container {
+  max-width: 736px;
+  margin-inline: auto;
+  margin-block: 97px;
+
+  .jobs-hunter {
+    margin-top: 68px;
+    border-radius: 15px;
+  }
+
+  .jobs-hunter-detail {
+    font-size: 0.8rem;
+  }
+
+  .jobs-tags {
+    font-size: 0.8rem;
+    color: #4a6f8b;
+
+    button {
+      background-color: #bfd7e9;
+      padding: 0.2rem 1rem;
+    }
+
+    .active-btn {
+      background-color: #4a6f8b;
+      color: #fff;
+    }
+    // overflow: auto;
+  }
+
+  .search-btn {
+    background-color: var(--default-blue-deep);
+    border-radius: 0;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+}

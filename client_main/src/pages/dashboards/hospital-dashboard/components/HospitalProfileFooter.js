@@ -1,11 +1,12 @@
 const HospitalProfileFooter = () => {
   return (
     <section className="row gap-5 mt-5">
-      <div className="col d-flex justify-content-center gap-4 py-5 px-3 second-column">
+      <div className="col d-flex justify-content-center gap-4 py-4 px-3 second-column">
         <div>
-          <h3 className="fs-6 text-white">Services</h3>
-
-          <ul className="pt-4 d-flex flex-column gap-1">
+          <h5 className="text-white fw-bold">Services</h5>
+          <ul
+            className="pt-2 d-flex flex-column gap-1"
+            style={{ listStylePosition: "inside", listStyleType: "disc" }}>
             <li>Optology</li>
             <li>General Medicine</li>
             <li>X-Ray Analysis</li>
@@ -14,9 +15,10 @@ const HospitalProfileFooter = () => {
         </div>
         <div class="vr"></div>
         <div>
-          <h3 className="fs-6 text-white">Facilities</h3>
-
-          <ul className="pt-4 d-flex flex-column gap-1">
+          <h5 className="text-white fw-bold">Facilities</h5>
+          <ul
+            className="pt-2 d-flex flex-column gap-1"
+            style={{ listStylePosition: "inside", listStyleType: "disc" }}>
             <li>10 Operation beds</li>
             <li>X-ray machines</li>
             <li>Urine analyser</li>
