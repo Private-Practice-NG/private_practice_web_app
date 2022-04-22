@@ -143,6 +143,10 @@
   border-top-right-radius: 5px;
 }
 
+.job-details {
+  min-height: 100vh;
+}
+
 /* Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
