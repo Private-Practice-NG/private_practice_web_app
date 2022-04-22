@@ -2,7 +2,7 @@ import hospitalLogo from "../../../../assets/images/hospital-logo.jpg";
 
 const HospitalProfileHeading = () => {
   return (
-    <section className="row gap-5 pb-4">
+    <section className="row pb-4">
       {/* hospital name and image */}
       <div className="col-6 d-flex align-items-center gap-4">
         <img
@@ -20,7 +20,7 @@ const HospitalProfileHeading = () => {
       </div>
       <div className="vr"></div>
       {/* hospital details like address, social links etc */}
-      <div className="col">
+      <div className="col ps-5">
         <div>
           <div>
             <p>
@@ -38,26 +38,29 @@ const HospitalProfileHeading = () => {
           </div>
           {/* hospital socials */}
           <ul
-            className="d-flex align-items-center justify-content-between pt-3"
+            className="w-50 d-flex align-items-center pt-2"
             style={{ color: "#10ACF5" }}>
             <li>
-              <a href="https://facebook.com" title="facebook">
-                <i class="bi bi-facebook"></i>
+              <a href="https://facebook.com" className="me-2" title="facebook">
+                <i class="bi bi-facebook social-icon"></i>
               </a>
             </li>
             <li>
-              <a href="https://linkedin.com" title="linkedin">
-                <i class="bi bi-linkedin"></i>
+              <a href="https://linkedin.com" className="mx-2" title="linkedin">
+                <i class="bi bi-linkedin social-icon"></i>
               </a>
             </li>
             <li>
-              <a href="https://twitter.com" title="twitter">
-                <i class="bi bi-twitter"></i>
+              <a href="https://twitter.com" className="mx-2" title="twitter">
+                <i class="bi bi-twitter social-icon"></i>
               </a>
             </li>
             <li>
-              <a href="https://instagram.com" title="instagram">
-                <i class="bi bi-instagram"></i>
+              <a
+                href="https://instagram.com"
+                className="mx-2"
+                title="instagram">
+                <i class="bi bi-instagram social-icon"></i>
               </a>
             </li>
             {/* <li>

@@ -4,13 +4,12 @@ const HospitalProfileRatings = () => {
   return (
     <section>
       <hr />
-
-      <section className="row gap-5 mt-5">
+      <section className="row gap-4 mt-5">
         {/* hospital ratings */}
-        <div className="col d-flex flex-column hospital-rating">
+        <div className="col d-flex flex-column hospital-rating pb-3">
           <div
             className="d-flex align-items-center justify-content-center py-3 gap-3"
-            style={{ backgroundColor: "#5EBBF4", borderRadius: "40px" }}>
+            style={{ backgroundColor: "#5EBBF4", borderRadius: "10px" }}>
             <div>
               <h2 className="fw-bolder fs-1">
                 5.0 <span className="fw-normal">Overall Rating</span>
@@ -29,7 +28,6 @@ const HospitalProfileRatings = () => {
                   <i class="bi bi-star-fill" role="img" aria-label="Star"></i>
                 </div>
               </div>
-
               <div className="pt-2">
                 <p>Facilities</p>
                 <div className="d-flex align-items-center gap-1">
@@ -51,7 +49,6 @@ const HospitalProfileRatings = () => {
                 width="75"
                 className="rounded-circle border border-3"
               />
-
               <div>
                 <h3>Joel Chinaza</h3>
                 <p>
@@ -67,7 +64,6 @@ const HospitalProfileRatings = () => {
                 </div>
               </div>
             </div>
-
             <div className="d-flex align-items-center gap-3 comment">
               <img
                 src={avatar}
@@ -75,7 +71,6 @@ const HospitalProfileRatings = () => {
                 width="75"
                 className="rounded-circle border border-3"
               />
-
               <div>
                 <h3>Joel Chinaza</h3>
                 <p>
@@ -93,12 +88,11 @@ const HospitalProfileRatings = () => {
             </div>
           </div>
           <button
-            className="align-self-center p-2 fst-italic"
-            style={{ fontSize: "12px" }}>
+            className="align-self-center p-1 fst-italic"
+            style={{ fontSize: "12px", textDecoration: "underline" }}>
             View more
           </button>
         </div>
-
         {/* second column */}
         <div className="col row gap-4">
           {/* success rates */}
@@ -108,7 +102,7 @@ const HospitalProfileRatings = () => {
               <p className="text-uppercase">Total</p>
             </div>
             <div>
-              <h3 className="fs-6 text-white">125 Completed postings</h3>
+              <h3 className="fs-6 text-white px-3">125 Completed postings</h3>
 
               <div className="pt-3">
                 <h4 className="fs-1 fw-bolder">94%</h4>
@@ -116,16 +110,13 @@ const HospitalProfileRatings = () => {
               </div>
             </div>
           </div>
-
           {/* job posted */}
-          <div className="col d-flex flex-column justify-content-between align-items-center py-4 text-center second-column">
+          <div className="col d-flex flex-column justify-content-between align-items-center py-4 px-2 text-center second-column">
             <h3 className="fs-6 text-white">Active Job Postings</h3>
-
             <div className="active-post">
               <h3 className="text-white fs-1">13</h3>
               <p>Active</p>
             </div>
-
             <div>
               <button
                 className="btn btn-primary"

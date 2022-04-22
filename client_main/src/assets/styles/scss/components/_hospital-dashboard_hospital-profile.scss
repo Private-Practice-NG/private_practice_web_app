@@ -1,6 +1,6 @@
 .hospital-profile {
   .custom_plain-wrapper {
-    width: 75%;
+    width: 80%;
     padding: 2.5rem;
   }
   h1,
@@ -10,7 +10,6 @@
   h5 {
     margin-bottom: 0;
   }
-
   p,
   span {
     font-size: 0.85rem;
@@ -18,18 +17,23 @@
   .subtitle {
     font-size: 0.65rem;
   }
-
+  .social-icon {
+    color: var(--default-dashboard-text-clr);
+    &:hover {
+      color: var(--default-blue-deep);
+      transform: scale(1.25);
+      transition: all ease 0.75s;
+    }
+  }
   .hospital-rating,
   .second-column {
     background-color: #7e9ab0;
-    border-radius: 40px;
+    border-radius: 15px;
     color: #fff;
-
     i {
       color: #fdda62;
     }
   }
-
   .comment {
     h3 {
       font-size: 0.85rem;
@@ -42,19 +46,17 @@
       font-size: 10px;
     }
   }
-
   .job-posted {
     border: 10px solid #85ff96;
     border-radius: 50%;
     padding: 1.75rem;
   }
-
   .active-post {
     background-color: #85ff96;
     // padding: 2rem;
     border-radius: 50%;
-    height: 125px;
-    width: 125px;
+    height: 120px;
+    width: 120px;
     display: flex;
     flex-direction: column;
     align-items: center;
