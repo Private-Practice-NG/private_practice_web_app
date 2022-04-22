@@ -8,7 +8,6 @@ const JobDetails = () => {
       <h2 className="montserrat fs-3 fw-bolder px-4 text-capitalize">
         Occasional Itching eyes
       </h2>
-
       <div className="border-top row gap-5">
         <section className="ps-4 pt-4 col">
           <article>
@@ -84,7 +83,6 @@ const JobDetails = () => {
             </ul>
           </div>
         </section>
-
         <section className="border-start col-3">
           <div className="d-flex flex-column gap-3 p-4 w-50 mx-auto">
             <button className="btn btn-primary rounded-pill filled-btn">
@@ -94,13 +92,11 @@ const JobDetails = () => {
               Save job
             </button>
           </div>
-
           <article className="border-top p-4">
             <div className="d-flex align-items-center">
               <h3 className="montserrat fs-5">About Client</h3>
               <span>stars</span>
             </div>
-
             <div className="d-flex flex-column gap-3">
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -108,7 +104,6 @@ const JobDetails = () => {
               </p>
               <p>Ac et proin nisl neque eu suspendisse.</p>
             </div>
-
             <div>
               <div>
                 <p>Kings hospital</p>

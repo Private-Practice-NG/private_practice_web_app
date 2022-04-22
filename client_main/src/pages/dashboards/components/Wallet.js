@@ -47,7 +47,6 @@ const Wallet = () => {
                   <img src={mastercardLogo} alt="mastercard logo" />
                   <p>Debit</p>
                 </div>
-
                 <div className="d-flex align-items-center justify-content-between">
                   <p>****</p>
                   <p>****</p>
@@ -60,7 +59,6 @@ const Wallet = () => {
                   <img src={mastercardLogo} alt="mastercard logo" />
                   <p>Debit</p>
                 </div>
-
                 <div className="d-flex align-items-center justify-content-between">
                   <p>****</p>
                   <p>****</p>
@@ -92,7 +90,6 @@ const Wallet = () => {
                     <p>12-10-20 14:15</p>
                   </div>
                 </div>
-
                 <div className="text-end">
                   <p className="fs-5 funded" style={{ color: "#2387d4" }}>
                     &#8358;2,480.00

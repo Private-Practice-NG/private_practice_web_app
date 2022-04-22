@@ -21,7 +21,6 @@ function SpecialistDashboardRouteCenter() {
         <Route path="job-inbox" element={<JobInbox />} />
       </Route>
       <Route path="/specialist/jobs/job-details" element={<JobDetails />} />
-
       <Route path="/specialist/wallet" element={<SpecialistWallet />} />
       <Route path="/specialist/favourites" element={<SpecialistFavourites />} />
       <Route path="/specialist/helpsupport" element={<HelpAndSupport />} />

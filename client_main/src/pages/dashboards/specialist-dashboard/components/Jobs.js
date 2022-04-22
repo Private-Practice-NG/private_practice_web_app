@@ -9,7 +9,6 @@ const Jobs = ({ jobs, howMany, title, isOngoing, isProcessing }) => {
           {title} {howMany && `(${howMany})`}
         </h2>
       </div>
-
       <div className="bg-white" style={{ borderRadius: "0px 20px 20px 20px" }}>
         {jobs?.map(({ id, hospital, location, title, info, date }) => (
           <article className="px-5 py-4 border-top row" key={id}>
@@ -32,7 +31,6 @@ const Jobs = ({ jobs, howMany, title, isOngoing, isProcessing }) => {
                 </li>
               </ul>
             </div>
-
             {isOngoing && (
               <div className="col-4 d-flex flex-column gap-3 w-25 pt-3">
                 <button className="btn btn-outline-primary px-4 py-2 rounded-pill outline-btn">
@@ -43,7 +41,6 @@ const Jobs = ({ jobs, howMany, title, isOngoing, isProcessing }) => {
                 </button>
               </div>
             )}
-
             {isProcessing && (
               <div className="col-4 d-flex flex-column gap-3 w-25 pt-3">
                 <button className="btn btn-primary px-4 py-2 rounded-pill filled-btn">
@@ -53,7 +50,6 @@ const Jobs = ({ jobs, howMany, title, isOngoing, isProcessing }) => {
             )}
           </article>
         ))}
-
         <p className="px-4 pb-4 fw-bolder fs-5 fst-italic">Load More &gt;</p>
       </div>
     </section>

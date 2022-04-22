@@ -35,7 +35,6 @@ const SpecialistJobs = () => {
             ))}
           </div>
         </section>
-
         <Outlet />
       </div>
     </DashboardContainer>

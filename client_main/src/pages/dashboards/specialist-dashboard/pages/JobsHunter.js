@@ -19,15 +19,12 @@ const JobsHunter = () => {
           Advanced Search
         </p>
       </header>
-
       <section className="jobs-hunter bg-white">
         <h2 className="fw-bolder fs-4 px-4 py-3 montserrat">Job Feed</h2>
-
         <section className="border-top px-4 py-3 d-flex align-items-center justify-content-between">
           <button className="me-3 btn px-1">
             <i class="bi bi-chevron-left"></i>
           </button>
-
           <div className="d-flex align-items-center justify-content-between w-100 jobs-tags">
             <button className="rounded-pill active-btn">All</button>
             <button className="rounded-pill">Optician</button>
@@ -36,12 +33,10 @@ const JobsHunter = () => {
             <button className="rounded-pill">Skin care specialist</button>
             <button className="rounded-pill">Hair care specialist</button>
           </div>
-
           <button className="ms-3 btn px-1">
             <i class="bi bi-chevron-right"></i>
           </button>
         </section>
-
         <section>
           <article className="border-top px-4 py-3">
             <div className="d-flex ">
@@ -57,7 +52,6 @@ const JobsHunter = () => {
                   className="pt-1 fw-bolder">
                   More &gt;
                 </Link>
-
                 <div className="d-flex align-items-center gap-4 pt-3 jobs-hunter-detail">
                   <p>Optician</p>
                   <i class="bi bi-chevron-right"></i>
@@ -66,12 +60,10 @@ const JobsHunter = () => {
                   <p>Eye Doctor</p>
                 </div>
               </div>
-
               <button className="like-btn">
                 <i class="bi bi-heart-fill"></i>
               </button>
             </div>
-
             <div className="d-flex align-items-center justify-content-between pt-3">
               <ul className="d-flex align-items-center gap-5 mb-0 jobs-hunter-detail">
                 <li className="d-flex align-items-center gap-2">
@@ -93,15 +85,12 @@ const JobsHunter = () => {
             </div>
           </article>
         </section>
-
         <div className="border-top">
           <button className="mx-4 my-3 btn btn-outline-primary rounded-pill px-4 outline-btn">
             Load More
           </button>
         </div>
       </section>
-
-      {/*  */}
     </section>
   );
 };

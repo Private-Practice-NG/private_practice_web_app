@@ -2,7 +2,6 @@ const Offers = ({ privateOffer, heading, isEmergency }) => {
   return (
     <div className="px-4 col offers">
       <h3 className="fs-6 offers-heading">{heading}</h3>
-
       <div className="d-flex flex-column gap-2 pt-3">
         {privateOffer?.map(({ hospital, title, address, date, image, id }) => (
           <div
@@ -17,7 +16,6 @@ const Offers = ({ privateOffer, heading, isEmergency }) => {
             />
             <div>
               <h4 className="fs-5 montserrat">{title}</h4>
-
               <div className="offer-info">
                 <p>{hospital}</p>
                 <p>{address}</p>
