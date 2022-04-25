@@ -1,6 +1,8 @@
 import timeIcon from "../../../../assets/images/icons/carbon_time.svg";
 import calendarIcon from "../../../../assets/images/icons/calender.svg";
 import redCrossIcon from "../../../../assets/images/icons/red-cross.svg";
+import darkHospital from "../../../../assets/images/icons/dark-hospital-icon.png";
+import darkLocation from "../../../../assets/images/icons/dark-location-icon.png";
 
 const JobDetails = () => {
   return (
@@ -85,7 +87,7 @@ const JobDetails = () => {
         </section>
         <section className="border-start col-3">
           <div className="d-flex flex-column gap-3 p-4 w-50 mx-auto">
-            <button className="btn btn-primary rounded-pill filled-btn">
+            <button className="btn btn-primary px-4 rounded-pill text-capitalize filled-btn">
               Apply now
             </button>
             <button className="btn btn-outline-primary rounded-pill outline-btn">
@@ -104,22 +106,25 @@ const JobDetails = () => {
               </p>
               <p>Ac et proin nisl neque eu suspendisse.</p>
             </div>
-            <div>
-              <div>
+            <div className="pt-3 ">
+              <div className="d-flex align-items-center gap-3">
+                <img src={darkHospital} alt="" width={17} />
                 <p>Kings hospital</p>
               </div>
-              <div>
+              <div className="d-flex align-items-center gap-3 mt-2">
+                <img src={darkLocation} alt="" width={15} />
                 <p>Wuse, Zone 4, Abuja</p>
               </div>
             </div>
           </article>
-
           <div className="border-top p-4">
-            <p className="px-3 py-2 bg-success rounded text-white">
+            <p className="px-3 py-2 rounded job-link">
               privatepractice.com/ays98d890
             </p>
 
-            <a href="#">Copy link</a>
+            <button className="montserrat fw-bolder pt-1 job-copy-link">
+              Copy Link
+            </button>
           </div>
         </section>
       </div>

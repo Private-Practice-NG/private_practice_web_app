@@ -145,6 +145,14 @@
 
 .job-details {
   min-height: 100vh;
+  background-color: "#eaf1f8";
+}
+.job-details .job-link {
+  background-color: #e4ecf2;
+}
+.job-details .job-copy-link {
+  color: var(--default-blue-deep);
+  font-size: 0.8rem;
 }
 
 /* Chrome, Safari, Edge, Opera */
