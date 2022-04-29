@@ -80,11 +80,16 @@ button {
 
 .specialist-job-nav {
   padding-inline: 31px;
-  padding-block: 6px;
+  padding-block: 7px;
   background-color: #fff;
-  border-radius: 8px;
+  border-radius: 6px;
 }
 
-.active-job {
-  background-color: red;
+.current {
+  background-color: var(--default-blue);
+  color: #fff;
+
+  &:hover {
+    color: #fff;
+  }
 }

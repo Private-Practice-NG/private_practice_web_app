@@ -13,7 +13,7 @@ const NavLinks = ({ isHospital }) => {
       icon: require("../assets/images/icons/jobs.png"),
       name: "Jobs",
       hospitalDashboardLink: "/hospital/jobs",
-      specialistDashboardLink: "/specialist/jobs",
+      specialistDashboardLink: "/specialist/jobs/practicing-profile",
     },
     {
       key: 3,

@@ -162,9 +162,40 @@
 .practicing-profile .work-history {
   font-size: 0.85rem;
 }
-.practicing-profile .work-history-footer,
+.practicing-profile .work-history-footer {
+  font-size: 0.8rem;
+}
 .practicing-profile .work-date {
-  font-size: 0.7rem;
+  border: 1px solid red;
+}
+.practicing-profile .online-tag {
+  width: 18px;
+  height: 18px;
+  border: 2px solid #f7fafd;
+  border-radius: 50%;
+  background-color: #12d00e;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.practicing-profile .edit-container {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: #f9fcff;
+  border: 1px solid rgba(126, 154, 176, 0.63);
+  position: absolute;
+  display: grid;
+  place-items: center;
+}
+.practicing-profile .noti-count {
+  width: 35px;
+  height: 35px;
+  background-color: #e4ecf2;
+  color: #4a6f8b;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
 }
 
 /* Chrome, Safari, Edge, Opera */
@@ -233,11 +264,15 @@ button {
 
 .specialist-job-nav {
   padding-inline: 31px;
-  padding-block: 6px;
+  padding-block: 7px;
   background-color: #fff;
-  border-radius: 8px;
+  border-radius: 6px;
 }
 
-.active-job {
-  background-color: red;
+.current {
+  background-color: var(--default-blue);
+  color: #fff;
+}
+.current:hover {
+  color: #fff;
 }
