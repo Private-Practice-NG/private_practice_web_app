@@ -155,6 +155,50 @@
   font-size: 0.8rem;
 }
 
+.specialist-home-wrapper {
+  width: 90%;
+  margin: 50px auto;
+}
+
+.first-grid {
+  margin: 0 30px;
+}
+
+.basic-profile-card {
+  margin: 0;
+  width: 40%;
+  border-radius: 15px;
+  padding: 20px;
+  background-color: white;
+}
+.basic-profile-card .specialist-avatar-area img {
+  width: 80px;
+  border: 3px solid var(--default-blue-deep);
+}
+.basic-profile-card button {
+  background-color: #66bda3;
+  padding: 3px 15px;
+}
+.basic-profile-card .profile-details .detail {
+  font-size: 13px;
+}
+
+.weekly-stats {
+  margin: 0;
+  width: 30%;
+  border-radius: 15px;
+  padding: 20px;
+  background-color: white;
+}
+
+.profile-completion-section {
+  margin: 0;
+  width: 25%;
+  border-radius: 15px;
+  padding: 20px;
+  background-color: white;
+}
+
 /* Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {

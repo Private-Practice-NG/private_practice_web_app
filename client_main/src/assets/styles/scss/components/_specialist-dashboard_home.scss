@@ -1,0 +1,37 @@
+@mixin plain-wrapper($width, $margin) {
+  margin: $margin;
+  width: $width;
+  border-radius: 15px;
+  padding: 20px;
+  background-color: white;
+}
+
+.specialist-home-wrapper {
+  width: 90%;
+  margin: 50px auto;
+}
+.first-grid {
+  margin: 0 30px;
+}
+.basic-profile-card {
+  @include plain-wrapper(40%, 0);
+  .specialist-avatar-area img {
+    width: 80px;
+    border: 3px solid var(--default-blue-deep);
+  }
+  button {
+    background-color: rgb(102, 189, 163);
+    padding: 3px 15px;
+  }
+  .profile-details {
+    .detail {
+      font-size: 13px;
+    }
+  }
+}
+.weekly-stats {
+  @include plain-wrapper(30%, 0);
+}
+.profile-completion-section {
+  @include plain-wrapper(25%, 0);
+}

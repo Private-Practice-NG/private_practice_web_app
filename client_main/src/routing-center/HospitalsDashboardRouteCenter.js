@@ -42,7 +42,7 @@ import TreatmentDetails from "../pages/dashboards/hospital-dashboard/pages/Treat
 import JobPayment from "../pages/dashboards/hospital-dashboard/pages/JobPayment";
 import HospitalProfile from "../pages/dashboards/hospital-dashboard/pages/HospitalProfile";
 import JobsHome from "../pages/dashboards/hospital-dashboard/pages/JobsHome";
-import SpecialistNearYou from "../pages/dashboards/hospital-dashboard/pages/SpecialistNearYou";
+import SpecialistSelection from "../pages/dashboards/hospital-dashboard/pages/SpecialistSelection";
 import JobPostSuccess from "../pages/dashboards/hospital-dashboard/pages/JobPostSuccess";
 import HospitalFavourites from "../pages/dashboards/hospital-dashboard/pages/HospitalFavourites";
 import HospitalHelpSupport from "../pages/dashboards/hospital-dashboard/pages/HospitalHelpSupport";
@@ -100,8 +100,8 @@ function HospitalsDashboardRouteCenter() {
       />
       <Route path="/hospital/jobs/payment" element={<JobPayment />} />
       <Route
-        path="/hospital/jobs/specialist-near-you"
-        element={<SpecialistNearYou />}
+        path="/hospital/jobs/specialist-selection"
+        element={<SpecialistSelection />}
       />
       <Route
         path="/hospital/jobs/job-posted-successfully"

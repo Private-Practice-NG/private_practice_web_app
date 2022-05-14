@@ -1,13 +1,13 @@
 import nearPeople from "../../../../assets/images/near-people.png";
-import PageNavigator from "../../components/PageNavigator";
-import SelectedSpecialist from "../components/SelectedSpecialist";
-import FeaturedSpecialists from "../components/FeaturedSpecialists";
-import DashboardContainer from "../../../../components/DashboardContainer";
+import PageNavigator from "../../pages/dashboards/components/PageNavigator";
+import SelectedSpecialist from "../../pages/dashboards/hospital-dashboard/components/SelectedSpecialist";
+import FeaturedSpecialists from "../../pages/dashboards/hospital-dashboard/components/FeaturedSpecialists";
+import DashboardContainer from "../../components/DashboardContainer";
 
 const SpecialistSelection = () => {
   return (
     <DashboardContainer isHospital>
-      <section className="specialist-selection">
+      <section className="specialist-near-you">
         <div className="custom_plain-wrapper mt-5 shadow">
           <header className="d-flex flex-wrap align-items-center justify-content-between">
             <div>
@@ -40,7 +40,7 @@ const SpecialistSelection = () => {
           <FeaturedSpecialists />
         </div>
         <PageNavigator
-          nextPage="/hospital/dashboard"
+          nextPage="/hospital/jobs/job-preview"
           previousPage="/hospital/jobs/find-specialist"
         />
       </section>

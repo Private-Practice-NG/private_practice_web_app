@@ -57,7 +57,7 @@ function FindASpecialist() {
       </section>
       <PageNavigator
         previousPage="/hospital/jobs/payment"
-        nextPage="/hospital/jobs/specialist-near-you"
+        nextPage="/hospital/jobs/specialist-selection"
       />
     </DashboardContainer>
   );

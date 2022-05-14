@@ -73,7 +73,7 @@ function JobPreview() {
         </section>
         <div className="px-2 post-btn-wrapper">
           <Link
-            to="/jobs/job-posted-successfully"
+            to="/hospital/jobs/job-posted-successfully"
             className="post-btn btn mt-4 text-white w-100 fs-5">
             Post Job
           </Link>
