@@ -15,10 +15,13 @@ function SpecialistDashboardRouteCenter() {
     <Routes>
       <Route path="/specialist/dashboard" element={<SpecialistDashboard />} />
       {/* jobs route center */}
-      <Route path="/specialist/jobs" element={<SpecialistJobs />}>
-        <Route index element={<PracticingProfile />} />
-        <Route path="jobs-hunter" element={<JobsHunter />} />
-        <Route path="job-inbox" element={<JobInbox />} />
+      <Route element={<SpecialistJobs />}>
+        <Route
+          path="/specialist/jobs/practicing-profile"
+          element={<PracticingProfile />}
+        />
+        <Route path="/specialist/jobs/jobs-hunter" element={<JobsHunter />} />
+        <Route path="/specialist/jobs/job-inbox" element={<JobInbox />} />
       </Route>
       <Route path="/specialist/jobs/job-details" element={<JobDetails />} />
       <Route path="/specialist/wallet" element={<SpecialistWallet />} />

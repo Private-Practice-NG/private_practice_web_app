@@ -155,48 +155,47 @@
   font-size: 0.8rem;
 }
 
-.specialist-home-wrapper {
-  width: 90%;
-  margin: 50px auto;
+.practicing-profile {
+  border-radius: 30px;
+  background-color: #fff;
 }
-
-.first-grid {
-  margin: 0 30px;
+.practicing-profile .work-history {
+  font-size: 0.85rem;
 }
-
-.basic-profile-card {
-  margin: 0;
-  width: 40%;
-  border-radius: 15px;
-  padding: 20px;
-  background-color: white;
+.practicing-profile .work-history-footer {
+  font-size: 0.8rem;
 }
-.basic-profile-card .specialist-avatar-area img {
-  width: 80px;
-  border: 3px solid var(--default-blue-deep);
+.practicing-profile .work-date {
+  border: 1px solid red;
 }
-.basic-profile-card button {
-  background-color: #66bda3;
-  padding: 3px 15px;
+.practicing-profile .online-tag {
+  width: 18px;
+  height: 18px;
+  border: 2px solid #f7fafd;
+  border-radius: 50%;
+  background-color: #12d00e;
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
-.basic-profile-card .profile-details .detail {
-  font-size: 13px;
+.practicing-profile .edit-container {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: #f9fcff;
+  border: 1px solid rgba(126, 154, 176, 0.63);
+  position: absolute;
+  display: grid;
+  place-items: center;
 }
-
-.weekly-stats {
-  margin: 0;
-  width: 30%;
-  border-radius: 15px;
-  padding: 20px;
-  background-color: white;
-}
-
-.profile-completion-section {
-  margin: 0;
-  width: 25%;
-  border-radius: 15px;
-  padding: 20px;
-  background-color: white;
+.practicing-profile .noti-count {
+  width: 35px;
+  height: 35px;
+  background-color: #e4ecf2;
+  color: #4a6f8b;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
 }
 
 /* Chrome, Safari, Edge, Opera */
@@ -265,11 +264,15 @@ button {
 
 .specialist-job-nav {
   padding-inline: 31px;
-  padding-block: 6px;
+  padding-block: 7px;
   background-color: #fff;
-  border-radius: 8px;
+  border-radius: 6px;
 }
 
-.active-job {
-  background-color: red;
+.current {
+  background-color: var(--default-blue);
+  color: #fff;
+}
+.current:hover {
+  color: #fff;
 }

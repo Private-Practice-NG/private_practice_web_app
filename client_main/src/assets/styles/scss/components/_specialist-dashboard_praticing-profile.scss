@@ -1,0 +1,48 @@
+.practicing-profile {
+  border-radius: 30px;
+  background-color: #fff;
+
+  .work-history {
+    font-size: 0.85rem;
+  }
+
+  .work-history-footer {
+    font-size: 0.8rem;
+  }
+
+  .work-date {
+    border: 1px solid red;
+  }
+
+  .online-tag {
+    width: 18px;
+    height: 18px;
+    border: 2px solid #f7fafd;
+    border-radius: 50%;
+    background-color: #12d00e;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+
+  .edit-container {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: #f9fcff;
+    border: 1px solid rgba(126, 154, 176, 0.63);
+    position: absolute;
+    display: grid;
+    place-items: center;
+  }
+
+  .noti-count {
+    width: 35px;
+    height: 35px;
+    background-color: #e4ecf2;
+    color: #4a6f8b;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+  }
+}

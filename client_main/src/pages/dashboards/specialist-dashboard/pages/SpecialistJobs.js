@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import { Outlet, Link } from "react-router-dom";
 import DashboardContainer from "../../../../components/DashboardContainer";
 
@@ -6,17 +7,17 @@ const SpecialistJobs = () => {
     {
       id: 1,
       name: "Job hunter",
-      link: "jobs-hunter",
+      link: "/specialist/jobs/jobs-hunter",
     },
     {
       id: 2,
       name: "Practicing profile",
-      link: "",
+      link: "/specialist/jobs/practicing-profile",
     },
     {
       id: 3,
       name: "Job inbox",
-      link: "job-inbox",
+      link: "/specialist/jobs/job-inbox",
     },
   ];
 
@@ -26,12 +27,17 @@ const SpecialistJobs = () => {
         <section className="pt-5">
           <div className="d-flex align-items-center justify-content-center gap-4">
             {jobNav?.map(({ id, link, name }) => (
-              <Link
+              <NavLink
                 to={link}
                 key={id}
-                className="montserrat shadow specialist-job-nav">
+                // ` `
+                className={({ isActive }) =>
+                  isActive
+                    ? "montserrat shadow text-capitalize specialist-job-nav current"
+                    : "montserrat shadow text-capitalize specialist-job-nav"
+                }>
                 {name}
-              </Link>
+              </NavLink>
             ))}
           </div>
         </section>
