@@ -25,6 +25,7 @@ import MailVerificationPage1 from "../pages/registration-section/pages/MailVerif
 import MailVerificationPage2 from "../pages/registration-section/pages/MailVerificationPage2";
 import ProfileSummaryPage from "../pages/registration-section/pages/ProfileSummaryPage";
 import ProfileSetupComplete from "../pages/registration-section/pages/ProfileSetupComplete";
+import EmailVerification from "../pages/registration-section/pages/EmailVerification";
 
 function App() {
   return (
@@ -53,6 +54,10 @@ function App() {
       <Route
         path="/general-specialist-data-1"
         element={<GeneralSpecialistData1 />}
+      />
+      <Route
+        path="/email-verification/:userType/:userId/verify/:token"
+        element={<EmailVerification />}
       />
       <Route path="/verify-user-email" element={<VerifyUserEmail />} />
       <Route
