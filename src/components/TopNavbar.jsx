@@ -10,7 +10,11 @@ function TopNavbar() {
       <nav className='navbar navbar-expand-lg navbar-light top-nav'>
         <div className='container-fluid'>
           <Link to='/' className='navbar-brand'>
-            <img src={brandLogo} alt='private practice logo' />
+            <img
+              src={brandLogo}
+              alt='private practice logo'
+              style={{ display: 'inline-block' }}
+            />
             <span>Private Practice</span>
           </Link>
           <button

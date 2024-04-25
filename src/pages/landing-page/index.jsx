@@ -11,7 +11,7 @@ function LandingPage() {
   return (
     <main>
       <TopNavbar />
-      <section style={{ transform: 'translateY(-94.5px)' }}>
+      <section style={{ transform: 'translateY(-102.5px)' }}>
         <LeadBanner />
         <GoalsArea />
         <HowItWorksSection />
