@@ -22,6 +22,7 @@ function buildStyles() {
 exports.buildStyles = buildStyles;
 
 // autoprefixer task
+
 exports.default = () =>
   gulp
     .src('src/styles/scss/**/*.scss')
