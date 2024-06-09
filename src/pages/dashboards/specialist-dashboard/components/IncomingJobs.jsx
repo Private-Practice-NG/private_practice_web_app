@@ -1,5 +1,6 @@
-// import hospitalIcon from "../../../../assets/images/icons/hospital.png";
+import React from "react";
 import Offers from "./Offers";
+import hospitalIcon from "../../../../assets/images/icons/hospital.png";
 
 const IncomingJobs = () => {
   const offers = {
@@ -10,7 +11,7 @@ const IncomingJobs = () => {
         hospital: "Kings care hospital",
         address: "Wuse Zone 4, Abuja",
         date: "June 22, 2022 - June 24, 2022",
-        image: require("../../../../assets/images/icons/hospital.png"),
+        image: hospitalIcon,
       },
       {
         id: 2,
@@ -18,7 +19,7 @@ const IncomingJobs = () => {
         hospital: "Kings care hospital",
         address: "Wuse Zone 4, Abuja",
         date: "June 22, 2022 - June 24, 2022",
-        image: require("../../../../assets/images/icons/hospital.png"),
+        image: hospitalIcon,
       },
       {
         id: 3,
@@ -26,7 +27,7 @@ const IncomingJobs = () => {
         hospital: "Kings care hospital",
         address: "Wuse Zone 4, Abuja",
         date: "June 22, 2022 - June 24, 2022",
-        image: require("../../../../assets/images/icons/hospital.png"),
+        image: hospitalIcon,
       },
       {
         id: 4,
@@ -34,7 +35,7 @@ const IncomingJobs = () => {
         hospital: "Kings care hospital",
         address: "Wuse Zone 4, Abuja",
         date: "June 22, 2022 - June 24, 2022",
-        image: require("../../../../assets/images/icons/hospital.png"),
+        image: hospitalIcon,
       },
     ],
     emergency: [
@@ -44,7 +45,7 @@ const IncomingJobs = () => {
         hospital: "Kings care hospital",
         address: "Wuse Zone 4, Abuja",
         date: "June 22, 2022 - June 24, 2022",
-        image: require("../../../../assets/images/icons/hospital.png"),
+        image: hospitalIcon,
       },
     ],
   };

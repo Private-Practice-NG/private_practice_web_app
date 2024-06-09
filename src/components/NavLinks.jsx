@@ -1,58 +1,68 @@
-import { NavLink } from "react-router-dom";
+import React from 'react';
+import { NavLink } from 'react-router-dom';
+import globalIcon from '../assets/images/icons/global.png';
+import jobsIcon from '../assets/images/icons/jobs.png';
+import growthIcon from '../assets/images/icons/growth.png';
+import walletIcon from '../assets/images/icons/wallet.png';
+import starIcon from '../assets/images/icons/star.png';
+import calendarIcon from '../assets/images/icons/calendar.png';
+import questionIcon from '../assets/images/icons/question.png';
+import tourismIcon from '../assets/images/icons/tourism.png';
+
 const NavLinks = ({ isHospital }) => {
   const navs = [
     {
       key: 1,
-      icon: require("../assets/images/icons/global.png"),
+      icon: globalIcon,
       name: "Dashboard",
       hospitalDashboardLink: "/hospital/dashboard",
       specialistDashboardLink: "/specialist/dashboard",
     },
     {
       key: 2,
-      icon: require("../assets/images/icons/jobs.png"),
+      icon: jobsIcon,
       name: "Jobs",
       hospitalDashboardLink: "/hospital/jobs",
       specialistDashboardLink: "/specialist/jobs",
     },
     {
       key: 3,
-      icon: require("../assets/images/icons/growth.png"),
+      icon: growthIcon,
       name: "Statistics",
       hospitalDashboardLink: "/hospital/statistics",
       specialistDashboardLink: "/specialist/statistics",
     },
     {
       key: 4,
-      icon: require("../assets/images/icons/wallet.png"),
+      icon: walletIcon,
       name: "Wallet",
       hospitalDashboardLink: "/hospital/wallet",
       specialistDashboardLink: "/specialist/wallet",
     },
     {
       key: 5,
-      icon: require("../assets/images/icons/star.png"),
+      icon: starIcon,
       name: "Favorites",
       hospitalDashboardLink: "/hospital/favourites",
       specialistDashboardLink: "/specialist/favourites",
     },
     {
       key: 6,
-      icon: require("../assets/images/icons/calendar.png"),
+      icon: calendarIcon,
       name: "Calender",
       hospitalDashboardLink: "/hospital/calender",
       specialistDashboardLink: "/specialist/calender",
     },
     {
       key: 7,
-      icon: require("../assets/images/icons/question.png"),
+      icon: questionIcon,
       name: "Help/Support",
       hospitalDashboardLink: "/hospital/helpsupport",
       specialistDashboardLink: "/specialist/helpsupport",
     },
     {
       key: 8,
-      icon: require("../assets/images/icons/tourism.png"),
+      icon: tourismIcon,
       name: "Site Guide",
       hospitalDashboardLink: "/hospital/site-guide",
       specialistDashboardLink: "/specialist/site-guide",
@@ -64,14 +74,10 @@ const NavLinks = ({ isHospital }) => {
       {navs.map((nav) => (
         <li className="dashboard-nav-lists" key={nav.key}>
           <NavLink
-            to={
-              isHospital
-                ? nav.hospitalDashboardLink
-                : nav.specialistDashboardLink
-            }
-            className={`dashboard-nav-link ${({ isActive }) =>
-              isActive ? "active" : null}`}>
-            <img src={nav.icon} alt="" />
+            to={isHospital ? nav.hospitalDashboardLink : nav.specialistDashboardLink}
+            className={({ isActive }) => isActive ? 'dashboard-nav-link active' : 'dashboard-nav-link'}
+          >
+            <img src={nav.icon} alt={nav.name} />
             <span>{nav.name}</span>
           </NavLink>
         </li>
@@ -79,4 +85,5 @@ const NavLinks = ({ isHospital }) => {
     </ul>
   );
 };
+
 export default NavLinks;
