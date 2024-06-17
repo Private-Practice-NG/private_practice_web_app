@@ -1,5 +1,6 @@
-// import React from "react";
+import React from 'react';
 import { Routes, Route } from 'react-router-dom';
+
 import SpecialistDashboard from '../pages/dashboards/specialist-dashboard';
 import SpecialistJobs from '../pages/dashboards/specialist-dashboard/pages/SpecialistJobs';
 import HelpAndSupport from '../pages/dashboards/specialist-dashboard/pages/HelpAndSupport';
@@ -13,18 +14,16 @@ import JobDetails from '../pages/dashboards/specialist-dashboard/pages/JobDetail
 function SpecialistDashboardRouteCenter() {
   return (
     <Routes>
-      <Route path='/specialist/dashboard' element={<SpecialistDashboard />} />
-      {/* jobs route center */}
-      <Route path='/specialist/jobs' element={<SpecialistJobs />}>
+      <Route path="dashboard" element={<SpecialistDashboard />} />
+      <Route path="jobs" element={<SpecialistJobs />}>
         <Route index element={<PracticingProfile />} />
-        <Route path='jobs-hunter' element={<JobsHunter />} />
-        <Route path='job-inbox' element={<JobInbox />} />
+        <Route path="jobs-hunter" element={<JobsHunter />} />
+        <Route path="job-inbox" element={<JobInbox />} />
       </Route>
-      <Route path='/specialist/jobs/job-details' element={<JobDetails />} />
-
-      <Route path='/specialist/wallet' element={<SpecialistWallet />} />
-      <Route path='/specialist/favourites' element={<SpecialistFavourites />} />
-      <Route path='/specialist/helpsupport' element={<HelpAndSupport />} />
+      <Route path="jobs/job-details" element={<JobDetails />} />
+      <Route path="wallet" element={<SpecialistWallet />} />
+      <Route path="favourites" element={<SpecialistFavourites />} />
+      <Route path="helpsupport" element={<HelpAndSupport />} />
     </Routes>
   );
 }

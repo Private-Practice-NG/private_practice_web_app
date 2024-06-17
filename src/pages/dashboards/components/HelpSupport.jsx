@@ -1,51 +1,61 @@
+import React from 'react';
 import Faqs from './Faqs';
 import specialistIcon from '../../../assets/images/icons/specialist-icon.png';
 import hospitalIcon from '../../../assets/images/icons/hospital-outline.png';
 import patientIcon from '../../../assets/images/icons/patient-icon.png';
+import accountIcon from '../../../assets/images/icons/account.png';
+import refundIcon from '../../../assets/images/icons/refund.png';
+import paymentIcon from '../../../assets/images/icons/payment.png';
+import shareIcon from '../../../assets/images/icons/share.png';
+import letterIcon from '../../../assets/images/icons/letter.png';
+import worldIcon from '../../../assets/images/icons/world.png';
+import fraudIcon from '../../../assets/images/icons/fraud.png';
+import fileIcon from '../../../assets/images/icons/file.png';
 
 const HelpSupport = () => {
   const otherLinks = [
     {
       id: 1,
-      image: require('../../../assets/images/icons/account.png'),
+      image: accountIcon,
       name: 'My Account',
     },
     {
       id: 2,
-      image: require('../../../assets/images/icons/refund.png'),
+      image: refundIcon,
       name: 'Charges and Refund',
     },
     {
       id: 3,
-      image: require('../../../assets/images/icons/payment.png'),
+      image: paymentIcon,
       name: 'Payouts',
     },
     {
       id: 4,
-      image: require('../../../assets/images/icons/share.png'),
+      image: shareIcon,
       name: 'Connect',
     },
     {
       id: 5,
-      image: require('../../../assets/images/icons/letter.png'),
+      image: letterIcon,
       name: 'Subscription',
     },
     {
       id: 6,
-      image: require('../../../assets/images/icons/world.png'),
+      image: worldIcon,
       name: 'Travels',
     },
     {
       id: 7,
-      image: require('../../../assets/images/icons/fraud.png'),
+      image: fraudIcon,
       name: 'Fraud',
     },
     {
       id: 8,
-      image: require('../../../assets/images/icons/file.png'),
+      image: fileIcon,
       name: 'Others',
     },
   ];
+
   return (
     <section className='help-support-section'>
       <div className='custom_plain-wrapper'>
@@ -84,7 +94,7 @@ const HelpSupport = () => {
                   className='d-flex flex-column align-items-center text-center'
                   key={id}
                 >
-                  <img src={image} alt='' />
+                  <img src={image} alt={name} />
                   <p className='pt-1'>{name}</p>
                 </li>
               ))}
@@ -123,4 +133,5 @@ const HelpSupport = () => {
     </section>
   );
 };
+
 export default HelpSupport;
